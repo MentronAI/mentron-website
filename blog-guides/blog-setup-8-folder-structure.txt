@@ -1,0 +1,30 @@
+# FOLDER STRUCTURE
+
+mentron-app/
+├── app/
+│   ├── blogs/
+│   │   ├── [slug]/
+│   │   │   └── page.tsx          # Individual blog post page
+│   │   └── page.tsx               # Blog list page
+│   └── layout.tsx
+├── content/
+│   └── blogs/
+│       ├── ai-transforming-learning.mdx
+│       ├── study-techniques.mdx
+│       └── canvas-lms-integration.mdx
+├── public/
+│   └── images/
+│       ├── blog/
+│       │   ├── ai-transforming-learning.jpg
+│       │   ├── study-techniques.jpg
+│       │   └── canvas-lms-integration.jpg
+│       ├── authors/
+│       │   └── nithish.jpg
+│       ├── og-default.jpg
+│       ├── og-blog.jpg
+│       └── logo.png
+├── lib/
+│   ├── blog.ts                    # Blog utilities
+│   └── seo.ts                     # SEO utilities
+├── next.config.js
+└── package.json
