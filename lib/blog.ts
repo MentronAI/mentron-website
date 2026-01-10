@@ -25,6 +25,11 @@ export interface BlogPost {
 }
 
 export function getAllPosts(): BlogPost[] {
+  // Create directory if it doesn't exist to avoid errors
+  if (!fs.existsSync(postsDirectory)) {
+    return [];
+  }
+
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames
     .filter((fileName) => fileName.endsWith('.mdx'))

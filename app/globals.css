@@ -101,6 +101,12 @@
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
   }
 
+  .text-gradient {
+    background: linear-gradient(135deg, #0077FF 0%, #00D4FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .scrollbar-hide::-webkit-scrollbar {
       display: none;
   }
@@ -120,5 +126,76 @@
   }
   h1, h2, h3 {
     @apply font-display;
+  }
+}
+
+@layer components {
+  /* Blog content typography */
+  .blog-content h2 {
+    @apply text-3xl font-bold mt-12 mb-4 text-slate-900 font-display;
+  }
+
+  .blog-content h3 {
+    @apply text-2xl font-semibold mt-8 mb-3 text-slate-800 font-display;
+  }
+
+  .blog-content p {
+    @apply mb-6 leading-relaxed text-slate-600 text-lg;
+  }
+
+  .blog-content ul {
+    @apply mb-6 ml-6 text-slate-600 list-disc;
+  }
+  
+  .blog-content ol {
+    @apply mb-6 ml-6 text-slate-600 list-decimal;
+  }
+
+  .blog-content li {
+    @apply mb-2 leading-relaxed pl-2;
+  }
+
+  .blog-content blockquote {
+    @apply border-l-4 border-primary pl-6 my-8 italic text-slate-700 bg-slate-50 p-6 rounded-xl;
+  }
+
+  .blog-content code {
+    @apply bg-slate-100 px-2 py-1 rounded text-sm text-primary font-mono;
+  }
+
+  .blog-content pre {
+    @apply bg-slate-900 text-slate-50 p-6 rounded-xl overflow-x-auto my-8;
+  }
+  
+  .blog-content pre code {
+    @apply bg-transparent p-0 text-slate-50;
+  }
+
+  .blog-content img {
+    @apply rounded-2xl my-8 w-full shadow-lg;
+  }
+  
+  .blog-content a {
+    @apply text-primary hover:underline font-medium;
+  }
+
+  .blog-content table {
+    @apply w-full border-collapse my-8 text-sm overflow-hidden rounded-xl border border-slate-200;
+  }
+
+  .blog-content thead {
+    @apply bg-slate-50;
+  }
+
+  .blog-content th {
+    @apply border border-slate-200 p-4 text-left font-bold text-slate-900;
+  }
+
+  .blog-content td {
+    @apply border border-slate-200 p-4 text-slate-600;
+  }
+
+  .blog-content tr:nth-child(even) {
+    @apply bg-slate-50/50;
   }
 }

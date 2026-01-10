@@ -1,4 +1,8 @@
 import Link from "next/link"
+import Image from "next/image"
+import { Metadata } from 'next'
+import { generateBlogCollectionJsonLd } from '@/lib/seo'
+import { getAllPosts, getAllCategories } from '@/lib/blog'
 import { 
   ChevronRight, 
   Search, 
@@ -20,9 +24,51 @@ import {
   BrainCircuit
 } from "lucide-react"
 
+export const metadata: Metadata = {
+  title: 'Blog - Learn About AI-Powered Education | Mentron',
+  description: 'Insights on AI-powered learning, education technology, and study strategies for students, teachers, and institutions.',
+  openGraph: {
+    title: 'Mentron Blog - AI-Powered Education Insights',
+    description: 'Insights on AI-powered learning, education technology, and study strategies.',
+    url: 'https://mentron.in/blogs',
+    siteName: 'Mentron',
+    images: [
+      {
+        url: 'https://mentron.in/images/mentron-in-og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Mentron Blog',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mentron Blog',
+    description: 'Insights on AI-powered learning and education technology.',
+    images: ['https://mentron.in/images/mentron-in-og-default.jpg'],
+    creator: '@mentronai',
+  },
+}
+
 export default function BlogsPage() {
+  const blogCollectionJsonLd = generateBlogCollectionJsonLd()
+  const posts = getAllPosts()
+  const categories = getAllCategories()
+
+  // Use the first post as featured, and the rest for the grid
+  const featuredPost = posts[0]
+  const recentPosts = posts.slice(1)
+
   return (
     <>
+      {/* JSON-LD Schema for Blog Collection */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogCollectionJsonLd) }}
+      />
+
       {/* Breadcrumb Navigation */}
       <div className="px-6 lg:px-16 pt-8 pb-4 bg-white border-b border-slate-100">
         <div className="max-w-7xl mx-auto">
@@ -65,81 +111,95 @@ export default function BlogsPage() {
             <button className="px-5 py-2 bg-primary text-white font-semibold rounded-full text-sm transition-all hover:bg-primary-dark shadow-sm">
               All Posts
             </button>
-            <button className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
-              AI Technology
-            </button>
-            <button className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
-              Study Tips
-            </button>
-            <button className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
-              For Teachers
-            </button>
-            <button className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
-              Product Updates
-            </button>
-            <button className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
-              Education
-            </button>
+            {categories.map((category) => (
+              <button key={category} className="px-5 py-2 bg-white border-2 border-slate-200 text-slate-600 font-semibold rounded-full text-sm transition-all hover:border-primary hover:text-primary">
+                {category}
+              </button>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Featured Post */}
-      <section className="px-6 lg:px-16 py-12 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 mb-6">
-            <Star width={20} className="text-warning fill-warning" />
-            <h2 className="text-sm font-bold text-slate-900 uppercase tracking-widest font-geist">Featured Post</h2>
-          </div>
-
-          <Link href="/blog/ai-transforming-learning" className="block bg-white border-2 border-slate-200 rounded-3xl overflow-hidden hover-lift hover:border-primary transition-all">
-            <div className="grid lg:grid-cols-2 gap-0">
-              {/* Image */}
-              <div className="h-80 lg:h-auto bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <Sparkles width={64} className="mb-4 opacity-50 mx-auto" />
-                  <p className="text-xl font-medium opacity-75">Featured Image</p>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="p-10 flex flex-col justify-center">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-50 text-primary text-xs font-semibold rounded-full border border-blue-100">AI Technology</span>
-                  <span className="px-3 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-full border border-purple-100">Education</span>
-                </div>
-
-                <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 font-display leading-tight">
-                  How AI is Transforming Student Learning in 2026: From Theory to Practice
-                </h3>
-
-                <p className="text-slate-500 text-lg mb-6 font-geist leading-relaxed">
-                  Artificial Intelligence is no longer a futuristic concept—it&apos;s reshaping how students learn, teachers teach, and institutions operate. Discover real-world case studies and implementation strategies.
-                </p>
-
-                <div className="flex items-center gap-6 text-sm text-slate-500 font-geist">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center text-white font-bold text-xs">
-                      NY
-                    </div>
-                    <span>Nithish Yadav</span>
-                  </div>
-                  <span>•</span>
-                  <div className="flex items-center gap-1">
-                    <Calendar width={14} />
-                    <span>Jan 8, 2026</span>
-                  </div>
-                  <span>•</span>
-                  <div className="flex items-center gap-1">
-                    <Clock width={14} />
-                    <span>8 min read</span>
-                  </div>
-                </div>
-              </div>
+      {featuredPost && (
+        <section className="px-6 lg:px-16 py-12 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center gap-2 mb-6">
+              <Star width={20} className="text-warning fill-warning" />
+              <h2 className="text-sm font-bold text-slate-900 uppercase tracking-widest font-geist">Featured Post</h2>
             </div>
-          </Link>
-        </div>
-      </section>
+
+            <Link href={`/blogs/${featuredPost.slug}`} className="block bg-white border-2 border-slate-200 rounded-3xl overflow-hidden hover-lift hover:border-primary transition-all">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Image */}
+                <div className="h-80 lg:h-auto bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 relative flex items-center justify-center overflow-hidden">
+                  {featuredPost.image ? (
+                    <Image 
+                      src={featuredPost.image} 
+                      alt={featuredPost.title}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="text-center text-white p-8">
+                      <Sparkles width={64} className="mb-4 opacity-50 mx-auto" />
+                      <p className="text-xl font-medium opacity-75">Featured Image</p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Content */}
+                <div className="p-10 flex flex-col justify-center">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {featuredPost.category.slice(0, 2).map((cat) => (
+                      <span key={cat} className="px-3 py-1 bg-blue-50 text-primary text-xs font-semibold rounded-full border border-blue-100">
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
+
+                  <h3 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4 font-display leading-tight">
+                    {featuredPost.title}
+                  </h3>
+
+                  <p className="text-slate-500 text-lg mb-6 font-geist leading-relaxed line-clamp-3">
+                    {featuredPost.description}
+                  </p>
+
+                  <div className="flex items-center gap-6 text-sm text-slate-500 font-geist">
+                    <div className="flex items-center gap-2">
+                      {featuredPost.author.image ? (
+                        <Image 
+                          src={featuredPost.author.image} 
+                          alt={featuredPost.author.name}
+                          width={32}
+                          height={32}
+                          className="rounded-full w-8 h-8 object-cover"
+                        />
+                      ) : (
+                        <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center text-white font-bold text-xs">
+                          {featuredPost.author.name.substring(0, 2).toUpperCase()}
+                        </div>
+                      )}
+                      <span>{featuredPost.author.name}</span>
+                    </div>
+                    <span>•</span>
+                    <div className="flex items-center gap-1">
+                      <Calendar width={14} />
+                      <span>{new Date(featuredPost.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                    </div>
+                    <span>•</span>
+                    <div className="flex items-center gap-1">
+                      <Clock width={14} />
+                      <span>{featuredPost.readingTime}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* Blog Grid */}
       <section className="px-6 lg:px-16 py-12 bg-white">
@@ -148,291 +208,70 @@ export default function BlogsPage() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-slate-900 font-display">Recent Articles</h2>
             <div className="flex items-center gap-2 text-sm text-slate-500 font-geist">
-              <span>Showing 1-9 of 47 posts</span>
+              <span>Showing {recentPosts.length} posts</span>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {/* Blog Card 1 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                <BookOpen width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-full">Study Tips</span>
+            {recentPosts.map((post) => (
+              <article key={post.slug} className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all flex flex-col h-full">
+                <div className="h-48 bg-gradient-to-br from-purple-500 to-pink-500 relative flex items-center justify-center overflow-hidden flex-shrink-0">
+                  {post.image ? (
+                    <Image 
+                      src={post.image} 
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <BookOpen width={48} className="text-white opacity-50" />
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/study-techniques">5 Evidence-Based Study Techniques That Actually Work</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Research-backed strategies to maximize learning efficiency and retention. Discover what cognitive science says about effective studying.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Dec 28, 2025</span>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {post.category.slice(0, 1).map((cat) => (
+                      <span key={cat} className="px-2 py-1 bg-purple-50 text-purple-600 text-xs font-semibold rounded-full">
+                        {cat}
+                      </span>
+                    ))}
                   </div>
-                  <span>•</span>
-                  <span>6 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 2 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center">
-                <Users width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-green-50 text-green-600 text-xs font-semibold rounded-full">For Teachers</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/ai-classroom-integration">How to Integrate AI Tools in Your Classroom</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Step-by-step guide for educators new to AI technology. Learn how to start small and scale gradually.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Dec 15, 2025</span>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
+                    <Link href={`/blogs/${post.slug}`}>{post.title}</Link>
+                  </h3>
+                  <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2 flex-1">
+                    {post.description}
+                  </p>
+                  <div className="flex items-center gap-3 text-xs text-slate-400 font-geist mt-auto">
+                    <div className="flex items-center gap-1">
+                      <Calendar width={12} />
+                      <span>{new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                    </div>
+                    <span>•</span>
+                    <span>{post.readingTime}</span>
                   </div>
-                  <span>•</span>
-                  <span>10 min read</span>
                 </div>
-              </div>
-            </article>
-
-            {/* Blog Card 3 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-                <Package width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-orange-50 text-orange-600 text-xs font-semibold rounded-full">Product</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/canvas-lms-integration">Canvas LMS Integration: Complete Setup Guide</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Connect Mentron with your school&apos;s Canvas LMS in 5 minutes. Sync courses, rosters, and assignments automatically.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Jan 5, 2026</span>
-                  </div>
-                  <span>•</span>
-                  <span>8 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 4 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                <Brain width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-blue-50 text-primary text-xs font-semibold rounded-full">AI Technology</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/spaced-repetition">Understanding Spaced Repetition: The Science Behind Memory</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  How the FSRS algorithm optimizes review schedules for long-term retention. Learn the math behind smart flashcards.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Dec 20, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>12 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 5 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
-                <TrendingUp width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-yellow-50 text-yellow-600 text-xs font-semibold rounded-full">Education</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/adaptive-learning">The Rise of Adaptive Learning: Personalization at Scale</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  How modern LMS platforms are finally delivering personalized education to millions of students worldwide.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Dec 10, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>7 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 6 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
-                <GitBranch width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-indigo-50 text-indigo-600 text-xs font-semibold rounded-full">Study Tips</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/mind-maps">Mind Mapping for STEM: Visualize Complex Concepts</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Practical techniques for creating effective mind maps in physics, chemistry, and biology courses.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Dec 5, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>9 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 7 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
-                <Zap width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-pink-50 text-pink-600 text-xs font-semibold rounded-full">Product</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/quiz-generation">Auto Quiz Generation: How It Works Behind the Scenes</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  A deep dive into the AI models that create meaningful assessment questions from any document.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Nov 28, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>11 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 8 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-teal-500 to-green-500 flex items-center justify-center">
-                <Award width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-teal-50 text-teal-600 text-xs font-semibold rounded-full">For Teachers</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/reduce-grading-time">How Teachers Reduced Grading Time by 70%</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Case studies from 50+ schools using AI-powered auto-grading and instant feedback systems.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Nov 15, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>6 min read</span>
-                </div>
-              </div>
-            </article>
-
-            {/* Blog Card 9 */}
-            <article className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all">
-              <div className="h-48 bg-gradient-to-br from-violet-500 to-fuchsia-500 flex items-center justify-center">
-                <Rocket width={48} className="text-white opacity-50" />
-              </div>
-              <div className="p-6">
-                <div className="flex gap-2 mb-3">
-                  <span className="px-2 py-1 bg-violet-50 text-violet-600 text-xs font-semibold rounded-full">Education</span>
-                </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 font-display leading-tight hover:text-primary transition-colors">
-                  <Link href="/blog/future-of-education">The Future of Education: 2026-2030 Predictions</Link>
-                </h3>
-                <p className="text-sm text-slate-500 mb-4 font-geist line-clamp-2">
-                  Expert predictions on how AI, VR, and adaptive learning will reshape classrooms in the next 5 years.
-                </p>
-                <div className="flex items-center gap-3 text-xs text-slate-400 font-geist">
-                  <div className="flex items-center gap-1">
-                    <Calendar width={12} />
-                    <span>Nov 1, 2025</span>
-                  </div>
-                  <span>•</span>
-                  <span>14 min read</span>
-                </div>
-              </div>
-            </article>
-
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Pagination */}
+      {/* Pagination (Static for now, but dynamic list handles content) */}
       <section className="px-6 lg:px-16 py-12 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto">
+          {/* ... pagination UI preserved as is or removed if single page is enough ... */}
+          {/* Leaving pagination UI for visual completeness as requested */}
           <div className="flex items-center justify-center gap-2">
-
-            {/* Previous Button */}
             <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-400 flex items-center justify-center hover:border-primary hover:text-primary transition-all disabled:opacity-30 disabled:cursor-not-allowed" disabled>
               <ChevronLeft width={20} />
             </button>
-
-            {/* Page Numbers */}
             <button className="w-10 h-10 rounded-full bg-primary text-white font-semibold text-sm transition-all">
               1
             </button>
-            <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-all">
-              2
-            </button>
-            <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-all">
-              3
-            </button>
-            <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-all">
-              4
-            </button>
-
-            <span className="text-slate-400 px-2">...</span>
-
-            <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-600 font-semibold text-sm hover:border-primary hover:text-primary transition-all">
-              6
-            </button>
-
-            {/* Next Button */}
             <button className="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all">
               <ChevronRight width={20} />
             </button>
-
           </div>
-
-          {/* Page Info */}
-          <p className="text-center text-sm text-slate-500 mt-6 font-geist">
-            Showing <span className="font-semibold text-slate-900">1-9</span> of <span className="font-semibold text-slate-900">47</span> articles
-          </p>
         </div>
       </section>
 

@@ -1,10 +1,11 @@
 // lib/seo.ts - ENHANCED VERSION with all Google Rich Results schemas
 import { Metadata } from 'next'
-import { BlogPost } from './blog'
+import { BlogPost, getAllPosts } from './blog'
 
 const SITE_URL = 'https://mentron.in'
 const SITE_NAME = 'Mentron'
-const DEFAULT_OG_IMAGE = '/images/og-default.jpg'
+const LOGO_PATH = '/logo/mentron.webp'
+const DEFAULT_OG_IMAGE = '/images/mentron-og-default.jpg'
 const TWITTER_HANDLE = '@mentronai' // Replace with your actual handle
 
 // ============================================================================
@@ -90,7 +91,7 @@ export function generateBlogJsonLd(post: BlogPost) {
       url: SITE_URL,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/logo.png`,
+        url: `${SITE_URL}${LOGO_PATH}`,
         width: 600,
         height: 60,
       },
@@ -159,11 +160,12 @@ export function generateOrganizationJsonLd() {
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/logo.png`,
+      url: `${SITE_URL}${LOGO_PATH}`,
       width: 600,
       height: 60,
     },
     description: 'AI-powered learning platform for students, teachers, and institutions. Adaptive learning paths, auto-generated study materials, and instant feedback.',
+    foundingDate: '2025-06-05',
     sameAs: [
       'https://twitter.com/mentronai', // Replace with actual social profiles
       'https://www.linkedin.com/company/mentron',
@@ -202,6 +204,7 @@ export function generateWebsiteJsonLd() {
     name: SITE_NAME,
     url: SITE_URL,
     description: 'Your AI Study Partner - Adaptive learning paths, AI-generated study materials, and instant feedback personalized for your goals.',
+    inLanguage: 'en-US',
     publisher: {
       '@id': `${SITE_URL}#organization`,
     },
@@ -221,6 +224,8 @@ export function generateWebsiteJsonLd() {
 // ============================================================================
 
 export function generateBlogCollectionJsonLd() {
+  const posts = getAllPosts();
+  
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -249,6 +254,19 @@ export function generateBlogCollectionJsonLd() {
         },
       ],
     },
+    hasPart: posts.map((post) => ({
+      '@type': 'BlogPosting',
+      '@id': `${SITE_URL}/blogs/${post.slug}#blogposting`,
+      name: post.title,
+      url: `${SITE_URL}/blogs/${post.slug}`,
+      headline: post.title,
+      description: post.description,
+      datePublished: new Date(post.date).toISOString(),
+      author: {
+        '@type': 'Person',
+        name: post.author.name
+      }
+    }))
   }
 }
 
