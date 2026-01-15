@@ -17,54 +17,54 @@ export default function TeacherBenefits() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Left Column: Vertical Bar Chart */}
-          <div className="bg-white border border-slate-200 rounded-3xl p-8">
+          <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8">
             <h3 className="text-lg font-bold text-slate-900 mb-6 font-display">Weekly Hours Breakdown</h3>
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Grading</div>
+            <div className="space-y-6 sm:space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Grading</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-danger to-red-400 rounded-full flex items-center justify-end pr-3" style={{ width: "52%" }}>
+                  <div className="h-full bg-gradient-to-r from-danger to-red-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "52%" }}>
                     <span className="text-xs font-bold text-white">11.6h</span>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Planning</div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Planning</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3" style={{ width: "43%" }}>
+                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "43%" }}>
                     <span className="text-xs font-bold text-white">9.7h</span>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Admin Work</div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Admin Work</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3" style={{ width: "38%" }}>
+                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "38%" }}>
                     <span className="text-xs font-bold text-white">8.5h</span>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Communication</div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Communication</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full flex items-center justify-end pr-3" style={{ width: "19%" }}>
+                  <div className="h-full bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "19%" }}>
                     <span className="text-xs font-bold text-slate-700">4.2h</span>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Instruction</div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Instruction</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-success to-emerald-400 rounded-full flex items-center justify-end pr-3" style={{ width: "100%" }}>
+                  <div className="h-full bg-gradient-to-r from-success to-emerald-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "100%" }}>
                     <span className="text-xs font-bold text-white">22.4h</span>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
-                <div className="w-32 text-sm text-slate-600 font-medium">Collaboration</div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Collaboration</div>
                 <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-primary to-blue-400 rounded-full flex items-center justify-end pr-3" style={{ width: "14%" }}>
-                    <span className="text-xs font-bold text-white">3.2h</span>
+                  <div className="h-full bg-gradient-to-r from-primary to-blue-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "18%" }}>
+                    <span className="text-xs font-bold text-white">4h</span>
                   </div>
                 </div>
               </div>
