@@ -59,9 +59,12 @@ export default function Sidebar() {
       </div>
 
       <div className="hidden lg:block space-y-4 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-        <button className="w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 rounded-xl transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5">
+        <Link 
+          href="/institutional-demo" 
+          className="block w-full bg-primary hover:bg-primary-dark text-white font-medium py-3 rounded-xl transition-all shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 text-center"
+        >
           Join Waitlist
-        </button>
+        </Link>
         <p className="text-xs text-slate-400 text-center">Your AI Study Partner.</p>
       </div>
     </aside>
