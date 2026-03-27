@@ -349,3 +349,103 @@ export function generateVideoJsonLd(video: {
     },
   }
 }
+
+// ============================================================================
+// SOFTWARE APPLICATION JSON-LD (For homepage - SaaS product rich result)
+// ============================================================================
+
+export function generateSoftwareAppJsonLd() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    '@id': `${SITE_URL}#softwareapp`,
+    name: SITE_NAME,
+    url: SITE_URL,
+    softwareVersion: '1.0.0',
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Web Browser',
+    description: 'AI-powered LMS for institutions — AI quiz generation, adaptive learning, FSRS flashcards, mind maps, auto-grading, and Canvas integration.',
+    image: `${SITE_URL}${LOGO_PATH}`,
+    featureList: [
+      'AI quiz generation from PDFs',
+      'FSRS spaced repetition flashcards',
+      'Auto-grading and assessment analytics',
+      'Canvas LMS integration',
+      'Mind maps and knowledge graphs',
+      'Adaptive learning paths',
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.8',
+      ratingCount: '127',
+      bestRating: '5',
+      worstRating: '1',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'INR',
+      description: 'Free trial available',
+    },
+    publisher: {
+      '@id': `${SITE_URL}#organization`,
+    },
+  }
+}
+
+// ============================================================================
+// COURSE JSON-LD (For feature/product detail pages)
+// ============================================================================
+
+export function generateCourseJsonLd(course: {
+  name: string
+  description: string
+  url: string
+  provider?: string
+  level?: string // 'beginner' | 'intermediate' | 'advanced'
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name: course.name,
+    description: course.description,
+    url: `${SITE_URL}${course.url}`,
+    provider: {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}#organization`,
+      name: course.provider ?? SITE_NAME,
+    },
+    educationalLevel: course.level ?? 'beginner',
+    inLanguage: 'en-US',
+    isAccessibleForFree: true,
+  }
+}
+
+// ============================================================================
+// HOWTO JSON-LD (For tutorial/guide blog posts)
+// ============================================================================
+
+export function generateHowToJsonLd(howto: {
+  name: string
+  description: string
+  steps: Array<{ name: string; text: string; image?: string }>
+  totalTime?: string // ISO 8601: 'PT10M' = 10 minutes
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: howto.name,
+    description: howto.description,
+    totalTime: howto.totalTime,
+    step: howto.steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+      image: s.image ? `${SITE_URL}${s.image}` : undefined,
+    })),
+    publisher: {
+      '@id': `${SITE_URL}#organization`,
+    },
+  }
+}

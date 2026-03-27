@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import Sidebar from "@/components/layout/sidebar";
-import { generateOrganizationJsonLd, generateWebsiteJsonLd } from "@/lib/seo";
+import { generateOrganizationJsonLd, generateWebsiteJsonLd, generateSoftwareAppJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -24,6 +24,26 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mentron.in'),
   title: "Mentron LMS- Smarter Learning & Smarter Teaching",
   description: "AI powered LMS that learns your learning style and auto-generates flashcards, quizzes, mind maps. Makes learning faster, saves teachers 6+ hrs/week.",
+  // Favicon and icons
+  icons: {
+    icon: [
+      { url: '/favicon/favicon.ico' },
+      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/favicon/apple-touch-icon.png',
+  },
+  manifest: '/favicon/site.webmanifest',
+  // Canonical (auto-resolves to current page URL)
+  alternates: {
+    canonical: './',
+  },
+  // Robots - allow indexing by default
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
     title: 'Mentron LMS- Smarter Learning & Smarter Teaching',
     description: 'AI powered LMS that learns your learning style and auto-generates flashcards, quizzes, mind maps. Makes learning faster, saves teachers 6+ hrs/week.',
@@ -56,6 +76,7 @@ export default function RootLayout({
 }>) {
   const organizationJsonLd = generateOrganizationJsonLd();
   const websiteJsonLd = generateWebsiteJsonLd();
+  const softwareAppJsonLd = generateSoftwareAppJsonLd();
 
   return (
     <html lang="en" className="scroll-smooth">
@@ -68,6 +89,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
         />
 
         {/* Grid background */}
