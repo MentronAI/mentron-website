@@ -2,10 +2,10 @@
 title: "Canvas LMS AI Integration: The Complete 2026 Guide for Schools"
 date: "2026-01-10"
 description: "Discover how Canvas LMS AI integration transforms teaching with automated quiz generation, smart flashcards, and instant course sync. Setup in 5 minutes—no coding required."
-author: 
-  name: "Nithish Yadav"
+author:
+  name: "Ananya Krishnan"
   role: "Product Lead, Mentron"
-  image: "/images/authors/nithish.jpg"
+  image: "/images/authors/ananya.jpg"
 image: "/images/blog/canvas-lms-ai-integration-guide.jpg"
 category: 
   - "Canvas LMS"
@@ -101,7 +101,7 @@ Students continue accessing courses through Canvas. Teachers use Mentron as a pa
 
 Unlike single-instance Canvas integrations that work for only one school, Mentron's multi-tenant architecture supports multiple organizations simultaneously. Each school, district, or department can connect their own Canvas instance with isolated data storage.
 
-**Real-World Example**: Chennai Public Schools District connects their district Canvas instance (canvas.chennaiblicschools.edu) to Mentron. Delhi International School connects their separate Canvas instance (lms.delhiintlschool.org) to Mentron. Both organizations use Mentron's AI tools, but their data remains completely isolated—teachers at Chennai Schools never see Delhi School data, and vice versa.
+**Example**: A school district can connect their Canvas instance to Mentron, while another school in a different region connects their separate Canvas instance. Both organizations use Mentron's AI tools, but their data remains completely isolated—teachers at one school never see the other school's data, and vice versa.
 
 This architecture makes Mentron ideal for:
 
@@ -231,43 +231,33 @@ Understanding exactly what data Mentron imports from Canvas helps administrators
 
 This limited data scope ensures student privacy while providing Mentron enough context to generate relevant AI-powered learning materials.
 
-## Canvas AI Integration Use Cases: Real-World Examples
+## Canvas AI Integration Use Cases
 
-### Biology Department, IIT Madras: Quiz Generation from Canvas Materials
+### Quiz Generation from Canvas Materials
 
-Dr. Rajesh Kumar, biology professor at IIT Madras, uploads 45-page lecture PDFs to Canvas Files for his molecular biology course (780 students across 4 sections). After connecting Canvas to Mentron via OAuth:
+Biology professors teaching large courses (700+ students across multiple sections) can upload 45-page lecture PDFs to Canvas Files. After connecting Canvas to Mentron:
 
-**Before Integration**: Dr. Kumar manually created quizzes by reading PDFs, writing questions in Word, then copying into Canvas Quizzes—3 hours per quiz, 12 quizzes per semester = 36 hours.
+**Before Integration**: Manually creating quizzes requires reading PDFs, writing questions in Word, then copying into Canvas Quizzes—typically 2-3 hours per quiz.
 
-**After Integration**: Dr. Kumar selects the PDF in Mentron (already imported from Canvas), clicks "Generate Quiz," reviews and edits AI-generated questions, then manually creates the quiz in Canvas using Mentron's question bank—20 minutes per quiz = 4 hours total saved per semester per course. Across 3 courses, that's 96 hours saved annually.
+**After Integration**: Select the PDF in Mentron (already imported from Canvas), click "Generate Quiz," review and edit AI-generated questions, then use Mentron's question bank to create quizzes in Canvas—reducing time to 20-30 minutes per quiz.
 
-**Student Impact**: According to Dr. Kumar's semester feedback survey, 87% of students reported quizzes better aligned with lecture content compared to previous years.
+### Adaptive Flashcards for Exam Prep
 
-### Delhi Public School: Adaptive Flashcards for CBSE Board Prep
+Schools can connect their Canvas instance to Mentron organization-wide. Teachers upload curriculum documents to Canvas, and Mentron automatically generates adaptive flashcards using the FSRS (Free Spaced Repetition Scheduler) algorithm.
 
-Delhi Public School (grades 9-12, 2,400 students) connected their Canvas instance to Mentron organization-wide. Chemistry teachers uploaded CBSE curriculum documents to Canvas, and Mentron automatically generated adaptive flashcards using the FSRS (Free Spaced Repetition Scheduler) algorithm.
-
-**How It Works**: When students miss quiz questions in Mentron (generated from Canvas materials), those concepts automatically enter personalized flashcard decks. The FSRS algorithm schedules review sessions based on individual memory patterns—students who struggle with chemical bonding see those cards more frequently until mastery.
-
-**Results After One Semester**:
-
-- Board exam scores in chemistry increased 12% average (comparing previous year's Grade 10 cohort)
-- Student-reported study time decreased 18% while confidence increased
-- Teachers identified knowledge gaps earlier using Mentron's analytics
+**How It Works**: When students miss quiz questions in Mentron (generated from Canvas materials), those concepts automatically enter personalized flashcard decks. The FSRS algorithm schedules review sessions based on individual memory patterns—students who struggle with specific concepts see those cards more frequently until mastery.
 
 [Learn more about FSRS flashcards for Canvas courses](/blogs/fsrs-flashcards-spaced-repetition)
 
-### St. Xavier's University: Mind Maps for Complex Course Content
+### Mind Maps for Complex Course Content
 
-St. Xavier's University's philosophy department (12 faculty, 340 students) struggled helping students visualize connections between philosophical movements, key thinkers, and historical contexts. After connecting Canvas to Mentron:
+Philosophy and humanities departments often struggle helping students visualize connections between concepts, key thinkers, and historical contexts. After connecting Canvas to Mentron, faculty can upload course syllabi and reading lists. Mentron's AI analyzes these materials and auto-generates interactive mind maps showing:
 
-Faculty uploaded course syllabi and reading lists to Canvas. Mentron's AI analyzed these materials and auto-generated interactive mind maps showing:
+- **Concept relationships**: How ideas relate to each other across different frameworks
+- **Historical connections**: Timeline showing influence between thinkers across centuries
+- **Theme clustering**: Visual groupings of related concepts and movements
 
-- **Concept relationships**: How Kant's categorical imperative relates to modern deontological ethics
-- **Historical connections**: Timeline showing influence between philosophers across centuries
-- **Theme clustering**: Visual groupings of existentialism, phenomenology, and related movements
-
-Students accessed mind maps through Mentron while completing Canvas assignments. End-of-semester surveys showed 76% of students found mind maps "very helpful" or "essential" for understanding course material.
+Students access mind maps through Mentron while completing Canvas assignments, helping them build integrated understanding rather than isolated facts.
 
 ## Canvas LMS Integration vs Competitor AI Tools
 
