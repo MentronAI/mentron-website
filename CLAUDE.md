@@ -90,3 +90,56 @@ MONGODB_URI=mongodb://localhost:27017        # MongoDB connection
 NEXT_PUBLIC_SUPABASE_URL=                    # Supabase URL (optional)
 NEXT_PUBLIC_SUPABASE_ANON_KEY=               # Supabase anon key (optional)
 ```
+
+## Blog Automation Pipeline
+
+Automated blog generation using Perplexity research and SEO optimization.
+
+### Skills Available
+
+| Skill | Purpose |
+|------|---------|
+| `/write-blog next` | Generate the next unwritten blog |
+| `/write-blog <slug>` | Generate a specific blog by slug |
+| `/write-blog batch N` | Generate N blogs in sequence |
+| `/blog-status` | Show progress dashboard |
+
+### Topic Tracking
+
+- **Source**: `mentron_ai_lms_topic_clusters_100.json` - 100 blog topics with `written` field
+- **Prompt**: `content-writer.md` - Comprehensive SEO content-writer template
+- **Output**: `content/blogs/{slug}.mdx`
+
+### Flow
+
+1. Reads topic from JSON (first unwritten by cluster order)
+2. Builds prompt from `content-writer.md` + topic data
+3. Calls Perplexity deep research for content generation
+4. Validates markdown (frontmatter, code blocks, structure)
+5. Repairs broken markdown using LLM if needed
+6. Publishes via `/publish-blog`
+7. Updates JSON with `written: true`
+
+### Current Progress
+
+- 6/100 blogs written (6%)
+- Cluster 1 (AI LMS Fundamentals): 60% complete
+- Clusters 2-10: 0% complete
+
+### Content Guidelines
+
+**IMPORTANT**: The product has NOT launched yet. Never include:
+- Fake testimonials or named case studies
+- Claims of actual implementation or customer success
+- Specific improvement statistics (e.g., "34% improvement")
+- Real institutions using Mentron (IIT Madras, Delhi Public School, etc.)
+
+**Author**: Always use `Ananya Krishnan` with image `/images/authors/ananya.jpg`
+
+### Validation Rules
+
+Before publishing, check:
+- Frontmatter exists with all required fields
+- Code blocks are balanced (``` count matches)
+- No unclosed HTML tags
+- Heading hierarchy is correct (no skipped levels)
