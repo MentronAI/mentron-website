@@ -22,7 +22,7 @@ Then paste the full blog content (frontmatter + markdown body).
 1. **Parses frontmatter** - Extracts title, date, description, author, image, category, published, featured
 2. **Generates slug** - Converts title to URL-safe slug (lowercase, hyphens, removes special chars)
 3. **Saves as .mdx** - Writes to `content/blogs/{slug}.mdx` exactly as provided (no content changes)
-4. **Verifies** - Confirms file exists and shows the public URL
+4. **Confirms** - File exists and shows the public URL
 
 ## Automatic integrations (no action needed)
 
