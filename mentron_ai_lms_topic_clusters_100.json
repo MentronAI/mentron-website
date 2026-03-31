@@ -10,7 +10,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Definitive pillar page defining AI LMS, evolution from traditional LMS, core components, and use cases for schools, universities, and enterprises.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T12:00:00Z",
+    "qc_update_summary": "Added FAQ (5 questions), injected secondary keywords (ai powered lms x5, ai lms explained x2), updated 4 H2 headings with keywords, added dateModified, improved topic coverage 57%→86%. Score: 85→108 (B→A)",
+    "qc_score": 108
   },
   {
     "cluster_no": 1,
@@ -23,7 +26,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Comparison article contrasting AI LMS with legacy systems across features, outcomes, costs, and implementation complexity.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:32:46.170Z",
+    "qc_update_summary": "95→102. v2 fixes: injected 5 missing subtopics: definition, features, use cases, pricing, implementation; boosted \"ai lms comparison\" in body",
+    "qc_score": 102
   },
   {
     "cluster_no": 1,
@@ -36,7 +42,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Feature checklist breaking down must-have AI capabilities like adaptive learning, auto-grading, AI quiz generation, and analytics.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:24.068Z",
+    "qc_update_summary": "99→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97
   },
   {
     "cluster_no": 1,
@@ -49,7 +58,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Technical deep-dive into AI LMS architecture, data pipelines, integrations, and scalability considerations for CTOs.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:24.265Z",
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94
   },
   {
     "cluster_no": 1,
@@ -62,7 +74,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Stakeholder-focused explainer quantifying productivity, engagement, and analytics benefits of AI LMS.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:24.466Z",
+    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 86
   },
   {
     "cluster_no": 1,
@@ -75,7 +90,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Guide to common AI LMS pricing models (per learner, per institution, freemium) and budgeting tips.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:24.635Z",
+    "qc_update_summary": "93→99. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 99
   },
   {
     "cluster_no": 1,
@@ -88,7 +106,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Roundup comparing leading AI LMS providers with a feature and pricing matrix.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:24.825Z",
+    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 87
   },
   {
     "cluster_no": 1,
@@ -101,7 +122,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Strategy piece for small EdTech founders choosing and positioning AI LMS in competitive markets.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:32:47.128Z",
+    "qc_update_summary": "91→101. v2 fixes: injected 1 missing subtopics: definition; injected LSI terms: machine learning, automation, algorithm, NLP; boosted \"edtech startup lms\" in conclusion; boosted \"edtech startup lms\" in body",
+    "qc_score": 101
   },
   {
     "cluster_no": 1,
@@ -114,7 +138,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Exploration of generative AI use cases inside LMS, including assistants, content generation, and feedback.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.021Z",
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94
   },
   {
     "cluster_no": 1,
@@ -126,8 +153,11 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
-    "content_angle": "Trend report summarizing key AI LMS developments for the next 3\u20135 years.",
-    "written": true
+    "content_angle": "Trend report summarizing key AI LMS developments for the next 3–5 years.",
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.201Z",
+    "qc_update_summary": "89→89. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 89
   },
   {
     "cluster_no": 2,
@@ -140,7 +170,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "In-depth guide to AI quiz generation workflows, best practices, and pitfalls.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.405Z",
+    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 91
   },
   {
     "cluster_no": 2,
@@ -153,7 +186,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Benefits-focused article quantifying time savings and productivity gains from AI-based quiz creation.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.602Z",
+    "qc_update_summary": "98→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85
   },
   {
     "cluster_no": 2,
@@ -166,7 +202,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Breakdown of modern question types and how AI LMS tools support them.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.790Z",
+    "qc_update_summary": "85→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 83
   },
   {
     "cluster_no": 2,
@@ -179,7 +218,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Guidelines for designing inclusive, bias-aware AI assessments.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:25.992Z",
+    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85
   },
   {
     "cluster_no": 2,
@@ -192,7 +234,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Overview of AI proctoring in LMS, pros/cons, and privacy considerations.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:26.189Z",
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97
   },
   {
     "cluster_no": 2,
@@ -205,7 +250,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Educational article on assessment types and how AI LMS supports each.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:26.384Z",
+    "qc_update_summary": "92→90. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 90
   },
   {
     "cluster_no": 2,
@@ -218,7 +266,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Technical-yet-accessible explanation of NLP-based auto-grading.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:26.588Z",
+    "qc_update_summary": "84→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 84
   },
   {
     "cluster_no": 2,
@@ -231,7 +282,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Operational guide on building and maintaining AI-ready question banks.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:26.778Z",
+    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 77
   },
   {
     "cluster_no": 2,
@@ -244,7 +298,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "How to use assessment analytics dashboards to refine questions and exams.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:26.975Z",
+    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 86
   },
   {
     "cluster_no": 2,
@@ -257,7 +314,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.classmarker.com/online-testing/benefits-of-online-testing/; https://blog.kahoot.com/online-quiz-tools/; https://www.proprofs.com/quiz-school/blog/ai-quiz-maker/",
     "content_angle": "Comparison of question formats and how AI supports each.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:27.169Z",
+    "qc_update_summary": "78→78. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 78
   },
   {
     "cluster_no": 3,
@@ -270,7 +330,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Hands-on tutorial for connecting an AI LMS like Mentron to Canvas.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:32:49.218Z",
+    "qc_update_summary": "96→100. v2 fixes: injected 2 missing subtopics: grade sync, data migration; boosted \"mentron canvas\" in intro; boosted \"mentron canvas\" in body",
+    "qc_score": 100
   },
   {
     "cluster_no": 3,
@@ -282,8 +345,11 @@
     "search_volume": "Est. Low",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
-    "content_angle": "Buyer\u2019s guide comparing AI add-ons and LTI apps for Canvas.",
-    "written": true
+    "content_angle": "Buyer’s guide comparing AI add-ons and LTI apps for Canvas.",
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:27.372Z",
+    "qc_update_summary": "93→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92
   },
   {
     "cluster_no": 3,
@@ -296,7 +362,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Technical guide on syncing grades and assignments between systems.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:27.567Z",
+    "qc_update_summary": "94→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92
   },
   {
     "cluster_no": 3,
@@ -309,7 +378,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Tutorial-style article for schools using Google Classroom plus AI LMS.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:27.773Z",
+    "qc_update_summary": "92→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92
   },
   {
     "cluster_no": 3,
@@ -322,7 +394,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Guide for universities running Moodle who want AI capabilities.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:28.022Z",
+    "qc_update_summary": "81→81. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 81
   },
   {
     "cluster_no": 3,
@@ -335,7 +410,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Explainer on setting up SSO between AI LMS, Canvas, and identity providers.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:28.261Z",
+    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85
   },
   {
     "cluster_no": 3,
@@ -348,7 +426,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Guide for IT teams to sync enrolments and data across systems.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:28.485Z",
+    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85
   },
   {
     "cluster_no": 3,
@@ -361,7 +442,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Developer-focused article on building custom extensions on top of AI LMS APIs.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:28.685Z",
+    "qc_update_summary": "91→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 83
   },
   {
     "cluster_no": 3,
@@ -374,7 +458,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "How-to for connecting live class tools and syncing attendance/recordings.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:28.884Z",
+    "qc_update_summary": "88→88. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 88
   },
   {
     "cluster_no": 3,
@@ -387,7 +474,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
     "content_angle": "Vendor-agnostic checklist for evaluating integration depth and reliability.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T12:00:00Z",
+    "qc_update_summary": "SKIPPED: .mdx file not found in content/blogs/",
+    "qc_score": 0
   },
   {
     "cluster_no": 4,
@@ -400,7 +490,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Foundational explainer of adaptive learning concepts inside AI LMS.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:32:50.753Z",
+    "qc_update_summary": "98→108. v2 fixes: injected 2 missing subtopics: algorithms, learner profiles; injected LSI terms: learner journey, customization, proficiency; boosted \"personalized learning\" in body",
+    "qc_score": 108
   },
   {
     "cluster_no": 4,
@@ -413,7 +506,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "How-to for building AI-driven learning journeys from competency maps.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:29.093Z",
+    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 77
   },
   {
     "cluster_no": 4,
@@ -426,7 +522,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Benefits and design tips for microlearning powered by AI recommendations.",
-    "written": true
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:29.286Z",
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97
   },
   {
     "cluster_no": 4,
@@ -439,7 +538,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Guide to predictive analytics for student risk and intervention workflows.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:29.478Z",
+    "qc_update_summary": "96→96. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 96
   },
   {
     "cluster_no": 4,
@@ -452,7 +554,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Explainer on mapping skills to content and assessments with AI.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:29.807Z",
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97
   },
   {
     "cluster_no": 4,
@@ -465,7 +570,10 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Technical overview of recommendation algorithms in learning contexts.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:30.029Z",
+    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85
   },
   {
     "cluster_no": 4,
@@ -478,7 +586,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "How adaptive learning strategies differ across disciplines.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:30.224Z",
+    "qc_update_summary": "86→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 84
   },
   {
     "cluster_no": 4,
@@ -491,7 +602,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Corporate-focused take on AI-driven personalization for employees.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:30.428Z",
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94
   },
   {
     "cluster_no": 4,
@@ -504,7 +618,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Checklist of data points and tracking you must implement.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:30.634Z",
+    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 91
   },
   {
     "cluster_no": 4,
@@ -517,7 +634,10 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/ai-learning-platforms/; https://www.smart-sparrow.com/adaptive-learning/; https://www.efrontlearning.com/blog/adaptive-learning-lms",
     "content_angle": "Strategies for automatically assigning remedial or enrichment content.",
-    "written": false
+    "written": true,
+    "qc_last_updated": "2026-03-31T08:41:30.833Z",
+    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 87
   },
   {
     "cluster_no": 5,
@@ -1296,7 +1416,7 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://edtechmagazine.com/k12/article/2025/09/data-privacy-classroom; https://edtechmagazine.com/higher-ed/article/2025/10/justifying-lms-investments-roi; https://www.educause.edu/topics/teaching-and-learning/learning-management-systems-lms",
-    "content_angle": "Strategic piece on planning LMS investments with a 3\u20135 year horizon.",
+    "content_angle": "Strategic piece on planning LMS investments with a 3–5 year horizon.",
     "written": false
   }
 ]

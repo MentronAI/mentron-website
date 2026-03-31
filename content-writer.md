@@ -120,12 +120,22 @@ Apply these **2026 SEO best practices** while writing: [blog.mean](https://blog.
   - Reference **2–3 authoritative external sources** (e.g., Instructure, D2L, EdWeek, Educause, reputable EdTech blogs, or research reports). [searchengineland](https://searchengineland.com/guide/external-links)
   - Always use **descriptive anchor text** (no “click here”).  
 
-- **E‑E‑A‑T**
-  - Demonstrate:
-    - Experience: Describe Mentron’s workflows and features concretely.  
-    - Expertise: Use correct EdTech terminology and explain it simply.  
-    - Authoritativeness: Cite credible sources and standards.  
-    - Trustworthiness: Be transparent about limitations and avoid exaggerated claims. [digitaltrainee](https://digitaltrainee.com/digital-marketing-knowledge-blogs/eeat-in-seo-2026/)
+- **SERP Feature Targeting**
+  - Featured snippet optimization:
+    - Under the first H2, include a definition-style opening sentence: "An [topic] is..." or "[Topic] refers to..."
+    - When listing features or steps, use ordered lists (1. 2. 3.) — list format wins snippets for "how to" queries
+    - Use "is" statements in H3 headings for "what is" keywords: "### What is Adaptive Learning?"
+  - FAQ section (required):
+    - End each article with a `## Frequently Asked Questions` section containing 3-5 FAQ entries
+    - Each FAQ uses the format: `### [Question]?` followed by a 2-3 sentence answer
+    - Include at least one FAQ targeting a "People Also Ask" query
+    - FAQ questions should incorporate secondary keywords naturally
+
+- **E‑E‑A‑T (Enhanced)**
+  - **Experience**: Reference specific Mentron features by name (AI Quiz Generator, FSRS Flashcards, Canvas LMS Integration, etc.). Use concrete scenarios ("Imagine a biology teacher with a 45-page chapter..."). Include feature-led proof statements ("Mentron can process long PDFs and generate 20-50 questions in under 2 minutes"). [digitaltrainee](https://digitaltrainee.com/digital-marketing-knowledge-blogs/eeat-in-seo-2026/)
+  - **Expertise**: Use correct EdTech terminology (Bloom’s Taxonomy, LTI, NAAC, FSRS, adaptive learning, formative assessment, Course Outcomes, CO mapping). Explain jargon on first use. Reference established frameworks (Bloom’s Taxonomy, spaced repetition, Ebbinghaus forgetting curve, ADDIE).
+  - **Authoritativeness**: Cite 2+ authoritative external sources (government, academic, industry reports — not just competitor blogs). Attribute statistics with source links. Mention competitors factually without disparaging.
+  - **Trustworthiness**: Never fabricate testimonials or named case studies. Acknowledge AI limitations, the need for human review, and implementation challenges. Discuss data privacy (FERPA, GDPR, PDPA) where relevant. Use natural, non-aggressive CTAs.
 
 ***
 
@@ -219,26 +229,26 @@ Before finalizing your answer, internally confirm that:
 
 Output **Only return the ```markdown ``` block content.**, ready to be saved as `content/blogs/[slug].md`.
 
-### 1) Frontmatter (YAML inside `***` fences)
+### 1) Frontmatter (YAML inside `---` fences)
 
 Use this exact structure:
 
 ```yaml
-***
+---
 title: "[Exact title provided]"
 date: "[Current date in YYYY-MM-DD format]"
 description: "[Compelling 150-160 character meta description with primary keyword]"
 author:
-  name: "Nithish Yadav"
-  role: "Product Lead, Mentron"
-  image: "/images/authors/nithish.jpg"
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.jpg"
 image: "/images/blog/[slug].jpg"
 category:
   - "[Relevant category 1]"
   - "[Relevant category 2]"
 published: true
 featured: false
-***
+---
 ```
 
 Notes:
@@ -273,12 +283,24 @@ Follow these formatting rules:
 
 Throughout the article, where relevant:
 
-- Highlight Mentron’s differentiated capabilities:
-  - Canvas integration and LMS interoperability  
-  - FSRS‑based flashcards and spaced repetition  
-  - AI quiz generation from PDFs, lecture notes, and question banks  
-  - Mind maps and knowledge graph–style course mapping  
-  - Auto‑grading and assessment analytics  
+- Highlight Mentron’s differentiated capabilities (reference these ACTUAL features — do NOT invent features):
+  - **Faculty Tools:**
+    - AI Quiz Generator — generates quizzes from PDFs, lecture notes, and question banks (1-200 questions). Maps to Course Outcomes and Bloom’s Taxonomy levels (K1-K6). Produces student-specific variants.
+    - AI Assignment Generator — creates assignments with deliverables and rubrics (easy/medium/hard). Maps to COs and cognitive levels. Student-specific.
+    - Question Paper Generator — 3-step workflow (Plan → Review → Generate). K-CODE system for Bloom’s mapping. CO coverage tracking.
+    - Notes Generator — Cornell-style study notes (main notes + cue column + summary). Beginner/intermediate/advanced.
+    - Auto-Grading — AI-powered evaluation of quiz and assignment submissions with analytics breakdown.
+  - **Student Tools:**
+    - FSRS Flashcards — Free Spaced Repetition Scheduler flashcards. Maps to Learning Outcomes. Supports very_easy to very_hard difficulty.
+    - Mind Maps — AI-generated visual mind maps in Markdown format. Maps to course Learning Outcomes.
+    - Knowledge Graphs — JSON knowledge graphs showing concept relationships (nodes, edges, hierarchies).
+    - Chat with Documents (RAG) — Ask questions about uploaded study materials. 4 retrieval strategies: Basic, Expansion, Reranking, Conversational.
+    - Learning Sessions — guided learning paths with todos, roadmaps, and progress tracking.
+  - **Platform Features:**
+    - Canvas LMS Integration — syncs courses and enrollments from Canvas. OAuth and manual token auth. Grade passback.
+    - Analytics Dashboard — course-level analytics, at-risk student detection, engagement scoring (0-100). CSV/PDF export.
+    - Course Outcome Management — define and track COs per course. Bloom’s Taxonomy mapping per CO.
+    - Multi-tenant RBAC — Master Admin, Org Admin, HOD, Faculty, Student roles. Custom grade schemes (Anna University 10-point, US 4.0, etc.).  
 
 - Include **use cases** for:
   - K‑12 schools  

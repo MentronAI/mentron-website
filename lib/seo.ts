@@ -75,7 +75,7 @@ export function generateBlogJsonLd(post: BlogPost) {
       height: 630,
     },
     datePublished: publishedDate,
-    dateModified: publishedDate, // Update this if you track modification dates
+    dateModified: post.dateModified ? new Date(post.dateModified).toISOString() : publishedDate,
     author: {
       '@type': 'Person',
       '@id': `${SITE_URL}/about#person`,

@@ -103,6 +103,12 @@ Automated blog generation using Perplexity research and SEO optimization.
 | `/write-blog <slug>` | Generate a specific blog by slug |
 | `/write-blog batch N` | Generate N blogs in sequence |
 | `/blog-status` | Show progress dashboard |
+| `/qc-blog <slug>` | SEO quality check with keyword density, E-E-A-T, topic coverage |
+| `/qc-blog <slug> --fix` | SEO quality check + auto-fix issues |
+| `/qc-blog batch <N>` | Quality check last N blogs |
+| `/blog-infographic <slug>` | Generate branded infographics for a blog |
+| `/link-blogs <slug>` | Add internal links to a blog |
+| `/link-blogs all` | Add internal links to all blogs |
 
 ### Topic Tracking
 
@@ -119,6 +125,7 @@ Automated blog generation using Perplexity research and SEO optimization.
 5. Repairs broken markdown using LLM if needed
 6. Publishes via `/publish-blog`
 7. Updates JSON with `written: true`
+8. Optional post-write: `/qc-blog`, `/blog-infographic`, `/link-blogs`
 
 ### Current Progress
 

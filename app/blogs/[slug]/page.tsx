@@ -16,10 +16,11 @@ import {
   BrainCircuit 
 } from 'lucide-react';
 import { getPostBySlug, getAllPosts } from '@/lib/blog';
-import { 
-  generateBlogMetadata, 
+import {
+  generateBlogMetadata,
   generateBlogJsonLd,
-  generateBreadcrumbJsonLd 
+  generateBreadcrumbJsonLd,
+  generateFAQJsonLd
 } from '@/lib/seo';
 import Footer from '@/components/layout/footer';
 
@@ -62,6 +63,7 @@ export default async function BlogPostPage(props: Props) {
   // Generate all JSON-LD schemas
   const blogJsonLd = generateBlogJsonLd(post);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(post);
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? generateFAQJsonLd(post.faqs) : null;
 
   // Get related articles (simple logic: recent posts excluding current)
   const allPosts = getAllPosts();
@@ -80,6 +82,12 @@ export default async function BlogPostPage(props: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
 
       {/* Breadcrumb Navigation */}
       <div className="px-6 lg:px-16 pt-8 pb-4 bg-white border-b border-slate-100">

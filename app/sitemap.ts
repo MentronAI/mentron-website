@@ -68,7 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dynamic blog post pages
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${baseUrl}/blogs/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(post.dateModified || post.date),
     changeFrequency: 'monthly',
     priority: 0.8,
   }))

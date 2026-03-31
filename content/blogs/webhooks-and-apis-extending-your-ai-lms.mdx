@@ -1,6 +1,7 @@
-***
-title: "Webhooks and APIs: Extending Your AI LMS"
+---
+title: "Webhooks and APIs: Extending Your AI LMS | Mentron"
 date: "2026-03-30"
+dateModified: "2026-03-31"
 description: "A developer guide to building custom integrations with AI LMS APIs and LMS webhooks — covering authentication, event-driven architecture, and code examples."
 author:
   name: "Ananya Krishnan"
@@ -12,11 +13,13 @@ category:
   - "AI LMS"
 published: true
 featured: false
-***
+---
 
 What happens when an off-the-shelf LMS cannot do exactly what your institution or product needs? You extend it. According to [API2Cart's 2026 developer research](https://api2cart.com/news/api-vs-webhook/), REST APIs now have **93% adoption** among developers building integration layers — yet most LMS platforms still ship with limited, poorly documented extension points that force engineering teams to work around the platform rather than with it.
 
-This is the practical **developer guide** to building on top of an **AI LMS API**. It covers the difference between polling-based REST calls and event-driven **LMS webhooks**, the authentication patterns that actually hold up in production, real code examples for the most common **custom integrations**, and the design principles that separate a brittle one-off script from a maintainable integration. Whether you are a developer at a university IT team, an EdTech ISV building on top of an LMS, or an L&D engineer automating corporate training workflows, this guide will get you building faster and breaking less.
+This is the practical **developer guide** to building on top of an **[AI LMS](/blogs/ai-lms-for-small-edtech-startups-how-to-compete) API**. It covers the difference between polling-based REST calls and event-driven **LMS webhooks**, the authentication patterns that actually hold up in production, real code examples for the most common **custom integrations**, and the design principles that separate a brittle one-off script from a maintainable integration. Whether you are a developer at a university IT team, an EdTech ISV building on top of an LMS, or an L&D engineer automating corporate training workflows, this guide will get you building faster and breaking less.
+
+Platforms like **Mentron** take an API-first approach to integration design — every feature accessible through the web interface is also programmatically available through well-documented REST endpoints and webhook events, ensuring developers can build robust **custom integrations** without fighting against platform limitations.
 
 ---
 
@@ -83,7 +86,7 @@ The practical rule: **use REST APIs for reads and writes your app initiates; use
 
 ### OAuth 2.0 and JWT: The 2026 Standard
 
-Every serious **ai lms api** in 2026 uses OAuth 2.0 as its authorisation framework. The specific grant type depends on your integration context:
+Every serious **[ai lms](/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026) api** in 2026 uses [OAuth](/blogs/single-sign-on-sso-for-ai-lms-and-campus-systems) 2.0 as its authorisation framework. The specific grant type depends on your integration context:
 
 - **Authorization Code Flow** — For user-facing integrations where a human needs to grant your app access to their LMS data. The user is redirected to the LMS login, approves the scope, and your app receives an access token. Common in third-party tools and Chrome extensions.
 - **Client Credentials Flow** — For server-to-server integrations where no human is involved. Your backend service authenticates with a `client_id` and `client_secret` (or a signed JWT assertion) and receives a scoped access token. This is the correct pattern for SIS enrollment sync, grade passback pipelines, and automated reporting jobs.
@@ -105,7 +108,7 @@ Some LMS platforms still support static API keys for simpler integrations. While
 
 ### Setting Up Your First API Call
 
-The following example demonstrates a typical authenticated REST call to fetch a student's enrollment list from a Mentron-style AI LMS API. The pattern follows standard OAuth 2.0 bearer token authentication.
+The following example demonstrates a typical authenticated REST call to fetch a student's enrollment list from a Mentron-style [AI LMS](/blogs/what-is-an-ai-lms-complete-2026-guide) API. The pattern follows standard OAuth 2.0 bearer token authentication.
 
 **Step 1: Obtain an access token (Client Credentials)**
 
@@ -168,7 +171,7 @@ Accept: application/json
 
 ### Writing Data Back to the LMS
 
-Grade passback is one of the most common write operations in LMS **custom integrations**. The following example posts a scored assessment result back to the LMS gradebook, compatible with LTI Advantage Assignment and Grade Services (AGS) patterns:
+[Grade passback](/blogs/syncing-grades-between-canvas-and-your-ai-lms) is one of the most common write operations in LMS **custom integrations**. The following example posts a scored assessment result back to the [LMS gradebook](/blogs/syncing-grades-between-canvas-and-your-ai-lms), compatible with LTI Advantage Assignment and Grade Services (AGS) patterns:
 
 ```http
 POST /v1/courses/{course_id}/assessments/{assessment_id}/submissions HTTP/1.1
@@ -333,13 +336,13 @@ The same pipeline runs in reverse on drop: `enrollment.dropped` webhook triggers
 
 ### Pattern 2: AI Assessment Results to External Analytics
 
-When an AI LMS auto-grades a quiz or assignment, the `grade.posted` webhook can feed a downstream analytics pipeline. A hypothetical university data team could consume these events in real time, aggregate them by cohort, and surface intervention alerts for at-risk learners — all without anyone needing to export a CSV from the LMS gradebook.
+When an [AI LMS](/blogs/ai-lms-for-small-edtech-startups-how-to-compete) auto-grades a quiz or assignment, the `grade.posted` webhook can feed a downstream analytics pipeline. A hypothetical university data team could consume these events in real time, aggregate them by cohort, and surface intervention alerts for at-risk learners — all without anyone needing to export a CSV from the LMS gradebook.
 
 This pattern is where Mentron's AI assessment capabilities integrate naturally with institutional BI tools. The `assessment.submitted` event carries the full submission payload including AI-generated feedback, FSRS-derived retention scores for flashcard components, and per-question confidence metadata. An external analytics service can ingest these events and build longitudinal learning curves per student without ever polling the LMS.
 
 ### Pattern 3: FSRS Spaced Repetition Sync to Mobile Apps
 
-For developers building companion mobile apps or browser extensions on top of an AI LMS, the spaced repetition schedule is a natural candidate for a custom integration. When Mentron's FSRS algorithm schedules a flashcard review for a specific learner, a `review.scheduled` event can push the card data and due timestamp to an external notification service or mobile push system — ensuring the learner receives their review reminder on whichever device they prefer.
+For developers building companion mobile apps or browser extensions on top of an [AI LMS](/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026), the spaced repetition schedule is a natural candidate for a custom integration. When Mentron's FSRS algorithm schedules a flashcard review for a specific learner, a `review.scheduled` event can push the card data and due timestamp to an external notification service or mobile push system — ensuring the learner receives their review reminder on whichever device they prefer.
 
 ### Pattern 4: Corporate L&D Completion Reporting to ERP
 
@@ -419,11 +422,35 @@ Any custom integration built on the Mentron API inherits responsibility for the 
 
 ## Conclusion
 
-The difference between an AI LMS that grows with your institution and one that becomes a silo is the quality of its extension layer. When you combine a well-designed **AI LMS API** with a reliable **LMS webhooks** system, you unlock enrollment automation, real-time analytics pipelines, AI assessment passback, and cross-platform interoperability — without coupling your integration logic to any single vendor's roadmap.
+The difference between an [AI LMS](/blogs/what-is-an-ai-lms-complete-2026-guide) that grows with your institution and one that becomes a silo is the quality of its extension layer. When you combine a well-designed **AI LMS API** with a reliable **LMS webhooks** system, you unlock [enrollment automation](/blogs/connecting-ai-lms-with-sis-and-erp-systems), real-time analytics pipelines, AI assessment passback, and cross-platform interoperability — without coupling your integration logic to any single vendor's roadmap.
 
 The key principles to take forward from this **developer guide**: choose REST APIs for on-demand reads and writes; use **event-driven LMS** webhooks for real-time reactions to LMS events; authenticate with OAuth 2.0 client credentials for server-to-server pipelines; verify every incoming webhook signature; design handlers to be idempotent; and treat AI-generated outputs as drafts that require human review before becoming authoritative records.
 
-Mentron is built on these principles from the ground up. [Explore the Mentron developer documentation](https://mentron.in) to review the full API reference, download Postman collections for common integration scenarios, and request sandbox API credentials to start building **custom integrations** today.
+Mentron is built on these principles from the ground up. The platform provides comprehensive REST API documentation, webhook event reference, and developer SDKs in multiple languages. [Explore the Mentron developer documentation](https://mentron.in) to review the full API reference, download Postman collections for common integration scenarios, and request sandbox API credentials to start building **custom integrations** today.
+
+---
+
+## Frequently Asked Questions
+
+### What is the difference between an AI LMS API and LMS webhooks for custom integrations?
+
+An AI LMS API follows a request-response pattern where your application pulls data on demand. You send an HTTP request to get enrollment lists, fetch grades, or submit assessment results. LMS webhooks use a push pattern where the LMS sends data to your registered endpoint when events occur. For most custom integrations, you'll use both: webhooks to detect events (enrollment changes, assessment submissions) and API calls to fetch full context or push responses. This event-driven LMS approach eliminates polling delays and reduces server load compared to API-only integration patterns.
+
+### How do I authenticate with an ai lms api for server-to-server custom integrations?
+
+Use OAuth 2.0 client credentials flow for server-to-server integrations. Your backend authenticates with a client_id and client_secret (or signed JWT assertion) to receive a scoped access token. Avoid static API keys when possible — they can't be scoped granularly and don't expire automatically. Mentron's AI LMS API supports OAuth 2.0 client credentials and JWT bearer authentication with rate limiting (1,000 requests/minute for standard integrations) and field-level permission scoping. Always request minimum necessary scopes (e.g., `assessments:read` for analytics dashboards, not `users:write`).
+
+### What events do LMS webhooks typically support for event-driven LMS integrations?
+
+Common webhook events across AI LMS platforms include: enrollment.created, enrollment.dropped, assessment.submitted, grade.posted, course.completed, certification.awarded, and review.scheduled (for spaced repetition). These events enable powerful custom integrations like enrollment automation pipelines (SIS→LMS→third-party tools), AI assessment analytics to external BI systems, and ERP compliance tracking. When building event-driven LMS integrations, always verify webhook signatures using HMAC-SHA256 to prevent malicious payloads, and design handlers to be idempotent since the LMS may retry delivery.
+
+### Can I build custom integrations that work with both Canvas LMS and an AI LMS simultaneously?
+
+Yes, through LTI 1.3 tool provider integration. Mentron connects as an LTI 1.3-compliant tool within Canvas or Moodle, passing authentication and course context via the LTI handshake. Grade results flow back to the Canvas gradebook through LTI Assignment and Grade Services (AGS). For deeper custom integrations, use the Canvas REST API alongside Mentron's AI LMS API — webhooks from both platforms can feed a unified middleware layer. This lets you keep your existing LMS while adding AI quiz generation, FSRS flashcards, and auto-grading capabilities from Mentron without replacing your core infrastructure.
+
+### What are the best practices for handling AI-generated grades in lms webhooks and API responses?
+
+Always treat AI-generated grades as requiring human review before becoming official records. Mentron's AI LMS API includes a `review_status` field (values: `pending_human_review`, `approved`, `rejected`) and an `ai_confidence` score (0-1) on assessment submissions. Build your custom integrations to surface these fields to instructors rather than auto-posting AI grades directly to authoritative gradebooks. When processing LMS webhooks for `grade.posted` events, check the `graded_by` field — if it indicates AI grading, route to a review queue before finalizing. This human-in-the-loop approach is responsible deployment practice for AI assessment systems in 2026.
 
 ---
 
@@ -434,3 +461,11 @@ Mentron is built on these principles from the ground up. [Explore the Mentron de
 - [How Mentron's AI quiz generation and auto-grading works under the hood]
 - [FSRS spaced repetition algorithm explained for developers and educators]
 - [AI LMS data privacy and FERPA compliance guide for IT teams]
+
+## Related Articles
+
+- [AI LMS + Moodle: Modernizing Open-Source LMS](/blogs/ai-lms-moodle-modernizing-open-source-lms)
+- [Canvas LMS AI Integration: Step-by-Step Guide](/blogs/canvas-lms-ai-integration-step-by-step-guide)
+- [Choosing the Right AI Add-on for Canvas LMS](/blogs/choosing-the-right-ai-add-on-for-canvas-lms)
+- [Connecting AI LMS with SIS and ERP Systems](/blogs/connecting-ai-lms-with-sis-and-erp-systems)
+- [Integrating AI LMS with Google Classroom](/blogs/integrating-ai-lms-with-google-classroom)

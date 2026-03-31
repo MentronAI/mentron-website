@@ -11,6 +11,7 @@ export interface BlogPost {
   title: string
   description: string
   date: string
+  dateModified?: string
   author: {
     name: string
     image: string
@@ -22,6 +23,7 @@ export interface BlogPost {
   published: boolean
   readingTime: string
   content: string
+  faqs?: Array<{ question: string; answer: string }>
 }
 
 export function getAllPosts(): BlogPost[] {
@@ -44,6 +46,7 @@ export function getAllPosts(): BlogPost[] {
         title: data.title,
         description: data.description,
         date: data.date,
+        dateModified: data.dateModified,
         author: data.author,
         image: data.image,
         category: data.category || [],
@@ -51,6 +54,7 @@ export function getAllPosts(): BlogPost[] {
         published: data.published !== false,
         readingTime: readingTime(content).text,
         content,
+        faqs: extractFAQs(content),
       } as BlogPost
     })
     .filter((post) => post.published)
@@ -70,6 +74,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       title: data.title,
       description: data.description,
       date: data.date,
+      dateModified: data.dateModified,
       author: data.author,
       image: data.image,
       category: data.category || [],
@@ -77,6 +82,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       published: data.published !== false,
       readingTime: readingTime(content).text,
       content,
+      faqs: extractFAQs(content),
     } as BlogPost
   } catch (error) {
     return null
@@ -92,4 +98,39 @@ export function getAllCategories(): string[] {
   })
 
   return Array.from(categories).sort()
+}
+
+/**
+ * Extract FAQ entries from MDX content.
+ * Looks for "## Frequently Asked Questions" or "## FAQ" section,
+ * then parses H3 headings as questions and their following paragraphs as answers.
+ */
+export function extractFAQs(content: string): Array<{ question: string; answer: string }> {
+  const faqs: Array<{ question: string; answer: string }> = []
+
+  // Find the FAQ section
+  const faqMatch = content.match(/^#{2,3}\s*(?:FAQ|Frequently\s+Asked\s+Questions)/im)
+  if (!faqMatch || faqMatch.index === undefined) return faqs
+
+  const faqSection = content.slice(faqMatch.index)
+
+  // Split by H3 headings within the FAQ section
+  const h3Blocks = faqSection.split(/^###\s+/m).slice(1) // skip text before first H3
+
+  for (const block of h3Blocks) {
+    const lines = block.trim().split('\n')
+    const question = lines[0].replace(/\s*[?#]*\s*$/, '').trim()
+    const answer = lines
+      .slice(1)
+      .join(' ')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // strip links
+      .replace(/[*_~`#]/g, '') // strip markdown
+      .trim()
+
+    if (question && answer) {
+      faqs.push({ question, answer })
+    }
+  }
+
+  return faqs
 }
