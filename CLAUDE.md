@@ -141,7 +141,7 @@ Automated blog generation using Perplexity research and SEO optimization.
 - Specific improvement statistics (e.g., "34% improvement")
 - Real institutions using Mentron (IIT Madras, Delhi Public School, etc.)
 
-**Author**: Always use `Ananya Krishnan` with image `/images/authors/ananya.jpg`
+**Author**: Always use `Ananya Krishnan` with image `/images/authors/ananya.png`
 
 ### Validation Rules
 

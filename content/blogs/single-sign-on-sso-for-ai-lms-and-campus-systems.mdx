@@ -6,7 +6,7 @@ description: "Learn how to set up AI LMS SSO with Canvas, Moodle, and identity p
 author:
   name: "Ananya Krishnan"
   role: "Content Lead, Mentron"
-  image: "/images/authors/ananya.jpg"
+  image: "/images/authors/ananya.png"
 image: "/images/blog/single-sign-on-sso-for-ai-lms-and-campus-systems.jpg"
 category:
   - "LMS Integration"
@@ -25,7 +25,7 @@ This guide is written for university IT leads, EdTech administrators, and instru
 
 ---
 
-## Why LMS Single Sign-On Is Non-Negotiable for Campus AI Tools
+## Why LMS SSO Is Non-Negotiable for Campus AI Tools
 
 Single sign-on is not a luxury feature. For any campus deploying AI-powered tools alongside an existing LMS, it is a foundational requirement that affects security, compliance, and adoption in equal measure.
 
@@ -47,7 +47,7 @@ For institutions in Europe and GDPR jurisdictions, or for those serving internat
 
 ---
 
-## SAML SSO, OAuth, and OIDC — Choosing the Right Authentication Protocol
+## Choosing the Right SSO Authentication Protocol
 
 Before configuring anything, your team needs to understand which protocol your systems support and what each one is designed to do. Using the wrong protocol is one of [the top five mistakes universities make with SSO](https://idmengineering.com/the-top-5-mistakes-universities-make-with-sso-and-how-to-avoid-them/), and it consistently causes integration failures and security gaps.
 
@@ -114,7 +114,7 @@ Before configuring anything, your team needs to understand which protocol your s
 
 ---
 
-## Identity Providers — The Right Fit for Your Campus Architecture
+## Identity Providers for Your Campus Architecture
 
 An **identity provider** (IdP) is the system that holds the authoritative user directory and issues authentication tokens. Choosing the right IdP shapes every downstream integration — including your AI LMS.
 
@@ -136,11 +136,11 @@ An **identity provider** (IdP) is the system that holds the authoritative user d
 
 ---
 
-## Configuring SSO for Canvas LMS: Step-by-Step
+## SSO for Canvas LMS: Step-by-Step Setup
 
 Canvas is the most widely deployed commercial LMS in North American universities, and it supports **saml sso** with full documentation for major identity providers.
 
-### Prerequisites
+### SSO Setup Prerequisites
 
 Before you begin, gather the following from your IdP administrator:
 
@@ -167,7 +167,7 @@ For K-12 institutions using ClassLink as their roster and IdP layer, [ClassLink 
 
 ---
 
-## How SSO Flows Work in Practice — A Technical Overview
+## How SSO Flows Work: A Technical Overview
 
 Understanding the technical flow helps your team troubleshoot problems and explain the process to sceptical administrators or faculty. There are two flow types in **saml sso**:
 
@@ -208,7 +208,7 @@ Just-in-Time (JIT) provisioning creates user accounts on first successful SAML l
 
 ---
 
-## AI LMS SSO: How Mentron Fits Your Identity Architecture
+## Mentron SSO: Your Identity Architecture Fit
 
 Mentron is designed to plug cleanly into existing university identity infrastructure — not to replace it. Whether your campus runs Okta, Microsoft Entra ID, Google Workspace, or Shibboleth, Mentron is built to act as a **SAML 2.0 Service Provider** and an **OIDC-compatible client**, supporting both protocols from day one.
 
@@ -216,7 +216,7 @@ Mentron is designed to plug cleanly into existing university identity infrastruc
 
 For universities running Canvas as their primary LMS, Mentron connects via **LTI 1.3** to surface directly inside course pages, passing student identity and course context without any re-authentication. A student who logged in to Canvas via your institutional SSO can access Mentron's AI quiz generator, FSRS-based flashcard decks, and knowledge-graph course maps without seeing a second login screen.
 
-### AI Capabilities That Work With Your Identity Layer, Not Against It
+### AI Features Aligned With Your Identity Layer
 
 Mentron's AI features — including quiz generation from PDFs and lecture notes, auto-grading with rubric alignment, FSRS spaced repetition flashcards, and assessment analytics — all operate within the access boundaries established by your IdP. Role-based access controls ensure that:
 
@@ -245,7 +245,7 @@ Even experienced IT teams encounter the same set of implementation pitfalls. Her
 
 ---
 
-## Conclusion
+## Conclusion and Key Takeaways
 
 **LMS single sign-on** is the invisible infrastructure that determines whether your campus AI tools get used or get ignored. A well-configured SSO architecture — built on SAML 2.0 or OIDC, governed by a mature identity provider, and extended to new tools via LTI 1.3 — eliminates authentication friction, enforces security and compliance uniformly, and gives IT teams central visibility into every access event across every platform.
 
@@ -259,23 +259,23 @@ Mentron is built for institutions that need AI capabilities without identity com
 
 ## Frequently Asked Questions
 
-### What is the difference between SAML SSO and OAuth when setting up AI LMS single sign on?
+### SAML SSO vs OAuth for AI LMS Sign-On
 
 SAML 2.0 is an authentication protocol designed for single sign-on in enterprise environments. It uses XML assertions to pass identity information between an identity provider and service provider. OAuth 2.0 is an authorization protocol — it grants access to resources but doesn't authenticate users by itself. For AI LMS SSO, you should use either SAML 2.0 or OpenID Connect (which adds authentication on top of OAuth). Using OAuth alone for authentication creates security gaps.
 
-### How do I implement lms single sign on for Canvas with an AI LMS like Mentron?
+### Implementing Canvas SSO With an AI LMS
 
 Canvas supports SAML 2.0 federation with major identity providers including Okta, Microsoft Entra ID, and Google Workspace. To implement lms single sign on, configure Canvas as a service provider in your IdP, map the correct attributes (email, display name, enrolment role), and enable JIT provisioning. For AI tools like Mentron, use LTI 1.3 which includes OIDC-based authentication — this lets students access Mentron's features directly within Canvas without re-authenticating. The LMS single sign on session established at Canvas login extends to all LTI tools.
 
-### Which identity providers work best for AI LMS SSO deployment in higher education?
+### Best Identity Providers for AI LMS SSO
 
 Microsoft Entra ID (formerly Azure AD) is the dominant choice for universities already using Microsoft 365. Google Workspace works well for K-12 and Google-first institutions. Okta excels in heterogeneous environments with many systems to connect. Shibboleth is standard for research universities participating in the InCommon federation. Mentron supports SAML 2.0 and OIDC across all these major identity providers, ensuring your AI LMS SSO deployment works regardless of your IdP choice.
 
-### Can I use oauth instead of SAML for my AI LMS single sign on implementation?
+### Using OAuth vs SAML for AI LMS SSO
 
 You should not use OAuth alone for authentication — it's designed for authorization, not identity verification. For AI LMS single sign on, use SAML 2.0 for legacy systems like Canvas and Moodle, or OpenID Connect for modern AI tools. OIDC adds an identity layer on top of OAuth. If your AI LMS only advertises oauth support without OIDC, confirm whether it actually handles authentication or if you need additional identity infrastructure. Mentron supports both SAML 2.0 and OIDC to cover all deployment scenarios.
 
-### How does Mentron handle identity providers and lms single sign on for university deployments?
+### Mentron SSO for University Deployments
 
 Mentron is built as a SAML 2.0 service provider and OIDC client, meaning it connects directly to your existing identity infrastructure. Whether you run Okta, Entra ID, Google Workspace, or Shibboleth, Mentron authenticates users through your IdP without requiring separate credentials. For Canvas and Moodle integrations, Mentron uses LTI 1.3 which inherits the SSO session from the LMS. This unified approach to AI LMS SSO means students never see duplicate login prompts when accessing AI features alongside their regular coursework.
 
@@ -289,7 +289,7 @@ Mentron is built as a SAML 2.0 service provider and OIDC client, meaning it conn
 - [FSRS spaced repetition and student assessment outcomes]
 - [Setting up auto-grading and rubric alignment in an AI LMS]
 
-## Related Articles
+## Related Articles on SSO Integration
 
 - [AI LMS + Moodle: Modernizing Open-Source LMS](/blogs/ai-lms-moodle-modernizing-open-source-lms)
 - [Canvas LMS AI Integration: Step-by-Step Guide](/blogs/canvas-lms-ai-integration-step-by-step-guide)

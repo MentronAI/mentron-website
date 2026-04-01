@@ -11,7 +11,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/api/',           // Block API routes
           '/admin/',         // Block admin pages
-          '/*?*',            // Block URL parameters (prevent duplicate content)
           '/dashboard/',     // Block user dashboard
           '/login',          // Block auth pages
           '/signup',
@@ -44,6 +43,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/dashboard/'],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: [
+      `${baseUrl}/sitemap.xml`,
+      `${baseUrl}/sitemap-blogs.xml`,
+    ],
   }
 }

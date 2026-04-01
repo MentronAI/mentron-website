@@ -386,7 +386,7 @@ Then paste the full blog content (frontmatter + markdown body). Parses frontmatt
 
 These are hardcoded constraints for all generated content:
 
-1. **Author**: Always `Ananya Krishnan` with image `/images/authors/ananya.jpg`
+1. **Author**: Always `Ananya Krishnan` with image `/images/authors/ananya.png`
 2. **Frontmatter**: Use `---` fences (not `***`)
 3. **No fake testimonials**: Never fabricate named quotes, case studies, or institutions
 4. **No launch claims**: Product has not launched. No "34% improvement" or "used by 500 schools"

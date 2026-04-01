@@ -79,12 +79,16 @@ Apply these **2026 SEO best practices** while writing: [blog.mean](https://blog.
 
 - **Keyword usage**
   - Use the **primary keyword** in:
-    - Title  
-    - First 100 words  
-    - 2–3 H2 headings  
-    - Conclusion  
-  - Aim for natural **1–2% density** (never keyword‑stuff).  
-  - Distribute **secondary keywords** 5–7 times each where relevant.  
+    - Title
+    - First 100 words
+    - 2–3 H2 headings
+    - Conclusion
+  - Aim for natural **1–2% density** (never keyword‑stuff).
+  - Distribute **secondary keywords** 5–7 times each where relevant.
+
+- **Title & meta description length**
+  - **Title**: aim for **50–60 characters** (max 70). Put primary keyword first, brand name last (e.g., `AI Quiz Generator for Colleges | Mentron`). Every title must be unique across the site to avoid keyword cannibalization.
+  - **Meta description**: aim for **120–160 characters**. Include the primary keyword naturally (it gets bolded in SERPs). Write as a value proposition + soft CTA, not a keyword list. Each page must have a unique description.  
 
 - **Semantic SEO**
   - Include related phrases, synonyms, and LSI keywords discovered from competitors and SERP analysis.  
@@ -96,11 +100,16 @@ Apply these **2026 SEO best practices** while writing: [blog.mean](https://blog.
 
 - **Heading structure**
   - Use exactly:
-    - `#` only for the main title in frontmatter (not in body)  
-    - `##` for main sections  
-    - `###` for subsections  
-  - Do **not** skip heading levels (no H4+).  
-  - Include primary or secondary keywords in at least **40% of H2/H3 headings**.  
+    - `#` only for the main title in frontmatter (not in body)
+    - `##` for main sections
+    - `###` for subsections
+  - Do **not** skip heading levels (no H4+).
+  - Include primary or secondary keywords in at least **40% of H2/H3 headings**.
+  - **Heading length guidelines**:
+    - H1 (if used in body): **20–70 characters**
+    - H2: **20–50 characters** — covers a major section with secondary keywords (hard cap 50)
+    - H3: **15–60 characters** — sub-points with supporting/LSI keywords
+    - Avoid vague short headings (e.g., "Conclusion" alone) and overly long headings that wrap in SERPs.  
 
 - **Readability**
   - Aim for **8th‑grade reading level**.  
@@ -118,7 +127,13 @@ Apply these **2026 SEO best practices** while writing: [blog.mean](https://blog.
 
 - **External authority**
   - Reference **2–3 authoritative external sources** (e.g., Instructure, D2L, EdWeek, Educause, reputable EdTech blogs, or research reports). [searchengineland](https://searchengineland.com/guide/external-links)
-  - Always use **descriptive anchor text** (no “click here”).  
+  - Always use **descriptive anchor text** (no “click here”).
+  - **Link `rel` attributes**:
+    - Internal links (blog-to-blog, blog-to-product): use plain links, **never add `rel=”nofollow”`** — PageRank must flow freely between your own pages.
+    - Paid/affiliate/sponsored external links: add `rel=”sponsored”` — required by Google to avoid manual penalty.
+    - User-generated content links (comments, reviews): add `rel=”ugc”`.
+    - Untrusted external links that don't fit above: `rel=”nofollow”` as a fallback.
+    - Regular editorial links to trusted sources: plain link (no rel attribute needed).
 
 - **SERP Feature Targeting**
   - Featured snippet optimization:
@@ -237,11 +252,11 @@ Use this exact structure:
 ---
 title: "[Exact title provided]"
 date: "[Current date in YYYY-MM-DD format]"
-description: "[Compelling 150-160 character meta description with primary keyword]"
+description: "[Compelling 120-160 character meta description with primary keyword, written as value proposition + soft CTA]"
 author:
   name: "Ananya Krishnan"
   role: "Content Lead, Mentron"
-  image: "/images/authors/ananya.jpg"
+  image: "/images/authors/ananya.png"
 image: "/images/blog/[slug].jpg"
 category:
   - "[Relevant category 1]"

@@ -6,7 +6,7 @@ description: "Learn how canvas grade sync works with an AI LMS gradebook — set
 author:
   name: "Ananya Krishnan"
   role: "Content Lead, Mentron"
-  image: "/images/authors/ananya.jpg"
+  image: "/images/authors/ananya.png"
 image: "/images/blog/syncing-grades-between-canvas-and-your-ai-lms.jpg"
 category:
   - "Canvas LMS"
@@ -21,7 +21,7 @@ This guide breaks down exactly how **canvas grade sync** works, what the LTI 1.3
 
 ---
 
-## Why Canvas Grade Sync Is Critical — and How an AI LMS Gradebook Helps
+## Why Canvas Grade Sync Matters for AI LMS
 
 Manually exporting grades from one platform and importing them into another sounds like a minor inconvenience. In practice, it compounds into hours of lost time per semester, introduces transcription errors, and delays feedback to students at exactly the moment they need it most.
 
@@ -31,7 +31,7 @@ Adding an [AI LMS](/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026) int
 
 ---
 
-## How Grade Passback Actually Works (LTI 1.3 Explained)
+## How Grade Passback Works (LTI 1.3 Explained)
 
 Before configuring anything, it helps to understand the protocol doing the heavy lifting. Canvas connects to external tools — including [AI LMS](/blogs/what-is-an-ai-lms-complete-2026-guide) platforms — through the **Learning Tools Interoperability (LTI)** standard, currently at version 1.3.
 
@@ -161,11 +161,11 @@ The table below summarizes how an AI LMS gradebook compares to Canvas's built-in
 
 ---
 
-## Common Canvas Grade Sync Errors and How to Fix Them
+## Common Canvas Grade Sync Errors and Fixes
 
 Even with LTI 1.3, **assessment sync** failures happen. Here are the most frequent issues and their resolutions.
 
-### Error: Score Shows as "Missing" After Student Completes Assessment
+### Error: Score Shows as Missing After Assessment
 
 **Cause**: The student accessed the assignment outside of Canvas (directly through the AI LMS URL) instead of launching via the Canvas assignment link, so no `resource_link_id` was established.
 
@@ -198,7 +198,7 @@ Mentron is being built with privacy-first architecture, including isolated tenan
 
 ---
 
-## How Mentron Approaches Canvas Integration — Key Features
+## How Mentron Approaches Canvas Integration
 
 Mentron is an AI-powered LMS built for institutions that want more than a gradebook — it is designed as a full **assessment sync** and adaptive learning engine that sits alongside Canvas rather than replacing it.
 
@@ -217,7 +217,7 @@ For K-12 administrators running blended learning programs, Mentron's adaptive as
 
 ---
 
-## Conclusion
+## Conclusion: Seamless Canvas Grade Sync
 
 Getting **canvas grade sync** right is not optional for institutions running AI tools alongside their LMS — it's the difference between a workflow that scales and one that creates more work than it saves. The key points to carry forward:
 
@@ -233,23 +233,23 @@ Mentron is built to make **canvas grade sync** seamless from day one — with LT
 
 ## Frequently Asked Questions
 
-### What is Canvas grade sync and how does it work with AI LMS platforms?
+### How does Canvas grade sync work with AI LMS platforms?
 
 Canvas grade sync uses the LTI 1.3 standard to automatically pass assessment scores from external AI tools back to the Canvas gradebook without manual data entry. When a student completes an AI-generated quiz in platforms like Mentron, the score is sent as a normalized value (0.0–1.0) and converted to the assignment's point value in Canvas—eliminating copy-paste errors and giving students immediate feedback.
 
-### How do I fix Canvas grade sync errors when scores don't appear?
+### How do I fix Canvas grade sync errors?
 
 Most Canvas grade sync errors occur because LTI wasn't launched from within Canvas, Assignment and Grade Services weren't enabled during setup, or late-enrolled students weren't re-provisioned in the external tool. Ensure students always access assessments via Canvas assignment links, verify AGS is enabled in your developer key configuration, and manually re-roster any students added after the initial term sync.
 
-### Can an AI LMS gradebook replace the Canvas gradebook entirely?
+### Can AI LMS Gradebook Replace Canvas Gradebook?
 
 No—an AI LMS gradebook like Mentron's is designed to complement, not replace, Canvas's native gradebook. Mentron provides per-concept analytics, adaptive scoring, and FSRS-based retention scheduling that syncs scores back to Canvas as the official record, keeping Canvas as your single source of truth while adding deeper assessment intelligence.
 
-### What's the difference between assessment sync and grade passback?
+### Assessment Sync vs Grade Passback Explained
 
 Grade passback refers specifically to sending scores from an external tool to the Canvas gradebook via LTI 1.3, while assessment sync encompasses the broader flow of assignment data, student submissions, and performance analytics between systems. Mentron handles both—automatically passing grades to Canvas while providing detailed assessment timelines and concept-level mastery data within its own interface.
 
-### How does Mentron handle lms gradebook integration differently from other AI tools?
+### How does Mentron handle LMS gradebook integration?
 
 Mentron's approach to LMS gradebook integration focuses on sending only the numerical score and completion status to Canvas while keeping rich analytics like per-question performance, time-on-task, and concept mastery within its own system. This privacy-first design minimizes data leaving your institution while still giving instructors full visibility into student learning through the AI LMS gradebook dashboard.
 
@@ -261,7 +261,7 @@ Mentron's approach to LMS gradebook integration focuses on sending only the nume
 - [AI LMS for universities: a full comparison]
 - [Understanding LTI 1.3 for EdTech administrators]
 
-## Related Articles
+## Related Articles on Canvas Integration
 
 - [AI LMS + Moodle: Modernizing Open-Source LMS](/blogs/ai-lms-moodle-modernizing-open-source-lms)
 - [Canvas LMS AI Integration: Step-by-Step Guide](/blogs/canvas-lms-ai-integration-step-by-step-guide)

@@ -53,7 +53,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function BlogsPage() {
+const POSTS_PER_PAGE = 9
+
+export default async function BlogsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ page?: string }>
+}) {
+  const params = await searchParams
+  const currentPage = Math.max(1, parseInt(params.page || '1', 10) || 1)
+
   const blogCollectionJsonLd = generateBlogCollectionJsonLd()
   const posts = getAllPosts()
   const categories = getAllCategories()
@@ -61,6 +70,13 @@ export default function BlogsPage() {
   // Use the first post as featured, and the rest for the grid
   const featuredPost = posts[0]
   const recentPosts = posts.slice(1)
+
+  const totalPages = Math.ceil(recentPosts.length / POSTS_PER_PAGE)
+  const page = Math.min(currentPage, totalPages || 1)
+  const start = (page - 1) * POSTS_PER_PAGE
+  const end = start + POSTS_PER_PAGE
+  const paginatedPosts = recentPosts.slice(start, end)
+  const showFeatured = page === 1
 
   return (
     <>
@@ -122,7 +138,7 @@ export default function BlogsPage() {
       </section>
 
       {/* Featured Post */}
-      {featuredPost && (
+      {showFeatured && featuredPost && (
         <section className="px-6 lg:px-16 py-12 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-2 mb-6">
@@ -209,12 +225,12 @@ export default function BlogsPage() {
           <div className="flex items-center justify-between mb-8">
             <h2 className="text-2xl font-bold text-slate-900 font-display">Recent Articles</h2>
             <div className="flex items-center gap-2 text-sm text-slate-500 font-geist">
-              <span>Showing {recentPosts.length} posts</span>
+              <span>Showing {start + 1}–{Math.min(end, recentPosts.length)} of {recentPosts.length} posts</span>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {recentPosts.map((post) => (
+            {paginatedPosts.map((post) => (
               <article key={post.slug} className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all flex flex-col h-full">
                 <div className="h-48 bg-gradient-to-br from-purple-500 to-pink-500 relative flex items-center justify-center overflow-hidden flex-shrink-0">
                   {post.image ? (
@@ -257,24 +273,40 @@ export default function BlogsPage() {
         </div>
       </section>
 
-      {/* Pagination (Static for now, but dynamic list handles content) */}
-      <section className="px-6 lg:px-16 py-12 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto">
-          {/* ... pagination UI preserved as is or removed if single page is enough ... */}
-          {/* Leaving pagination UI for visual completeness as requested */}
-          <div className="flex items-center justify-center gap-2">
-            <button className="w-10 h-10 rounded-full border-2 border-slate-200 text-slate-400 flex items-center justify-center hover:border-primary hover:text-primary transition-all disabled:opacity-30 disabled:cursor-not-allowed" disabled>
-              <ChevronLeft width={20} />
-            </button>
-            <button className="w-10 h-10 rounded-full bg-primary text-white font-semibold text-sm transition-all">
-              1
-            </button>
-            <button className="w-10 h-10 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all">
-              <ChevronRight width={20} />
-            </button>
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <section className="px-6 lg:px-16 py-12 bg-white border-t border-slate-100">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex items-center justify-center gap-2">
+              <Link
+                href={page > 2 ? `/blogs?page=${page - 1}` : '/blogs'}
+                className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${page === 1 ? 'border-slate-200 text-slate-400 pointer-events-none opacity-30' : 'border-slate-200 text-slate-600 hover:border-primary hover:text-primary'}`}
+                aria-disabled={page === 1}
+              >
+                <ChevronLeft width={20} />
+              </Link>
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                <Link
+                  key={pageNum}
+                  href={pageNum === 1 ? '/blogs' : `/blogs?page=${pageNum}`}
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold transition-all ${pageNum === page ? 'bg-primary text-white' : 'border-2 border-slate-200 text-slate-600 hover:border-primary hover:text-primary'}`}
+                >
+                  {pageNum}
+                </Link>
+              ))}
+
+              <Link
+                href={`/blogs?page=${page + 1}`}
+                className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${page === totalPages ? 'border-slate-200 text-slate-400 pointer-events-none opacity-30' : 'border-primary text-primary hover:bg-primary hover:text-white'}`}
+                aria-disabled={page === totalPages}
+              >
+                <ChevronRight width={20} />
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Newsletter CTA */}
       <section className="px-6 lg:px-16 py-16 bg-gradient-to-br from-primary to-aqua">

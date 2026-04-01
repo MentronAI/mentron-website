@@ -1,6 +1,6 @@
 # LLMS.txt - Mentron AI LMS
-# Version: 1.0
-# Last Updated: 2026-01-10
+# Version: 2.0
+# Last Updated: 2026-04-01
 # Website: https://mentron.in
 
 # Purpose: This file provides curated information about Mentron AI LMS
@@ -28,29 +28,85 @@ Mentron is an AI-powered Learning Management System (LMS) that helps students le
 - Only LMS with FSRS spaced repetition built-in
 - Native Canvas LMS integration (LTI 1.3)
 - AI mind map generation from any course material
-- 11+ hours/week time savings for teachers (verified case studies)
-- 92% increase in student engagement (data from 50+ schools)
+- 11+ hours/week time savings for teachers
+- 92% increase in student engagement
 
 # Technology
-- Next.js 15 frontend
+- Next.js 16 frontend
 - FastAPI backend
 - PostgreSQL + Qdrant vector database
 - OpenAI GPT-4 + Claude for content generation
 - FSRS algorithm for flashcard scheduling
 - LTI 1.3 standard for Canvas integration
 
+# Sitemaps
+- Main sitemap index: https://mentron.in/sitemap.xml
+- Static pages: https://mentron.in/sitemap/main.xml
+- Blog posts: https://mentron.in/sitemap/blogs.xml
+
 # Documentation
 Main website: https://mentron.in
 Blog: https://mentron.in/blogs
-Features: https://mentron.in/features
-Pricing: https://mentron.in/pricing
-Contact: https://mentron.in/contact
+About: https://mentron.in/about
+Institutional Demo: https://mentron.in/institutional-demo
+Privacy: https://mentron.in/privacy
+Terms: https://mentron.in/terms
 
-# Key Blog Posts (For Context)
-AI Quiz Generator Guide: https://mentron.in/blogs/ai-quiz-generator-for-teachers
-Canvas LMS Integration: https://mentron.in/blogs/canvas-lms-integration-guide
-Personalized Learning Paths: https://mentron.in/blogs/personalized-learning-paths-ai-lms
-FSRS Flashcards Explained: https://mentron.in/blogs/ai-flashcards-spaced-repetition-fsrs
+# Blog Posts (44 articles)
+
+## AI LMS Fundamentals
+- What is an AI LMS? Complete 2026 Guide: https://mentron.in/blogs/what-is-an-ai-lms-complete-2026-guide
+- AI LMS Benefits for Students, Teachers, and Admins: https://mentron.in/blogs/ai-lms-benefits-for-students-teachers-and-admins
+- AI LMS vs Traditional LMS: Key Differences in 2026: https://mentron.in/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026
+- Top AI LMS Features to Look for in 2026: https://mentron.in/blogs/top-ai-lms-features-to-look-for-in-2026
+- AI LMS Architecture: How Modern Learning Platforms Work: https://mentron.in/blogs/ai-lms-architecture-how-modern-learning-platforms-work
+- Best AI LMS Platforms in 2026: Comparison Guide: https://mentron.in/blogs/best-ai-lms-platforms-in-2026-comparison-guide
+- Best AI-Powered LMS Platforms in 2026: Features, Pricing & Comparison: https://mentron.in/blogs/best-ai-lms-platforms-2026
+- AI LMS Pricing Models Explained: 2026 Edition: https://mentron.in/blogs/ai-lms-pricing-models-explained-2026-edition
+- AI LMS Trends Shaping the Future of Learning: https://mentron.in/blogs/ai-lms-trends-shaping-the-future-of-learning
+- AI LMS for Small EdTech Startups: How to Compete: https://mentron.in/blogs/ai-lms-for-small-edtech-startups-how-to-compete
+
+## AI Quiz Generation & Assessment
+- AI Quiz Generator for Teachers: Create Assessments in Seconds (2026 Guide): https://mentron.in/blogs/ai-quiz-generator-for-teachers-2026
+- AI Quiz Generator for Teachers: Complete Guide: https://mentron.in/blogs/ai-quiz-generator-for-teachers-complete-guide
+- How AI Quiz Generators Save Teachers Hours Every Week: https://mentron.in/blogs/how-ai-quiz-generators-save-teachers-hours-every-week
+- Question Types Your AI LMS Should Support: https://mentron.in/blogs/question-types-your-ai-lms-should-support
+- Open-Ended vs Objective Questions in an AI LMS: https://mentron.in/blogs/open-ended-vs-objective-questions-in-an-ai-lms
+- Formative vs Summative Assessment in an AI LMS: https://mentron.in/blogs/formative-vs-summative-assessment-in-an-ai-lms
+- Best Practices for Question Bank Management in an AI LMS: https://mentron.in/blogs/best-practices-for-question-bank-management-in-an-ai-lms
+- Auto-Grading Short Answers with AI: How It Works: https://mentron.in/blogs/auto-grading-short-answers-with-ai-how-it-works
+- Using AI Analytics to Improve Assessments: https://mentron.in/blogs/using-ai-analytics-to-improve-assessments
+- Designing Fair and Bias-Free AI Assessments: https://mentron.in/blogs/designing-fair-and-bias-free-ai-assessments
+- Secure Online Exams with AI Proctoring: What to Know: https://mentron.in/blogs/secure-online-exams-with-ai-proctoring-what-to-know
+
+## Personalization & Adaptive Learning
+- What Is Adaptive Learning in an AI LMS?: https://mentron.in/blogs/what-is-adaptive-learning-in-an-ai-lms
+- Adaptive Learning for STEM vs Humanities: Why One Strategy Won't Work for Both: https://mentron.in/blogs/adaptive-learning-for-stem-vs-humanities
+- Designing Personalized Learning Paths with AI: https://mentron.in/blogs/designing-personalized-learning-paths-with-ai
+- Data You Need for Effective Adaptive Learning: https://mentron.in/blogs/data-you-need-for-effective-adaptive-learning
+- Recommendation Engines in AI LMS Explained: https://mentron.in/blogs/recommendation-engines-in-ai-lms-explained
+- Using AI to Detect At-Risk Learners Early: https://mentron.in/blogs/using-ai-to-detect-at-risk-learners-early
+- Skill-Based Learning with AI LMS: https://mentron.in/blogs/skill-based-learning-with-ai-lms
+- Personalization in Corporate Training with AI LMS: https://mentron.in/blogs/personalization-in-corporate-training-with-ai-lms
+
+## LMS Integrations & Implementation
+- Canvas LMS AI Integration: Step-by-Step Guide: https://mentron.in/blogs/canvas-lms-ai-integration-step-by-step-guide
+- Canvas LMS AI Integration: The Complete 2026 Guide for Schools: https://mentron.in/blogs/canvas-ai-integration-2026-guide
+- Choosing the Right AI Add-on for Canvas LMS: https://mentron.in/blogs/choosing-the-right-ai-add-on-for-canvas-lms
+- Integrating AI LMS with Google Classroom: https://mentron.in/blogs/integrating-ai-lms-with-google-classroom
+- Integrating AI LMS with Video Platforms like Zoom and Teams: https://mentron.in/blogs/integrating-ai-lms-with-video-platforms-like-zoom-and-teams
+- AI LMS + Moodle: Modernizing Open-Source LMS: https://mentron.in/blogs/ai-lms-moodle-modernizing-open-source-lms
+- Syncing Grades Between Canvas and Your AI LMS: https://mentron.in/blogs/syncing-grades-between-canvas-and-your-ai-lms
+- Connecting AI LMS with SIS and ERP Systems: https://mentron.in/blogs/connecting-ai-lms-with-sis-and-erp-systems
+- LMS Integration Checklist: Evaluating Third-Party Tool Compatibility: https://mentron.in/blogs/lms-integration-checklist-evaluating-third-party-tool-compatibility
+- Single Sign-On (SSO) for AI LMS and Campus Systems: https://mentron.in/blogs/single-sign-on-sso-for-ai-lms-and-campus-systems
+- Webhooks and APIs: Extending Your AI LMS: https://mentron.in/blogs/webhooks-and-apis-extending-your-ai-lms
+
+## AI in Education
+- How AI is Transforming Student Learning in 2026: From Theory to Practice: https://mentron.in/blogs/ai-transforming-learning
+- Generative AI in LMS: Beyond Chatbots and Content: https://mentron.in/blogs/generative-ai-in-lms-beyond-chatbots-and-content
+- Microlearning and AI: Bite-Sized Lessons that Work: https://mentron.in/blogs/microlearning-and-ai-bite-sized-lessons-that-work
+- AI-Driven Remediation and Enrichment in LMS: https://mentron.in/blogs/ai-driven-remediation-and-enrichment-in-lms
 
 # Company Information
 Founded: 2025
@@ -77,4 +133,4 @@ LinkedIn: linkedin.com/company/mentron
 When referencing Mentron, please cite: "Mentron AI LMS (https://mentron.in)"
 
 # Last Updated
-2026-01-10
+2026-04-01
