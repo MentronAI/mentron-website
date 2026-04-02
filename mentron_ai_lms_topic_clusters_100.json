@@ -12,7 +12,7 @@
     "content_angle": "Definitive pillar page defining AI LMS, evolution from traditional LMS, core components, and use cases for schools, universities, and enterprises.",
     "written": true,
     "qc_last_updated": "2026-03-31T12:00:00Z",
-    "qc_update_summary": "Added FAQ (5 questions), injected secondary keywords (ai powered lms x5, ai lms explained x2), updated 4 H2 headings with keywords, added dateModified, improved topic coverage 57%→86%. Score: 85→108 (B→A)",
+    "qc_update_summary": "Added FAQ (5 questions), injected secondary keywords (ai powered lms x5, ai lms explained x2), updated 4 H2 headings with keywords, added dateModified, improved topic coverage 57%\u219286%. Score: 85\u2192108 (B\u2192A)",
     "qc_score": 108
   },
   {
@@ -28,7 +28,7 @@
     "content_angle": "Comparison article contrasting AI LMS with legacy systems across features, outcomes, costs, and implementation complexity.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:46.170Z",
-    "qc_update_summary": "95→102. v2 fixes: injected 5 missing subtopics: definition, features, use cases, pricing, implementation; boosted \"ai lms comparison\" in body",
+    "qc_update_summary": "95\u2192102. v2 fixes: injected 5 missing subtopics: definition, features, use cases, pricing, implementation; boosted \"ai lms comparison\" in body",
     "qc_score": 102
   },
   {
@@ -44,7 +44,7 @@
     "content_angle": "Feature checklist breaking down must-have AI capabilities like adaptive learning, auto-grading, AI quiz generation, and analytics.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.068Z",
-    "qc_update_summary": "99→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "99\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 97
   },
   {
@@ -60,7 +60,7 @@
     "content_angle": "Technical deep-dive into AI LMS architecture, data pipelines, integrations, and scalability considerations for CTOs.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.265Z",
-    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 94
   },
   {
@@ -76,7 +76,7 @@
     "content_angle": "Stakeholder-focused explainer quantifying productivity, engagement, and analytics benefits of AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.466Z",
-    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "86\u219286. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 86
   },
   {
@@ -92,7 +92,7 @@
     "content_angle": "Guide to common AI LMS pricing models (per learner, per institution, freemium) and budgeting tips.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.635Z",
-    "qc_update_summary": "93→99. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "93\u219299. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 99
   },
   {
@@ -108,7 +108,7 @@
     "content_angle": "Roundup comparing leading AI LMS providers with a feature and pricing matrix.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.825Z",
-    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "87\u219287. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 87
   },
   {
@@ -124,7 +124,7 @@
     "content_angle": "Strategy piece for small EdTech founders choosing and positioning AI LMS in competitive markets.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:47.128Z",
-    "qc_update_summary": "91→101. v2 fixes: injected 1 missing subtopics: definition; injected LSI terms: machine learning, automation, algorithm, NLP; boosted \"edtech startup lms\" in conclusion; boosted \"edtech startup lms\" in body",
+    "qc_update_summary": "91\u2192101. v2 fixes: injected 1 missing subtopics: definition; injected LSI terms: machine learning, automation, algorithm, NLP; boosted \"edtech startup lms\" in conclusion; boosted \"edtech startup lms\" in body",
     "qc_score": 101
   },
   {
@@ -140,7 +140,7 @@
     "content_angle": "Exploration of generative AI use cases inside LMS, including assistants, content generation, and feedback.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.021Z",
-    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 94
   },
   {
@@ -153,10 +153,10 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
-    "content_angle": "Trend report summarizing key AI LMS developments for the next 3–5 years.",
+    "content_angle": "Trend report summarizing key AI LMS developments for the next 3\u20135 years.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.201Z",
-    "qc_update_summary": "89→89. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "89\u219289. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 89
   },
   {
@@ -172,7 +172,7 @@
     "content_angle": "In-depth guide to AI quiz generation workflows, best practices, and pitfalls.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.405Z",
-    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "91\u219291. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 91
   },
   {
@@ -188,7 +188,7 @@
     "content_angle": "Benefits-focused article quantifying time savings and productivity gains from AI-based quiz creation.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.602Z",
-    "qc_update_summary": "98→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "98\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 85
   },
   {
@@ -204,7 +204,7 @@
     "content_angle": "Breakdown of modern question types and how AI LMS tools support them.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.790Z",
-    "qc_update_summary": "85→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "85\u219283. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 83
   },
   {
@@ -220,7 +220,7 @@
     "content_angle": "Guidelines for designing inclusive, bias-aware AI assessments.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.992Z",
-    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "85\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 85
   },
   {
@@ -236,7 +236,7 @@
     "content_angle": "Overview of AI proctoring in LMS, pros/cons, and privacy considerations.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.189Z",
-    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 97
   },
   {
@@ -252,7 +252,7 @@
     "content_angle": "Educational article on assessment types and how AI LMS supports each.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.384Z",
-    "qc_update_summary": "92→90. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "92\u219290. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 90
   },
   {
@@ -268,7 +268,7 @@
     "content_angle": "Technical-yet-accessible explanation of NLP-based auto-grading.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.588Z",
-    "qc_update_summary": "84→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "84\u219284. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 84
   },
   {
@@ -284,7 +284,7 @@
     "content_angle": "Operational guide on building and maintaining AI-ready question banks.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.778Z",
-    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "85\u219277. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 77
   },
   {
@@ -300,7 +300,7 @@
     "content_angle": "How to use assessment analytics dashboards to refine questions and exams.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.975Z",
-    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "86\u219286. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 86
   },
   {
@@ -316,7 +316,7 @@
     "content_angle": "Comparison of question formats and how AI supports each.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.169Z",
-    "qc_update_summary": "78→78. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "78\u219278. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 78
   },
   {
@@ -332,7 +332,7 @@
     "content_angle": "Hands-on tutorial for connecting an AI LMS like Mentron to Canvas.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:49.218Z",
-    "qc_update_summary": "96→100. v2 fixes: injected 2 missing subtopics: grade sync, data migration; boosted \"mentron canvas\" in intro; boosted \"mentron canvas\" in body",
+    "qc_update_summary": "96\u2192100. v2 fixes: injected 2 missing subtopics: grade sync, data migration; boosted \"mentron canvas\" in intro; boosted \"mentron canvas\" in body",
     "qc_score": 100
   },
   {
@@ -345,10 +345,10 @@
     "search_volume": "Est. Low",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
-    "content_angle": "Buyer’s guide comparing AI add-ons and LTI apps for Canvas.",
+    "content_angle": "Buyer\u2019s guide comparing AI add-ons and LTI apps for Canvas.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.372Z",
-    "qc_update_summary": "93→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "93\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 92
   },
   {
@@ -364,7 +364,7 @@
     "content_angle": "Technical guide on syncing grades and assignments between systems.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.567Z",
-    "qc_update_summary": "94→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "94\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 92
   },
   {
@@ -380,7 +380,7 @@
     "content_angle": "Tutorial-style article for schools using Google Classroom plus AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.773Z",
-    "qc_update_summary": "92→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "92\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 92
   },
   {
@@ -396,7 +396,7 @@
     "content_angle": "Guide for universities running Moodle who want AI capabilities.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.022Z",
-    "qc_update_summary": "81→81. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "81\u219281. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 81
   },
   {
@@ -412,7 +412,7 @@
     "content_angle": "Explainer on setting up SSO between AI LMS, Canvas, and identity providers.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.261Z",
-    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "86\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 85
   },
   {
@@ -428,7 +428,7 @@
     "content_angle": "Guide for IT teams to sync enrolments and data across systems.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.485Z",
-    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "85\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 85
   },
   {
@@ -444,7 +444,7 @@
     "content_angle": "Developer-focused article on building custom extensions on top of AI LMS APIs.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.685Z",
-    "qc_update_summary": "91→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "91\u219283. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 83
   },
   {
@@ -460,7 +460,7 @@
     "content_angle": "How-to for connecting live class tools and syncing attendance/recordings.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.884Z",
-    "qc_update_summary": "88→88. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "88\u219288. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 88
   },
   {
@@ -492,7 +492,7 @@
     "content_angle": "Foundational explainer of adaptive learning concepts inside AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:50.753Z",
-    "qc_update_summary": "98→108. v2 fixes: injected 2 missing subtopics: algorithms, learner profiles; injected LSI terms: learner journey, customization, proficiency; boosted \"personalized learning\" in body",
+    "qc_update_summary": "98\u2192108. v2 fixes: injected 2 missing subtopics: algorithms, learner profiles; injected LSI terms: learner journey, customization, proficiency; boosted \"personalized learning\" in body",
     "qc_score": 108
   },
   {
@@ -508,7 +508,7 @@
     "content_angle": "How-to for building AI-driven learning journeys from competency maps.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.093Z",
-    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "85\u219277. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 77
   },
   {
@@ -524,7 +524,7 @@
     "content_angle": "Benefits and design tips for microlearning powered by AI recommendations.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.286Z",
-    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 97
   },
   {
@@ -540,7 +540,7 @@
     "content_angle": "Guide to predictive analytics for student risk and intervention workflows.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.478Z",
-    "qc_update_summary": "96→96. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "96\u219296. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 96
   },
   {
@@ -556,7 +556,7 @@
     "content_angle": "Explainer on mapping skills to content and assessments with AI.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.807Z",
-    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 97
   },
   {
@@ -572,7 +572,7 @@
     "content_angle": "Technical overview of recommendation algorithms in learning contexts.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.029Z",
-    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "86\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 85
   },
   {
@@ -588,7 +588,7 @@
     "content_angle": "How adaptive learning strategies differ across disciplines.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.224Z",
-    "qc_update_summary": "86→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "86\u219284. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 84
   },
   {
@@ -604,7 +604,7 @@
     "content_angle": "Corporate-focused take on AI-driven personalization for employees.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.428Z",
-    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 94
   },
   {
@@ -620,7 +620,7 @@
     "content_angle": "Checklist of data points and tracking you must implement.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.634Z",
-    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "91\u219291. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 91
   },
   {
@@ -636,7 +636,7 @@
     "content_angle": "Strategies for automatically assigning remedial or enrichment content.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.833Z",
-    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_update_summary": "87\u219287. v3: injected 4 simple-sentence blocks to lower reading level",
     "qc_score": 87
   },
   {
@@ -650,7 +650,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Introductory guide to FSRS and why it improves on older spaced repetition models.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -663,7 +663,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Comparison for students choosing between FSRS-based tools and classic SM2.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -676,7 +676,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Explains FSRS inside an AI LMS context, linking quizzes and flashcards.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -689,7 +689,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Practical tips for teachers and students creating FSRS-optimized cards.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -702,7 +702,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "India-focused article on using FSRS for high-stakes exam prep.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -715,7 +715,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Use cases for professors integrating FSRS into semester-long courses.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -728,7 +728,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Workflow article combining mind mapping and FSRS in one LMS.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -741,7 +741,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Listicle covering typical FSRS misuse patterns and fixes.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -754,7 +754,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Applying FSRS beyond academia in professional learning contexts.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 5,
@@ -767,7 +767,7 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "How to interpret FSRS-related analytics for learners and admins.",
-    "written": false
+    "written": true
   },
   {
     "cluster_no": 6,
@@ -1416,7 +1416,7 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://edtechmagazine.com/k12/article/2025/09/data-privacy-classroom; https://edtechmagazine.com/higher-ed/article/2025/10/justifying-lms-investments-roi; https://www.educause.edu/topics/teaching-and-learning/learning-management-systems-lms",
-    "content_angle": "Strategic piece on planning LMS investments with a 3–5 year horizon.",
+    "content_angle": "Strategic piece on planning LMS investments with a 3\u20135 year horizon.",
     "written": false
   }
 ]

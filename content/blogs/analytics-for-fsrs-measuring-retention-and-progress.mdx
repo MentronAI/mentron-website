@@ -1,0 +1,275 @@
+---
+title: "Analytics for FSRS: Measuring Retention and Progress"
+date: "2026-03-30"
+description: "Master FSRS analytics and flashcard retention data to close knowledge gaps. Learn which metrics matter and what actions to take for learners and admins."
+author:
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.png"
+image: "/images/blog/analytics-for-fsrs-measuring-retention-and-progress.jpg"
+category:
+  - "AI LMS"
+  - "EdTech"
+published: true
+featured: false
+---
+
+Most learners using flashcard systems can tell you how many cards they reviewed today. Very few can tell you which concepts they're about to forget — or why. That gap between activity and insight is precisely where **FSRS analytics** deliver their greatest value.
+
+The Free Spaced Repetition Scheduler produces a richer data model than any traditional quiz or assessment tool. Every card review generates signals about memory **stability**, recall probability, difficulty trends, **accuracy rates**, and **time spent** per item. The challenge isn't collecting this data — it's knowing how to interpret it and act on it confidently.
+
+This guide is for two audiences. If you're a **learner** — student, professional, or certification candidate — you'll learn how to read your own **flashcard retention data** and stop studying blindly. If you're an **instructor, L&D manager, or platform admin**, you'll learn which cohort-level signals in Mentron's Analytics Dashboard indicate knowledge gaps that need intervention before they become failures.
+
+By the end, you'll have a clear, jargon-free framework for turning FSRS numbers into better learning decisions.
+
+---
+
+## What Is FSRS Analytics?
+
+> **FSRS analytics** refers to the set of quantitative metrics produced by the Free Spaced Repetition Scheduler — including memory stability, retrievability, card difficulty, accuracy rates, and review history — that together describe how well a learner is retaining and progressing through a body of knowledge over time.
+
+Unlike traditional quiz analytics that measure performance at a single point in time, FSRS analytics are **longitudinal and predictive**. They don't just show what a learner got right yesterday — they model what a learner is likely to forget tomorrow, and when to schedule the next review to prevent it.
+
+This predictive dimension is what makes [FSRS a three-component memory model](https://expertium.github.io/Algorithm.html): Stability (S), Retrievability (R), and Difficulty (D). Every metric in the FSRS analytics stack traces back to one of these three foundations.
+
+### The Three Core FSRS Metrics Defined
+
+Understanding FSRS output starts with internalizing what these three variables mean in plain language:
+
+- **Stability (S)** — The number of days before your recall probability for a card drops from 100% to 90%. A card with S = 30 means you can go 30 days without reviewing it and still have a 90% chance of recalling it correctly. Higher stability means stronger, more durable memory.
+- **Retrievability (R)** — Your probability of successfully recalling a specific card *right now*, given how much time has passed since your last review and how stable that memory is. Retrievability decays continuously between reviews, following the **forgetting curve**.
+- **Difficulty (D)** — A per-card score ranging from 1 to 10 that reflects [how intrinsically hard the card is to retain](https://domenic.me/fsrs/), independent of how much time has passed. High-difficulty cards require more frequent review and grow stability more slowly even after correct recall.
+
+---
+
+## Reading Your Flashcard Retention Data
+
+For individual learners, **flashcard retention data** is the single most valuable signal for understanding what you actually know versus what you merely recognise. Here's how to read each metric.
+
+### Retrievability and the Forgetting Curve
+
+Every card in your FSRS deck has a current retrievability score. The FSRS scheduler surfaces cards for review when their retrievability drops to the configured threshold (typically 85–90%). This means the **forgetting curve** is actively managed — you see cards precisely when they're at risk of fading, not on a random schedule.
+
+Understanding this metric helps you answer a critical question: **why are you seeing this card today?** The answer is always that your retrievability for that card has dropped to the review threshold. Cards you see often have low stability and high difficulty. Cards you see rarely have high stability and low difficulty. This pattern tells you exactly where to focus your attention.
+
+### Accuracy Rates Per Card and Per Deck
+
+**Accuracy rates** measure the percentage of reviews where you answered correctly across a card's entire review history. This metric is deceptively revealing because accuracy rates alone don't tell the full story — context matters.
+
+A card with a 95% **accuracy rate** and very short intervals (S = 3 days) is actually a warning sign: you're reviewing it very frequently and still only getting it right 95% of the time. That combination means the card is genuinely difficult and not stabilizing well. A card with a 95% accuracy rate and S = 90 days is healthy — you've built durable, reliable recall for that concept.
+
+Mentron maps every flashcard to specific **Learning Outcomes** and **Bloom's Taxonomy levels (K1–K6)**. This means your **accuracy rates** can be examined not just by card, but by outcome — giving you a clean signal for which course objectives you've truly mastered and which still have gaps.
+
+### Time Spent Per Review
+
+**Time spent** per card is a secondary but valuable metric. A card that consistently takes you 15–20 seconds to answer is one you're working hard on — which is healthy. A card you answer in under 2 seconds every time may be too easy and is consuming review time that could go toward harder material.
+
+If your daily review sessions have high average **time spent** but your accuracy rates are low, that's a signal of overloaded working memory — you may have too many cards in active rotation. The solution is to pause adding new cards and focus on stabilizing the current deck before expanding it.
+
+---
+
+## FSRS Analytics Metrics at a Glance
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>What It Measures</th>
+      <th>Healthy Signal</th>
+      <th>Warning Signal</th>
+      <th>Action to Take</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stability (S)</td>
+      <td>Days before recall drops to 90%</td>
+      <td>Steadily increasing with each review</td>
+      <td>Plateau after multiple correct reviews</td>
+      <td>Redesign card for deeper encoding</td>
+    </tr>
+    <tr>
+      <td>Retrievability (R)</td>
+      <td>Current probability of correct recall</td>
+      <td>Stays above 90% between scheduled reviews</td>
+      <td>Drops sharply within 1–2 days of review</td>
+      <td>Reduce desired retention interval or break card down</td>
+    </tr>
+    <tr>
+      <td>Difficulty (D)</td>
+      <td>Inherent hardness of a card (1–10)</td>
+      <td>Gradually decreasing as mastery builds</td>
+      <td>Stuck above 7–8 after 10+ reviews</td>
+      <td>Split into smaller atomic cards</td>
+    </tr>
+    <tr>
+      <td>Accuracy Rate</td>
+      <td>% of correct reviews in card history</td>
+      <td>Above 85% with increasing stability</td>
+      <td>Below 70% on short-interval cards</td>
+      <td>Re-study source material via RAG chat</td>
+    </tr>
+    <tr>
+      <td>Time Spent</td>
+      <td>Average seconds per review</td>
+      <td>Consistent with question complexity</td>
+      <td>Declining (too easy) or spiking (overloaded)</td>
+      <td>Adjust deck size or card difficulty balance</td>
+    </tr>
+    <tr>
+      <td>Review Streak / Heatmap</td>
+      <td>Daily review consistency</td>
+      <td>Regular daily sessions, few missed days</td>
+      <td>Long gaps of 5+ days between sessions</td>
+      <td>Enable Learning Session reminders in Mentron</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Admin and Instructor FSRS Analytics
+
+The view from the top of the learning stack looks very different from an individual learner's dashboard. Instructors and L&D managers need to identify which parts of the curriculum are failing at a cohort level — not just flag individual struggling learners.
+
+Mentron's **Analytics Dashboard** provides course-level analytics, at-risk detection, and engagement scoring (0–100) across all enrolled learners. Here's how to interpret each signal in the context of FSRS-powered cohort learning.
+
+### Reading Cohort-Level Retention Data
+
+> Think of cohort FSRS analytics as an aggregate **forgetting curve** for your entire class or training group. The goal is not to find which individual is performing poorly — it's to find which **concepts** are failing to stabilize across the population.
+
+When instructors examine cohort **flashcard retention data** in Mentron, the most actionable view is retention aggregated by **Course Outcome** rather than by individual card. If CO3 (Apply data privacy regulations) shows average retrievability of 62% across 40 enrolled employees, while CO1 (Define regulatory framework) shows 88%, the gap reveals a specific instructional problem: learners can recall definitions but cannot apply the regulation — a K2-to-K3 Bloom's Taxonomy failure.
+
+This outcome-level view is only possible because Mentron tags every FSRS flashcard to specific Course Outcomes and Bloom's levels at creation time — either manually or via the **AI Quiz Generator** during automated deck creation.
+
+### At-Risk Student and Learner Detection
+
+Mentron's at-risk detection algorithm surfaces learners whose **engagement scores** and **accuracy rates** fall below configurable thresholds. In the FSRS context, at-risk signals include:
+
+- Learners who have not completed any review sessions in 5+ days (high probability of significant **forgetting curve** steepening across their entire deck)
+- Learners whose per-card accuracy rate has dropped by more than 20 percentage points over the last 14 days (memory destabilization, often caused by topic overload or personal disruption)
+- Learners whose **difficulty scores** are rising on cards that were previously stabilizing (regression, often indicating that earlier understanding was surface-level)
+
+These signals don't replace instructor judgment — they direct instructor attention to the right places at the right time. An engagement score of 34/100 for a learner who hasn't opened their flashcard deck in eight days is a prompt for a check-in conversation, not an automated penalty.
+
+### Heatmaps and Review Cadence Analysis
+
+Review heatmaps visualize how consistently a cohort is engaging with their FSRS decks across calendar days. Gaps in the heatmap — days with no review activity across multiple learners simultaneously — reveal systemic barriers to engagement: exam seasons that crowd out spaced review, assignment deadlines that spike **time spent** on other tasks, or onboarding programs that don't allocate protected time for daily review sessions.
+
+When a K-12 teacher or university professor spots a seven-day heatmap gap in mid-semester review data, the intervention isn't to penalize students — it's to adjust the content loading in that week's **Learning Session** plan and ensure that the FSRS deck for the upcoming unit assessment isn't overwhelmed with new cards while old cards are also needing reinforcement.
+
+### Engagement Scoring and Its Limits
+
+Mentron's engagement score (0–100) is a composite signal derived from review frequency, session length, accuracy trend, and Learning Session completion. A high engagement score doesn't always mean deep learning — a learner who reviews 40 easy cards per day in under 3 seconds per card has a high score but shallow retention growth.
+
+The correct interpretation pairs engagement scores with **stability trend data**. High engagement + rising average stability across the deck = strong, productive learning. High engagement + flat or declining average stability = learner may be gaming the review system by reflexively pressing "easy" without genuinely testing recall.
+
+---
+
+## Using Analytics to Improve FSRS Decks
+
+One of the most underused applications of **FSRS analytics** is feedback on the quality of the flashcard content itself. Poorly written cards produce systematically bad data — and without analytics, content problems are invisible.
+
+### Identifying Low-Quality Cards via Data
+
+Cards that show persistently high difficulty scores (D > 7), consistently low **accuracy rates** (below 65%), and minimal stability growth across many reviews are sending a clear signal: the card is poorly designed, not that the learner is weak. Common causes include:
+
+- Cards that test two or more distinct facts in a single question (violating the minimum information principle)
+- Cards with ambiguous or unclear answer fields
+- Cards testing recall at the wrong Bloom's Taxonomy level for the learner's current stage
+
+When these patterns surface in cohort analytics, instructors can use Mentron's **AI Quiz Generator** to regenerate question-answer pairs from the same source material but with improved atomic structure and appropriate difficulty targeting.
+
+### Connecting Flashcard Data to Formal Assessments
+
+**Flashcard retention data** should not exist in a silo. Mentron connects FSRS flashcard performance to course-level outcomes through **Auto-Grading** and assessment analytics. This means an instructor can see whether a learner's high flashcard stability on a Course Outcome correlates with strong formal assessment performance — or whether there's a disconnect.
+
+When there's a disconnect (high flashcard stability but poor quiz performance), it usually indicates one of two problems: the flashcards are testing recall at too low a cognitive level (K1 recognition instead of K3 application), or the assessment requires skills the flashcards aren't covering. Either way, the data surfaces the gap so it can be fixed before the next assessment cycle.
+
+---
+
+## Building an Analytics Review Habit
+
+The most common failure mode in analytics-driven learning programs is data overwhelm — instructors check the dashboard once at setup and never return, or learners open their statistics page, get lost in numbers they don't understand, and go back to reviewing mindlessly.
+
+The solution is a structured, minimal analytics review ritual:
+
+### A Weekly 15-Minute Analytics Review for Learners
+
+1. **Check your three lowest-stability cards** — These are the memories most at risk. Do they need to be rewritten or broken into smaller pieces?
+2. **Review your accuracy rate by Learning Outcome** — Which outcome has the lowest overall accuracy? Is it a content understanding gap or a card quality issue?
+3. **Scan your review heatmap for the past 7 days** — Are there missed days with no reviews? Did a missed session cause a spike in due cards the following day?
+4. **Note your average **time spent** trend** — Is it increasing (content is getting harder as you go deeper) or decreasing (you may need to add new, more challenging cards)?
+5. **Set one intention** — Based on the data, pick one specific card or outcome to focus additional study on before next week's review.
+
+### A Monthly Analytics Check for Instructors and Admins
+
+1. **Pull cohort **accuracy rates** by Course Outcome** — Identify the two COs with the lowest average accuracy. Plan supplementary content or revised cards for those topics.
+2. **Review at-risk learner flags** — Follow up with anyone flagged for 5+ days of inactivity. Is it a behavioral issue or a technical barrier (access, time, card overload)?
+3. **Examine average stability growth across the cohort** — Is overall memory durability improving month over month? This is the headline metric for long-term FSRS program effectiveness.
+4. **Regenerate underperforming decks** — Use Mentron's AI Quiz Generator to refresh cards for outcomes where cohort difficulty scores remain persistently high.
+5. **Report on retention improvement** — Connect FSRS flashcard data to formal assessment outcomes to demonstrate ROI to stakeholders.
+
+---
+
+## Addressing Analytics Objections
+
+### Data Overwhelm: Too Many Metrics
+
+You don't need to track all FSRS metrics simultaneously. For learners, **stability trend** and **accuracy rate by outcome** are the only two that drive meaningful decisions. For admins, **cohort accuracy by Course Outcome** and **at-risk flags** cover 90% of actionable insights. Start with two metrics and expand only when those are consistently informing your decisions.
+
+### Interpreting FSRS Data Without a Statistics Background
+
+The three-component FSRS model ([Stability, Retrievability, Difficulty](https://faqs.ankiweb.net/what-spaced-repetition-algorithm)) sounds technical, but each metric has a plain-English interpretation that maps directly to learning behavior. Stability = how long you can wait before forgetting. Retrievability = how likely you are to remember right now. Difficulty = how hard this specific concept is for you. No statistical training is needed to act on those definitions.
+
+### Balancing Analytics with Actual Learning Time
+
+Analytics are a 5–10 minute weekly investment, not a daily activity. The [FSRS algorithm](/blogs/fsrs-flashcards-explained-smarter-spaced-repetition) handles the scheduling complexity automatically — learners don't need to manually interpret retrievability curves to benefit from spaced repetition. Analytics review is a periodic calibration step, not a parallel workload.
+
+### Privacy Concerns with Detailed Learner Tracking
+
+Mentron's **Multi-tenant RBAC** architecture ensures that granular learner-level FSRS data is only visible to the learner themselves and to instructors within their enrolled courses. Master Admins and Org Admins see aggregated cohort data, not individual card-level performance without explicit access configuration. Organizations can configure data retention and access policies to meet GDPR, FERPA, and HIPAA requirements based on their deployment context.
+
+---
+
+## Frequently Asked Questions
+
+### What does stability mean in FSRS analytics?
+
+Stability in FSRS is defined as [the number of days before your probability of correctly recalling a card drops from 100% to 90%](https://faqs.ankiweb.net/what-spaced-repetition-algorithm). A card with stability of 365 days means you could go a full year before your recall probability fell to 90%. It matters because rising stability is the clearest indicator that spaced repetition is working — each successful review compounds memory durability, allowing progressively longer intervals between reviews without forgetting.
+
+### How often should I check my FSRS analytics as a learner?
+
+Once per week for 10–15 minutes is sufficient for most learners. The FSRS scheduler handles daily review optimization automatically — you don't need to manually interpret your metrics every session. The weekly review is specifically for identifying cards that need to be redesigned, outcomes with persistent gaps, and consistency patterns in your review heatmap.
+
+### What is a healthy accuracy rate for FSRS flashcards?
+
+A per-card **accuracy rate** of 85–95% is considered healthy in most FSRS implementations. Rates above 95% on short-interval cards suggest the card is too easy and could be rewritten at a higher Bloom's Taxonomy level. Rates below 75% on cards you've reviewed more than 10 times suggest a card quality problem — the question may be ambiguous, testing multiple facts at once, or the underlying concept needs more foundational study before being converted to a flashcard.
+
+### Can instructors see individual students' FSRS card-level data?
+
+In Mentron, instructors can see learner-level performance data aggregated by Learning Outcome and Course Outcome — including **accuracy rates**, engagement scores, and at-risk flags. Card-level detail (specific card stability and retrievability per learner) is configurable based on your organization's privacy and RBAC settings. The default view surfaces outcome-level data, which is the most actionable signal for instructional intervention.
+
+### What should I do when flashcard retention data shows no improvement?
+
+If stability isn't growing and **accuracy rates** are plateauing across multiple sessions, the most common causes are: (1) cards that are too complex and test multiple concepts simultaneously, (2) reviewing too many new cards too quickly, which overwhelms consolidation, or (3) a genuine gap in foundational understanding that flashcards alone can't address. The recommended workflow in Mentron is to use **Chat with Documents (RAG)** to revisit the source material, then use the **AI Quiz Generator** to regenerate atomic, single-concept cards from that material before resuming spaced review.
+
+---
+
+## Conclusion
+
+**FSRS analytics** transform passive flashcard use into a data-driven learning practice — one where both learners and administrators can see exactly what's being retained, what's at risk of being forgotten, and where to direct attention next. The three core metrics — **stability**, **retrievability**, and **difficulty** — each tell a specific part of the retention story, and Mentron's Analytics Dashboard makes that story visible at both the individual and cohort level.
+
+For learners, the priority signals are stability trends, **accuracy rates** by outcome, and **time spent** consistency. For instructors and L&D admins, the priority signals are cohort accuracy by Course Outcome, at-risk engagement flags, and stability growth month over month. Combining **flashcard retention data** with Mentron's Learning Sessions, Auto-Grading, and Canvas LMS grade passback creates a complete picture of learning health — not just activity metrics.
+
+If your current LMS gives you completion rates and quiz scores but no insight into what learners will actually remember in 30 days, it's time to change the dashboard.
+
+[Explore Mentron's FSRS Analytics Dashboard and see your retention data](https://mentron.ai)
+
+---
+
+## Related Articles
+
+- [Combining Mind Maps and FSRS for Deep Learning](/blogs/combining-mind-maps-and-fsrs-for-deep-learning)
+- [FSRS Flashcards for Corporate Training and Certifications](/blogs/fsrs-flashcards-for-corporate-training-and-certifications)
+- [FSRS vs Anki SM2: Which Is Better in 2026?](/blogs/fsrs-vs-anki-sm2-which-is-better-in-2026)

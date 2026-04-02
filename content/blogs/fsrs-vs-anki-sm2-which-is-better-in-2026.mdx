@@ -1,0 +1,261 @@
+---
+title: "FSRS vs Anki SM2: Which Is Better in 2026?"
+date: "2026-03-30"
+description: "FSRS vs Anki SM-2 compared: discover which spaced repetition algorithm delivers better retention, fewer reviews, and smarter scheduling in 2026."
+author:
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.png"
+image: "/images/blog/fsrs-vs-anki-sm2-which-is-better-in-2026.jpg"
+category:
+  - "AI LMS"
+  - "EdTech"
+published: true
+featured: false
+---
+
+If you have ever stared at a growing Anki review pile and wondered why the same cards keep reappearing every other day, you have experienced the limits of SM-2 firsthand. The debate around **FSRS vs Anki** — more precisely, FSRS versus SM-2 — has become one of the most searched topics in the spaced repetition community, and for good reason.
+
+In this post you will learn exactly how these two flashcard algorithms differ, which one fits your study goals, and how modern AI-powered learning platforms like Mentron go a step further by weaving FSRS directly into a full LMS experience. Whether you are a university student managing a massive flashcard deck, a medical student prepping for board exams, or an L&D professional building corporate training modules, this comparison will help you make an informed, data-backed choice.
+
+---
+
+## Understanding SM-2: The Legacy Flashcard Algorithm
+
+SM-2 — short for SuperMemo 2 — was [designed by Piotr Wozniak in 1987](https://apps.ankiweb.net/docs/manual.html) and has been the scheduling backbone of Anki, Mnemosyne, and dozens of other flashcard apps ever since. Nearly four decades of widespread use proves it works at a fundamental level. But that same longevity also reveals its age.
+
+### How SM-2 Calculates Review Intervals
+
+SM-2 tracks two values for every card:
+
+- **Repetition count (n):** How many consecutive times you answered correctly
+- **Ease factor (EF):** A multiplier that starts at 2.5 and shifts up or down based on your rating
+
+The algorithm multiplies your current interval by the ease factor to produce the next review date. Rate a card "Easy" and the interval grows quickly. Rate it "Hard" and the ease factor drops, shortening future intervals and returning the card sooner.
+
+The math is simple and the logic is intuitive — which explains why SM-2 dominated for so long. But simplicity comes with trade-offs.
+
+### The "Ease Hell" Problem with SM-2
+
+Ease hell is the notorious spiral that happens when you consistently rate a difficult card "Hard" or "Again." Each press lowers the ease factor. A lower ease factor produces shorter intervals. Shorter intervals make you see the card more often, which makes another "Hard" press more likely. The cycle repeats until you are reviewing the same card every one or two days indefinitely.
+
+Community research and migration guides consistently name ease hell as the top complaint among long-term SM-2 users, especially those running large decks like the 27,000-card AnKing medical collection.
+
+There is also a deeper structural issue: **SM-2 uses the identical formula for every learner on the planet.** Your memory curve is shaped by your sleep patterns, prior knowledge, and cognitive style. SM-2 does not know that, and it does not try to find out.
+
+---
+
+## What Is FSRS and Why Has It Changed the Game?
+
+FSRS stands for **Free Spaced Repetition Scheduler**. It was created by [Jarrett Ye](https://github.com/open-spaced-repetition/fsrs4anki/wiki/Spaced-Repetition-Algorithm:-A-Three%E2%80%90Day-Journey-from-Novice-to-Expert) and was first integrated natively into Anki in late 2023. Where SM-2 relies on a fixed heuristic formula designed in a pre-internet era, FSRS was trained on real-world data — over 700 million flashcard reviews from tens of thousands of learners — using machine learning techniques to model how memory actually behaves over time.
+
+### The DSR Memory Model Behind FSRS
+
+FSRS schedules cards using three interconnected components, collectively called the **DSR model**:
+
+- **Difficulty (D):** How inherently hard this specific card is for you, scored on a 1–10 scale
+- **Stability (S):** The estimated number of days until your recall probability drops to 90%
+- **Retrievability (R):** Your current probability of recalling the card right now
+
+Every review updates all three values based on your response, the elapsed time since your last review, and your prior history with that card. The next interval is then calculated to hit your **desired retention rate** — a percentage you configure yourself, typically between 85% and 95%.
+
+This is a fundamentally different philosophy from SM-2. SM-2 asks: *"How did you rate the card?"* FSRS asks: *"How much have you forgotten, and when is forgetting most likely to happen next?"*
+
+### How FSRS Personalizes to Your Memory
+
+After you accumulate around 1,000 reviews, FSRS can be **optimized against your specific review history**, producing a unique set of parameters — in effect, a personalized forgetting curve built from your own data. Two students studying the same deck will receive different schedules because their memory patterns differ.
+
+[Independent benchmarks published by Jarrett Ye and co-author Expertium](https://expertium.github.io/Benchmark.html), evaluated on approximately 350 million held-out reviews from nearly 10,000 Anki user collections, show that **FSRS-6 achieves 99.6% superiority over SM-2** in log loss prediction. According to benchmarks by Ye et al. (2024), FSRS v5 with individual optimization also reduces prediction error (RMSE) by **13.2% compared to SM-2**. Both metrics confirm that FSRS predicts when you will forget a card far more accurately than the 1987 formula ever could.
+
+---
+
+## FSRS vs SM-2: A Side-by-Side Comparison
+
+The table below captures the key differences for students choosing between FSRS-based tools and classic SM-2 scheduling.
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>SM-2 (Classic)</th>
+      <th>FSRS (Modern Standard)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Algorithm basis</strong></td>
+      <td>1987 heuristics, fixed formula</td>
+      <td>2023 machine learning, trained on 700M+ reviews</td>
+    </tr>
+    <tr>
+      <td><strong>Memory model</strong></td>
+      <td>Interval x ease factor</td>
+      <td>DSR model (Difficulty, Stability, Retrievability)</td>
+    </tr>
+    <tr>
+      <td><strong>Personalization</strong></td>
+      <td>None — same formula for all learners</td>
+      <td>Full — learns your unique memory patterns</td>
+    </tr>
+    <tr>
+      <td><strong>Desired retention</strong></td>
+      <td>Not configurable</td>
+      <td>Adjustable per deck (70–95%)</td>
+    </tr>
+    <tr>
+      <td><strong>Ease hell risk</strong></td>
+      <td>Yes — recurring review spiral on hard cards</td>
+      <td>No — ease factor eliminated entirely</td>
+    </tr>
+    <tr>
+      <td><strong>Prediction accuracy (RMSE)</strong></td>
+      <td>Baseline</td>
+      <td>13.2% lower error vs SM-2 at individual level</td>
+    </tr>
+    <tr>
+      <td><strong>Daily review reduction</strong></td>
+      <td>Baseline</td>
+      <td>Up to 30% fewer reviews for equal retention</td>
+    </tr>
+    <tr>
+      <td><strong>Optimization method</strong></td>
+      <td>Manual interval and ease tweaks</td>
+      <td>Automatic, runs on your own review history</td>
+    </tr>
+    <tr>
+      <td><strong>Load balancing</strong></td>
+      <td>Limited, prone to review spikes</td>
+      <td>Built-in, distributes reviews evenly across days</td>
+    </tr>
+    <tr>
+      <td><strong>Data requirement</strong></td>
+      <td>None</td>
+      <td>1,000+ reviews recommended for full optimization</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Study Efficiency: What the Data Actually Shows
+
+The real-world benefit of switching to FSRS is not theoretical — it shows up directly in how many cards you review each day and how long each session lasts.
+
+### Review Load and Time Saved
+
+Data from learners running both algorithms on comparable medical decks shows a consistent pattern: SM-2 users average around **180 reviews per day**, while FSRS users on the same material average roughly **135 reviews** — a 25% reduction. That difference translates to approximately 15 fewer minutes per study session.
+
+Upper-bound estimates put the figure at **up to 30% fewer reviews** while maintaining the same target retention. Compounded over a full academic year, that gap can represent hundreds of hours. For a student managing three or four courses simultaneously, that reclaimed time is significant.
+
+Another underrated advantage: FSRS's built-in load balancing distributes reviews more evenly across the calendar. If you have ever returned from a long weekend to find 400 cards waiting, FSRS's scheduler is designed to prevent exactly that.
+
+### Retention Rates: Are They Really Different?
+
+Interestingly, retention rates between the two algorithms are roughly equivalent when configured for the same target — both hover around **85%** in practice. The critical insight is that FSRS achieves that 85% with meaningfully fewer reviews, not with a higher raw score. That is the **study efficiency** win.
+
+The [FSRS benchmark](https://expertium.github.io/Benchmark.html) makes one important caveat worth noting: SM-2 was never originally designed to predict the probability of recall. The benchmark adds a probability-conversion layer on top of SM-2 to make comparison possible. A perfectly apples-to-apples comparison is not technically feasible, but the directional conclusion — FSRS is more accurate and more efficient — holds across every metric tested.
+
+---
+
+## When SM-2 Might Still Work for You
+
+FSRS is the stronger algorithm by most objective measures, but SM-2 is not irrelevant. It is worth sticking with it if:
+
+- **You have fewer than 500–1,000 reviews.** FSRS can still run on default parameters, but personalization benefits are minimal before sufficient data accumulates.
+- **You are mid-exam crunch.** Switching algorithms two weeks before a major assessment introduces scheduling disruption you do not need right now.
+- **Your heavily customized SM-2 setup is already working.** If you have manually dialed in intervals and your daily load feels sustainable, the switching friction may outweigh the incremental gain.
+- **You are new to spaced repetition.** Learn the fundamentals first. Switch to FSRS once you have a stable, active deck and a real review history behind you.
+
+SM-2 also remains the default in older Anki versions and many third-party apps that have not yet updated their scheduling engine. It is a reliable, proven baseline — just no longer the state of the art.
+
+---
+
+## When to Choose FSRS: The Right Scenarios
+
+FSRS pays off fastest in high-volume, long-term study scenarios where the **memory curve** varies significantly across cards and learners. It is especially well-suited for:
+
+- **Medical, pharmacy, and law students** managing decks of 5,000–30,000 cards where cumulative review load is a genuine burnout risk
+- **Language learners** building vocabulary across thousands of words with highly variable personal exposure and frequency
+- **K-12 and university students** on LMS platforms that support FSRS natively, keeping flashcard scheduling inside the course environment
+- **Corporate L&D teams** running compliance or technical upskilling programs where both completion efficiency and long-term retention evidence matter for regulatory reporting
+
+The cognitive science case for spaced repetition is well-documented: resources like [Educause's learning design literature](https://www.educause.edu/) and [EdSurge's EdTech research hub](https://www.edsurge.com/research) consistently affirm that distributed practice with optimized intervals outperforms massed review — the core principle FSRS implements more precisely than any predecessor.
+
+---
+
+## How Mentron Embeds FSRS Inside Your LMS
+
+Mentron is built on the premise that spaced repetition should not live in a standalone app disconnected from the course. Mentron integrates FSRS-powered flashcards directly into the LMS layer, so memory science and course delivery happen in a single, unified experience — visible to both students and instructors.
+
+### FSRS Flashcards Built Into Your LMS
+
+When a student uploads a PDF, completes a lecture, or interacts with a question bank, Mentron's AI engine can automatically generate flashcards from that content. Those cards are scheduled using FSRS from day one, aligned to each student's configured retention target.
+
+Instructors gain something standalone flashcard apps cannot provide: **class-level retention analytics.** If 40% of students consistently fail a concept during spaced review, that is actionable signal — not buried inside a personal deck no one else can see. This transforms FSRS from a personal productivity tool into a course-level diagnostic engine.
+
+### AI Quiz Generation Meets Spaced Repetition
+
+Mentron's AI generation layer goes beyond flashcards. From uploaded lecture notes, PDFs, or a pre-built question bank, the platform produces:
+
+- Multiple-choice and short-answer questions for graded assessments
+- FSRS-scheduled flashcard sets for student-led review
+- Mind maps and knowledge graphs that show how course concepts connect
+
+All of this integrates with Mentron's **Canvas LMS integration** via standard LTI protocols, so students and instructors work inside the same environment they already use for assignments and grades. Auto-grading closes the feedback loop within minutes, and the FSRS-powered review queue resurfaces forgotten material before the next module — not after the final.
+
+### Use Cases Across Education and Training
+
+The scope is broader than most expect:
+
+- **K-12 schools** can deploy [FSRS flashcards](/blogs/fsrs-flashcards-explained-smarter-spaced-repetition) for vocabulary, formulas, historical dates, and scientific terms — auto-generated from teacher-uploaded materials, reviewed and approved before publication
+- **Universities and colleges** benefit from seamless Canvas and Moodle integration, keeping FSRS-scheduled review inside the LMS students already log into daily
+- **Corporate L&D teams** can run FSRS-based product training, onboarding modules, or compliance refreshers through Mentron, with dashboards showing which employees are falling behind on retention before certification deadlines arrive
+
+### Common Objections Addressed
+
+**"Will AI-generated flashcards be accurate enough?"** Mentron includes a mandatory human review step. Instructors can edit, approve, or reject AI-generated cards in bulk before they reach students.
+
+**"What about student data privacy?"** Mentron is built for institutional compliance. Student review data is never used to train external models, and the platform supports data residency requirements for schools and enterprises.
+
+**"How long does implementation take?"** Canvas integration uses LTI 1.3 and typically completes in under a day for a single course. Full institutional deployment timelines vary by IT infrastructure but are comparable to any standard LMS tool addition.
+
+---
+
+## Conclusion
+
+The **FSRS vs SM-2** debate is essentially resolved at the algorithm level: FSRS is more accurate, more personalized, and measurably more efficient for the vast majority of learners. Independent benchmarks confirm it on hundreds of millions of reviews, real-world data backs up the 25–30% reduction in daily reviews, and the elimination of ease hell alone makes the switch worthwhile for anyone with a large or long-running deck.
+
+If you are choosing a standalone flashcard tool, prioritize those with FSRS enabled and individual optimization available. If you are selecting an LMS for a school, university, or corporate L&D program, the sharper question is: does the platform embed FSRS-grade scheduling intelligence directly into the course experience?
+
+Mentron is designed to do exactly that. [Start a free Mentron demo](https://mentron.ai) to see FSRS-powered flashcards, AI quiz generation, and Canvas integration working together in one platform.
+
+
+## Frequently Asked Questions
+
+### Is FSRS better than SM-2 for spaced repetition?
+
+Yes. FSRS models three dimensions of memory per card — stability, difficulty, and retrievability — while SM-2 uses a single ease factor. This gives FSRS significantly more accurate interval predictions. Benchmark testing on over 350 million reviews showed FSRS achieves 99.6% superiority over SM-2 in prediction accuracy, meaning it schedules reviews at closer to the optimal moment for each individual learner.
+
+### Can I switch from SM-2 to FSRS in Anki?
+
+Yes. Anki 23.10 and later versions include FSRS as a built-in scheduling option. You can enable it in your deck options without losing your existing review history. FSRS will use your past review data to calibrate its initial parameters, and accuracy improves after you accumulate roughly 1,000 reviews under the new algorithm.
+
+### Does FSRS reduce the number of daily reviews?
+
+FSRS typically reduces total review count by 20–30% compared to SM-2 while maintaining the same or higher retention rate. This happens because FSRS avoids showing you cards you already know well, instead concentrating your review time on cards that are genuinely at risk of being forgotten.
+
+### What retention target should I set in FSRS?
+
+For most learners, a desired retention of 85–90% is optimal. Setting it above 95% dramatically increases review volume with diminishing returns. For high-stakes material like medical licensing exams or safety-critical [compliance training](/blogs/fsrs-flashcards-for-corporate-training-and-certifications), 90–95% may be justified. You can adjust the target per deck in Mentron's FSRS settings.
+
+### Is FSRS free to use?
+
+Yes. FSRS is an open-source algorithm released under the MIT license. It is available in Anki, RemNote, and Mentron at no additional cost. The algorithm itself is free — platforms may charge for additional features built around it.
+
+---
+
+## Related Articles
+
+- [Combining Mind Maps and FSRS for Deep Learning](/blogs/combining-mind-maps-and-fsrs-for-deep-learning)
+- [Designing Effective Flashcards for FSRS](/blogs/designing-effective-flashcards-for-fsrs)
+- [FSRS Flashcards for NEET, JEE, and Competitive Exams](/blogs/fsrs-flashcards-for-neet-jee-and-competitive-exams)
