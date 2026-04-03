@@ -12,8 +12,14 @@
     "content_angle": "Definitive pillar page defining AI LMS, evolution from traditional LMS, core components, and use cases for schools, universities, and enterprises.",
     "written": true,
     "qc_last_updated": "2026-03-31T12:00:00Z",
-    "qc_update_summary": "Added FAQ (5 questions), injected secondary keywords (ai powered lms x5, ai lms explained x2), updated 4 H2 headings with keywords, added dateModified, improved topic coverage 57%\u219286%. Score: 85\u2192108 (B\u2192A)",
-    "qc_score": 108
+    "qc_update_summary": "Added FAQ (5 questions), injected secondary keywords (ai powered lms x5, ai lms explained x2), updated 4 H2 headings with keywords, added dateModified, improved topic coverage 57%→86%. Score: 85→108 (B→A)",
+    "qc_score": 108,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a clean white background and very light blue (#EBF5FF at 12% opacity) soft geometric shapes in the corners. In the center, a minimalist line-art illustration of a glowing brain icon connected by thin dotted lines to three device icons below it: a laptop, a tablet, and a smartphone. Each device screen shows a simple abstract course interface with a progress bar. The text 'AI LMS' appears in bold Inter font at the top center in dark navy blue (#1a2332). The overall style is flat, modern, and professional with no gradients, using only white, light blue, and very light green (#EBFBF0 at 10% opacity) accent circles scattered subtly around the edges. Thin line-art icons, no shadows, no 3D effects.",
+    "content_image_ideas": [
+      "A portrait infographic showing a vertical timeline with three stages of LMS evolution. At the top, a simple line-art icon of a filing cabinet labeled 'Traditional LMS' with text 'Content Storage' below in Inter font. In the middle, an icon of a gear with a small brain symbol labeled 'Early AI Features'. At the bottom, a radiant line-art brain icon labeled 'Full AI LMS' with subtext 'Adaptive, Personalized, Predictive'. Background is white with very light blue (#EBF5FF at 10%) rounded rectangle cards for each stage. Connecting arrows between stages in thin gray lines. Clean flat design, no gradients, Inter font throughout.",
+      "A square infographic displaying a horizontal comparison table with three columns. Column headers read 'Machine Learning', 'NLP', and 'Adaptive Algorithms' in bold Inter font on a very light blue (#EBF5FF at 12%) background strip. Below each header, 3-4 bullet points listed as simple line-art icons with short labels: 'Pattern Recognition', 'Quiz Generation', 'Feedback Analysis' under ML; 'Text Understanding', 'Semantic Search', 'Auto-Grading' under NLP; 'Personalized Paths', 'Real-time Adjustment', 'Mastery Tracking' under Adaptive. White background, thin gray border dividers, flat minimalist style.",
+      "A portrait infographic showing a circular flow diagram with four connected nodes arranged in a diamond pattern. Starting from the top: 'Learner Interaction' (icon of a student at a desk), flowing right to 'AI Analysis' (brain circuit icon), flowing down to 'Personalized Content' (document with sparkle icon), flowing left to 'Assessment & Feedback' (checkmark in circle icon), and back up to 'Learner Interaction'. Each node sits inside a rounded rectangle card with white fill and very light green (#EBFBF0 at 12%) border. Thin curved arrows connect the nodes. Labels in Inter font. White background, clean flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 1,
@@ -28,8 +34,14 @@
     "content_angle": "Comparison article contrasting AI LMS with legacy systems across features, outcomes, costs, and implementation complexity.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:46.170Z",
-    "qc_update_summary": "95\u2192102. v2 fixes: injected 5 missing subtopics: definition, features, use cases, pricing, implementation; boosted \"ai lms comparison\" in body",
-    "qc_score": 102
+    "qc_update_summary": "95→102. v2 fixes: injected 5 missing subtopics: definition, features, use cases, pricing, implementation; boosted \"ai lms comparison\" in body",
+    "qc_score": 102,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a clean white background divided into two halves by a subtle vertical dashed line. The left half has a very light gray (#f5f5f5) tint and shows a minimalist line-art illustration of a static bookshelf with identical books and a clipboard with a red 'X' mark, labeled 'Traditional LMS' in Inter font. The right half has a very light blue (#EBF5FF at 12%) tint and shows a dynamic line-art illustration of interconnected nodes, a brain icon, and adaptive pathways with a green checkmark, labeled 'AI LMS' in Inter font. A bold 'VS' badge in a circle sits on the dividing line. The style is flat, clean, and modern with no gradients, using thin line art and Inter font.",
+    "content_image_ideas": [
+      "A portrait comparison infographic with two vertical columns side by side. The left column header reads 'Traditional LMS' in Inter font on a light gray (#f5f5f5) background strip, with rows showing simple line-art icons: a fixed path line (labeled 'Static Content'), a manual pen icon ('Manual Grading'), a single track rail ('One Path for All'), and a basic bar chart ('Completion Reports'). The right column header reads 'AI LMS' on a very light blue (#EBF5FF at 12%) strip, with matching rows: a branching tree icon ('Adaptive Paths'), a robot checkmark ('Auto-Grading'), multiple diverging paths ('Personalized'), and a predictive graph ('Mastery Analytics'). White background, thin gray row dividers, flat minimalist style.",
+      "A square infographic showing a cost-benefit matrix with four quadrants on a white background. The top-left quadrant (very light green #EBFBF0 at 10%) shows 'Lower Short-term Cost' with a dollar icon and 'Traditional LMS' label. The top-right quadrant (very light blue #EBF5FF at 10%) shows 'Higher ROI Long-term' with a trending-up arrow icon and 'AI LMS' label. The bottom-left shows 'Limited Scalability' with a locked icon. The bottom-right shows 'Scales with AI' with a growth graph icon. Bold quadrant labels in Inter font. Clean flat design, thin gray quadrant dividers, no gradients.",
+      "A portrait infographic showing a horizontal process flow with five steps connected by arrows, illustrating the transition from traditional to AI LMS. Step 1: 'Audit Current System' (magnifying glass icon). Step 2: 'Identify Gaps' (checklist with missing items). Step 3: 'Pilot AI Features' (rocket icon with small brain). Step 4: 'Train Staff' (people with gear icon). Step 5: 'Full Migration' (checkmark in star icon). Each step is a rounded rectangle card with white fill and alternating very light blue and very light green (#EBF5FF and #EBFBF0 at 12%) left borders. Inter font labels. White background, thin arrow connectors, flat style."
+    ]
   },
   {
     "cluster_no": 1,
@@ -44,8 +56,14 @@
     "content_angle": "Feature checklist breaking down must-have AI capabilities like adaptive learning, auto-grading, AI quiz generation, and analytics.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.068Z",
-    "qc_update_summary": "99\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 97
+    "qc_update_summary": "99→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background and a subtle very light blue (#EBF5FF at 10%) wave pattern along the bottom edge. In the center, seven minimalist line-art icons arranged in a horizontal row, each inside a small rounded square card with a very light blue or very light green (#EBFBF0 at 12%) border: a quiz paper with a sparkle ('Quiz Generation'), a branching path ('Adaptive Learning'), stacked flashcards ('FSRS Spaced Repetition'), a robot grading paper ('Auto-Grading'), a prediction chart ('Predictive Analytics'), a network graph ('Knowledge Graphs'), and a puzzle piece ('Integrations'). Above the icons, the text '7 Must-Have AI LMS Features' in bold Inter font in dark navy. Clean flat design, no gradients, thin line art throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing a feature checklist with seven rows. Each row has a rounded checkbox icon (some checked in green, others with a star), a line-art icon on the left, a feature name in bold Inter font, and a one-line description in regular Inter font. Features listed: 'AI Quiz Generation' (sparkle on document icon), 'Adaptive Learning Paths' (branching arrows), 'FSRS Spaced Repetition' (calendar with refresh icon), 'Auto-Grading' (robot pen icon), 'Predictive Analytics' (crystal ball with graph), 'Knowledge Graphs' (connected nodes), 'LTI/Canvas Integration' (puzzle pieces). Alternating row backgrounds of white and very light blue (#EBF5FF at 8%). Flat minimalist style, no gradients.",
+      "A square infographic displaying a circular radar/spider chart with seven axes radiating from the center, each labeled with an AI LMS feature name in Inter font. The axes are: 'Quiz Gen', 'Adaptive', 'FSRS', 'Grading', 'Analytics', 'Knowledge Graphs', 'Integrations'. Two overlapping polygon shapes: a smaller one in light gray labeled 'Traditional LMS' and a larger one in very light blue (#EBF5FF at 20%) labeled 'AI LMS (Mentron)'. White background, thin gray axis lines, clean Inter font labels. Flat design, no gradients.",
+      "A portrait infographic showing a vertical stack of three 'before and after' cards. Each card has a left side (light gray background) showing the old way and a right side (very light green #EBFBF0 at 12% background) showing the AI way. Card 1: '2 weeks building quizzes' vs '2 minutes AI-generated'. Card 2: 'One-size-fits-all curriculum' vs 'Personalized per learner'. Card 3: 'Manual grading stacks' vs 'Instant auto-grading with analytics'. Each side has a simple line-art icon. Bold Inter font for numbers, regular Inter for labels. White overall background, thin gray card borders, flat style."
+    ]
   },
   {
     "cluster_no": 1,
@@ -60,8 +78,14 @@
     "content_angle": "Technical deep-dive into AI LMS architecture, data pipelines, integrations, and scalability considerations for CTOs.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.265Z",
-    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 94
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a clean layered architecture diagram showing four horizontal layers stacked vertically, each as a rounded rectangle with a different subtle background tint. From top to bottom: 'Experience Layer' (very light green #EBFBF0 at 12%) with laptop and mobile line-art icons, 'Core LMS Services' (white) with course and enrollment icons, 'AI & Analytics Layer' (very light blue #EBF5FF at 12%) with brain and chart icons, 'Integration & Data Layer' (very light green #EBFBF0 at 10%) with API connector and database icons. Vertical arrows flow between layers. Title text 'AI LMS Architecture' in bold Inter font at the top in dark navy. Flat minimalist design, thin borders, no gradients.",
+    "content_image_ideas": [
+      "A portrait infographic showing a detailed four-layer architecture diagram. Each layer is a wide rounded rectangle card with a distinct icon set and bullet points. Layer 1 (top): 'Experience Layer' with icons for web app, mobile app, and LTI embed. Layer 2: 'Core Services' with icons for users, courses, enrollments, grades. Layer 3: 'AI Layer' with icons for ML engine, NLP, FSRS scheduler, recommendation engine. Layer 4 (bottom): 'Data & Integration' with icons for xAPI/LRS, SSO, SIS, HRIS connectors. Background alternates between white and very light blue (#EBF5FF at 8%). Inter font labels. Thin downward arrows between layers. Flat clean design.",
+      "A square infographic showing a data pipeline flow diagram on a white background. Five nodes connected by arrows from left to right: 'Learner Events' (lightning bolt icon) flows to 'Event Broker' (funnel icon) flows to 'Stream Processing' (gear icon) flows to 'Learning Record Store' (database icon) flows to 'AI Models & Dashboards' (brain + chart icon). Each node is a rounded rectangle card with a very light blue (#EBF5FF at 12%) background. Below the pipeline, a thin strip shows example events in small Inter font: 'quiz_submitted', 'flashcard_reviewed', 'video_watched'. Clean flat style, no gradients.",
+      "A portrait infographic showing a technology stack diagram arranged as horizontal blocks. From bottom to top: 'Cloud Infrastructure' (light gray block), 'Database Layer' (very light blue #EBF5FF at 10%) listing PostgreSQL, Redis, LRS, 'API & Microservices' (white) listing REST, GraphQL, Kafka, 'AI Services' (very light green #EBFBF0 at 10%) listing ML models, NLP, FSRS, 'Frontend' (white) listing React, Next.js, Canvas LTI. Each block has small line-art icons and Inter font labels. Blocks stack neatly with thin borders. White overall background, flat minimalist style."
+    ]
   },
   {
     "cluster_no": 1,
@@ -76,8 +100,14 @@
     "content_angle": "Stakeholder-focused explainer quantifying productivity, engagement, and analytics benefits of AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.466Z",
-    "qc_update_summary": "86\u219286. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 86
+    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 86,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, three stylized human figures represented as minimalist line-art busts arranged in a row, each inside a circle with a distinct subtle background tint. Left figure: a student with a graduation cap on a very light blue (#EBF5FF at 12%) circle, labeled 'Students' below in Inter font. Center figure: a teacher with a book on a very light green (#EBFBF0 at 12%) circle, labeled 'Teachers'. Right figure: an admin with a dashboard icon on a very light blue (#EBF5FF at 10%) circle, labeled 'Admins'. Above each figure, small line-art icons radiate outward showing benefits: stars and upward arrows for students, a clock and checkmark for teachers, a chart and shield for admins. Title text 'Who Benefits from AI LMS?' in bold Inter font at the top. Clean flat design, no gradients.",
+    "content_image_ideas": [
+      "A portrait infographic with three horizontal sections, one for each stakeholder. The 'Students' section (very light blue #EBF5FF at 10% background) shows four benefit cards in a 2x2 grid: '54% Higher Scores' (trending-up icon), 'Personalized Paths' (branching arrows), 'Better Retention' (brain with lock), 'Faster Mastery' (rocket). The 'Teachers' section (very light green #EBFBF0 at 10% background) shows: '5.9 hrs/week Saved' (clock icon), 'Auto-Grading' (robot pen), 'AI Quiz Gen' (sparkle doc), 'Data Insights' (chart). The 'Admins' section (white) shows: 'Lower Dropout' (shield), 'ROI Tracking' (dollar graph), 'Compliance' (checklist), 'Scalable Platform' (growth icon). Inter font throughout. Flat design, no gradients.",
+      "A square infographic showing a Venn diagram with three overlapping circles on a white background. Circle 1 (very light blue #EBF5FF at 15%): 'Student Benefits' listing engagement, personalization, retention. Circle 2 (very light green #EBFBF0 at 15%): 'Teacher Benefits' listing time savings, automation, insights. Circle 3 (very light blue #EBF5FF at 10%): 'Admin Benefits' listing ROI, compliance, analytics. The overlapping center area labeled 'AI-Powered Learning Platform' with a small brain icon. Inter font labels. Thin circle outlines in matching but slightly darker tones. Clean flat style, no gradients.",
+      "A portrait infographic showing a 'before and after' timeline for a typical school week. The left column (light gray #f5f5f5 background) shows 'Without AI LMS': Monday 'Manual quiz creation (3 hrs)', Tuesday 'One-size lecture', Wednesday 'Hand-grading papers (4 hrs)', Thursday 'Static reports', Friday 'No time for 1-on-1'. The right column (very light green #EBFBF0 at 10% background) shows 'With AI LMS': Monday 'AI quiz in 2 minutes', Tuesday 'Adaptive learning paths', Wednesday 'Auto-graded with feedback', Thursday 'Real-time analytics dashboard', Friday 'Personalized student support'. Each row has a simple line-art icon. Inter font. Flat clean design."
+    ]
   },
   {
     "cluster_no": 1,
@@ -92,8 +122,14 @@
     "content_angle": "Guide to common AI LMS pricing models (per learner, per institution, freemium) and budgeting tips.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.635Z",
-    "qc_update_summary": "93\u219299. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 99
+    "qc_update_summary": "93→99. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 99,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, three pricing model illustrations arranged horizontally as clean card shapes. The left card (very light green #EBFBF0 at 12% border) shows a single person icon with a price tag, labeled 'Per Learner' in Inter font. The center card (very light blue #EBF5FF at 12% border) shows a building icon with a flat fee tag, labeled 'Per Institution'. The right card (white with thin gray border) shows a free tag with a small star upgrade icon, labeled 'Freemium'. Below the cards, a subtle horizontal line graph trending upward in thin blue line art representing ROI. Title text 'AI LMS Pricing Models' in bold Inter font at the top in dark navy. Flat minimalist design, no gradients, Inter font throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing a pricing comparison table with three columns on a white background. Column headers in rounded rectangle strips: 'Per Learner' (very light blue #EBF5FF at 12%), 'Per Institution' (very light green #EBFBF0 at 12%), 'Freemium' (light gray). Rows show: 'Best For' (startup icon, university icon, testing icon), 'Cost Range' ($3-6/mo, $3K-60K/yr, Free-$500/mo), 'Scales With' (users icon, fixed icon, usage icon), 'AI Features' (full, tiered, limited), 'Example Platforms' (Absorb, Docebo, TalentLMS). Each cell has a small line-art icon and Inter font text. Thin gray row dividers. Flat clean style, no gradients.",
+      "A square infographic showing a cost calculator visualization on a white background. A large central circle labeled 'Your AI LMS Budget' in bold Inter font, with five smaller circles radiating outward connected by thin lines: 'License Fees' (dollar icon), 'Setup & Training' (wrench icon), 'Content Migration' (folder-move icon), 'AI Feature Add-ons' (brain icon), 'Ongoing Support' (headset icon). Each outer circle has a very light blue (#EBF5FF at 12%) fill. Small percentage labels (e.g., '40%', '15%', '10%', '20%', '15%') next to each node. Inter font throughout. Flat design, no gradients.",
+      "A portrait infographic showing a stacked bar chart comparing total cost of ownership over 3 years. Two bars side by side: 'Traditional LMS' (light gray #e8e8e8 fill) and 'AI LMS' (very light blue #EBF5FF at 25% fill). Each bar is segmented into: Year 1 (labeled with dollar range), Year 2, Year 3. A dotted trend line above shows 'ROI Break-even' point at Year 2 with a small flag icon. Below, three key takeaways listed as bullet points with line-art icons: 'AI LMS costs 20-40% more upfront', 'ROI positive within 18-24 months', '3-year savings from automation'. Inter font. White background, flat minimalist style."
+    ]
   },
   {
     "cluster_no": 1,
@@ -108,8 +144,14 @@
     "content_angle": "Roundup comparing leading AI LMS providers with a feature and pricing matrix.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:24.825Z",
-    "qc_update_summary": "87\u219287. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 87
+    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 87,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, five podium-style cards arranged in a slight arc, each representing a platform. The cards have alternating very light blue (#EBF5FF at 12%) and very light green (#EBFBF0 at 12%) top border strips. Each card shows a minimalist line-art platform icon at top and the name below in Inter font: 'Mentron', 'Canvas', 'Moodle', 'Brightspace', 'Docebo'. The Mentron card is slightly elevated and has a small star badge. Above the cards, text 'Best AI LMS Platforms 2026' in bold Inter font in dark navy. Below, a thin horizontal row of five star rating icons. Clean flat design, no gradients, professional and modern.",
+    "content_image_ideas": [
+      "A portrait infographic showing a feature comparison matrix with five columns (one per platform) and eight rows. Column headers: 'Mentron' (very light blue #EBF5FF at 12%), 'Canvas', 'Moodle', 'Brightspace', 'Docebo' on white. Rows represent features: 'AI Assessment', 'Adaptive Learning', 'FSRS Flashcards', 'Auto-Grading', 'Knowledge Graphs', 'Analytics', 'Canvas Integration', 'Pricing Flexibility'. Each cell contains either a green checkmark icon, a gray dash (missing), or a yellow warning icon (basic). Inter font text. Thin gray grid lines. White background, flat style, no gradients.",
+      "A square infographic showing a scoring radar chart with six axes on a white background. Axes labeled: 'AI Depth', 'Ease of Use', 'Analytics', 'Integrations', 'Pricing', 'Support' in Inter font. Two overlapping hexagons: a larger one in very light blue (#EBF5FF at 20%) for 'Mentron' and a smaller one in light gray for 'Traditional LMS Average'. Legend at the bottom with color-coded dots. Clean thin gray axis lines radiating from center. Inter font labels. Flat minimalist design, no gradients.",
+      "A portrait infographic showing a decision flowchart for choosing an AI LMS platform. Starting from a top diamond shape 'What is your institution type?', three paths branch down: 'K-12 School' (leads to 'Focus: Ease of Use + Parent Portal'), 'University' (leads to 'Focus: LTI Integration + Research Analytics'), 'Corporate' (leads to 'Focus: Compliance + ROI Tracking'). Each endpoint then connects to recommended platform strengths. All shapes are rounded rectangles or diamonds with very light blue (#EBF5FF at 10%) or very light green (#EBFBF0 at 10%) fills. Inter font labels, thin connector arrows. White background, flat style."
+    ]
   },
   {
     "cluster_no": 1,
@@ -124,8 +166,14 @@
     "content_angle": "Strategy piece for small EdTech founders choosing and positioning AI LMS in competitive markets.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:47.128Z",
-    "qc_update_summary": "91\u2192101. v2 fixes: injected 1 missing subtopics: definition; injected LSI terms: machine learning, automation, algorithm, NLP; boosted \"edtech startup lms\" in conclusion; boosted \"edtech startup lms\" in body",
-    "qc_score": 101
+    "qc_update_summary": "91→101. v2 fixes: injected 1 missing subtopics: definition; injected LSI terms: machine learning, automation, algorithm, NLP; boosted \"edtech startup lms\" in conclusion; boosted \"edtech startup lms\" in body",
+    "qc_score": 101,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a small rocket ship launching from a laptop screen, with small sparkle and star icons around it representing a startup taking off. The laptop base has a subtle very light blue (#EBF5FF at 12%) reflection. To the left of the laptop, three small line-art icons arranged vertically: a gear ('AI Features'), a dollar sign in a circle ('Affordable'), and a plug ('Canvas Integration'). To the right, an upward trending arrow graph. Title text 'AI LMS for Startups' in bold Inter font at the top in dark navy. A subtle very light green (#EBFBF0 at 8%) arc sweeps behind the rocket. Clean flat design, no gradients, Inter font throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing a side-by-side comparison table with two columns. Left column header: 'Enterprise AI LMS' (light gray background) with rows: '$50K+/year', 'Months to deploy', 'Custom contracts', 'Dedicated support team', 'Feature bloat'. Right column header: 'Startup AI LMS (Mentron)' (very light blue #EBF5FF at 12%) with rows: '$5K-$15K/year', 'Days to deploy', 'Self-service + help', 'Community + chat support', 'Lean feature set'. Each row has a simple line-art icon. A green checkmark highlights the startup column. Inter font text. Thin gray row dividers. White background, flat style.",
+      "A square infographic showing a four-step startup launch timeline on a white background. Four rounded rectangle cards connected by arrows in a horizontal row: Step 1 'Sign Up' (person with plus icon), Step 2 'Connect Canvas' (plug icon), Step 3 'Upload Content' (upload cloud icon), Step 4 'Go Live' (rocket icon). Below each card, a time label: '5 min', '15 min', '30 min', 'Day 1'. Cards alternate between very light blue (#EBF5FF at 12%) and very light green (#EBFBF0 at 12%) backgrounds. Inter font labels. Thin arrow connectors. Flat minimalist design, no gradients.",
+      "A portrait infographic showing a competitive positioning matrix as a 2x2 grid on a white background. The x-axis is labeled 'Price' (low to high) and y-axis is labeled 'AI Capability' (basic to advanced) in Inter font. Four quadrant labels: 'Budget Basic' (bottom-left, light gray), 'Premium Power' (top-right, light gray), 'Startup Sweet Spot' (top-left, very light green #EBFBF0 at 15%), 'Overpriced Basic' (bottom-right, light gray). Small platform icons placed in relevant quadrants: Mentron in 'Startup Sweet Spot', Docebo in 'Premium Power', basic tools in 'Budget Basic'. Inter font axis labels and quadrant names. Flat clean style, no gradients."
+    ]
   },
   {
     "cluster_no": 1,
@@ -140,8 +188,14 @@
     "content_angle": "Exploration of generative AI use cases inside LMS, including assistants, content generation, and feedback.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.021Z",
-    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 94
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a large minimalist line-art brain icon with a small sparkle/wand icon touching it, representing generative AI enhancing learning. From the brain, five thin lines radiate outward to five small icons arranged in a semicircle below: a chat bubble ('AI Assistants'), a document with pen ('Content Gen'), flashcards ('FSRS Cards'), a grading checkmark ('Auto-Grading'), and a mind map network ('Mind Maps'). The radiating lines and icons sit on a very subtle very light blue (#EBF5FF at 8%) circular backdrop. Title text 'Generative AI in LMS' in bold Inter font at the top in dark navy. Clean flat design, no gradients, Inter font throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing a 'Beyond Chatbots' spectrum with five horizontal bars of increasing length, stacked vertically. Each bar represents a generative AI capability with a line-art icon on the left and label in Inter font. From shortest to longest: 'Basic Chatbots' (light gray), 'Content Generation' (light gray), 'AI Quiz Creation' (very light blue #EBF5FF at 15%), 'Auto-Grading & Feedback' (very light blue #EBF5FF at 20%), 'Adaptive Learning Ecosystem' (very light green #EBFBF0 at 20%). A vertical dashed line marks 'Beyond Chatbots' threshold. Inter font labels on each bar. White background, flat style, no gradients.",
+      "A square infographic showing a PDF-to-quiz conversion process flow on a white background. Five steps connected by arrows in a zigzag pattern: Step 1 'Upload PDF' (document upload icon) at top-left, Step 2 'AI Analyzes Content' (brain scanning icon) at top-right, Step 3 'Extract Key Concepts' (magnifying glass on text) at middle-right, Step 4 'Generate Questions' (quiz paper with sparkle) at middle-left, Step 5 'Review & Publish' (checkmark in circle) at bottom-center. Steps 3-5 have very light blue (#EBF5FF at 12%) card backgrounds. Step 1-2 have white backgrounds with thin borders. Inter font labels. Thin arrow connectors. Flat clean design.",
+      "A portrait infographic showing three rows, each comparing a traditional approach (left, light gray) with a generative AI approach (right, very light green #EBFBF0 at 12%). Row 1: 'Static Flashcards' vs 'FSRS Adaptive Flashcards' with calendar icons showing fixed vs dynamic scheduling. Row 2: 'Manual Mind Mapping' vs 'AI-Generated Mind Maps' with hand-drawn vs clean auto-generated map icons. Row 3: 'Generic Feedback' vs 'Personalized AI Feedback' with a template paper vs a tailored comment icon. Each comparison has a small arrow pointing right with a '10x' or '30% better' label. Inter font throughout. White background, flat minimalist style, no gradients."
+    ]
   },
   {
     "cluster_no": 1,
@@ -153,11 +207,17 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
-    "content_angle": "Trend report summarizing key AI LMS developments for the next 3\u20135 years.",
+    "content_angle": "Trend report summarizing key AI LMS developments for the next 3–5 years.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.201Z",
-    "qc_update_summary": "89\u219289. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 89
+    "qc_update_summary": "89→89. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 89,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a forward-pointing arrow or chevron shape made of connected dots and lines, resembling both a trend graph and a network, suggesting the future of learning. Along the arrow path, six small line-art icons are placed: a brain ('AI'), a micro chip ('Microlearning'), a skills badge ('Skills-Based'), an eye ('Analytics'), a people group ('Collaboration'), and a shield ('Privacy'). The arrow sits on a very subtle very light blue (#EBF5FF at 8%) gradient-free backdrop. Title text 'AI LMS Trends 2026-2030' in bold Inter font at the top in dark navy. Clean flat design, no gradients, Inter font throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing a vertical timeline from 2024 to 2030 with six milestone markers. Each milestone is a rounded rectangle card with a line-art icon and Inter font label. 2024: 'Basic AI Features' (simple gear icon, light gray). 2025: 'Adaptive Learning Mainstream' (branching path, very light blue #EBF5FF at 12%). 2026: 'Agentic AI Orchestrators' (robot brain, very light blue). 2027: 'Skills-Based Ecosystems' (skills badge, very light green #EBFBF0 at 12%). 2028: 'Predictive Learner Journeys' (crystal ball, very light green). 2030: 'Fully Autonomous AI Mentors' (star brain, very light green at 15%). Thin vertical connecting line. White background, flat style.",
+      "A square infographic showing a trend comparison table on a white background. Three columns: 'Trend' (bold Inter font), 'Traditional LMS Response' (light gray background), 'AI LMS Response' (very light blue #EBF5FF at 12% background). Five rows: 'Personalization' ('Fixed paths' vs 'Agentic AI paths'), 'Content Format' ('Long modules' vs 'Microlearning bursts'), 'Assessment' ('Static quizzes' vs 'AI-generated adaptive'), 'Analytics' ('Completion reports' vs 'Predictive insights'), 'Skills Focus' ('Certificate-based' vs 'Competency-verified'). Each cell has a small line-art icon. Inter font text. Thin gray row dividers. Flat clean design, no gradients.",
+      "A portrait infographic showing five trend prediction cards arranged in a 2-3 grid pattern on a white background. Each card is a rounded rectangle with alternating very light blue (#EBF5FF at 10%) and very light green (#EBFBF0 at 10%) backgrounds. Card 1: 'Agentic AI' (autonomous robot icon, '72% enterprise adoption by 2026'). Card 2: 'Microlearning' (bite-sized module icon, '50% better retention'). Card 3: 'Skills Graphs' (connected nodes icon, 'Shift from courses to competencies'). Card 4: 'Predictive Analytics' (trending chart icon, 'Early risk detection'). Card 5: 'Privacy-First AI' (shield icon, 'Ethical AI governance'). Each card has a bold Inter font title and small description. Flat minimalist style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -172,8 +232,14 @@
     "content_angle": "In-depth guide to AI quiz generation workflows, best practices, and pitfalls.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.405Z",
-    "qc_update_summary": "91\u219291. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 91
+    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 91,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a teacher figure at a desk, with a stack of papers on the left feeding into a glowing brain circuit icon in the middle, and organized quiz cards with checkmarks emerging on the right. Thin dotted lines connect the input papers to the brain and then to the output quiz cards, forming a clear left-to-right workflow. The brain icon sits on a subtle very light blue (#EBF5FF at 12%) circular backdrop. Small sparkle icons float near the output cards. Title text 'AI Quiz Generator for Teachers' in bold Inter font at the top in dark navy (#1a2332). The overall style is flat, clean, and professional with no gradients, using thin line art, white, light blue (#EBF5FF at 10-12%), and very light green (#EBFBF0 at 10%) accent shapes scattered subtly near the corners.",
+    "content_image_ideas": [
+      "A portrait infographic showing the AI quiz generation workflow as a five-step horizontal process. Step 1: 'Upload Content' (PDF upload icon with upward arrow). Step 2: 'AI Analyzes' (brain with magnifying glass icon). Step 3: 'Questions Generated' (quiz paper with sparkle icon). Step 4: 'Teacher Reviews' (person with pencil editing icon). Step 5: 'Publish to Class' (send/paper-plane icon). Each step is a rounded rectangle card with alternating very light blue (#EBF5FF at 12%) and white backgrounds. Thin arrows connect each step. Labels in Inter font. White overall background, flat minimalist style, no gradients.",
+      "A square infographic showing an AI quiz maker feature checklist on a white background. Six rows, each with a rounded checkbox icon on the left, a line-art icon in the center, and a feature name and one-line description in Inter font on the right. Features listed: 'PDF & Video Input' (document icon), '5+ Question Types' (grid of question shapes), 'Bloom's Alignment' (pyramid with levels icon), 'Auto-Grading' (robot checkmark icon), 'Analytics Dashboard' (bar chart icon), 'LMS Integration' (puzzle piece icon). Alternating row backgrounds of white and very light blue (#EBF5FF at 8%). Flat clean style, no gradients.",
+      "A portrait infographic showing a 'Before vs After AI Quiz Generation' comparison in two columns. Left column header: 'Manual Process' on a light gray (#f5f5f5) strip, with timeline items: 'Write 20 questions (90 min)', 'Format in LMS (30 min)', 'Administer quiz (45 min)', 'Grade manually (60 min)', 'Analyze results (20 min)' -- total '245 min' in bold. Right column header: 'AI Quiz Generator' on a very light green (#EBFBF0 at 12%) strip, with: 'Generate from PDF (2 min)', 'Review & edit (10 min)', 'Auto-distribute (1 min)', 'Auto-graded (0 min)', 'Instant analytics (0 min)' -- total '13 min' in bold. Each row has a small line-art icon. Inter font. Flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -188,8 +254,14 @@
     "content_angle": "Benefits-focused article quantifying time savings and productivity gains from AI-based quiz creation.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.602Z",
-    "qc_update_summary": "98\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 85
+    "qc_update_summary": "98→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a large minimalist line-art clock icon with the right half replaced by a brain circuit symbol, representing time saved through AI. On the left of the clock, a tired teacher figure with a stack of papers and a small clock icon showing many hours. On the right of the clock, a refreshed teacher figure with a laptop showing a green checkmark and a spark icon, with a small clock icon showing saved hours. The left side has a very subtle light gray (#f8f8f8) tint and the right side has a very light green (#EBFBF0 at 10%) tint. Title text 'AI Quiz Generators Save Teachers Hours' in bold Inter font at the top in dark navy. Flat minimalist style, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing a weekly teacher time budget as a stacked horizontal bar chart. Two bars: 'Without AI Quiz Generator' (light gray #e8e8e8 fill, total 11.5 hrs) segmented into 'Question Writing 4 hrs', 'Formatting 1.5 hrs', 'Grading 5 hrs', 'Tracking Results 1 hr'. Second bar 'With AI Quiz Generator' (very light green #EBFBF0 at 25% fill, total 2.5 hrs) segmented into 'Review AI Output 1 hr', 'Minor Formatting 0.5 hr', 'Spot-Check Grades 0.5 hr', 'Analytics Review 0.5 hr'. A large callout badge showing '9 hrs saved/week' in bold Inter font sits between the bars. White background, flat style, Inter font, no gradients.",
+      "A square infographic showing five quantified benefit cards arranged in a 2-3 grid pattern on a white background. Card 1: '80-90% Less Writing Time' (pencil with downward arrow icon, very light blue #EBF5FF at 12% background). Card 2: 'Zero Manual Grading' (robot checkmark icon, very light green #EBFBF0 at 12% background). Card 3: 'Instant Feedback' (lightning bolt icon, white background). Card 4: 'Growing Question Bank' (stacked cards with plus icon, very light blue background). Card 5: 'Auto Analytics' (dashboard chart icon, very light green background). Each card is a rounded rectangle with a line-art icon at top, bold Inter font metric, and one-line description below. Flat style, no gradients.",
+      "A portrait infographic showing a compounding savings timeline across three semesters. Semester 1: 'Building the Bank' with a small bar showing '5 hrs/week saved' and an icon of a partially filled library (very light blue #EBF5FF at 10% background). Semester 2: 'Bank Growing' with a medium bar showing '7 hrs/week saved' and a half-filled library icon (very light green #EBFBF0 at 10% background). Semester 3: 'Full Compound' with a large bar showing '9 hrs/week saved' and a full library with sparkle icon (very light green #EBFBF0 at 15% background). An upward trending arrow connects all three. Inter font. White background, flat minimalist style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -204,8 +276,14 @@
     "content_angle": "Breakdown of modern question types and how AI LMS tools support them.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.790Z",
-    "qc_update_summary": "85\u219283. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 83
+    "qc_update_summary": "85→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 83,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, eight minimalist line-art icons arranged in a 2x4 grid, each inside a small rounded square card. The icons represent different question types: a list with radio buttons ('MCQ'), a toggle switch ('True/False'), a blank line in a sentence ('Fill-in-Blank'), a text box with lines ('Short Answer'), two column lines connecting ('Matching'), numbered steps ('Ordering'), a photo with pin markers ('Diagram Label'), and a branching tree ('Adaptive'). Cards alternate between very light blue (#EBF5FF at 12%) and very light green (#EBFBF0 at 12%) backgrounds. Title text 'Question Types Your AI LMS Should Support' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing Bloom's Taxonomy mapped to question types as a pyramid diagram on a white background. The pyramid has six horizontal layers from bottom to top: 'Remember' (very light blue #EBF5FF at 8%) listing MCQ, True/False, Fill-in-Blank. 'Understand' (very light blue #EBF5FF at 10%) listing Short Answer, Matching. 'Apply' (very light green #EBFBF0 at 8%) listing Scenario Questions, Ordering. 'Analyze' (very light green #EBFBF0 at 10%) listing Case Study, Diagram Labeling. 'Evaluate' (very light green #EBFBF0 at 12%) listing Assertion-Reason, Peer Review. 'Create' (very light green #EBFBF0 at 14%) listing Project-Based, Open Design. Each layer has small line-art icons. Inter font labels. Flat style, no gradients.",
+      "A square infographic showing a question type comparison table on a white background. Seven rows, each representing a question type. Columns: 'Type' (bold Inter font), 'Auto-Graded' (green check or amber partial icon), 'Bloom's Range' (colored bar), 'Best For' (one-line description). Types listed: MCQ, True/False, Fill-in-Blank, Short Answer, Matching, Scenario, Diagram. Auto-graded column shows full green checks for MCQ/TF/Fill/Matching, partial for Short Answer/Scenario, partial for Diagram. Header row on very light blue (#EBF5FF at 12%) background. Thin gray grid lines. Inter font text. Flat clean style, no gradients.",
+      "A portrait infographic showing adaptive question difficulty as a branching path diagram. A starting node 'Medium Question' at top center branches left and right. Left branch: 'Incorrect Answer' (red-tinted arrow) leads to 'Easier Question' with a simplified version icon, which branches again. Right branch: 'Correct Answer' (green-tinted arrow) leads to 'Harder Question' with a complex version icon, which branches again. Three levels of branching shown. Each node is a rounded rectangle card with a small line-art icon. Very light blue (#EBF5FF at 10%) background for correct paths, very light green (#EBFBF0 at 10%) for progression. Inter font labels. White overall background, flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -220,8 +298,14 @@
     "content_angle": "Guidelines for designing inclusive, bias-aware AI assessments.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:25.992Z",
-    "qc_update_summary": "85\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 85
+    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a balanced scale. The left pan holds a diverse group of student figures (different sizes representing different backgrounds), and the right pan holds a set of quiz papers with a brain icon. The scale is perfectly level, representing fairness. A subtle shield icon with a checkmark overlays the center of the scale beam. The left pan sits on a very light blue (#EBF5FF at 10%) circular backdrop and the right pan on a very light green (#EBFBF0 at 10%) backdrop. Title text 'Designing Fair & Bias-Free AI Assessments' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing the four dimensions of assessment fairness as four horizontal cards stacked vertically. Card 1: 'Representational Fairness' (people diversity icon, very light blue #EBF5FF at 10% background) with subtitle 'All groups reflected in content'. Card 2: 'Linguistic Fairness' (speech bubble with globe icon, very light green #EBFBF0 at 10% background) with subtitle 'Accessible across dialects and fluency levels'. Card 3: 'Predictive Fairness' (target with equal rings icon, white background) with subtitle 'Equal prediction accuracy across groups'. Card 4: 'Access Fairness' (open door with ramp icon, very light blue #EBF5FF at 10% background) with subtitle 'Equal platform access for all students'. Each card is a rounded rectangle with a line-art icon, bold Inter font title, and small description. Thin gray dividers. Flat style, no gradients.",
+      "A square infographic showing a bias audit checklist on a white background. Six checklist items arranged in a 2x3 grid of rounded rectangle cards. Each card has a checkbox icon, a bold Inter font title, and a one-line action. Items: 'Audit Source Material' (magnifying glass on document icon, very light blue #EBF5FF at 12%), 'Diversify Question Types' (multiple format icons, very light green #EBFBF0 at 12%), 'Use Semantic NLP Scoring' (brain with text icon, white), 'Run Subgroup Audits' (people with chart icon, very light blue), 'Show AI Confidence' (gauge/meter icon, very light green), 'Build Recourse Paths' (arrow to human icon, white). Flat minimalist style, no gradients, Inter font.",
+      "A portrait infographic showing a 'Biased vs Fair' comparison flow for AI quiz generation. Two vertical flows side by side. Left flow labeled 'Biased Pipeline' (light gray #f0f0f0 background): 'Homogeneous Training Data' flows to 'Culturally Skewed Questions' flows to 'Unequal Scoring' flows to 'Disparate Outcomes'. Red flag icons at each stage. Right flow labeled 'Fair Pipeline' (very light green #EBFBF0 at 12% background): 'Diverse Training Data' flows to 'Audited Question Generation' flows to 'Semantic + Human Review' flows to 'Equitable Outcomes'. Green checkmark icons at each stage. A crossed-out arrow between the two flows shows 'Intervention Point'. Inter font throughout. Flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -236,8 +320,14 @@
     "content_angle": "Overview of AI proctoring in LMS, pros/cons, and privacy considerations.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.189Z",
-    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 97
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a laptop with a shield icon overlaying its screen, representing secure online exams. Inside the shield, a small eye icon and a checkmark symbolize AI monitoring and exam integrity. To the left of the laptop, a student figure at a desk with a webcam dot active. To the right, three small floating icons: a fingerprint ('Identity Verification'), a lock ('Browser Lockdown'), and a chart ('Behavioral Analytics'). Very light blue (#EBF5FF at 10%) shapes behind the shield area. Title text 'Secure Online Exams with AI Proctoring' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing the three layers of AI proctoring as a layered stack diagram. Layer 1 (top): 'Identity Verification' (fingerprint and ID card icon, very light blue #EBF5FF at 12% background) with sub-items: 'Government ID Scan', 'Facial Biometric Match', 'Liveness Detection'. Layer 2 (middle): 'Session Monitoring' (eye and screen icon, white background) with sub-items: 'Gaze Tracking', 'Head Pose Estimation', 'Audio Detection', 'Object Detection', 'Browser Lockdown'. Layer 3 (bottom): 'Behavioral Analytics' (chart with flag icon, very light green #EBFBF0 at 12% background) with sub-items: 'Risk Score Generation', 'Flagged Incident Logging', 'Human Review Queue'. Each layer is a wide rounded rectangle card. Thin arrows between layers. Inter font. Flat style, no gradients.",
+      "A square infographic showing a comparison table of invigilation methods on a white background. Three columns: 'Traditional Invigilation' (light gray #f5f5f5 header), 'AI Proctoring (Rule-Based)' (very light blue #EBF5FF at 12% header), 'AI Proctoring (Adaptive)' (very light green #EBFBF0 at 12% header). Five comparison rows: 'Cost', 'Scalability', 'False Positives', 'Privacy Risk', 'Student Experience'. Each cell has a simple line-art icon and short label (e.g., 'High', 'Low', 'Medium'). Green checkmarks highlight the Adaptive column where it excels. Thin gray grid lines. Inter font. Flat minimalist style, no gradients.",
+      "A portrait infographic showing a privacy compliance checklist for AI proctoring on a white background. Five regulation cards stacked vertically, each as a rounded rectangle with a line-art icon and regulation details in Inter font. Card 1: 'GDPR' (EU flag icon, very light blue #EBF5FF at 10%) listing 'Explicit consent, right to erasure'. Card 2: 'FERPA' (US building icon, white) listing 'Student record protections'. Card 3: 'India DPDP Act' (document icon, very light green #EBFBF0 at 10%) listing 'Consent-based, purpose limitation'. Card 4: 'CCPA/CPRA' (shield icon, very light blue #EBF5FF at 10%) listing 'Opt-out, biometric data protection'. Card 5: 'PDPA' (globe icon, white) listing 'Cross-border transfer rules'. Thin gray dividers. Flat clean style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -252,8 +342,14 @@
     "content_angle": "Educational article on assessment types and how AI LMS supports each.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.384Z",
-    "qc_update_summary": "92\u219290. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 90
+    "qc_update_summary": "92→90. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 90,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, two contrasting assessment icons side by side connected by a bidirectional arrow. On the left, a small magnifying glass icon with a growing plant sprout underneath, labeled 'Formative' in Inter font on a very light green (#EBFBF0 at 12%) circular backdrop -- representing assessment FOR learning and growth. On the right, a certificate or diploma icon with a checkmark, labeled 'Summative' in Inter font on a very light blue (#EBF5FF at 12%) circular backdrop -- representing assessment OF learning. Above both, a thin curved line with small data points connects them, labeled 'Continuous Assessment Loop'. Title text 'Formative vs Summative Assessment in AI LMS' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing a detailed side-by-side comparison of formative and summative assessment. Two columns: 'Formative Assessment' (very light green #EBFBF0 at 10% header) and 'Summative Assessment' (very light blue #EBF5FF at 10% header). Comparison rows: 'Purpose' ('Diagnose gaps during learning' vs 'Measure achievement after learning'), 'Timing' ('During unit' vs 'End of unit'), 'Stakes' ('Low' vs 'High'), 'Examples' ('Weekly quizzes, exit tickets, flashcards' vs 'Final exams, certifications, projects'), 'AI Role' ('Auto-generate, instant feedback' vs 'AI grading, analytics, security'), 'Frequency' ('Daily/Weekly' vs 'Monthly/Quarterly'). Each row has small line-art icons. Inter font. White background. Thin gray row dividers. Flat style, no gradients.",
+      "A square infographic showing the continuous assessment feedback loop as a circular diagram with four nodes on a white background. Starting from the top and moving clockwise: 'Teach Lesson' (open book icon) flows to 'Formative Check' (quiz icon with magnifying glass, very light green #EBFBF0 at 12% background) flows to 'AI Analytics' (dashboard chart icon, very light blue #EBF5FF at 12% background) flows to 'Adjust Instruction' (pencil editing a path icon) flows back to 'Teach Lesson'. A secondary path from 'AI Analytics' flows down to 'Summative Assessment' (certificate icon, very light blue background) which then flows to 'Final Analytics'. Each node is a rounded rectangle card. Thin curved arrows. Inter font labels. Flat style, no gradients.",
+      "A portrait infographic showing how AI transforms each assessment type as two vertical flows. Left flow labeled 'AI + Formative' (very light green #EBFBF0 at 10% background): three cards stacked: 'Auto Quiz Generation from PDFs' (document-to-quiz icon), 'FSRS Flashcard Review' (spaced calendar icon), 'Real-Time Analytics' (live dashboard icon). Right flow labeled 'AI + Summative' (very light blue #EBF5FF at 10% background): three cards: 'AI Grading at Scale' (robot grading icon), 'Anti-Cheat & Proctoring' (shield with lock icon), 'Post-Exam Insights' (chart with magnifying glass icon). Each card is a white rounded rectangle with a thin border and a line-art icon. Inter font. Flat minimalist style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -268,8 +364,14 @@
     "content_angle": "Technical-yet-accessible explanation of NLP-based auto-grading.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.588Z",
-    "qc_update_summary": "84\u219284. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 84
+    "qc_update_summary": "84→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 84,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a student's written answer on paper flowing into a document scanner, then through a brain circuit icon (representing NLP processing), and emerging as a scored response with a rubric breakdown and feedback comment on the right. The flow moves left to right with thin dotted connector lines. The brain/NLP icon sits on a very light blue (#EBF5FF at 12%) circular backdrop. Small icons near the output show a score badge, a rubric checklist, and a feedback speech bubble. Title text 'Auto-Grading Short Answers with AI' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing the five-step AI auto-grading pipeline as a vertical flow. Step 1: 'Preprocessing' (text cleanup icon, white card) -- 'Clean, normalize, tokenize student text'. Step 2: 'Encoding' (transformer layers icon, very light blue #EBF5FF at 12% card) -- 'Convert to semantic vector embeddings'. Step 3: 'Semantic Comparison' (two overlapping circles icon, white card) -- 'Cosine similarity against model answer'. Step 4: 'Rubric Evaluation' (rubric grid icon, very light green #EBFBF0 at 12% card) -- 'Score against each rubric criterion'. Step 5: 'Feedback Generation' (speech bubble with checkmark icon, white card) -- 'Generate explanation and improvement hints'. Thin downward arrows connect steps. Inter font labels. White background, flat style, no gradients.",
+      "A square infographic showing semantic similarity scoring as a visual concept diagram on a white background. Three text samples at the top: 'Student Answer', 'Model Answer 1', 'Model Answer 2', each as a small rounded rectangle with line-art text lines. Below, a vector space visualization shows three dots: student (blue), model 1 (green, closer), model 2 (gray, farther). A line between student and model 1 labeled 'High Similarity (0.87)' and between student and model 2 labeled 'Low Similarity (0.32)'. A threshold line labeled 'Human Review Threshold (0.60)' runs across the space. Very light blue (#EBF5FF at 10%) background for the vector space area. Inter font. Flat style, no gradients.",
+      "A portrait infographic showing 'Keyword Matching vs Semantic NLP Scoring' as a side-by-side comparison. Left column (light gray #f5f5f5 header): 'Keyword Matching' shows three student answers with red X marks -- 'Photosynthesis converts light to chemical energy' (failed: missing word 'sunlight'), 'Plants use sunlight to make glucose' (failed: different phrasing), 'The process uses solar energy for food production' (failed: no keyword match). Right column (very light green #EBFBF0 at 12% header): 'Semantic NLP Scoring' shows the same three answers with green checkmarks -- all marked as 'Correct: semantically equivalent'. Each answer is a small card with a line-art icon. Inter font. White background. Flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -284,8 +386,14 @@
     "content_angle": "Operational guide on building and maintaining AI-ready question banks.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.778Z",
-    "qc_update_summary": "85\u219277. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 77
+    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 77,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a large organized library filing cabinet with labeled drawers, representing a well-structured question bank. Each drawer has a small tag icon with labels like 'MCQ', 'Bloom L3', 'Biology', and difficulty indicators. A small brain icon with a funnel sits above the cabinet, representing AI pulling questions intelligently. To the right, an output tray shows a balanced quiz paper emerging with questions selected from different drawers. Very light blue (#EBF5FF at 10%) shapes behind the cabinet area. Title text 'Question Bank Management Best Practices' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing the essential tag categories for a question bank as a tag cloud / metadata card layout on a white background. Eight tags arranged around a central question card icon. Each tag is a rounded rectangle with a line-art icon and Inter font label: 'Topic/Subtopic' (folder icon, very light blue #EBF5FF at 12%), 'Learning Objective ID' (target icon, white), 'Bloom's Level' (pyramid icon, very light green #EBFBF0 at 12%), 'Difficulty Level' (mountain/gradient icon, very light blue), 'Format Type' (MCQ/TF icons, white), 'Source' (origin icon, very light green), 'Last Reviewed Date' (calendar icon, very light blue), 'Usage Count' (counter icon, white). Thin lines connect each tag to the central question. Inter font. Flat style, no gradients.",
+      "A square infographic showing question bank quality control as a three-phase cycle diagram on a white background. Phase 1: 'Create' (pencil with sparkle icon, very light blue #EBF5FF at 12% background) -- 'AI generates from course content'. Phase 2: 'Review' (magnifying glass with person icon, white background) -- 'Instructor edits, tags, approves'. Phase 3: 'Analyze' (chart with recycling arrow icon, very light green #EBFBF0 at 12% background) -- 'Usage analytics flag stale items'. Curved arrows form a circular flow between phases. Below the cycle, a small callout: 'Retire items with usage >50 and difficulty index <0.2'. Inter font. Flat minimalist style, no gradients.",
+      "A portrait infographic showing a randomized quiz assembly flow on a white background. At the top, a large question bank icon (filing cabinet with many cards). Below, filter criteria shown as small tag chips: 'Topic: Photosynthesis', 'Difficulty: 2-3', 'Format: MCQ+Short Answer', 'Bloom: Apply'. An arrow flows down to a 'Randomizer' gear icon, which then branches into three quiz variants (Quiz A, Quiz B, Quiz C) shown as three slightly different quiz papers, each with the same difficulty distribution but different questions. Each variant is a white rounded card with a small line-art icon. Very light green (#EBFBF0 at 10%) accent behind the variants. Inter font labels. Flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -300,8 +408,14 @@
     "content_angle": "How to use assessment analytics dashboards to refine questions and exams.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:26.975Z",
-    "qc_update_summary": "86\u219286. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 86
+    "qc_update_summary": "86→86. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 86,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a dashboard screen showing a bar chart with one highlighted red bar among green bars, representing a problematic question identified by AI analytics. A magnifying glass icon hovers over the red bar. Below the chart, small data cards show metrics: difficulty index, discrimination index, and a flag icon. To the right, a small gear icon with an upward arrow represents the improvement cycle. Very light blue (#EBF5FF at 10%) shapes behind the dashboard. Title text 'Using AI Analytics to Improve Assessments' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing item analysis metrics explained as three vertical metric cards on a white background. Card 1: 'Difficulty Index (P-Value)' (horizontal gauge icon, very light blue #EBF5FF at 12% background) with a horizontal scale from 0 to 1, green zone marked 0.30-0.70 labeled 'Ideal Range', left zone '<0.30 Too Hard' in amber, right zone '>0.70 Too Easy' in gray. Card 2: 'Discrimination Index (D-Value)' (two diverging arrows icon, white background) with rating scale: 'Excellent >0.40', 'Good 0.30-0.39', 'Acceptable 0.20-0.29', 'Poor <0.20' with green-to-red indicators. Card 3: 'Distractor Analysis' (pie chart with segments icon, very light green #EBFBF0 at 12% background) showing 'Functioning' vs 'Non-functioning' distractors. Inter font throughout. Flat style, no gradients.",
+      "A square infographic showing a question heat map dashboard on a white background. A grid of 20 small squares (representing exam questions) in a 4x5 layout, each colored by performance: green squares for 'Well-performing questions', amber squares for 'Needs review', one red square for 'Flagged for removal'. A legend at the bottom maps colors to discrimination ranges. To the right, a small sidebar card shows the flagged question's details: 'Q14: P=0.18, D=0.05 -- Recommend rewrite'. Very light blue (#EBF5FF at 8%) background behind the grid. Inter font. Flat minimalist style, no gradients.",
+      "A portrait infographic showing the assessment improvement cycle as a four-step vertical loop. Step 1: 'Run Assessment' (quiz paper icon, white card). Step 2: 'Collect Analytics' (data stream icon, very light blue #EBF5FF at 12% card) with sub-items: 'P-Value', 'D-Value', 'Distractor Analysis'. Step 3: 'Identify Weak Items' (magnifying glass with flag icon, white card) with callout: 'Flag questions with D<0.20 or P<0.20'. Step 4: 'Revise or Retire' (pencil editing and trash can icons, very light green #EBFBF0 at 12% card). A curved arrow loops from Step 4 back to Step 1, labeled 'Continuous Improvement'. Each step is a rounded rectangle with thin borders. Inter font. Flat style, no gradients."
+    ]
   },
   {
     "cluster_no": 2,
@@ -316,8 +430,14 @@
     "content_angle": "Comparison of question formats and how AI supports each.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.169Z",
-    "qc_update_summary": "78\u219278. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 78
+    "qc_update_summary": "78→78. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 78,
+    "hero_image_idea": "A wide landscape hero banner (1200x630 aspect ratio) with a white background. In the center, a minimalist line-art illustration of a balance scale with two question formats. The left pan holds an essay/text document icon with thought bubble lines (representing open-ended questions) on a very light green (#EBFBF0 at 12%) circular backdrop. The right pan holds a checklist with radio buttons icon (representing objective questions) on a very light blue (#EBF5FF at 12%) circular backdrop. The scale is perfectly level, indicating both have value. A small brain/AI icon sits on the fulcrum beam representing AI support for both. Title text 'Open-Ended vs Objective Questions in AI LMS' in bold Inter font at the top in dark navy. Clean flat design, no gradients, thin line art.",
+    "content_image_ideas": [
+      "A portrait infographic showing a detailed side-by-side comparison table on a white background. Two columns: 'Objective Questions' (very light blue #EBF5FF at 12% header) and 'Open-Ended Questions' (very light green #EBFBF0 at 12% header). Comparison rows with line-art icons: 'Format' ('MCQ, T/F, Fill-in-Blank, Matching' vs 'Short Answer, Essay, Case Study'), 'What It Measures' ('Recall & Recognition' vs 'Critical Thinking & Synthesis'), 'Grading Speed' ('Instant auto-grade' vs 'AI-assisted rubric scoring'), 'Bloom's Range' ('Remember - Apply' vs 'Apply - Create'), 'Best For' ('Broad sampling, compliance' vs 'Deep understanding, skills'), 'AI Role' ('Generate from PDFs, auto-grade' vs 'Rubric scoring, feedback generation'). Thin gray row dividers. Inter font. Flat style, no gradients.",
+      "A square infographic showing a decision flowchart for choosing the right question format on a white background. Starting from a top diamond node: 'What is your learning objective?' Three branches flow down. Branch 1: 'Recall or Comprehension' leads to 'Use Objective Questions' (checklist icon, very light blue #EBF5FF at 12% card) with examples: 'MCQ for vocabulary, T/F for concepts'. Branch 2: 'Application or Analysis' leads to 'Use Either -- Mix Both' (blended icon, white card) with note: 'MCQ for breadth + Short Answer for depth'. Branch 3: 'Evaluation or Creation' leads to 'Use Open-Ended' (essay icon, very light green #EBFBF0 at 12% card) with examples: 'Essay for argument, Case study for synthesis'. Flowchart nodes are rounded rectangles. Thin connector arrows. Inter font. Flat style, no gradients.",
+      "A portrait infographic showing how AI bridges the gap between open-ended and objective questions as a convergence diagram. Left side: 'Traditional Approach' with two separate tracks -- 'Objective: Fast but shallow' (speedometer icon, light gray) and 'Open-Ended: Deep but slow' (depth/anchor icon, light gray). Right side: 'AI-Enhanced Approach' (very light green #EBFBF0 at 12% background) where both tracks merge into a single unified path: 'Fast AND Deep'. Three feature cards show how: 'AI Auto-Grades Open Responses' (robot grading essay icon), 'AI Generates Higher-Order MCQs' (brain on quiz icon), 'Rubric-Based Feedback for All Formats' (rubric with checkmarks icon). Inter font throughout. White background, flat minimalist style, no gradients."
+    ]
   },
   {
     "cluster_no": 3,
@@ -332,8 +452,14 @@
     "content_angle": "Hands-on tutorial for connecting an AI LMS like Mentron to Canvas.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:49.218Z",
-    "qc_update_summary": "96\u2192100. v2 fixes: injected 2 missing subtopics: grade sync, data migration; boosted \"mentron canvas\" in intro; boosted \"mentron canvas\" in body",
-    "qc_score": 100
+    "qc_update_summary": "96→100. v2 fixes: injected 2 missing subtopics: grade sync, data migration; boosted \"mentron canvas\" in intro; boosted \"mentron canvas\" in body",
+    "qc_score": 100,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a clean, flat-illustrated integration workflow between Canvas LMS and an AI platform. On the left side, draw a simplified Canvas LMS dashboard panel in white with light blue (#EBF5FF) card backgrounds, showing a course module list and a 'Connect AI Tool' button. In the center, a prominent horizontal arrow or connector line in a soft blue tone links Canvas to a stylized AI brain icon inside a rounded rectangle. On the right side, show the AI LMS panel with auto-generated quiz cards, a grading badge, and a knowledge graph thumbnail. Background is pure white with very subtle light blue (#EBF5FF) geometric shapes in the corners. Use Inter font for any labels like 'Canvas LMS', 'AI Engine', 'Auto-Grade'. The overall feel should be technical yet approachable, minimalist, and professional.",
+    "content_image_ideas": [
+      "A step-by-step process diagram showing the Canvas LMS AI integration flow as a numbered horizontal timeline. Five steps shown as clean rounded rectangles connected by arrows: (1) Admin Login with a key icon, (2) Install LTI App with a puzzle piece icon, (3) Configure API Keys with a gear icon, (4) Select Courses with a checklist icon, (5) Activate AI Features with a sparkles icon. Each step box has a white background with a thin light blue (#EBF5FF) border, step number in a small blue circle on the left. Background is white. All text in Inter font. Clean flat style with no shadows or gradients.",
+      "A comparison infographic showing 'Before AI Integration' vs 'After AI Integration' side by side. Left column on a very light red or neutral background shows a teacher manually creating quizzes, grading papers, and tracking students with spreadsheet icons -- small clock icons indicating hours spent. Right column on a very light green (#EBFBF0) background shows the same tasks automated: an AI quiz generator icon, auto-grading checkmark badge, and a predictive analytics dashboard thumbnail. A central divider with a 'VS' badge. White card backgrounds for each task row. Inter font for labels. Minimalist line-art icons throughout.",
+      "A technical architecture diagram showing the data flow between Canvas LMS, LTI 1.3 layer, and the AI LMS engine. Three main blocks arranged horizontally: Canvas LMS (with course, gradebook, and roster sub-elements), LTI 1.3 Gateway (central connector with lock icon for security), and AI LMS Platform (with quiz generator, auto-grader, and analytics sub-elements). Arrows show bidirectional data flow for grade passback and roster sync. Each block is a white rounded rectangle with light blue (#EBF5FF) header. Background is white. Inter font for all labels. Clean flat style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -345,11 +471,17 @@
     "search_volume": "Est. Low",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.instructure.com/resources/blog; https://community.canvaslms.com/t5/The-Product-Blog/bg-p/thespotlightblog/label-name/integrations; https://www.d2l.com/blog/learning-platform-integrations/",
-    "content_angle": "Buyer\u2019s guide comparing AI add-ons and LTI apps for Canvas.",
+    "content_angle": "Buyer’s guide comparing AI add-ons and LTI apps for Canvas.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.372Z",
-    "qc_update_summary": "93\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 92
+    "qc_update_summary": "93→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting a product evaluation scenario for Canvas LMS AI add-ons. On the left, show a stylized Canvas LMS window frame in white with a light blue (#EBF5FF) toolbar. In the center, three floating card panels represent different AI add-on options, each with a distinctive flat icon: a quiz generator (question mark icon), an auto-grader (checkmark in a circle icon), and an adaptive learning engine (pathways icon). On the right, a large green checkmark badge indicating the best choice. Background is white with very subtle light green (#EBFBF0) circular shapes. All text in Inter font. Minimalist, flat illustration style.",
+    "content_image_ideas": [
+      "A feature comparison matrix infographic with three columns representing different Canvas AI add-on categories and rows showing features. Column headers: 'Quiz Generation', 'Auto-Grading', 'Adaptive Learning'. Row labels: LTI 1.3 Support, Grade Passback, Custom Questions, Analytics, Price Tier. Each cell contains either a green checkmark icon or a neutral dash. The matrix is on a white background with light blue (#EBF5FF) header row. Clean grid lines. Inter font for all text. Flat style, no shadows.",
+      "An LTI 1.3 Advantage capabilities diagram showing three connected feature blocks in a triangular arrangement. Top block: 'Deep Linking' with an embed/link icon. Bottom-left: 'Names & Roles Provisioning' with a user roster icon. Bottom-right: 'Assignment & Grade Services' with a gradebook icon. All blocks are white cards with light blue (#EBF5FF) borders. A central circle with 'LTI 1.3 Advantage' text connects to each block with thin lines. White background. Inter font. Minimalist flat style.",
+      "A decision flowchart for choosing a Canvas AI add-on. Starting from a top node 'What do you need?', branching into three paths: 'Assessment Automation' leading to Quiz Generator tools, 'Grading Efficiency' leading to Auto-Grading tools, and 'Personalized Learning' leading to Adaptive platforms. Each terminal node has a small icon and a 'Recommended' badge in light green (#EBFBF0). Flowchart nodes are rounded rectangles with white fill and thin blue borders. Arrows connect nodes. White background. Inter font. Clean flat diagram style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -364,8 +496,14 @@
     "content_angle": "Technical guide on syncing grades and assignments between systems.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.567Z",
-    "qc_update_summary": "94\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 92
+    "qc_update_summary": "94→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) illustrating seamless grade synchronization between two systems. On the left, a Canvas Gradebook panel shown as a simplified white table with student rows and score columns on a light blue (#EBF5FF) background. In the center, a bidirectional sync arrow with a rotating refresh icon and a small LTI 1.3 badge. On the right, an AI LMS gradebook panel showing enriched data: scores, concept mastery bars, and analytics indicators on a light green (#EBFBF0) background. Small floating score cards (e.g., '95/100', 'A+') travel along the sync arrows. Pure white background. Inter font. Flat, clean style.",
+    "content_image_ideas": [
+      "A technical flow diagram showing the LTI 1.3 Grade Passback process in four sequential steps arranged horizontally. Step 1: Student clicks assignment in Canvas (laptop icon). Step 2: LTI launch with JWT token (key icon). Step 3: Student completes AI assessment (document with checkmark icon). Step 4: Score passback as 0.0-1.0 decimal (arrow returning to Canvas gradebook). Each step is a white rounded card with a numbered blue circle, connected by directional arrows. Background is white. Inter font. Flat minimalist style.",
+      "A comparison diagram showing 'Assignment-Level Sync' vs 'Course-Level Sync' side by side. Left side shows a single assignment column in a gradebook with a direct arrow from the AI tool -- labeled 'One-to-One Mapping'. Right side shows multiple assignments grouped into a category with arrows flowing to SIS -- labeled 'Category Aggregation'. Both panels are white cards with light blue (#EBF5FF) headers. A small warning icon on the right side indicating 'Name match required'. White background. Inter font. Clean flat illustration.",
+      "A troubleshooting infographic showing common grade sync errors and their solutions in a vertical list format. Four rows, each with: an error icon on the left (red-tinted), error description in the center, and a solution icon on the right (green-tinted). Errors include: 'Mismatched assignment IDs', 'Expired LTI tokens', 'Incorrect grade scale', 'Missing roster sync'. Each row is a white card separated by thin dividers. Background is white. Inter font. Flat style with no gradients."
+    ]
   },
   {
     "cluster_no": 3,
@@ -380,8 +518,14 @@
     "content_angle": "Tutorial-style article for schools using Google Classroom plus AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:27.773Z",
-    "qc_update_summary": "92\u219292. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 92
+    "qc_update_summary": "92→92. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 92,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing the bridge between Google Classroom and an AI LMS platform. On the left, a stylized Google Classroom interface in white with the familiar class stream layout and subtle green accent tones. In the center, two connection paths are shown: an 'API' path (with a code bracket icon) and an 'Add-on' path (with a puzzle piece icon), both converging into the AI LMS panel on the right. The AI panel shows quiz generation, flashcards, and analytics modules. Background is white with very subtle light blue (#EBF5FF) and light green (#EBFBF0) accents. Inter font. Clean flat illustration.",
+    "content_image_ideas": [
+      "A two-path comparison diagram showing 'Google Classroom API (OAuth 2.0)' path vs 'Workspace Marketplace Add-on' path. Left path shows steps: Authorize App, Read Rosters, Create Assignments, Send Scores -- each as a small white card with an icon. Right path shows steps: Install Add-on, Allowlist App, Embed in Assignment, Auto-Sync -- similarly styled. Both paths converge at the bottom into a shared 'AI LMS Features' block. Background is white. Inter font. Flat clean style with light blue (#EBF5FF) path backgrounds.",
+      "A K-12 classroom ecosystem diagram showing connected tools around a central Google Classroom hub. The center is a white circle labeled 'Google Classroom'. Radiating outward are connected tools: AI Quiz Generator, Spaced Repetition Flashcards, Adaptive Learning Paths, Parent Portal, and Analytics Dashboard. Each connected tool is a white rounded card with a flat icon, connected by thin lines. Very light green (#EBFBF0) circular background behind the central hub. Inter font. Minimalist style.",
+      "A step-by-step setup guide infographic for Google Classroom AI integration shown as a vertical timeline. Six steps: (1) Create Google Cloud Project, (2) Enable Classroom API, (3) Configure OAuth Consent, (4) Install AI LMS Add-on, (5) Link Courses, (6) Activate AI Features. Each step is a white card with a numbered blue circle on the left and a flat icon on the right. Cards are connected by a vertical line. Background is white. Inter font. Clean flat style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -396,8 +540,14 @@
     "content_angle": "Guide for universities running Moodle who want AI capabilities.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.022Z",
-    "qc_update_summary": "81\u219281. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 81
+    "qc_update_summary": "81→81. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 81,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting the modernization of Moodle with AI capabilities. On the left, show a stylized Moodle interface panel with its characteristic course list in white and a warm neutral header bar. In the center, a transformation arrow with AI-powered module icons floating around it: a quiz generator, a spaced repetition clock, a knowledge graph network, and an analytics chart. On the right, the modernized Moodle panel shows AI-enhanced features. Background is white with subtle light blue (#EBF5FF) and light green (#EBFBF0) shapes. Inter font. Clean flat illustration.",
+    "content_image_ideas": [
+      "A capabilities gap analysis chart comparing Moodle's native AI features vs what AI LMS integration adds. Two columns: 'Moodle Native' on the left with a neutral background, 'With AI LMS' on the right with a light green (#EBFBF0) background. Rows represent features: Text Generation, Summarization, Quiz Generation, Auto-Grading, Adaptive Paths, Predictive Analytics, Spaced Repetition, Knowledge Graphs. Moodle Native has checkmarks for the first two and dashes for the rest. AI LMS column has checkmarks for all. White card backgrounds. Inter font. Flat clean style.",
+      "A Moodle AI Subsystem architecture diagram showing three layered components. Top layer: 'AI Manager' (admin controls panel icon). Middle layer: 'AI Actions' (task list icon for text generation, summarization, image creation). Bottom layer: 'Provider Connectors' showing logos/icons for OpenAI, Azure AI, Ollama, and a generic API endpoint. Each layer is a wide white card with a light blue (#EBF5FF) header bar. Arrows connect layers vertically. White background. Inter font. Technical but approachable flat style.",
+      "A plugin evaluation matrix for Moodle AI plugins shown as a clean grid. Columns represent different plugins (AI Quiz Generator, Auto-Grader, FSRS Flashcards, Analytics). Rows evaluate criteria: LTI 1.3 Compatible, Moodle 4.5+, Free/Paid, Data Privacy, Maintenance Status. Cells contain simple icons: green checkmark, amber warning, or red X. Header row has light blue (#EBF5FF) background. White card cells. Inter font. Flat minimalist style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -412,8 +562,14 @@
     "content_angle": "Explainer on setting up SSO between AI LMS, Canvas, and identity providers.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.261Z",
-    "qc_update_summary": "86\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 85
+    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) illustrating single sign-on across campus systems. In the center, a large white shield icon with a keyhole represents the Identity Provider (IdP). Radiating outward from the shield are connection lines to surrounding system icons arranged in a semicircle: Canvas LMS, AI LMS (Mentron), Library Portal, Email, SIS, and Video Platform. A single student avatar icon at the bottom connects to the central shield with one login arrow. Background is white with very subtle light blue (#EBF5FF) radial pattern. Inter font for system labels. Clean flat style.",
+    "content_image_ideas": [
+      "A protocol comparison table infographic showing SAML 2.0, OAuth 2.0, and OpenID Connect (OIDC) side by side. Three columns, each with a header card in light blue (#EBF5FF). Rows compare: Primary Use Case, Token Format, Best For, Complexity Level, and LMS Support. Each cell has a short label and a small relevant icon. A 'Recommended for AI LMS' badge in light green (#EBFBF0) appears on the OIDC column. White background. Clean grid. Inter font. Flat minimalist style.",
+      "An SSO authentication flow diagram showing the step-by-step process in a circular layout. Steps: (1) User clicks 'Login' at AI LMS, (2) Redirect to Identity Provider, (3) User authenticates (MFA), (4) IdP sends assertion/token, (5) AI LMS validates and grants access. Each step is a white card with a numbered circle and flat icon arranged in a clockwise flow. Arrows connect the steps. Center of the circle shows a lock icon. White background. Inter font. Clean flat style.",
+      "A campus identity ecosystem diagram showing all connected systems through a central IdP hub. The IdP hub (Okta/Azure AD) is a white circle in the center with a key icon. Surrounding it in a ring are white rounded cards for: Canvas LMS, Mentron AI LMS, Moodle, Library System, SIS/ERP, Email/Teams. Each connected by a thin line with a small padlock icon. A student icon at the top connects to the IdP with a 'Single Login' arrow. Very light green (#EBFBF0) background ring. Inter font. Clean flat style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -428,8 +584,14 @@
     "content_angle": "Guide for IT teams to sync enrolments and data across systems.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.485Z",
-    "qc_update_summary": "85\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 85
+    "qc_update_summary": "85→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing data flow between SIS, ERP, and AI LMS systems in an institutional setting. Three main panels arranged horizontally: on the left, an SIS panel (white card with student enrollment icons and a 'Banner' label), in the center an AI LMS hub (larger panel with quiz, analytics, and adaptive learning icons), and on the right an ERP panel (white card with HR, finance, and compliance icons). Bidirectional arrows connect all three panels, with small data icons (enrollment records, grades, training completion) floating along the arrows. Background is white with subtle light blue (#EBF5FF) shapes. Inter font. Flat professional style.",
+    "content_image_ideas": [
+      "A technical architecture diagram showing three integration layers between SIS/ERP and AI LMS. Top layer: 'Source Systems' (SIS, ERP, HRIS icons in white cards). Middle layer: 'Integration Middleware' (showing API Gateway, ETL Pipeline, and Event Bus components in light blue (#EBF5FF) cards). Bottom layer: 'AI LMS Platform' (with learner profiles, adaptive engine, and analytics). Vertical arrows show data flowing down (enrollment, HR data) and up (grades, completion). White background. Inter font. Technical but clean flat style.",
+      "A 'Before vs After' comparison showing manual CSV-based data sync vs automated API-based sync. Left side labeled 'Manual Process' on a neutral background shows: export CSV icon, reformat columns icon, import to LMS icon, fix errors icon -- with red clock icons showing time cost. Right side labeled 'Automated Sync' on a light green (#EBFBF0) background shows: real-time API connection icon, automatic enrollment icon, error-free badge, and a green efficiency meter. Central divider with arrow. White card backgrounds. Inter font. Clean flat style.",
+      "A data mapping infographic showing which data fields flow between SIS, LMS, and ERP systems. Three columns: SIS fields (student ID, enrollment status, course registration, demographic data), LMS fields (course progress, assessment scores, learning analytics, engagement metrics), ERP fields (training completion, certification status, HR records, compliance data). Horizontal arrows between columns show which fields sync in each direction. White cards with light blue (#EBF5FF) headers. Inter font. Clean flat diagram."
+    ]
   },
   {
     "cluster_no": 3,
@@ -444,8 +606,14 @@
     "content_angle": "Developer-focused article on building custom extensions on top of AI LMS APIs.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.685Z",
-    "qc_update_summary": "91\u219283. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 83
+    "qc_update_summary": "91→83. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 83,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting a developer's integration workspace with APIs and webhooks. On the left, show a code editor panel in white with simplified JSON/API code snippets in light blue (#EBF5FF) code blocks. In the center, two parallel data flow illustrations: a 'REST API' path shown as a request-response cycle (client sends request arrow, server returns response arrow) and a 'Webhook' path shown as a push notification (server fires event arrow to client endpoint). On the right, a connected systems panel showing the integrated result. Background is white. Inter font for code-like labels. Clean flat technical illustration.",
+    "content_image_ideas": [
+      "A REST API vs Webhook comparison diagram shown as a side-by-side illustration. Left side 'REST API (Pull)' shows your application icon sending a request arrow to the LMS server icon, which returns a response arrow -- with a clock icon indicating polling delay. Right side 'Webhook (Push)' shows the LMS server icon proactively sending an event arrow to your application endpoint with a lightning bolt icon indicating real-time delivery. Both paths are on white card backgrounds with light blue (#EBF5FF) headers. White background. Inter font. Flat clean style.",
+      "An authentication flow diagram for AI LMS API access showing OAuth 2.0 steps. Four sequential steps in a horizontal timeline: (1) Register Application (form icon), (2) Obtain Access Token (key icon), (3) Make Authenticated Request (shield + arrow icon), (4) Receive Protected Data (document icon). Each step is a white rounded card with a numbered blue circle. Below the timeline, small code snippet boxes show example request/response headers. White background. Inter font. Technical flat style.",
+      "A webhook event handling architecture diagram. Top: 'LMS Event Occurs' (quiz submitted icon) triggers an HTTP POST to a webhook endpoint. Middle: 'Your Server' receives the payload (shown as a JSON object icon), validates the signature (lock icon), and processes the event. Bottom: Three example event types branch out: 'assessment.completed', 'enrollment.created', 'grade.updated' -- each as a white card with a distinct icon. Light blue (#EBF5FF) background for the server block. Inter font. Clean flat style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -460,8 +628,14 @@
     "content_angle": "How-to for connecting live class tools and syncing attendance/recordings.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:28.884Z",
-    "qc_update_summary": "88\u219288. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 88
+    "qc_update_summary": "88→88. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 88,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing the integration of video conferencing with AI LMS. On the left, a stylized video call interface in white with participant grid, a 'Live Class' badge, and video call controls. In the center, an LTI connection bridge with a play button icon transforms live session data into learning records. On the right, the AI LMS panel shows auto-generated attendance records, post-class quiz cards, and a session replay thumbnail. Small data badges (attendance, engagement, recording) float along the connection bridge. Background is white with subtle light blue (#EBF5FF) and light green (#EBFBF0) accents. Inter font. Flat clean style.",
+    "content_image_ideas": [
+      "A live class to learning data flow diagram showing what happens after a Zoom/Teams session ends. Three parallel process tracks: Track 1 'Attendance Data' flows from video platform to LMS gradebook (checkmark icons). Track 2 'Session Recording' auto-links to the correct course module (video play icon). Track 3 'AI Analysis' generates post-class quizzes and updates adaptive learning paths (brain + quiz icons). Each track is a horizontal white card with icons flowing left to right. Background is white. Inter font. Flat style.",
+      "A Zoom LTI integration setup checklist shown as a vertical card stack. Six cards stacked vertically: (1) Install Zoom LTI Pro app, (2) Copy Client ID and Deployment ID, (3) Configure in LMS admin panel, (4) Test with a sample course, (5) Enable auto-recording, (6) Activate AI post-class features. Each card has a numbered step, a flat icon, and a brief description. Completed steps have a small green checkmark. White cards on white background. Inter font. Clean flat style.",
+      "A hybrid learning ecosystem diagram showing video platforms at the center connected to various LMS features. Center: 'Live Classes' hub with Zoom and Teams icons. Radiating connections to: 'Auto-Attendance' (roster icon), 'Session Recordings' (video icon), 'AI Quiz Generation' (question mark icon), 'Engagement Analytics' (chart icon), 'Spaced Repetition Triggers' (clock icon), and 'Adaptive Path Updates' (pathway icon). Each connected element is a white rounded card. Very light blue (#EBF5FF) radial background. Inter font. Flat style."
+    ]
   },
   {
     "cluster_no": 3,
@@ -477,7 +651,13 @@
     "written": true,
     "qc_last_updated": "2026-03-31T12:00:00Z",
     "qc_update_summary": "SKIPPED: .mdx file not found in content/blogs/",
-    "qc_score": 0
+    "qc_score": 0,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a comprehensive LMS integration evaluation checklist. In the center, a large clipboard icon with a checklist that has several checked items in green and a few unchecked items. Surrounding the clipboard are floating icon cards representing integration categories: an LTI badge, an API documentation icon, a data privacy shield, a vendor reliability meter, a support ticket icon, and a scalability graph. Each icon card is a white rounded rectangle on a very light blue (#EBF5FF) background. Background is white. Inter font for labels. Clean, organized flat illustration style.",
+    "content_image_ideas": [
+      "A weighted scoring rubric infographic for evaluating LMS integrations. Five rows representing evaluation criteria: 'LTI Compliance' (weight 25%), 'API Depth' (weight 20%), 'Data Privacy' (weight 20%), 'Vendor Reliability' (weight 20%), 'Scalability' (weight 15%). Each row shows a horizontal bar chart with the weight percentage filled in light blue (#EBF5FF). Three vendor columns (Vendor A, B, C) show scores as small progress bars. White card background. Inter font. Clean flat style with no gradients.",
+      "An integration depth spectrum diagram showing three levels of tool connectivity. Three horizontal bands stacked vertically: 'Surface-Level' (top, neutral background) showing a simple link connection, 'LTI-Based' (middle, light blue #EBF5FF background) showing meetings launching inside LMS with attendance sync, and 'Deep API' (bottom, light green #EBFBF0 background) showing bidirectional data flow, real-time roster sync, grade passback, and event logging. Each band has descriptive text and flat icons. White background. Inter font.",
+      "A vendor evaluation checklist card designed as a printable-style infographic. Organized in two columns: 'Technical Criteria' (LTI 1.3 support, API documentation quality, webhook availability, data residency options, uptime SLA) and 'Business Criteria' (pricing model, support response time, reference institutions, roadmap alignment, contract flexibility). Each item has an empty checkbox icon next to it. Columns separated by a thin vertical line. White card with light blue (#EBF5FF) header. Inter font. Clean flat style."
+    ]
   },
   {
     "cluster_no": 4,
@@ -492,8 +672,14 @@
     "content_angle": "Foundational explainer of adaptive learning concepts inside AI LMS.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:32:50.753Z",
-    "qc_update_summary": "98\u2192108. v2 fixes: injected 2 missing subtopics: algorithms, learner profiles; injected LSI terms: learner journey, customization, proficiency; boosted \"personalized learning\" in body",
-    "qc_score": 108
+    "qc_update_summary": "98→108. v2 fixes: injected 2 missing subtopics: algorithms, learner profiles; injected LSI terms: learner journey, customization, proficiency; boosted \"personalized learning\" in body",
+    "qc_score": 108,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a central brain icon with branching adaptive learning paths radiating outward to multiple learner silhouettes. Each learner silhouette follows a uniquely positioned dotted-line path using only light blue (#EBF5FF) and light green (#EBFBF0) accents. The brain icon sits inside a white rounded rectangle with a subtle light blue border. Thin connecting lines branch from the brain to small node circles representing course concepts, each node at a different position along the path to show individualized progression. A small 'Adaptive Learning' label appears in Inter font at the top center. The background is clean white with very faint geometric shapes in light blue (#EBF5FF at 10% opacity) scattered in the corners. Flat minimalist style, no gradients, no shadows, clean line art throughout.",
+    "content_image_ideas": [
+      "A portrait infographic showing the adaptive learning feedback loop as a four-step circular flow diagram. Starting from the top and moving clockwise: Step 1 'Collect Data' with a line-art chart icon, Step 2 'Analyze Patterns' with a brain and magnifying glass icon, Step 3 'Adjust Content' with a document branching into two paths icon, Step 4 'Deliver and Repeat' with a laptop screen and learner icon. Each step is enclosed in a white rounded card with a numbered circle. Thin curved arrows connect the steps clockwise. The center of the circle shows a small loop icon. Background is white with a very light blue (#EBF5FF at 10%) circular band behind the flow. All text in Inter font. Clean flat style, no gradients.",
+      "A square infographic presenting a side-by-side comparison table titled 'Traditional LMS vs Adaptive AI LMS' in Inter font on a light blue (#EBF5FF at 12%) header strip. The left column shows Traditional LMS rows with gray icons: a straight line path labeled 'Fixed Sequence', a manual grading pen labeled 'Manual Assessment', a single track labeled 'One Pace for All'. The right column shows Adaptive AI LMS rows with corresponding icons: a branching tree labeled 'Personalized Paths', a robot checkmark labeled 'Auto-Grading', multiple diverging paths labeled 'Self-Paced'. Each row is a white card with thin gray dividers. White background, Inter font, clean flat style.",
+      "A portrait infographic illustrating the concept of knowledge graphs and spaced repetition. The top half shows a network of interconnected concept nodes (circles labeled A through F) with directional arrows showing prerequisite relationships, rendered in line art on a white background. Each node has a small mastery indicator showing empty, half-filled, or filled circle. The bottom half shows a timeline bar representing FSRS-based spaced repetition with review intervals marked at Day 1, Day 3, Day 7, Day 14, with a declining forgetting curve line above in light gray. A flashcard icon appears at each review point. Very light green (#EBFBF0 at 10%) background behind the timeline section. Inter font for labels. Flat minimalist style."
+    ]
   },
   {
     "cluster_no": 4,
@@ -508,8 +694,14 @@
     "content_angle": "How-to for building AI-driven learning journeys from competency maps.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.093Z",
-    "qc_update_summary": "85\u219277. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 77
+    "qc_update_summary": "85→77. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 77,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting a branching learning path visualization. In the center, a single starting node labeled 'Start' in Inter font branches into three diverging paths, each leading to different endpoint nodes at different heights to show varied learner progress. Each path is a thin dotted line in light blue (#EBF5FF) or light green (#EBFBF0). Along each path, small milestone diamond shapes represent competency checkpoints. A learner silhouette icon sits at a different point on each path. At the top, a competency map thumbnail shows interconnected skill nodes in line art. Background is white with very subtle light blue geometric accents at the edges. Flat clean illustration, no gradients, Inter font, professional and modern.",
+    "content_image_ideas": [
+      "A competency mapping flowchart showing how to break a curriculum into skills, map prerequisites, and build AI-driven learning paths. Three connected sections: Skills Audit (light blue #EBF5FF), Path Generator (white), and Progress Tracker (light green #EBFBF0). Inter font, flat line-art icons, no gradients.",
+      "A before/after comparison of one-size-fits-all curriculum versus personalized AI learning paths. Left: a single linear path for all students. Right: branching paths adapted per learner. White background, Inter font, light blue accents. Portrait orientation, flat minimalist style.",
+      "A skill gap analysis infographic showing a radar chart with two overlapping profiles: 'Current Skills' (light gray) and 'Target Competency' (light blue #EBF5FF). Arrows point to gap areas with recommended FSRS flashcard decks. Inter font labels. White background, flat style. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 4,
@@ -524,8 +716,14 @@
     "content_angle": "Benefits and design tips for microlearning powered by AI recommendations.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.286Z",
-    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 97
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing five small lesson cards in a horizontal row, each representing a 5-minute microlearning module. Each card has a simple icon (video, quiz, flashcard, reading, practice) and a progress bar. The cards are connected by thin dotted lines. Background is white with very light blue (#EBF5FF at 10%) shading behind the left two cards and very light green (#EBFBF0 at 10%) behind the right two. 'Bite-Sized Learning' text in Inter font at the top center. Flat line-art style, no gradients, professional and modern.",
+    "content_image_ideas": [
+      "A vertical infographic comparing traditional 60-minute lessons versus microlearning modules. Left column: one large block labeled '1-hour lecture' in light gray. Right column: five small cards labeled '5-min modules' stacked vertically in light blue (#EBF5FF). An arrow from the right column points to a retention bar showing higher memory retention. Inter font labels. White background, flat minimalist style.",
+      "A flowchart showing the AI microlearning recommendation cycle: Learner Completes Module → AI Analyzes Performance → Identify Knowledge Gap → Recommend Next 5-min Module → Learner Reviews → Loop. Each step is a rounded box with an icon, connected by arrows. White background with alternating very light blue and very light green boxes. Inter font. Portrait orientation.",
+      "A mobile screen mockup showing a microlearning interface with a flashcard, a 2-minute video thumbnail, and a quick quiz button. Clean UI design in Inter font. White background with light blue (#EBF5FF) card borders. Flat minimalist style, portrait orientation."
+    ]
   },
   {
     "cluster_no": 4,
@@ -540,8 +738,14 @@
     "content_angle": "Guide to predictive analytics for student risk and intervention workflows.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.478Z",
-    "qc_update_summary": "96\u219296. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 96
+    "qc_update_summary": "96→96. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 96,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting an early warning system dashboard concept. On the left, three signal icons feed into a central analysis hub: a login frequency chart representing engagement signals, a quiz score trend line representing assessment signals, and a speech bubble representing social signals. The central hub is a white rounded rectangle containing a brain icon with a magnifying glass. From the hub, three color-coded risk indicators extend to the right: a green circle labeled 'On Track', in Inter font, an amber circle labeled 'Watch' in Inter font, and a red circle labeled 'At Risk' in Inter font. Thin dotted lines color connect the signals to the hub and the indicators. Background is white with faint light blue (#EBF5FF) diagonal accents. Flat clean style, no gradients.",
+    "content_image_ideas": [
+      "A vertical infographic showing an early warning system dashboard. Three risk levels are color-coded: Green (On Track, light green #EBFBF0), Yellow (At Risk, very light yellow), Red (Critical, very light red with low opacity). Each level has a learner icon and 2-3 indicators. Inter font labels. White background, flat minimalist style.",
+      "A flowchart showing how AI detects at-risk learners: Student Activity Data → Engagement Metrics → Pattern Recognition → Risk Score → Alert to Instructor → Intervention. Each step is a box with an icon, connected by arrows. White background with light blue (#EBF5FF) behind the AI step. Inter font. Portrait orientation.",
+      "A line graph infographic showing engagement over a semester. One line shows a declining student (dropping from 90% to 30%) with a red flag at the intervention point. Another line shows recovery after intervention back to 80%. Inter font axis labels. White background, flat clean style. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 4,
@@ -556,8 +760,14 @@
     "content_angle": "Explainer on mapping skills to content and assessments with AI.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:29.807Z",
-    "qc_update_summary": "97\u219297. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 97
+    "qc_update_summary": "97→97. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 97,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a skills graph visualization as the central element. A directed network of interconnected skill nodes is drawn in line art, with nodes of varying sizes representing different competency levels. Some nodes are filled representing mastered, some half-filled representing in progress, and some empty representing not yet started). A thin upward arrow at the top right shows progression. To the left of the graph, a small AI brain icon with connecting lines shows AI mapping content to skills. To the right, a learner profile card shows a proficiency summary. Background is white with subtle light blue (#EBF5FF at 10%) shapes in the corners. Inter font for labels. Flat minimalist style, no gradients.",
+    "content_image_ideas": [
+      "A skill graph infographic showing interconnected skill nodes in a network layout. Each node is a circle with a skill name in Inter font, connected by lines showing prerequisites. Nodes are color-coded by proficiency: light green (#EBFBF0) for mastered, light blue (#EBF5FF) for in-progress, white for not started. Portrait orientation, flat minimalist style.",
+      "A three-column comparison infographic: Traditional LMS (left, gray), Competency-Based LMS (center, light blue #EBF5FF), AI-Powered Skill LMS (right, light green #EBFBF0). Each column lists 4-5 features with checkmarks or X marks. Inter font. White background, flat style. Portrait orientation.",
+      "A skills radar chart infographic showing a learner's current profile (light gray) overlaid with their target profile (light blue #EBF5FF). Gap areas are highlighted with arrows pointing to recommended FSRS flashcard decks. Inter font labels. White background, clean flat style. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 4,
@@ -572,8 +782,14 @@
     "content_angle": "Technical overview of recommendation algorithms in learning contexts.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.029Z",
-    "qc_update_summary": "86\u219285. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 85
+    "qc_update_summary": "86→85. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 85,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting four recommendation algorithm icons arranged in a horizontal row, each inside a white rounded card. From left to right: Collaborative Filtering shown as two overlapping person silhouettes with connecting lines, Content-Based shown as a document icon matching to a similar document, Knowledge-Based shown as a rule book with an arrow to a prerequisite chain, Hybrid Model shown as all three previous icons merging into a single star icon). Above the cards, thin dotted lines converge into a single output arrow pointing to a learner icon on the right with a 'Recommended for You' badge in Inter font. Background is white with very faint light blue (#EBF5FF) circular accents. Inter font. Flat clean style, no gradients.",
+    "content_image_ideas": [
+      "A portrait infographic showing the recommendation algorithm comparison table. Five rows: Collaborative Filtering, Content-Based Filtering, Knowledge-Based, Reinforcement Learning, Hybrid Model. Four columns: 'Core Mechanism' with brief text, 'Best Context' with icon and text, 'Limitation' with warning icon and text, 'Cold Start Resilience' with Low, Medium, or High rating as a simple bar. Each cell is a white card with Inter font text. The Hybrid Model row has a light green (#EBFBF0 at 12%) background highlight to indicate it as recommended. Thin gray grid lines. White overall background. Flat minimalist style.",
+      "A square infographic illustrating the cold start problem and its solutions. The top half shows the problem: two scenarios side by side. Left: 'New Learner' with an empty profile icon and a question mark, Right: 'New Content' with a dimmed course icon and zero ratings. Both connected to a 'Cannot Recommend' crossed-out badge. The bottom half shows solutions: four white cards in a row: 'Onboarding Diagnostic' with a quiz icon, 'Rich Metadata Tagging' with tag icon, 'Cohort Bootstrapping' with group icon, 'Progressive Profiling' with growing chart icon. Light blue (#EBF5FF at 10%) background behind the solutions section. Inter font. Flat clean style.",
+      "A portrait infographic showing how an LMS reads learning preferences through three signal types stacked vertically. Top section 'Explicit Signals' on a light blue (#EBF5FF at 10%) band: icons for self-reported skill levels, course ratings, and declared learning goals. Middle section 'Implicit Signals' on white: icons for time-on-task patterns, quiz retry frequency, video pause and rewind behavior, and flashcard recall accuracy. Bottom section 'Contextual Signals' on a light green (#EBFBF0 at 10%) band: icons for device type, time of day, deadline proximity, and recent activity. Each signal is a small white card with a flat icon and Inter font label. Clean flat style."
+    ]
   },
   {
     "cluster_no": 4,
@@ -588,8 +804,14 @@
     "content_angle": "How adaptive learning strategies differ across disciplines.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.224Z",
-    "qc_update_summary": "86\u219284. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 84
+    "qc_update_summary": "86→84. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 84,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) depicting a corporate training personalization concept. On the left, three employee silhouette icons representing different roles connect via dotted lines to a central AI hub icon showing a brain inside a gear. From the AI hub, three diverging personalized learning paths extend to the right, each leading to a different training module card: one labeled 'Code Training' with a laptop icon, one labeled 'Sales Enablement' with a briefcase icon, and one labeled 'Leadership' with a chart icon. The paths use light blue (#EBF5FF) and light green (#EBFBF0) tints alternately. Background is white with faint geometric shapes. Inter font for labels. Flat clean style, no gradients.",
+    "content_image_ideas": [
+      "A split comparison infographic showing adaptive learning for STEM (left half, light blue #EBF5FF) versus Humanities (right half, light green #EBFBF0). Each side shows 3-4 discipline-specific adaptation strategies with icons: math formulas, lab simulations vs. essay structures, thematic maps. Inter font. White border, flat minimalist style.",
+      "A table infographic with rows for Math, Physics, Biology, Literature, History, and Philosophy. Columns: Adaptive Strategy, FSRS Usage, Assessment Type. Each cell has a brief description in Inter font. Alternating very light blue and very light green row backgrounds. White base, flat style. Portrait orientation.",
+      "A visual showing two learner profiles: a STEM student with problem-solving skill nodes and a Humanities student with critical analysis nodes. Each profile has a mini learning path branching from it. Light blue for STEM path, light green for Humanities path. Inter font. White background, flat style."
+    ]
   },
   {
     "cluster_no": 4,
@@ -604,13 +826,19 @@
     "content_angle": "Corporate-focused take on AI-driven personalization for employees.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.428Z",
-    "qc_update_summary": "94\u219294. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 94
+    "qc_update_summary": "94→94. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 94,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a five-layer data pyramid as the central element. The pyramid has five horizontal layers stacked from bottom to top, each a white rounded rectangle band with a distinct label in Inter font: 'Learner Profile' at the bottom, 'Behavioral Events', in theAssessment Data' in the middle, 'Retention Metrics' in the top). 'Knowledge Graph'. Each tier has 2-3 small line-art icons representing data data type: user icon, click icon, quiz icon, flashcard icon, node icon). To the right of the pyramid, a large upward arrow with an 'AI Engine' badge shows the data flowing upward into an adaptive learning output. Background is white with very faint light blue (#EBF5FF) diagonal accents. Flat minimalist style, no gradients.",
+    "content_image_ideas": [
+      "A before/after infographic showing corporate training personalization. Before: all employees in one training track (single line). After: branching paths for Sales, Engineering, HR, and Leadership roles. Light blue (#EBF5FF) for the before section, light green (#EBFBF0) for after. Inter font labels. White background, flat minimalist style.",
+      "A corporate LMS dashboard mockup showing an employee profile with skill map, recommended courses, and FSRS flashcard progress. Clean UI design with Inter font. White background, light blue card borders (#EBF5FF). Portrait orientation, flat style.",
+      "A vertical infographic showing the ROI of personalized corporate training. Three metric cards stacked: Training Time Reduced (light blue #EBF5FF), Knowledge Retention Improved (white), Employee Satisfaction Increased (light green #EBFBF0). Each card has an icon and percentage. Inter font. Flat minimalist style."
+    ]
   },
   {
     "cluster_no": 4,
     "cluster_name": "Adaptive Learning & Personalization",
-    "blog_title": "Data You Need for Effective Adaptive Learning",
+    "blog_title": "AI-Driven Remedediation and Enrichment in LMS",
     "blog_slug": "data-you-need-for-effective-adaptive-learning",
     "primary_keywords": "adaptive learning data requirements; learning analytics data",
     "secondary_keywords": "event tracking; xapi; lrs",
@@ -620,8 +848,14 @@
     "content_angle": "Checklist of data points and tracking you must implement.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.634Z",
-    "qc_update_summary": "91\u219291. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 91
+    "qc_update_summary": "91→91. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 91,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a data pipeline flowing from left to right. Left side has icons representing learning events (click, quiz, video watch, flashcard review). Center shows a processing funnel labeled 'Data Engine' in Inter font. Right side shows an adaptive learning dashboard output. Very light blue (#EBF5FF at 10%) shading on the left event side, very light green (#EBFBF0 at 10%) on the output side. White base background. Flat line-art icons, no gradients, professional.",
+    "content_image_ideas": [
+      "A vertical checklist infographic titled 'Essential Data Points for Adaptive Learning' with 8 items: Click patterns, Time on task, Quiz scores, Review frequency, Content completion, Engagement depth, Error patterns, Learning velocity. Each item has a small icon and one-line description in Inter font. Alternating very light blue and very light green row backgrounds. Portrait orientation, flat style.",
+      "A data flow diagram showing xAPI events from LMS → Learning Record Store → Analytics Engine → Adaptive Algorithm → Personalized Content. Each stage is a box with an icon, connected by arrows. White background with light blue (#EBF5FF) behind the analytics engine. Inter font labels. Portrait orientation.",
+      "A comparison table showing data tracking maturity levels: Basic (page views only), Intermediate (quiz + time data), Advanced (xAPI + FSRS + behavior). Three columns with increasing detail. Light blue (#EBF5FF) shading behind the Advanced column. Inter font. White background, flat minimalist style."
+    ]
   },
   {
     "cluster_no": 4,
@@ -636,8 +870,14 @@
     "content_angle": "Strategies for automatically assigning remedial or enrichment content.",
     "written": true,
     "qc_last_updated": "2026-03-31T08:41:30.833Z",
-    "qc_update_summary": "87\u219287. v3: injected 4 simple-sentence blocks to lower reading level",
-    "qc_score": 87
+    "qc_update_summary": "87→87. v3: injected 4 simple-sentence blocks to lower reading level",
+    "qc_score": 87,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a dual-path content routing concept. In the center, an AI analysis node (a brain icon inside a circle) receives a performance signal from a learner icon on the left. Two arrows divererge from the AI node: a downward arrow labeled 'Remediation' in light blue (#EBF5FF) tint leading to remedial content cards: simplified explainer, extra practice quiz, and FSRS flashcard icons), and an upward arrow labeled 'Enrichment' in light green (#EBFBF0) tint leading to enrichment content cards including challenge question and advanced project. A horizontal 'Standard Path' arrow continues straight ahead. Background is white with faint geometric accents. Inter font. Flat clean style, no gradients.",
+    "content_image_ideas": [
+      "A portrait infographic showing remediation and enrichment triggers as a vertical decision flowchart. Starting at the top: a 'Learner Completes Assessment' node in a white card. A diamond decision node below asks 'Score vs Threshold'. Three branches emerge: Left branch showing less than 70% triggers remediation actions including simplified content, extra practice, and spaced repetition icons. Center branch showing 70-90% continues standard path with next module icon. Right branch showing greater than 90% triggers enrichment actions including challenge set, deep-dive reading, and advanced preview icons. Each action is a white card with an icon and Inter font label. Thin connecting arrows. White background. Clean flat style.",
+      "A square infographic showing behavioral signals that indicate learner status. Two columns: 'Struggling Learner Signals' on the left with a light blue (#EBF5FF at 10%) tint and 'Advanced Learner Signals' on the right with a light green (#EBFBF0 at 10%) tint. Left column shows: rewatching video, hover on paragraph with an eye icon, changing answers with an edit icon, short frequent sessions with a burst icon, dropping off mid-module with an exit icon). Right column shows:Advanced Learner Signals': fast-forwarding with a skip icon, completing early with a rocket icon, scoring near 100% with a star icon, rarely revisits content after initial completion. White card with Inter font label. Flat style.",
+      "A portrait infographic showing differentiated instruction across three contexts as a table. Three rows: K-12 Schools, Universities and Colleges, and Corporate L&D. Four columns: Context, Remediation Strategy, Enrichment Strategy, Key Trigger Signal). Each cell has a small icon and brief text in Inter font. K-12 row shows simplified explainer icon and challenge question icon. University row shows micro-module icon and research reading icon. Corporate row shows compliance refresher icon and advanced certification icon. White card cells with thin gray borders. Light blue (#EBF5FF at 10%) header strip. Clean flat minimalist style."
+    ]
   },
   {
     "cluster_no": 5,
@@ -650,7 +890,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Introductory guide to FSRS and why it improves on older spaced repetition models.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) with a central stylized brain rendered in flat line-art with thin dark outlines. Three connected nodes orbit the brain labeled 'Stability', 'Difficulty', and 'Retrievability' in Inter font. Small flashcard icons float around the brain. Background is white with very light blue (#EBF5FF at 10%) on the left third and very light green (#EBFBF0 at 10%) on the right third. Title 'FSRS Flashcards Explained' in Inter font at the top. No gradients, no shadows, clean and professional.",
+    "content_image_ideas": [
+      "A vertical timeline infographic showing spaced repetition evolution: Leitner Box (1980s, light gray) → SM-2 Algorithm (1987, white) → FSRS (2023+, light green #EBFBF0). Each era has an icon, year, and 2-3 key features in Inter font. Portrait orientation, flat minimalist style.",
+      "A flowchart showing the FSRS DSR model: three circles (Difficulty, Stability, Retrievability) feeding into a central FSRS Engine box, outputting to an optimized review calendar. Light blue (#EBF5FF) behind the circles. Inter font labels. White background, flat line-art. Portrait orientation.",
+      "A horizontal bar chart comparing reviews needed for 90% retention: SM-2 (longer bar, light gray) vs FSRS (shorter bar, light blue #EBF5FF). Annotation: '25% fewer reviews'. Inter font. White background, flat minimalist style."
+    ]
   },
   {
     "cluster_no": 5,
@@ -663,7 +909,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Comparison for students choosing between FSRS-based tools and classic SM2.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) split into two columns. Left: 'SM-2' with a rigid calendar grid in light gray. Right: 'FSRS' with an organic adaptive timeline in light blue (#EBF5FF). A 'VS' badge at the center divider. Both labels in Inter font. White base background, flat line-art icons. No gradients, no shadows. Professional and modern.",
+    "content_image_ideas": [
+      "A side-by-side comparison table with SM-2 (left, light gray) vs FSRS (right, light blue #EBF5FF). Rows: Personalization, Retention Target, Ease Hell Risk, Data-Driven. Each row has an icon and brief text. Inter font. White background, flat style. Portrait orientation.",
+      "A horizontal timeline from SM-2 (1987) to FSRS (2023) with three milestone markers connected by a thin line. Each marker has a small icon and year. Light green (#EBFBF0) behind FSRS milestone. Inter font. White background, flat style.",
+      "A dual-path flowchart showing what happens on 'Hard' rating: SM-2 path spirals into ease hell (looping arrows), FSRS path adapts smoothly (gentle curve). Light gray for SM-2, light blue for FSRS. Inter font. White background. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -676,7 +928,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Explains FSRS inside an AI LMS context, linking quizzes and flashcards.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a central laptop with an LMS dashboard displaying a flashcard review queue. Three connected icons branch out: quiz (top-left), flashcard stack (top-right), calendar (bottom), forming a triangular flow. Very light blue (#EBF5FF at 10%) on left half, very light green (#EBFBF0 at 10%) on right. Title 'FSRS in Your LMS' in Inter font at top. White base, flat line-art, no gradients.",
+    "content_image_ideas": [
+      "A circular flow diagram: Learn Content → Take Quiz → FSRS Calibrates → Adaptive Flashcard Review → Retention Improves → back to Learn. Each step is a node with icon and Inter font label, connected by curved arrows. Alternating light blue and light green nodes. White background. Portrait orientation.",
+      "A three-tier architecture diagram: Quiz & Assessment (light blue #EBF5FF), FSRS Engine (white), Course Content (light green #EBFBF0). Each tier has 3-4 small feature icons. Arrows flow between tiers. Inter font labels. Portrait orientation, flat style.",
+      "A before/after comparison: Traditional LMS revision (scattered random reviews) vs AI LMS with FSRS (optimized spaced schedule). Two side-by-side calendar panels. Left: light gray, messy. Right: light blue #EBF5FF, clean. Inter font. White background. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -689,7 +947,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Practical tips for teachers and students creating FSRS-optimized cards.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) with a large flashcard at center showing a clean front/back design. Around the card, four icons: scissors (minimal), lightbulb (one idea), checkmark (clear answer), eye (visual cue). White background with very light blue (#EBF5FF at 10%) top-left and very light green (#EBFBF0 at 10%) bottom-right. Title 'Effective Flashcard Design' in Inter font. Flat line-art, no gradients.",
+    "content_image_ideas": [
+      "A before/after flashcard redesign: left shows a bloated multi-question card with red X, right shows three clean atomic cards with green checkmarks. Light blue (#EBF5FF) behind good cards. Inter font. White background. Portrait orientation, flat style.",
+      "A checklist infographic 'FSRS Flashcard Quality Criteria': 6 items with icons (one fact per card, clear question, unambiguous answer, no OR logic, image when helpful, source linked). Alternating light blue and light green row backgrounds. Inter font. Portrait orientation.",
+      "A visual guide showing three FSRS-compatible card types: Basic (front/back), Cloze Deletion (fill-in-blank), Image Occlusion (label diagram). Each shown as a card mockup with Inter font sample content. Light blue (#EBF5FF) borders. White background. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -702,7 +966,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "India-focused article on using FSRS for high-stakes exam prep.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) with a stack of flashcards labeled Physics, Chemistry, Biology, Math in Inter font. Above the cards, a rising graph line shows improving retention. Background has very light blue (#EBF5FF at 10%) left, very light green (#EBFBF0 at 10%) right. Small book and graduation cap icons at corners. Title 'NEET & JEE Prep with FSRS' in Inter font. White base, flat line-art, no gradients.",
+    "content_image_ideas": [
+      "A vertical timeline comparing exam prep: Without FSRS (left, declining retention curve with cramming spikes) vs With FSRS (right, steady retention). Both run June to May exam season. Inter font labels. Light blue (#EBF5FF) behind FSRS track. White background. Portrait orientation.",
+      "A subject-wise flashcard breakdown: four boxes for Physics, Chemistry, Biology, Math with card counts and relevant icons (atom, flask, DNA, calculator). Alternating light blue and light green backgrounds. Inter font. White base. Portrait orientation.",
+      "A daily study routine infographic: Morning (new cards), Afternoon (subject practice), Evening (FSRS reviews), Night (weak card focus). Each block has an icon and Inter font description. Light blue and green accent bands. White background. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -715,7 +985,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Use cases for professors integrating FSRS into semester-long courses.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a university campus building (flat minimalist columns) on the left connected by a dotted line to a laptop showing FSRS flashcard decks on the right. Icons of a professor, students, and graduation cap float between them. Very light blue (#EBF5FF at 10%) behind campus, very light green (#EBFBF0 at 10%) behind laptop. Title 'FSRS in University Courses' in Inter font. White base, no gradients.",
+    "content_image_ideas": [
+      "A semester integration timeline: Phase 1 Setup (Week 0, light blue #EBF5FF), Phase 2 Active Learning (Weeks 1-12, white), Phase 3 Exam Prep (Weeks 13-16, light green #EBFBF0). Each phase has 3-4 action items with icons. Inter font. Portrait orientation, flat style.",
+      "A comparison: Traditional Exam Prep (cramming, highlighting, re-reading) vs FSRS-Enhanced Courses (daily reviews, adaptive scheduling, spaced practice). Two columns with icons. Left: light gray, Right: light blue #EBF5FF. Inter font. Portrait orientation.",
+      "A discipline-specific FSRS chart: rows for Medical School, Engineering, Law, Humanities, Business with icons and 'Best FSRS Use Case' in Inter font. Alternating light blue and light green rows. White base. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -728,7 +1004,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Workflow article combining mind mapping and FSRS in one LMS.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) with a mind map on the left half and a flashcard stack on the right half, connected by a dotted bridge line. The mind map has branching nodes in line-art. Flashcards show review intervals (1d, 3d, 7d, 30d) in Inter font. A sync icon at the connection point. Very light blue (#EBF5FF at 10%) behind mind map, very light green (#EBFBF0 at 10%) behind flashcards. White base, no gradients.",
+    "content_image_ideas": [
+      "A 4-step workflow: Learn Concept → Create Mind Map → Convert Nodes to Flashcards → FSRS Schedules Review. Each step is a numbered box with icon and arrow. Alternating light blue and light green. Inter font. White background. Portrait orientation.",
+      "A Venn diagram: Mind Maps (left circle, light blue #EBF5FF) and FSRS Flashcards (right circle, light green #EBFBF0). Overlap 'Deep Learning' contains: Concept Connections + Retention, Dual Coding, Active Recall. Each circle lists unique strengths. Inter font. White background.",
+      "A before/after retention chart: steep forgetting curve after lecture vs maintained retention with FSRS + mind map reviews. Simple line graph, X-axis Days 1-30, Y-axis Retention %. Inter font. Light blue (#EBF5FF) shading under FSRS curve. White background. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -741,7 +1023,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Listicle covering typical FSRS misuse patterns and fixes.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) with a caution theme. Center shows a flashcard with a large X mark, surrounded by 5-6 small warning triangle icons representing mistakes (clock for skipping reviews, stack for overload, question mark for vague cards). Very light blue (#EBF5FF at 10%) left, very light green (#EBFBF0 at 10%) right. Title 'FSRS Mistakes to Avoid' in Inter font. White base, flat line-art, no gradients.",
+    "content_image_ideas": [
+      "A 2x5 grid infographic '10 Common FSRS Mistakes'. Each cell: number, mistake title, one-line fix, small icon. Alternating light blue (#EBF5FF) and light green (#EBFBF0) rows. Inter font. White base. Portrait orientation, flat style.",
+      "A cause-and-effect flowchart: Overloaded Card → Ambiguous Rating → FSRS Miscalibrates → Wrong Intervals → Retention Drops. Light blue (#EBF5FF) on problem boxes, light green (#EBFBF0) on solutions. Inter font. White background. Portrait orientation.",
+      "A checklist card 'FSRS Health Check' with 8 items: Cards are atomic, Ratings are honest, Sessions are consistent, Retention target is set, Deck size is manageable, Reviews aren't backlogged, Difficulty spread is normal, Stability is growing. Checkbox icons. Inter font. Light blue border. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 5,
@@ -754,7 +1042,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "Applying FSRS beyond academia in professional learning contexts.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) in flat minimalist corporate style. Left: office building icon. Right: certification badge icon. Center: timeline showing spaced training sessions (Day 1, Week 2, Month 1, Month 3) with flashcard icons. Very light blue (#EBF5FF at 10%) behind building, very light green (#EBFBF0 at 10%) behind certification. Title 'FSRS for Corporate Training' in Inter font. White base, no gradients.",
+    "content_image_ideas": [
+      "A vertical comparison: Traditional Training (steep forgetting curve, 90% lost in 1 week) vs FSRS-Powered Training (maintained 85%+ retention over 3 months). Two simple line graphs. Inter font labels. Light blue (#EBF5FF) shading under FSRS curve. White background. Portrait orientation.",
+      "A 2x2 use-case grid: Compliance Training (GDPR, HIPAA), Sales Certifications (product knowledge), IT Certifications (AWS, Azure), Onboarding (company policies). Each quadrant has icon, title, 2-3 bullets. Alternating light blue and light green. Inter font. Portrait orientation.",
+      "An ROI bar chart: Cost of Re-training (tall bar, light gray) vs Cost of FSRS Maintenance (short bar, light blue #EBF5FF). Hours saved per employee annotation below. Inter font. White background. Portrait orientation, flat style."
+    ]
   },
   {
     "cluster_no": 5,
@@ -767,7 +1061,13 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://apps.ankiweb.net/docs/manual.html; https://supermemo.guru/wiki/FSRS; https://blog.quizlet.com/ai-study-tools",
     "content_angle": "How to interpret FSRS-related analytics for learners and admins.",
-    "written": true
+    "written": true,
+    "hero_image_idea": "A wide landscape hero banner (1200x630px) showing a clean analytics dashboard mockup. Center: area chart with smooth upward retention curve. Three flanking metric cards show Stability (S), Retrievability (R), Difficulty (D) with gauge icons. Very light blue (#EBF5FF at 10%) behind metrics, very light green (#EBFBF0 at 10%) behind chart. Title 'FSRS Analytics' in Inter font at top. White base, flat line-art, no gradients.",
+    "content_image_ideas": [
+      "A three-band metric definition: Stability (top, light blue #EBF5FF) = days until recall drops to 90%, Retrievability (middle, white) = current recall probability, Difficulty (bottom, light green #EBFBF0) = inherent hardness 1-10. Each band has icon, name, definition, example. Inter font. Portrait orientation.",
+      "A knowledge gap heatmap: grid of topics (rows) vs time periods (columns). Cells colored by retention: white (>90%), light yellow (70-90%), light pink (<70%). Helps identify intervention targets. Inter font labels. White border. Portrait orientation, flat style.",
+      "A 2x2 action matrix: Retrievability (low-high) vs Difficulty (low-high). Quadrants: Review Soon (low R, high D), Monitor (high R, high D), Schedule Review (low R, low D), On Track (high R, low D). Each with icon and action text in Inter font. Light blue and light green accents. Portrait orientation."
+    ]
   },
   {
     "cluster_no": 6,
@@ -1416,7 +1716,7 @@
     "search_volume": "Est. Medium",
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://edtechmagazine.com/k12/article/2025/09/data-privacy-classroom; https://edtechmagazine.com/higher-ed/article/2025/10/justifying-lms-investments-roi; https://www.educause.edu/topics/teaching-and-learning/learning-management-systems-lms",
-    "content_angle": "Strategic piece on planning LMS investments with a 3\u20135 year horizon.",
+    "content_angle": "Strategic piece on planning LMS investments with a 3–5 year horizon.",
     "written": false
   }
 ]
