@@ -143,6 +143,36 @@ Automated blog generation using Perplexity research and SEO optimization.
 
 **Author**: Always use `Ananya Krishnan` with image `/images/authors/ananya.png`
 
+### Blog Images
+
+Blog images are stored in `public/images/blog/{slug}/` with the following structure:
+
+- **Hero image**: 1200×630 webp, referenced in MDX frontmatter `image` field. Also serves as OG/Twitter card image automatically via `lib/seo.ts`.
+- **Content images**: 1184×864 webp, embedded inline in the MDX body using JSX `<img>` tags (NOT markdown `![]()` syntax).
+
+**Content image format in MDX** (use this exact pattern):
+```jsx
+<img src="/images/blog/{slug}/{filename}.webp" alt="Descriptive alt text" width="1184" height="864" loading="lazy" style={{ width: '100%', height: 'auto', borderRadius: '16px', border: '1px solid #e2e8f0' }} />
+```
+
+**Why JSX `<img>` and NOT markdown `![]()`**:
+- Markdown images render as plain `<img>` without explicit dimensions → causes CLS (Cumulative Layout Shift) warnings
+- Markdown images don't support `loading="lazy"` for below-fold content
+- JSX `<img>` with `width`/`height` prevents layout shift and enables lazy loading
+
+**Image naming convention**: Use descriptive kebab-case names matching the image content (e.g., `evolution-of-learning-platforms.webp`, `adaptive-learning-cycle.webp`).
+
+### Image Generation Prompts
+
+Image prompts are stored in `mentron_ai_lms_topic_clusters_100.json` under `hero_image_idea` and `content_image_ideas` (array of 3) for each blog.
+
+**Prompt style rules** (these prevent broken AI-generated images):
+- Use Bricolage Grotesque font for headings (the site's `font-display`), clean sans-serif for body text
+- Describe colors as "pale blue" / "pale mint green" — NEVER use hex codes or opacity percentages (they render as literal text in the image)
+- Always include: "Do NOT render any color codes, hex values, or percentage numbers as visible text"
+- Hero heading text should be a meaningful 4-7 word tagline, not a generic label like "AI LMS"
+- Style: flat minimalist line-art, no gradients, no shadows, no 3D effects
+
 ### Validation Rules
 
 Before publishing, check:
