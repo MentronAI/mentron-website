@@ -4,7 +4,7 @@ import { FileText, Users, AlertCircle, ArrowRight, X } from "lucide-react"
 
 export default function ProblemSection() {
   return (
-    <section id="pain-points" className="py-24 px-6 lg:px-16 bg-white">
+    <section id="pain-points" className="py-16 px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 font-display mb-4 tracking-tight">

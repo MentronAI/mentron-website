@@ -4,7 +4,7 @@ import { Layers, GitBranch, MessageCircle, FileText, ClipboardCheck, Network, Mi
 
 export default function StudentFeatures() {
   return (
-    <section id="features" className="py-24 px-6 lg:px-16 bg-white">
+    <section id="features" className="py-16 px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:px-0 animate-fadeInUp pr-0 pl-0 gap-x-6 gap-y-2 mb-12">

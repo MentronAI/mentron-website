@@ -4,7 +4,7 @@ import { BrainCircuit, CheckCircle, Network, BarChart } from "lucide-react"
 
 export default function WhyMentron() {
   return (
-    <section id="why-choose" className="py-24 px-6 lg:px-16 bg-white">
+    <section id="why-choose" className="py-16 px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 lg:gap-8">
           {/* Text Column */}

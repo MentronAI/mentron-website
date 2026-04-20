@@ -9,7 +9,7 @@ import {
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-24 px-6 lg:px-16 bg-white">
+    <section id="faq" className="py-16 px-6 lg:px-16 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4">

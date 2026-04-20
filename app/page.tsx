@@ -1,5 +1,4 @@
 import HeroSection from "@/components/sections/hero-section";
-import TrustSignals from "@/components/sections/trust-signals";
 import ProblemSection from "@/components/sections/problem-section";
 import TeacherBenefits from "@/components/sections/teacher-benefits";
 import HowItWorks from "@/components/sections/how-it-works";
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <TrustSignals />
       <ProblemSection />
       <TeacherBenefits />
       <HowItWorks />

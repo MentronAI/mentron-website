@@ -1,10 +1,104 @@
 "use client"
 
 import { Check } from "lucide-react"
+import { useEffect, useRef, useState } from "react"
+
+const barData = [
+  { label: "Grading", hours: 11.6, percent: 52, gradient: "from-danger to-red-400", textColor: "text-white" },
+  { label: "Planning", hours: 9.7, percent: 43, gradient: "from-warning to-amber-400", textColor: "text-white" },
+  { label: "Admin Work", hours: 8.5, percent: 38, gradient: "from-warning to-amber-400", textColor: "text-white" },
+  { label: "Communication", hours: 4.2, percent: 19, gradient: "from-amber-400 to-yellow-400", textColor: "text-slate-700" },
+  { label: "Instruction", hours: 22.4, percent: 100, gradient: "from-success to-emerald-400", textColor: "text-white" },
+  { label: "Collaboration", hours: 4, percent: 18, gradient: "from-primary to-blue-400", textColor: "text-white" },
+]
+
+function AnimatedBar({ label, hours, percent, gradient, textColor, isVisible, delay }: {
+  label: string
+  hours: number
+  percent: number
+  gradient: string
+  textColor: string
+  isVisible: boolean
+  delay: number
+}) {
+  const [width, setWidth] = useState(0)
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!isVisible) return
+
+    const startDelay = delay * 150
+
+    // Bar animation
+    const barTimeout = setTimeout(() => {
+      setWidth(percent)
+    }, startDelay)
+
+    // Number counting animation
+    const countTimeout = setTimeout(() => {
+      const duration = 1000
+      const steps = 40
+      const increment = hours / steps
+      let current = 0
+      const interval = setInterval(() => {
+        current += increment
+        if (current >= hours) {
+          setCount(hours)
+          clearInterval(interval)
+        } else {
+          setCount(Math.round(current * 10) / 10)
+        }
+      }, duration / steps)
+
+      return () => clearInterval(interval)
+    }, startDelay)
+
+    return () => {
+      clearTimeout(barTimeout)
+      clearTimeout(countTimeout)
+    }
+  }, [isVisible, hours, percent, delay])
+
+  return (
+    <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
+      <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">{label}</div>
+      <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
+        <div
+          className={`h-full bg-gradient-to-r ${gradient} rounded-full flex items-center justify-end pr-3 transition-all ease-out duration-1000`}
+          style={{ width: `${width}%` }}
+        >
+          <span className={`text-xs font-bold ${textColor}`}>
+            {count.toFixed(1)}h
+          </span>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export default function TeacherBenefits() {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => observer.disconnect()
+  }, [isVisible])
+
   return (
-    <section id="teacher-solutions" className="py-24 px-6 lg:px-16 bg-gradient-to-b from-slate-50 to-white">
+    <section ref={sectionRef} id="teacher-solutions" className="py-16 px-6 lg:px-16 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 font-display mb-4 tracking-tight">
@@ -20,54 +114,14 @@ export default function TeacherBenefits() {
           <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-8">
             <h3 className="text-lg font-bold text-slate-900 mb-6 font-display">Weekly Hours Breakdown</h3>
             <div className="space-y-6 sm:space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Grading</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-danger to-red-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "52%" }}>
-                    <span className="text-xs font-bold text-white">11.6h</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Planning</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "43%" }}>
-                    <span className="text-xs font-bold text-white">9.7h</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Admin Work</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-warning to-amber-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "38%" }}>
-                    <span className="text-xs font-bold text-white">8.5h</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Communication</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-amber-400 to-yellow-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "19%" }}>
-                    <span className="text-xs font-bold text-slate-700">4.2h</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Instruction</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-success to-emerald-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "100%" }}>
-                    <span className="text-xs font-bold text-white">22.4h</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4">
-                <div className="w-full sm:w-32 text-xs sm:text-sm text-slate-600 font-bold sm:font-medium uppercase sm:normal-case tracking-wider sm:tracking-normal">Collaboration</div>
-                <div className="flex-1 bg-slate-100 rounded-full h-8 overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-primary to-blue-400 rounded-full flex items-center justify-end pr-3 transition-all duration-1000" style={{ width: "18%" }}>
-                    <span className="text-xs font-bold text-white">4h</span>
-                  </div>
-                </div>
-              </div>
+              {barData.map((bar, index) => (
+                <AnimatedBar
+                  key={bar.label}
+                  {...bar}
+                  isVisible={isVisible}
+                  delay={index}
+                />
+              ))}
             </div>
           </div>
 
