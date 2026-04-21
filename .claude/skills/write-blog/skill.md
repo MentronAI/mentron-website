@@ -193,16 +193,6 @@ Progress: [N]/100 blogs written
 Next up: [next unwritten blog title]
 ```
 
-### Step 9: Post-Write Recommendations
-
-After publishing, remind the user about optional follow-up skills:
-
-```
-QC Check:       /qc-blog {slug}
-Infographics:   /blog-infographic {slug}
-Internal Links: /link-blogs {slug}
-```
-
 ## Batch processing
 When `batch N` is specified:
 1. Run steps 1-9 for first topic
