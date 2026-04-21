@@ -105,7 +105,7 @@ export default function RootLayout({
 
         <div className="relative z-10 flex flex-col lg:flex-row min-h-screen max-w-[1600px] mx-auto">
           <Sidebar />
-          <main className="flex-1 lg:ml-56 flex flex-col overflow-hidden">
+          <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
             {children}
           </main>
         </div>

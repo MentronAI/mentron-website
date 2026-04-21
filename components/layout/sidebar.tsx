@@ -11,7 +11,7 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className={`lg:w-56 lg:fixed lg:h-screen flex flex-col z-50 bg-white lg:bg-transparent border-slate-200/50 border-b lg:border-b-0 lg:border-r pt-8 pr-6 pb-8 pl-6 justify-between transition-all duration-300 ${isOpen ? "h-screen" : "h-auto"}`}>
+    <aside className={`lg:w-64 lg:fixed lg:h-screen flex flex-col z-50 bg-white lg:bg-transparent border-slate-200/50 border-b lg:border-b-0 lg:border-r pt-8 pr-8 pb-8 pl-8 justify-between transition-all duration-300 ${isOpen ? "h-screen" : "h-auto"}`}>
       <div className="w-full">
         <div className="mb-8 lg:mb-12 animate-fade-up flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group" onClick={() => setIsOpen(false)}>

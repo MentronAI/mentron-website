@@ -372,7 +372,7 @@ export default function HeroSection() {
   ]
 
   return (
-    <section id="hero" className="relative pt-8 pb-12 lg:pt-16 lg:pb-16 pl-4 pr-8 lg:pl-6 lg:pr-12 bg-white overflow-hidden">
+    <section id="hero" className="relative pt-8 pb-12 lg:pt-16 lg:pb-16 px-6 lg:px-16 bg-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8 animate-fade-up max-w-2xl relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary/5 border border-primary/10 rounded-full text-primary text-sm font-bold animate-fadeInUp">

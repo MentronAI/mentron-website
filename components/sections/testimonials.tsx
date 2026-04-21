@@ -17,7 +17,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-16 pl-4 pr-8 lg:pl-6 lg:pr-12 bg-white">
+    <section id="testimonials" className="py-16 px-6 lg:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col sm:px-0 animate-fadeInUp pr-0 pl-0 gap-x-6 gap-y-2 mb-12">
           <h2 className="text-[44px] leading-[0.9] sm:text-6xl lg:text-7xl xl:text-5xl text-[#000000] tracking-tighter text-left font-display">
