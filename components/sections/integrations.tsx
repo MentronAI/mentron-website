@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Integrations() {
   return (
-    <section id="integrations" className="py-16 px-6 lg:px-16 bg-gradient-to-b from-white to-slate-50">
+    <section id="integrations" className="py-16 pl-4 pr-8 lg:pl-6 lg:pr-12 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
