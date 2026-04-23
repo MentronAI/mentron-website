@@ -128,7 +128,7 @@ export default function TeacherBenefits() {
           {/* Right Column: Solution Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Solution 1 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-primary font-bold text-sm mb-2">Save 11 hrs/week</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Grading Automated</h4>
               <p className="text-sm text-slate-500 mb-3">Automated grading for quizzes frees up hours of manual review.</p>
@@ -139,7 +139,7 @@ export default function TeacherBenefits() {
             </div>
 
             {/* Solution 2 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-primary font-bold text-sm mb-2">40% faster planning</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Planning Optimized</h4>
               <p className="text-sm text-slate-500 mb-3">Create lesson plans 5x faster with AI-assisted tools.</p>
@@ -150,7 +150,7 @@ export default function TeacherBenefits() {
             </div>
 
             {/* Solution 3 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-primary font-bold text-sm mb-2">2-4 hrs back/day</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Admin Eliminated</h4>
               <p className="text-sm text-slate-500 mb-3">Live performance reporting handles paperwork automatically.</p>
@@ -161,7 +161,7 @@ export default function TeacherBenefits() {
             </div>
 
             {/* Solution 4 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-primary font-bold text-sm mb-2">70% time saved</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Communication Streamlined</h4>
               <p className="text-sm text-slate-500 mb-3">Automated parent updates and student notifications.</p>
@@ -172,7 +172,7 @@ export default function TeacherBenefits() {
             </div>
 
             {/* Solution 5 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-success font-bold text-sm mb-2">22+ hrs for teaching</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Instruction Amplified</h4>
               <p className="text-sm text-slate-500 mb-3">Maximize time on direct student engagement.</p>
@@ -183,7 +183,7 @@ export default function TeacherBenefits() {
             </div>
 
             {/* Solution 6 */}
-            <div className="bg-white border border-slate-200 rounded-2xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
+            <div className="bg-white border border-slate-200 rounded-3xl p-5 hover:shadow-lg hover:border-primary transition-all duration-300">
               <div className="text-primary font-bold text-sm mb-2">3x peer interaction</div>
               <h4 className="text-lg font-bold text-slate-900 mb-2 font-display">Collaboration Enhanced</h4>
               <p className="text-sm text-slate-500 mb-3">Facilitate deeper peer-to-peer learning experiences.</p>

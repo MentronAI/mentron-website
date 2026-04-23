@@ -28,7 +28,7 @@ export default function ProblemSection() {
               Drowning in Content Chaos
             </h3>
             <p className="text-slate-500 leading-relaxed mb-6">
-              84% of students feel lost in endless PDFs and textbooks with no clear roadmap or
+              Students feel lost in endless PDFs and textbooks with no clear roadmap or
               prioritization. You study for hours but still don't know what to focus on first.
             </p>
             <div className="bg-slate-50 rounded-xl p-5 h-32 flex items-end justify-around gap-3">
@@ -110,6 +110,17 @@ export default function ProblemSection() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Solution Bridge */}
+        <div className="mt-16 text-center">
+          <div className="inline-flex items-center gap-2 bg-primary/5 border border-primary/20 rounded-full px-5 py-2.5">
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <span className="text-sm font-medium text-primary">There's a better way</span>
+          </div>
+          <p className="text-slate-500 mt-4 max-w-lg mx-auto">
+            AI that adapts to your learning style. Instant feedback. Personalized study paths. See what Mentron can do.
+          </p>
         </div>
       </div>
     </section>

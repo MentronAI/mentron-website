@@ -31,15 +31,15 @@ export default function Footer() {
               </p>
               <div className="flex items-center gap-3 text-neutral-500">
                 {/* Twitter/X */}
-                <a href="https://twitter.com/mentron" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-[#0077FF] hover:text-[#0077FF] transition-colors">
+                <a href="https://twitter.com/mentron" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                   <Twitter className="w-3.5 h-3.5" />
                 </a>
                 {/* LinkedIn */}
-                <a href="https://linkedin.com/company/mentron" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-[#0077FF] hover:text-[#0077FF] transition-colors">
+                <a href="https://linkedin.com/company/mentron" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                   <Linkedin className="w-3.5 h-3.5" />
                 </a>
                 {/* GitHub */}
-                <a href="https://github.com/mentron-ai" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-[#0077FF] hover:text-[#0077FF] transition-colors">
+                <a href="https://github.com/mentron-ai" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                   <Github className="w-3.5 h-3.5" />
                 </a>
               </div>
@@ -51,9 +51,9 @@ export default function Footer() {
               <div className="space-y-3">
                 <h3 className="uppercase text-xs font-medium text-neutral-400 tracking-[0.16em] font-geist">Solutions</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li><Link href="/institutional-demo" className="hover:text-[#0077FF] transition-colors font-geist">For Institutions</Link></li>
-                  <li><Link href="/#features" className="hover:text-[#0077FF] transition-colors font-geist">Features</Link></li>
-                  <li><Link href="/#integrations" className="hover:text-[#0077FF] transition-colors font-geist">Integrations</Link></li>
+                  <li><Link href="/institutional-demo" className="hover:text-primary transition-colors font-geist">For Institutions</Link></li>
+                  <li><Link href="/#features" className="hover:text-primary transition-colors font-geist">Features</Link></li>
+                  <li><Link href="/#integrations" className="hover:text-primary transition-colors font-geist">Integrations</Link></li>
                 </ul>
               </div>
 
@@ -61,9 +61,9 @@ export default function Footer() {
               <div className="space-y-3">
                 <h3 className="uppercase text-xs font-medium text-neutral-400 tracking-[0.16em] font-geist">Resources</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li><Link href="/blogs" className="hover:text-[#0077FF] transition-colors font-geist">Blog</Link></li>
-                  <li><Link href="/#faq" className="hover:text-[#0077FF] transition-colors font-geist">FAQ</Link></li>
-                  <li><Link href="/help" className="hover:text-[#0077FF] transition-colors font-geist">Help Center</Link></li>
+                  <li><Link href="/blogs" className="hover:text-primary transition-colors font-geist">Blog</Link></li>
+                  <li><Link href="/#faq" className="hover:text-primary transition-colors font-geist">FAQ</Link></li>
+                  <li><Link href="/help" className="hover:text-primary transition-colors font-geist">Help Center</Link></li>
                 </ul>
               </div>
 
@@ -71,9 +71,9 @@ export default function Footer() {
               <div className="space-y-3">
                 <h3 className="text-xs font-medium uppercase tracking-[0.16em] text-neutral-400 font-geist">Company</h3>
                 <ul className="space-y-2 text-neutral-600">
-                  <li><Link href="/about" className="hover:text-[#0077FF] transition-colors font-geist">About</Link></li>
-                  <li><Link href="/privacy" className="hover:text-[#0077FF] transition-colors font-geist">Privacy Policy</Link></li>
-                  <li><Link href="/terms" className="hover:text-[#0077FF] transition-colors font-geist">Terms of Service</Link></li>
+                  <li><Link href="/about" className="hover:text-primary transition-colors font-geist">About</Link></li>
+                  <li><Link href="/privacy" className="hover:text-primary transition-colors font-geist">Privacy Policy</Link></li>
+                  <li><Link href="/terms" className="hover:text-primary transition-colors font-geist">Terms of Service</Link></li>
                 </ul>
               </div>
             </div>

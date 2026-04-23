@@ -154,7 +154,7 @@ export default function Integrations() {
 
         <div className="text-center mt-12">
           <p className="text-sm text-slate-500 font-geist mb-4">
-            We focus on Canvas, Google Classroom, and Moodle—the platforms used by 90% of Indian schools and colleges.
+            We focus on Canvas, Google Classroom, and Moodle—platforms widely used across Indian schools and colleges.
           </p>
           <a href="mailto:contact@mentron.in" className="text-primary font-semibold hover:underline">
             Request an Integration →
