@@ -27,11 +27,11 @@ export default function HeroSection() {
         sizes="100vw"
       />
 
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Directional gradient overlay — dark at bottom for text, light at top */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
 
-      {/* Radial gradient behind text for readability */}
-      <div className="absolute inset-0 z-[1] bg-[radial-gradient(ellipse_60%_50%_at_50%_50%,rgba(0,0,0,0.4),transparent)]" />
+      {/* Subtle brand-color radial glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_40%_at_50%_55%,rgba(0,119,255,0.08),transparent)]" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
@@ -45,7 +45,7 @@ export default function HeroSection() {
 
         {/* Caption */}
         <p
-          className="mt-6 text-sm sm:text-base tracking-[0.2em] text-white/50 font-semibold uppercase font-geist animate-[fadeInUp_0.6s_ease-out_0.6s_both]"
+          className="mt-6 text-sm sm:text-base tracking-[0.2em] text-white/50 font-semibold uppercase animate-[fadeInUp_0.6s_ease-out_0.6s_both]"
         >
           SPARK THE URGE TO DIG DEEPER
         </p>
@@ -55,7 +55,7 @@ export default function HeroSection() {
           className="mt-10 flex flex-col sm:flex-row gap-4 animate-[fadeInUp_0.8s_ease-out_0.8s_both]"
         >
           <a
-            href="#key-features"
+            href="/institutional-demo"
             className="bg-primary hover:bg-primary-dark text-white text-base font-semibold py-4 px-10 rounded-full transition-all shadow-xl shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-0.5"
           >
             Get Early Access
@@ -67,6 +67,11 @@ export default function HeroSection() {
             See How It Works
           </a>
         </div>
+
+        {/* Trust line */}
+        <p className="mt-8 text-sm text-white/60 font-medium tracking-wide animate-[fadeInUp_0.8s_ease-out_1s_both]">
+          Join educators exploring AI-powered learning
+        </p>
       </div>
     </section>
   )

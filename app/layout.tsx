@@ -96,7 +96,7 @@ export default function RootLayout({
         />
 
         {/* Grid background */}
-        <div className="fixed w-full h-full top-0 left-0 pointer-events-none z-0 opacity-40"
+        <div className="fixed w-full h-full top-0 left-0 pointer-events-none z-0 opacity-[0.06]"
           style={{
             backgroundImage: 'linear-gradient(to right, #E2E8F0 1px, transparent 1px), linear-gradient(to bottom, #E2E8F0 1px, transparent 1px)',
             backgroundSize: '60px 60px'

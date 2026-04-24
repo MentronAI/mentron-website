@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Layers, GitBranch, MessageCircle, FileText, ClipboardCheck, Network, Microscope, Calculator, Book, GraduationCap } from "lucide-react"
+import { Layers, GitBranch, MessageCircle, FileText, ClipboardCheck, Network } from "lucide-react"
 
 const flashcardData = [
   { q: "What is Photosynthesis?", a: "The process by which plants convert sunlight, water & CO₂ into glucose and oxygen." },
@@ -117,6 +117,9 @@ function ProgressiveNotes() {
     { col: "notes", text: "Driven by solute concentration gradient" },
     { col: "cue", text: "Example" },
     { col: "notes", text: "Roots absorbing water from soil" },
+    { col: "cue", text: "Formula" },
+    { col: "notes", text: "Water potential: ψ = ψs + ψp" },
+    { col: "notes", text: "Tonicity determines direction of flow" },
     { col: "summary", text: "Water flows from low → high solute via semi-permeable membrane" },
   ]
   const [visible, setVisible] = useState(0)
@@ -141,7 +144,7 @@ function ProgressiveNotes() {
     <div className="mt-4 space-y-0 border border-slate-200 rounded-xl overflow-hidden">
       <div className="flex">
         {/* Cue column */}
-        <div className="w-1/3 border-r border-slate-200 p-2 space-y-1.5 bg-indigo-50/50">
+        <div className="w-1/3 border-r border-slate-200 p-2 space-y-1.5 bg-slate-50">
           {lines.filter(l => l.col === "cue").map((line, i) => {
             const globalIdx = lines.indexOf(line)
             return (
@@ -149,7 +152,7 @@ function ProgressiveNotes() {
                 key={i}
                 className="h-3 rounded transition-all duration-300"
                 style={{
-                  backgroundColor: globalIdx < visible ? "#818cf8" : "#e2e8f0",
+                  backgroundColor: globalIdx < visible ? "#64748b" : "#e2e8f0",
                   opacity: globalIdx < visible ? 1 : 0.5,
                 }}
               />
@@ -165,8 +168,8 @@ function ProgressiveNotes() {
                 key={i}
                 className="h-3 rounded transition-all duration-300"
                 style={{
-                  width: globalIdx < visible ? "100%" : `${60 + Math.random() * 30}%`,
-                  backgroundColor: globalIdx < visible ? "#94a3b8" : "#e2e8f0",
+                  width: globalIdx < visible ? "100%" : `${[85, 70, 92, 65, 78, 88][i % 6]}%`,
+                  backgroundColor: globalIdx < visible ? "#475569" : "#e2e8f0",
                   opacity: globalIdx < visible ? 1 : 0.5,
                 }}
               />
@@ -175,12 +178,12 @@ function ProgressiveNotes() {
         </div>
       </div>
       {/* Summary row */}
-      <div className="border-t border-slate-200 p-2 bg-cyan-50/50">
+      <div className="border-t border-slate-200 p-2 bg-slate-100/60">
         <div
           className="h-3 rounded transition-all duration-300"
           style={{
             width: visible >= lines.length ? "100%" : "30%",
-            backgroundColor: visible >= lines.length ? "#06b6d4" : "#e2e8f0",
+            backgroundColor: visible >= lines.length ? "#334155" : "#e2e8f0",
             opacity: visible >= lines.length ? 1 : 0.5,
           }}
         />
@@ -247,11 +250,11 @@ function InteractiveQuiz() {
 
 export default function StudentFeatures() {
   return (
-    <section id="features" className="py-16 px-6 lg:px-16 bg-white">
+    <section id="features" className="py-16 px-6 lg:px-16 bg-[#F8F7F5]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:px-0 animate-fadeInUp pr-0 pl-0 gap-x-6 gap-y-2 mb-12">
-          <h2 className="text-[44px] leading-[0.9] sm:text-6xl lg:text-7xl xl:text-5xl text-slate-900 tracking-tighter text-left font-display">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight tracking-tighter text-slate-900 text-left font-display">
             Everything Your Students Need to Learn Better
           </h2>
           <p className="sm:text-base text-sm text-slate-400 tracking-tight mt-1">
@@ -266,7 +269,7 @@ export default function StudentFeatures() {
             <div className="absolute top-4 right-4 px-3 py-1 bg-primary text-white text-xs font-semibold rounded-full">
               Most Used by Students
             </div>
-            <div className="w-12 h-12 rounded-xl bg-blue-50 text-primary flex items-center justify-center mb-4">
+            <div className="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <Layers className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-2">AI Flashcards</h3>
@@ -277,17 +280,19 @@ export default function StudentFeatures() {
             {/* Interactive Flip Flashcards */}
             <FlashcardStack />
 
+            {/* Hidden until demo page is ready
             <div className="mt-auto pt-6 border-t border-slate-100">
               <div className="flex items-center justify-between text-sm">
                 <span className="text-slate-500">FSRS-powered spaced repetition</span>
-                <span className="text-primary font-semibold">→ See Demo</span>
+                <span className="text-slate-900 font-semibold">→ See Demo</span>
               </div>
             </div>
+            */}
           </div>
 
           {/* Mind Maps */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 hover:shadow-xl transition-all">
-            <div className="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <GitBranch className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Mind Maps</h3>
@@ -390,7 +395,7 @@ export default function StudentFeatures() {
 
           {/* Chat with Docs */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 hover:shadow-xl transition-all">
-            <div className="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <MessageCircle className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Chat with Docs</h3>
@@ -408,7 +413,7 @@ export default function StudentFeatures() {
 
           {/* Smart Notes */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 hover:shadow-xl transition-all">
-            <div className="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <FileText className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Smart Notes</h3>
@@ -426,7 +431,7 @@ export default function StudentFeatures() {
 
           {/* Quiz Gen */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 hover:shadow-xl transition-all">
-            <div className="w-10 h-10 rounded-xl bg-orange-50 text-orange-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <ClipboardCheck className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Quiz Gen</h3>
@@ -444,7 +449,7 @@ export default function StudentFeatures() {
 
           {/* Knowledge Graphs */}
           <div className="bg-white rounded-3xl p-6 border border-slate-200 hover:shadow-xl transition-all">
-            <div className="w-10 h-10 rounded-xl bg-red-50 text-red-600 flex items-center justify-center mb-4">
+            <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
               <Network className="w-5 h-5" />
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Knowledge Graphs</h3>
@@ -455,13 +460,13 @@ export default function StudentFeatures() {
             {/* Knowledge Graph - Rectangular Nodes */}
             <div className="relative h-40 flex items-center justify-center mt-4">
               <svg viewBox="0 0 285.75 285.75" className="w-full h-full">
-                <rect x="114.48" y="122.04" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="107.82" y="41.81" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="208.93" y="73.51" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="217.70" y="176.84" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="154.23" y="233.32" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="65.42" y="202.71" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
-                <rect x="17.48" y="117.61" width="55.8" height="33.84" fill="#dc2626" stroke="#dc2626" strokeWidth="1" rx="4"/>
+                <rect x="114.48" y="122.04" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="107.82" y="41.81" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="208.93" y="73.51" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="217.70" y="176.84" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="154.23" y="233.32" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="65.42" y="202.71" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
+                <rect x="17.48" y="117.61" width="55.8" height="33.84" fill="#0077FF" stroke="#0077FF" strokeWidth="1" rx="4"/>
                 <path d="M 142.17 121.55 L 137.34 75.73" stroke="#dc2626" strokeWidth="1"/>
                 <path d="M 208.36 86.42 L 170.30 138.35" stroke="#dc2626" strokeWidth="1"/>
                 <path d="M 170.81 139.94 L 216.76 194.86" stroke="#dc2626" strokeWidth="1"/>
@@ -478,146 +483,33 @@ export default function StudentFeatures() {
         </div>
 
         {/* Capability Highlights */}
-        <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-3xl p-8 border border-slate-200 mb-16">
+        <div className="bg-white rounded-3xl p-8 border border-slate-200 mb-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary mb-1">6</div>
+              <div className="text-3xl font-bold text-slate-900 mb-1">6</div>
               <div className="text-sm text-slate-600">AI-powered tools</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-1">Any</div>
+              <div className="text-3xl font-bold text-slate-900 mb-1">Any</div>
               <div className="text-sm text-slate-600">Subject or grade level</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-1">FSRS</div>
+              <div className="text-3xl font-bold text-slate-900 mb-1">FSRS</div>
               <div className="text-sm text-slate-600">Spaced repetition engine</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-1">24/7</div>
+              <div className="text-3xl font-bold text-slate-900 mb-1">24/7</div>
               <div className="text-sm text-slate-600">AI tutor availability</div>
-            </div>
-          </div>
-        </div>
-
-        {/* How These Tools Work Together */}
-        <div className="mb-16">
-          <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 text-center mb-10 font-display">
-            How Teachers Use These Tools Together
-          </h3>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="relative">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">1</div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">Assign Content</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Upload course materials (PDFs, lecture slides). AI processes content and creates study resources students can access 24/7.
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">Smart Notes</span>
-                    <span className="text-xs px-2 py-1 bg-blue-100 text-blue-700 rounded-full">Chat with Docs</span>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden md:block absolute top-5 -right-4 text-slate-300 text-2xl">→</div>
-            </div>
-
-            <div className="relative">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">2</div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">Students Study</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Students review with AI flashcards, explore mind maps, and use knowledge graphs to understand how concepts connect.
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full">Flashcards</span>
-                    <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full">Mind Maps</span>
-                    <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded-full">Graphs</span>
-                  </div>
-                </div>
-              </div>
-              <div className="hidden md:block absolute top-5 -right-4 text-slate-300 text-2xl">→</div>
-            </div>
-
-            <div>
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">3</div>
-                <div>
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">Track & Assess</h4>
-                  <p className="text-sm text-slate-600 leading-relaxed">
-                    Generate quizzes to assess understanding. See which students are struggling and where the class needs more help.
-                  </p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">Quiz Gen</span>
-                    <span className="text-xs px-2 py-1 bg-green-100 text-green-700 rounded-full">Analytics</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Perfect For Different Subjects */}
-        <div className="bg-slate-50 rounded-3xl p-8 lg:p-12 mb-16">
-          <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 text-center mb-10 font-display">
-            Works Across All Subjects & Grade Levels
-          </h3>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4 text-primary">
-                <Microscope className="w-6 h-6" />
-              </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">Science Classes</h4>
-              <p className="text-sm text-slate-600 mb-3">
-                Knowledge graphs for cell biology, chemistry equations, physics concepts. Mind maps for unit connections.
-              </p>
-              <div className="text-xs text-primary font-semibold">Biology • Chemistry • Physics</div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4 text-purple-600">
-                <Calculator className="w-6 h-6" />
-              </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">Math & Calculus</h4>
-              <p className="text-sm text-slate-600 mb-3">
-                Auto-generate practice problems. Students get instant feedback on problem-solving steps.
-              </p>
-              <div className="text-xs text-primary font-semibold">Algebra • Geometry • Calculus</div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-4 text-orange-600">
-                <Book className="w-6 h-6" />
-              </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">Humanities</h4>
-              <p className="text-sm text-slate-600 mb-3">
-                Mind maps for historical timelines, literary themes. Flashcards for vocabulary and key dates.
-              </p>
-              <div className="text-xs text-primary font-semibold">History • Literature • Languages</div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-slate-200">
-              <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4 text-green-600">
-                <GraduationCap className="w-6 h-6" />
-              </div>
-              <h4 className="text-lg font-bold text-slate-900 mb-2">College Courses</h4>
-              <p className="text-sm text-slate-600 mb-3">
-                Works for any university course. Engineering, business, medical schools—all subjects supported.
-              </p>
-              <div className="text-xs text-primary font-semibold">Undergrad • Postgrad • Professional</div>
             </div>
           </div>
         </div>
 
         {/* CTA */}
         <div className="text-center">
-          <button className="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-10 rounded-full transition-all shadow-xl transform hover:-translate-y-0.5 hover:shadow-2xl">
+          <a href="/institutional-demo" className="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-10 rounded-full transition-all shadow-xl transform hover:-translate-y-0.5 hover:shadow-2xl inline-block">
             Schedule a Demo for Your School
-          </button>
-          <p className="text-sm text-slate-500 mt-4">See how Mentron works in your classroom • 30-minute demo</p>
+          </a>
+          <p className="text-sm text-slate-500 mt-4">See how Mentron works in your classroom. 30-minute demo.</p>
         </div>
       </div>
     </section>

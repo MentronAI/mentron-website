@@ -1,10 +1,10 @@
 "use client"
 
-import { FileText, Users, AlertCircle, ArrowRight, X } from "lucide-react"
+import { ArrowRight, X } from "lucide-react"
 
 export default function ProblemSection() {
   return (
-    <section id="pain-points" className="py-16 px-6 lg:px-16 bg-white">
+    <section id="pain-points" className="py-16 px-6 lg:px-16 bg-[#F8F7F5]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 font-display mb-4 tracking-tight">
@@ -17,12 +17,9 @@ export default function ProblemSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1: Overwhelming Content */}
-          <div className="bg-white border border-slate-200 rounded-3xl p-8 relative hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
-            <div className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-red-50 text-danger">
-              OVERWHELMING
-            </div>
-            <div className="w-12 h-12 rounded-xl bg-red-50 text-danger flex items-center justify-center mb-6">
-              <FileText className="w-6 h-6" />
+          <div className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
+            <div className="inline-block px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-slate-100 text-slate-900 mb-4">
+              Overwhelming
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">
               Drowning in Content Chaos
@@ -46,12 +43,9 @@ export default function ProblemSection() {
           </div>
 
           {/* Card 2: One-Size-Fits-All */}
-          <div className="bg-white border border-slate-200 rounded-3xl p-8 relative hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
-            <div className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-amber-50 text-warning">
-              ONE-SIZE-FITS-ALL
-            </div>
-            <div className="w-12 h-12 rounded-xl bg-amber-50 text-warning flex items-center justify-center mb-6">
-              <Users className="w-6 h-6" />
+          <div className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
+            <div className="inline-block px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-slate-100 text-slate-900 mb-4">
+              One-Size-Fits-All
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">
               Generic Courses Ignore Your Reality
@@ -77,12 +71,9 @@ export default function ProblemSection() {
           </div>
 
           {/* Card 3: No Feedback */}
-          <div className="bg-white border border-slate-200 rounded-3xl p-8 relative hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
-            <div className="absolute top-5 right-5 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-red-50 text-danger">
-              NO FEEDBACK
-            </div>
-            <div className="w-12 h-12 rounded-xl bg-red-50 text-danger flex items-center justify-center mb-6">
-              <AlertCircle className="w-6 h-6" />
+          <div className="bg-white border border-slate-200 rounded-3xl p-8 hover:shadow-xl hover:-translate-y-1 hover:border-primary transition-all duration-300">
+            <div className="inline-block px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide bg-slate-100 text-slate-900 mb-4">
+              No Feedback
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mb-4 font-display">
               You Don't Know What You Don't Know
@@ -110,17 +101,6 @@ export default function ProblemSection() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Solution Bridge */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/5 border border-primary/20 rounded-full px-5 py-2.5">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-primary">There's a better way</span>
-          </div>
-          <p className="text-slate-500 mt-4 max-w-lg mx-auto">
-            AI that adapts to your learning style. Instant feedback. Personalized study paths. See what Mentron can do.
-          </p>
         </div>
       </div>
     </section>

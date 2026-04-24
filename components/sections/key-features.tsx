@@ -1,7 +1,7 @@
 "use client"
 
-import { useState, useEffect, useRef, useCallback } from "react"
-import { MessageCircle, Layers, Network, Bot, ClipboardCheck, BarChart3, BrainCircuit, BookOpen, GraduationCap, HelpCircle } from "lucide-react"
+import React, { useState, useEffect, useRef } from "react"
+import { MessageCircle, Bot, ClipboardCheck, BarChart3, BrainCircuit, HelpCircle } from "lucide-react"
 
 // ─── IntersectionObserver hook for scroll-triggered animations ───
 function useInView(threshold = 0.2) {
@@ -22,27 +22,22 @@ function useInView(threshold = 0.2) {
   return { ref, inView }
 }
 
-// ─── Hero Chat Demo with Memory Recall ───
-function HeroChatDemo({ mode }: { mode: "student" | "faculty" }) {
-  const exchanges = {
-    student: [
-      { role: "user", text: "I keep confusing BFS and DFS in graph traversal" },
-      { role: "memory", text: "Memory: Graph Traversal — 42% mastery" },
-      { role: "hero", text: "I see you've been working on Data Structures. BFS goes level-by-level using a queue, DFS goes depth-first using a stack. Want me to create a mind map showing the differences?" },
-    ],
-    faculty: [
-      { role: "user", text: "Which students are struggling in Unit 3?" },
-      { role: "memory", text: "Memory: Unit 3 — 3 students below 45%" },
-      { role: "hero", text: "3 students are showing weak mastery in Unit 3 (Data Structures): Rahul (35%), Priya (42%), and Arjun (28%). Common struggle: recursive backtracking. Want me to generate targeted practice quizzes for them?" },
-    ],
-  }
+// ─── Chat exchanges (static, outside component to avoid re-renders) ───
+const facultyChat = [
+  { role: "user", text: "Which students are struggling in Unit 3?" },
+  { role: "memory", text: "Memory: Unit 3 — 3 students below 45%" },
+  { role: "hero", text: "3 students are showing weak mastery in Unit 3 (Data Structures): Rahul (35%), Priya (42%), and Arjun (28%). Common struggle: recursive backtracking. Want me to generate targeted practice quizzes for them?" },
+]
 
-  const messages = exchanges[mode]
+// ─── Hero Chat Demo with Memory Recall ───
+function HeroChatDemo() {
   const [visibleCount, setVisibleCount] = useState(0)
   const [typing, setTyping] = useState(false)
   const [typedText, setTypedText] = useState("")
   const [started, setStarted] = useState(false)
   const { ref, inView } = useInView(0.3)
+
+  const messages = facultyChat
 
   useEffect(() => {
     if (!inView || started) return
@@ -71,7 +66,7 @@ function HeroChatDemo({ mode }: { mode: "student" | "faculty" }) {
       const timeout = setTimeout(() => setVisibleCount((c) => c + 1), 600)
       return () => clearTimeout(timeout)
     }
-  }, [started, visibleCount, messages])
+  }, [started, visibleCount]) // messages removed — static reference, stable identity
 
   return (
     <div ref={ref} className="bg-slate-50 rounded-2xl p-4 mt-4 space-y-3 border border-slate-100">
@@ -94,8 +89,8 @@ function HeroChatDemo({ mode }: { mode: "student" | "faculty" }) {
           )}
           {msg.role === "hero" && i < visibleCount - (typing ? 0 : 0) && !typing && (
             <div className="flex justify-start gap-2">
-              <div className="w-6 h-6 rounded-full bg-emerald-100 flex-shrink-0 flex items-center justify-center">
-                <MessageCircle className="w-3 h-3 text-emerald-600" />
+              <div className="w-6 h-6 rounded-full bg-slate-100 flex-shrink-0 flex items-center justify-center">
+                <MessageCircle className="w-3 h-3 text-slate-800" />
               </div>
               <div className="bg-white border border-slate-200 rounded-2xl rounded-bl-sm px-3 py-2 text-xs text-slate-700 max-w-[85%]">
                 {msg.text}
@@ -106,8 +101,8 @@ function HeroChatDemo({ mode }: { mode: "student" | "faculty" }) {
       ))}
       {typing && (
         <div className="flex justify-start gap-2">
-          <div className="w-6 h-6 rounded-full bg-emerald-100 flex-shrink-0 flex items-center justify-center">
-            <MessageCircle className="w-3 h-3 text-emerald-600" />
+          <div className="w-6 h-6 rounded-full bg-slate-100 flex-shrink-0 flex items-center justify-center">
+            <MessageCircle className="w-3 h-3 text-slate-800" />
           </div>
           <div className="bg-white border border-slate-200 rounded-2xl rounded-bl-sm px-3 py-2 text-xs text-slate-700 max-w-[85%]">
             {typedText}
@@ -194,110 +189,266 @@ function QuizGenDemo() {
   )
 }
 
-// ─── Knowledge Graph SVG ───
-function KnowledgeGraphSVG() {
-  return (
-    <div className="mt-4 flex items-center justify-center">
-      <svg viewBox="0 0 200 160" className="w-full h-32">
-        <circle cx="100" cy="80" r="16" fill="#dc2626" opacity="0.9" />
-        <circle cx="40" cy="30" r="12" fill="#dc2626" opacity="0.7" />
-        <circle cx="160" cy="40" r="12" fill="#dc2626" opacity="0.7" />
-        <circle cx="160" cy="130" r="12" fill="#dc2626" opacity="0.7" />
-        <circle cx="40" cy="130" r="12" fill="#dc2626" opacity="0.7" />
-        <circle cx="100" cy="20" r="10" fill="#dc2626" opacity="0.5" />
-        <line x1="100" y1="64" x2="45" y2="40" stroke="#dc2626" strokeWidth="1.5" opacity="0.4" />
-        <line x1="100" y1="64" x2="150" y2="48" stroke="#dc2626" strokeWidth="1.5" opacity="0.4" />
-        <line x1="100" y1="96" x2="150" y2="120" stroke="#dc2626" strokeWidth="1.5" opacity="0.4" />
-        <line x1="100" y1="96" x2="50" y2="120" stroke="#dc2626" strokeWidth="1.5" opacity="0.4" />
-        <line x1="45" y1="25" x2="92" y2="25" stroke="#dc2626" strokeWidth="1" opacity="0.3" />
-        <text x="100" y="84" textAnchor="middle" fill="white" fontSize="7" fontWeight="bold">DSA</text>
-        <text x="40" y="34" textAnchor="middle" fill="white" fontSize="5">Trees</text>
-        <text x="160" y="44" textAnchor="middle" fill="white" fontSize="5">Graphs</text>
-      </svg>
-    </div>
-  )
-}
-
-// ─── Flashcard Mini Demo ───
-function FlashcardMini() {
-  const [flipped, setFlipped] = useState(false)
-  return (
-    <div
-      className="mt-4 cursor-pointer mx-auto"
-      style={{ perspective: "800px" }}
-      onClick={() => setFlipped(!flipped)}
-    >
-      <div
-        className="relative w-full h-24 transition-transform duration-500"
-        style={{ transformStyle: "preserve-3d", transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
-      >
-        <div
-          className="absolute inset-0 rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col items-center justify-center p-3 text-center"
-          style={{ backfaceVisibility: "hidden" }}
-        >
-          <p className="text-[9px] text-slate-400 uppercase tracking-wider mb-1">Question</p>
-          <p className="text-xs font-bold text-slate-800">What is BFS?</p>
-          <p className="text-[8px] text-slate-400 mt-1">Tap to reveal</p>
-        </div>
-        <div
-          className="absolute inset-0 rounded-xl border border-blue-200 bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center p-3 text-center"
-          style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
-        >
-          <p className="text-[9px] text-blue-400 uppercase tracking-wider mb-1">Answer</p>
-          <p className="text-[10px] font-medium text-slate-700">Breadth-First Search: explores neighbors level by level using a queue.</p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 // ─── Memory Flow Diagram ───
 function MemoryFlow() {
-  const { ref, inView } = useInView(0.2)
-  const nodes = [
-    { icon: "Q", label: "Quiz" },
-    { icon: "M", label: "Mastery" },
-    { icon: "S", label: "Store" },
-    { icon: "H", label: "Hero" },
-    { icon: "R", label: "Smarter" },
-  ]
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const wrapRef = useRef<HTMLDivElement>(null)
+  const rafRef = useRef<number>(0)
+  const { ref: ioRef, inView } = useInView(0.2)
+  const hasStarted = useRef(false)
+  const [chipsVisible, setChipsVisible] = useState([false, false, false, false])
+
+  useEffect(() => {
+    if (!inView || hasStarted.current) return
+    hasStarted.current = true
+
+    const canvas = canvasRef.current
+    if (!canvas) return
+    const _ctx = canvas.getContext("2d")
+    if (!_ctx) return
+    const ctx = _ctx
+
+    const W = 640, H = 220
+    canvas.width = W
+    canvas.height = H
+
+    const STAGES = [
+      { x: 80, label: "Quiz", color: "#dc2626", light: "#FEE2E2" },
+      { x: 220, label: "Mastery", color: "#16a34a", light: "#DCFCE7" },
+      { x: 360, label: "Store", color: "#0077FF", light: "#DBEAFE" },
+      { x: 500, label: "Hero", color: "#f59e0b", light: "#FEF3C7" },
+      { x: 590, label: "Smarter", color: "#6366f1", light: "#EEF2FF" },
+    ]
+    const NODE_R = 26
+
+    let particles: { x: number; y: number; tx: number; ty: number; ox: number; oy: number; color: string; size: number; age: number; life: number; done: boolean; alpha: number; wobbleX: number; wobbleY: number }[] = []
+    let nodeScales = [1, 1, 1, 1, 1]
+    let nodeGlow = [0, 0, 0, 0, 0]
+    let connProgress = [0, 0, 0, 0]
+    let phase = 0
+    let phaseTimer = 0
+    let smarterActive = false
+    let phaseStarted = [false, false, false, false, false]
+    const chipLabels = ["Weak on recursion", "Aced linked lists", "Prefers visual aids", "Studies at night"]
+
+    function spawnBurst(fromIdx: number, toIdx: number, count: number, extraDelay: number) {
+      const from = STAGES[fromIdx], to = STAGES[toIdx]
+      for (let i = 0; i < count; i++) {
+        const ox = from.x + (Math.random() - 0.5) * 18
+        const oy = H / 2 - 10 + (Math.random() - 0.5) * 18
+        particles.push({
+          x: ox, y: oy, ox, oy,
+          tx: to.x + (Math.random() - 0.5) * 10,
+          ty: H / 2 - 10 + (Math.random() - 0.5) * 10,
+          color: from.color,
+          size: 2 + Math.random() * 2.5,
+          age: -(extraDelay + i * 6),
+          life: 80 + Math.random() * 30,
+          done: false, alpha: 0,
+          wobbleX: (Math.random() - 0.5) * 30,
+          wobbleY: -20 - Math.random() * 30,
+        })
+      }
+    }
+
+    function drawNode(idx: number, scale: number, glow: number) {
+      const s = STAGES[idx]
+      const cx = s.x, cy = H / 2 - 10, r = idx === 4 ? 22 : NODE_R
+
+      ctx.save()
+      ctx.translate(cx, cy)
+      ctx.scale(scale, scale)
+
+      if (glow > 0) {
+        ctx.globalAlpha = glow * 0.25
+        ctx.fillStyle = s.color
+        ctx.beginPath()
+        ctx.arc(0, 0, r + 14, 0, Math.PI * 2)
+        ctx.fill()
+        ctx.globalAlpha = 1
+      }
+
+      ctx.fillStyle = s.color
+      ctx.beginPath()
+      ctx.arc(0, 0, r, 0, Math.PI * 2)
+      ctx.fill()
+
+      ctx.fillStyle = "#ffffff"
+      ctx.font = "600 11px sans-serif"
+      ctx.textAlign = "center"
+      ctx.textBaseline = "middle"
+      ctx.fillText(["Q", "M", "S", "H", "★"][idx], 0, 0)
+      ctx.restore()
+
+      ctx.font = "500 12px sans-serif"
+      ctx.textAlign = "center"
+      ctx.textBaseline = "top"
+      ctx.fillStyle = "rgba(0,0,0,0.45)"
+      ctx.fillText(s.label, cx, cy + r + 18)
+    }
+
+    function drawConnector(fromIdx: number, toIdx: number, progress: number) {
+      const cy = H / 2 - 10
+      const x1 = STAGES[fromIdx].x + NODE_R + 2
+      const x2 = STAGES[toIdx].x - NODE_R - 2
+      const xLen = x2 - x1
+
+      ctx.save()
+      ctx.strokeStyle = "rgba(0,0,0,0.08)"
+      ctx.lineWidth = 0.5
+      ctx.setLineDash([3, 4])
+      ctx.beginPath()
+      ctx.moveTo(x1, cy)
+      ctx.lineTo(x2, cy)
+      ctx.stroke()
+      ctx.setLineDash([])
+
+      if (progress > 0) {
+        ctx.strokeStyle = STAGES[fromIdx].color
+        ctx.lineWidth = 1
+        ctx.globalAlpha = 0.5
+        ctx.beginPath()
+        ctx.moveTo(x1, cy)
+        ctx.lineTo(x1 + xLen * Math.min(progress, 1), cy)
+        ctx.stroke()
+      }
+      ctx.restore()
+    }
+
+    function loop() {
+      ctx.clearRect(0, 0, W, H)
+      phaseTimer++
+
+      if (phase === 0 && phaseTimer > 20) {
+        if (!phaseStarted[0]) { phaseStarted[0] = true; spawnBurst(0, 1, 14, 0) }
+        connProgress[0] = Math.min(connProgress[0] + 0.03, 1)
+        nodeGlow[0] = Math.min(nodeGlow[0] + 0.05, 1)
+        if (phaseTimer > 100) { phase = 1; phaseTimer = 0 }
+      }
+      if (phase === 1) {
+        if (!phaseStarted[1]) { phaseStarted[1] = true; nodeGlow[1] = 1; nodeScales[1] = 1.15; spawnBurst(1, 2, 18, 0) }
+        connProgress[1] = Math.min(connProgress[1] + 0.03, 1)
+        nodeScales[1] += (1 - nodeScales[1]) * 0.08
+        if (phaseTimer > 100) { phase = 2; phaseTimer = 0 }
+      }
+      if (phase === 2) {
+        if (!phaseStarted[2]) { phaseStarted[2] = true; nodeGlow[2] = 1; nodeScales[2] = 1.15; spawnBurst(2, 3, 22, 0) }
+        connProgress[2] = Math.min(connProgress[2] + 0.03, 1)
+        nodeScales[2] += (1 - nodeScales[2]) * 0.08
+        if (phaseTimer > 110) { phase = 3; phaseTimer = 0 }
+      }
+      if (phase === 3) {
+        if (!phaseStarted[3]) { phaseStarted[3] = true; nodeGlow[3] = 1; nodeScales[3] = 1.2; spawnBurst(3, 4, 28, 0) }
+        connProgress[3] = Math.min(connProgress[3] + 0.03, 1)
+        nodeScales[3] += (1 - nodeScales[3]) * 0.07
+        if (phaseTimer > 120) { phase = 4; phaseTimer = 0 }
+      }
+      if (phase === 4 && !phaseStarted[4]) {
+        phaseStarted[4] = true
+        nodeGlow[4] = 1
+        nodeScales[4] = 1.3
+        smarterActive = true
+        const chipLabels = ["Weak on recursion", "Aced linked lists", "Prefers visual aids", "Studies at night"]
+        chipLabels.forEach((_, i) => {
+          setTimeout(() => setChipsVisible(prev => {
+            const next = [...prev]
+            next[i] = true
+            return next
+          }), i * 140)
+        })
+      }
+      if (phase === 4) {
+        nodeScales[4] += (1 - nodeScales[4]) * 0.06
+      }
+
+      for (let i = 0; i < 4; i++) drawConnector(i, i + 1, connProgress[i])
+
+      particles.forEach(p => {
+        p.age++
+        if (p.age < 0) return
+        const t = Math.min(p.age / p.life, 1)
+        const ease = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
+        p.x = p.ox + (p.tx - p.ox) * ease + p.wobbleX * Math.sin(t * Math.PI)
+        p.y = p.oy + (p.ty - p.oy) * ease + p.wobbleY * Math.sin(t * Math.PI)
+        p.alpha = t > 0.85 ? 1 - (t - 0.85) / 0.15 : p.age < 8 ? p.age / 8 : 1
+        if (t >= 1) p.done = true
+      })
+      particles.forEach(p => {
+        if (p.age < 0) return
+        ctx.save()
+        ctx.globalAlpha = p.alpha
+        ctx.fillStyle = p.color
+        ctx.beginPath()
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2)
+        ctx.fill()
+        ctx.restore()
+      })
+      particles = particles.filter(p => !p.done)
+
+      for (let i = 0; i < 5; i++) {
+        drawNode(i, nodeScales[i], nodeGlow[i])
+        if (i < 4) nodeGlow[i] = Math.max(0, nodeGlow[i] - 0.008)
+      }
+      if (smarterActive) {
+        nodeGlow[4] = 0.7 + 0.3 * Math.sin(phaseTimer * 0.06)
+      }
+
+      rafRef.current = requestAnimationFrame(loop)
+    }
+
+    loop()
+
+    return () => cancelAnimationFrame(rafRef.current)
+  }, [inView])
+
+  const chipLabels = ["Weak on recursion", "Aced linked lists", "Prefers visual aids", "Studies at night"]
 
   return (
-    <div ref={ref} className="mt-6">
-      {/* Desktop: horizontal flow */}
-      <div className="hidden md:flex items-center justify-center gap-2">
-        {nodes.map((node, i) => (
-          <div key={node.label} className="flex items-center gap-2">
-            <div className="flex flex-col items-center">
-              <div className={`w-10 h-10 rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center text-sm font-bold text-primary transition-all duration-700 ${inView ? "opacity-100 scale-100" : "opacity-0 scale-75"}`} style={{ transitionDelay: `${i * 200}ms` }}>
-                {node.icon}
-              </div>
-              <span className="text-[10px] text-slate-500 mt-1">{node.label}</span>
-            </div>
-            {i < nodes.length - 1 && (
-              <div className="w-8 h-[2px] bg-primary/20 relative overflow-hidden">
-                {inView && (
-                  <div className="absolute inset-y-0 left-0 w-3 h-full bg-primary/60 animate-[flowDot_2s_ease-in-out_infinite]" style={{ animationDelay: `${i * 400}ms` }} />
-                )}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+    <div ref={ioRef}>
+      <div ref={wrapRef} className="mt-6">
+        {/* Desktop: canvas animation */}
+        <canvas ref={canvasRef} className="hidden sm:block w-full max-w-[640px] mx-auto h-auto" />
 
-      {/* Mobile: vertical flow */}
-      <div className="flex md:hidden flex-col items-center gap-2">
-        {nodes.map((node, i) => (
-          <div key={node.label} className="flex flex-col items-center">
-            <div className={`w-8 h-8 rounded-full border-2 border-primary/30 bg-primary/5 flex items-center justify-center text-xs font-bold text-primary transition-all duration-500 ${inView ? "opacity-100" : "opacity-0"}`} style={{ transitionDelay: `${i * 150}ms` }}>
-              {node.icon}
+        {/* Mobile: vertical flow of colored nodes */}
+        <div className="sm:hidden flex flex-col items-center">
+          {[
+            { label: "Quiz", color: "#dc2626", letter: "Q" },
+            { label: "Mastery", color: "#16a34a", letter: "M" },
+            { label: "Store", color: "#0077FF", letter: "S" },
+            { label: "Hero", color: "#f59e0b", letter: "H" },
+            { label: "Smarter", color: "#6366f1", letter: "★" },
+          ].map((stage, i, arr) => (
+            <React.Fragment key={stage.label}>
+              <div className="flex items-center gap-3">
+                <div
+                  className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm"
+                  style={{ backgroundColor: stage.color }}
+                >
+                  {stage.letter}
+                </div>
+                <span className="text-sm font-medium text-slate-700">{stage.label}</span>
+              </div>
+              {i < arr.length - 1 && (
+                <svg className="w-4 h-5 text-slate-300 my-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              )}
+            </React.Fragment>
+          ))}
+        </div>
+
+        <div className="flex justify-center gap-2 flex-wrap mt-5">
+          {chipLabels.map((label, i) => (
+            <div
+              key={label}
+              className={`text-[11px] px-2.5 py-1 rounded-full border border-slate-200 text-slate-500 bg-white transition-all duration-400 ${
+                chipsVisible[i] ? "opacity-100 translate-y-0" : "opacity-0 translate-y-1"
+              }`}
+            >
+              {label}
             </div>
-            <span className="text-[9px] text-slate-500">{node.label}</span>
-            {i < nodes.length - 1 && (
-              <div className="w-[2px] h-4 bg-primary/20" />
-            )}
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )
@@ -333,7 +484,6 @@ function FeatureCard({
 
 // ─── Main KeyFeatures Section ───
 export default function KeyFeatures() {
-  const [activeRole, setActiveRole] = useState<"student" | "faculty">("student")
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
 
@@ -348,72 +498,30 @@ export default function KeyFeatures() {
     return () => obs.disconnect()
   }, [])
 
-  const handleToggle = useCallback((role: "student" | "faculty") => {
-    if (role === activeRole) return
-    setIsVisible(false)
-    setTimeout(() => {
-      setActiveRole(role)
-      setIsVisible(true)
-    }, 150)
-  }, [activeRole])
-
   return (
-    <section id="key-features" className="py-16 px-6 lg:px-16 bg-white">
+    <section id="key-features" className="py-16 px-6 lg:px-16 bg-[#F8F7F5]">
       <div ref={sectionRef} className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-3">
-            The AI That Learns With You
+            AI-Powered Teaching Tools
           </h2>
           <p className="text-slate-500 max-w-2xl mx-auto">
-            Six AI-powered features, built for students and faculty
+            Intelligent features built for faculty, so you can focus on teaching
           </p>
-        </div>
-
-        {/* Role Toggle */}
-        <div
-          role="tablist"
-          aria-label="Audience selector"
-          className="flex items-center justify-center gap-2 mb-10"
-        >
-          <button
-            role="tab"
-            aria-selected={activeRole === "student"}
-            onClick={() => handleToggle("student")}
-            className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 min-h-[44px] ${
-              activeRole === "student"
-                ? "bg-primary text-white shadow-md"
-                : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-            }`}
-          >
-            For Students
-          </button>
-          <button
-            role="tab"
-            aria-selected={activeRole === "faculty"}
-            onClick={() => handleToggle("faculty")}
-            className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 min-h-[44px] ${
-              activeRole === "faculty"
-                ? "bg-primary text-white shadow-md"
-                : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-            }`}
-          >
-            For Faculty
-          </button>
         </div>
 
         {/* Feature Cards */}
         <div
-          role="tabpanel"
           className={`transition-all duration-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
           }`}
         >
-          {activeRole === "student" ? <StudentCards /> : <FacultyCards />}
+          <FacultyCards />
         </div>
 
         {/* Adaptive Memory Engine Banner */}
-        <div className="mt-10 bg-gradient-to-r from-blue-50 to-slate-50 rounded-3xl border border-slate-200 p-8 md:p-10">
+        <div className="mt-10 bg-slate-50 rounded-3xl border border-slate-200 p-8 md:p-10">
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
               <BrainCircuit className="w-6 h-6" />
@@ -432,92 +540,25 @@ export default function KeyFeatures() {
   )
 }
 
-function StudentCards() {
-  return (
-    <div className="grid md:grid-cols-3 gap-6">
-      {/* Card 1: Hero AI Tutor — spans 2 columns */}
-      <FeatureCard
-        icon={MessageCircle}
-        iconBg="bg-emerald-50 text-emerald-600"
-        headline="24/7 AI Tutor That Remembers You"
-        body="Hero doesn't just answer questions. It knows what you struggle with, what you've mastered, and how you learn best. Every conversation builds on the last."
-        className="md:col-span-2"
-      >
-        <HeroChatDemo mode="student" />
-      </FeatureCard>
-
-      {/* Card 2: Smart Flashcards */}
-      <div className="space-y-6">
-        <FeatureCard
-          icon={Layers}
-          iconBg="bg-blue-50 text-blue-600"
-          headline="Flashcards That Know When You're Ready"
-          body="Auto-generated from your course materials. Powered by FSRS spaced repetition and your personal mastery data."
-        >
-          <FlashcardMini />
-          <a href="#features" className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-3 hover:underline">
-            See it in action →
-          </a>
-        </FeatureCard>
-      </div>
-
-      {/* Card 3: Knowledge Graphs */}
-      <div className="md:col-span-3 grid md:grid-cols-2 gap-6">
-        <FeatureCard
-          icon={Network}
-          iconBg="bg-red-50 text-red-600"
-          headline="See How Everything Connects"
-          body="Visualize relationships between concepts across your entire course. Understand the big picture, not just isolated facts."
-        >
-          <KnowledgeGraphSVG />
-          <a href="#features" className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-3 hover:underline">
-            See it in action →
-          </a>
-        </FeatureCard>
-
-        {/* Extra space: Chat with Docs preview */}
-        <FeatureCard
-          icon={BookOpen}
-          iconBg="bg-violet-50 text-violet-600"
-          headline="Chat With Your Documents"
-          body="Upload PDFs, lecture slides, or textbooks. Ask questions, get summaries, and extract key concepts instantly."
-        >
-          <div className="mt-4 bg-slate-50 rounded-2xl p-4 border border-slate-100">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-5 h-5 rounded bg-violet-100 flex items-center justify-center">
-                <GraduationCap className="w-3 h-3 text-violet-600" />
-              </div>
-              <span className="text-[10px] text-slate-400">Chapter_7_Notes.pdf</span>
-            </div>
-            <div className="bg-white rounded-xl p-2.5 text-[10px] text-slate-500 border border-slate-100">
-              Summary: 3 key concepts extracted...
-            </div>
-          </div>
-        </FeatureCard>
-      </div>
-    </div>
-  )
-}
-
 function FacultyCards() {
   return (
     <div className="grid md:grid-cols-3 gap-6">
       {/* Card 4: Hero AI Assistant — spans 2 columns */}
       <FeatureCard
         icon={Bot}
-        iconBg="bg-blue-50 text-blue-600"
+        iconBg="bg-slate-100 text-slate-800"
         headline="AI Assistant That Knows Your Classes"
         body="Ask Hero about at-risk students, pending grading, or course performance. It pulls real analytics and can generate quizzes inline."
         className="md:col-span-2"
       >
-        <HeroChatDemo mode="faculty" />
+        <HeroChatDemo />
       </FeatureCard>
 
       {/* Card 5: Quiz Generation */}
       <div className="space-y-6">
         <FeatureCard
           icon={ClipboardCheck}
-          iconBg="bg-orange-50 text-orange-600"
+          iconBg="bg-slate-100 text-slate-800"
           headline="Generate Assessments in Minutes, Not Hours"
           body="Upload your materials. AI creates quizzes and assignments mapped to Course Outcomes and Bloom's Taxonomy."
         >
@@ -529,7 +570,7 @@ function FacultyCards() {
       <div className="md:col-span-3 grid md:grid-cols-2 gap-6">
         <FeatureCard
           icon={BarChart3}
-          iconBg="bg-emerald-50 text-emerald-600"
+          iconBg="bg-slate-100 text-slate-800"
           headline="See Who's Struggling Before It's Too Late"
           body="Real-time mastery tracking, engagement scores, and at-risk student detection across all your courses."
         >
@@ -538,23 +579,32 @@ function FacultyCards() {
 
         <FeatureCard
           icon={HelpCircle}
-          iconBg="bg-slate-50 text-slate-600"
+          iconBg="bg-slate-100 text-slate-800"
           headline="Auto-Grade With AI Feedback"
           body="AI evaluates student responses, provides personalized feedback, and maps performance to learning outcomes."
         >
           <div className="mt-4 bg-slate-50 rounded-2xl p-4 border border-slate-100">
-            <div className="space-y-2">
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] text-slate-500">Student A</span>
-                <span className="text-[10px] text-emerald-600 font-medium">85% — Good</span>
+            <div className="space-y-3">
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">Student A</span>
+                  <span className="text-xs text-slate-800 font-medium">85% — Good</span>
+                </div>
+                <p className="text-[11px] text-slate-400 italic mt-0.5 pl-0.5">Strong on recursion, minor gaps in tree traversal</p>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] text-slate-500">Student B</span>
-                <span className="text-[10px] text-amber-600 font-medium">62% — Needs review</span>
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">Student B</span>
+                  <span className="text-xs text-slate-600 font-medium">62% — Needs review</span>
+                </div>
+                <p className="text-[11px] text-slate-400 italic mt-0.5 pl-0.5">Struggles with dynamic programming — recommend targeted exercises</p>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] text-slate-500">Student C</span>
-                <span className="text-[10px] text-red-600 font-medium">38% — At risk</span>
+              <div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-slate-500">Student C</span>
+                  <span className="text-xs text-slate-900 font-medium">38% — At risk</span>
+                </div>
+                <p className="text-[11px] text-slate-400 italic mt-0.5 pl-0.5">Needs foundational review — schedule office hours</p>
               </div>
             </div>
           </div>

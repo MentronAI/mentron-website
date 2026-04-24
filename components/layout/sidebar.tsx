@@ -17,6 +17,7 @@ export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const isHome = pathname === "/"
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 100)
@@ -38,7 +39,7 @@ export default function Sidebar() {
       {/* Fixed navbar — transparent over hero, white bg on scroll */}
       <nav
         className={`fixed top-0 left-4 right-4 z-50 rounded-b-2xl transition-all duration-500 ${
-          scrolled
+          scrolled || !isHome
             ? "bg-white/95 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.08)] border-b border-slate-200/50"
             : "bg-transparent border-b border-transparent"
         }`}
@@ -52,7 +53,7 @@ export default function Sidebar() {
               width={100}
               height={20}
               className={`h-[18px] lg:h-[22px] w-auto transition-all duration-300 ${
-                scrolled ? "[filter:none]" : "brightness-0 invert"
+                scrolled || !isHome ? "[filter:none]" : "brightness-0 invert"
               }`}
               unoptimized
             />
@@ -66,8 +67,8 @@ export default function Sidebar() {
                 href={link.href}
                 className={`text-[15px] font-medium transition-colors duration-300 ${
                   pathname === link.href
-                    ? scrolled ? "text-slate-900" : "text-white"
-                    : scrolled
+                    ? (scrolled || !isHome) ? "text-slate-900" : "text-white"
+                    : (scrolled || !isHome)
                       ? "text-slate-500 hover:text-slate-900"
                       : "text-white/60 hover:text-white"
                 }`}
@@ -82,7 +83,7 @@ export default function Sidebar() {
             <Link
               href="/institutional-demo"
               className={`text-[14px] font-semibold py-2.5 px-6 rounded-full transition-all duration-300 ${
-                scrolled
+                (scrolled || !isHome)
                   ? "bg-primary hover:bg-primary-dark text-white"
                   : "bg-white text-slate-900 hover:bg-white/90"
               }`}
@@ -100,19 +101,19 @@ export default function Sidebar() {
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 origin-center ${
                 isOpen ? "rotate-45 translate-y-[5.5px] bg-slate-700"
-                  : scrolled ? "bg-slate-700" : "bg-white"
+                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
               }`}
             />
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 ${
                 isOpen ? "opacity-0 scale-x-0 bg-slate-700"
-                  : scrolled ? "bg-slate-700" : "bg-white"
+                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
               }`}
             />
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 origin-center ${
                 isOpen ? "-rotate-45 -translate-y-[5.5px] bg-slate-700"
-                  : scrolled ? "bg-slate-700" : "bg-white"
+                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
               }`}
             />
           </button>
