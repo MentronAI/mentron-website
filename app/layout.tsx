@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   // Favicon and icons
   icons: {
     icon: [
-      { url: '/favicon/favicon.ico' },
-      { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/logo/favicon_io/favicon.ico' },
+      { url: '/logo/favicon_io/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/logo/favicon_io/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    apple: '/favicon/apple-touch-icon.png',
+    apple: '/logo/favicon_io/apple-touch-icon.png',
   },
-  manifest: '/favicon/site.webmanifest',
+  manifest: '/logo/favicon_io/site.webmanifest',
   // Canonical (auto-resolves to current page URL)
   alternates: {
     canonical: './',
@@ -96,16 +96,16 @@ export default function RootLayout({
         />
 
         {/* Grid background */}
-        <div className="fixed w-full h-full top-0 left-0 pointer-events-none z-0 opacity-40"
+        <div className="fixed w-full h-full top-0 left-0 pointer-events-none z-0 opacity-[0.06]"
           style={{
             backgroundImage: 'linear-gradient(to right, #E2E8F0 1px, transparent 1px), linear-gradient(to bottom, #E2E8F0 1px, transparent 1px)',
             backgroundSize: '60px 60px'
           }}
         />
 
-        <div className="relative z-10 flex flex-col lg:flex-row min-h-screen max-w-[1600px] mx-auto">
+        <div className="relative z-10 min-h-screen">
           <Sidebar />
-          <main className="flex-1 lg:ml-64 flex flex-col overflow-hidden">
+          <main className="flex flex-col">
             {children}
           </main>
         </div>

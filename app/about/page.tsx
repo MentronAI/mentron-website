@@ -21,8 +21,8 @@ export default function AboutPage() {
             <section className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-slate-900">Our Story</h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-4">
-                Founded in January 2025, Mentron emerged from a simple observation: traditional learning management systems 
-                weren't keeping pace with the rapid advancement of AI technology. Our team of educators, technologists, 
+                Founded in July 2025, Mentron went official as an LLP in February 2026. Mentron emerged from a simple observation: traditional learning management systems
+                weren't keeping pace with the rapid advancement of AI technology. Our team of educators, technologists,
                 and AI experts came together to create a solution that would bridge this gap.
               </p>
             </section>

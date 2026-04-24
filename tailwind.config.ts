@@ -84,30 +84,15 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        marquee: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
-        fadeUp: {
-          '0%': { opacity: "0", transform: 'translateY(20px)' },
-          '100%': { opacity: "1", transform: 'translateY(0)' }
-        },
-        fadeInUp: {
-          '0%': { opacity: "0", transform: 'translateY(10px)' },
-          '100%': { opacity: "1", transform: 'translateY(0)' }
-        },
-        pop: {
-          '0%': { transform: 'scale(0) translateY(20px)', opacity: "0" },
-          '100%': { transform: 'scale(1) translateY(0)', opacity: "1" }
+        flowDot: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(300%)' },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        'marquee': 'marquee 40s linear infinite',
-        'fade-up': 'fadeUp 0.8s ease-out forwards',
-        'fadeInUp': 'fadeInUp 0.6s ease-out forwards',
-        'pop': 'pop 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards',
+        'flowDot': 'flowDot 2s ease-in-out infinite',
       },
     },
   },
