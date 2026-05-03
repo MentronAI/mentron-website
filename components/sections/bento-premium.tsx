@@ -366,7 +366,7 @@ const BENTO_CSS = `    /* ========================================
       z-index: 2;
       flex: 1;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
     }
 
