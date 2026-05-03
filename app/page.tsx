@@ -1,8 +1,7 @@
 import HeroSection from "@/components/sections/hero-section";
-import ProblemSection from "@/components/sections/problem-section";
-import KeyFeatures from "@/components/sections/key-features";
-import StudentFeatures from "@/components/sections/student-features";
-import TeacherBenefits from "@/components/sections/teacher-benefits";
+import WhyMentron from "@/components/sections/why-mentron";
+import TimeSavings from "@/components/sections/time-savings";
+import BentoPremium from "@/components/sections/bento-premium";
 import Integrations from "@/components/sections/integrations";
 import FAQSection from "@/components/sections/faq-section";
 import CTASection from "@/components/sections/cta-section";
@@ -12,10 +11,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <ProblemSection />
-      <KeyFeatures />
-      <StudentFeatures />
-      <TeacherBenefits />
+      <WhyMentron />
+      <TimeSavings />
+      <BentoPremium />
       <Integrations />
       <FAQSection />
       <CTASection />

@@ -69,6 +69,9 @@ const config: Config = {
         success: '#10B981',
         warning: '#F59E0B',
         danger: '#EF4444',
+        page: '#F4F7FB',
+        'accent-purple': '#665efd',
+        'accent-teal': '#06B6D4',
       },
       borderRadius: {
         lg: "var(--radius)",

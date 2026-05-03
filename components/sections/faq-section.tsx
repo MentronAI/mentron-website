@@ -9,8 +9,8 @@ import {
 
 export default function FAQSection() {
   return (
-    <section id="faq" className="py-16 px-6 lg:px-16 bg-[#F8F7F5]">
-      <div className="max-w-6xl mx-auto">
+    <section id="faq" className="py-16 px-6 lg:px-8 bg-page">
+      <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tighter text-slate-900 font-display mb-4">
