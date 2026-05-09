@@ -4,8 +4,8 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full overflow-hidden bg-white"
-      style={{ minHeight: "520px" }}
+      className="relative w-full overflow-hidden bg-white flex flex-col"
+      style={{ minHeight: "100vh" }}
     >
       {/* Aurora layer 1 — soft blue wash */}
       <div
@@ -53,7 +53,7 @@ export default function HeroSection() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center text-left px-6 max-w-4xl mx-auto py-20 md:py-28">
+      <div className="relative z-10 flex flex-col justify-center items-center text-center px-6 max-w-4xl mx-auto flex-1">
         {/* Caption */}
         <p
           className="text-xs sm:text-sm tracking-[0.2em] text-slate-400 font-semibold uppercase animate-[fadeInUp_0.6s_ease-out_0.2s_both]"

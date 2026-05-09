@@ -6,9 +6,9 @@ import { useTextStream } from '@/lib/hooks/use-text-stream';
 const TEACHER_CSS = `
     .teacher-section {
       position: relative;
-      padding: 96px 32px 128px;
+      padding: 96px 32px 48px;
       overflow: hidden;
-      background: #fff;
+      background: #F8F7F5;
     }
     .teacher-section::before {
       content: '';
@@ -18,7 +18,7 @@ const TEACHER_CSS = `
       background:
         radial-gradient(ellipse 65% 70% at -8% -5%, rgba(99,102,241,.07) 0%, transparent 60%),
         radial-gradient(ellipse 50% 55% at 108% 105%, rgba(16,185,129,.06) 0%, transparent 60%),
-        #ffffff;
+        #F8F7F5;
     }
     .teacher-section::after {
       content: '';
@@ -73,7 +73,7 @@ const TEACHER_CSS = `
     }
     .teacher-section .browser-chrome {
       height: 42px;
-      background: #F8F9FA;
+      background: #fff;
       border-bottom: 1px solid #EAECF0;
       display: grid;
       grid-template-columns: 72px 1fr 72px;
@@ -668,8 +668,8 @@ const TEACHER_HTML = `
                   <line x1="0" y1="21" x2="480" y2="21" stroke="#F3F4F6" stroke-width="1"/>
                   <line x1="0" y1="42" x2="480" y2="42" stroke="#F3F4F6" stroke-width="1"/>
                   <line x1="0" y1="63" x2="480" y2="63" stroke="#EAECF0" stroke-width="1"/>
-                  <text x="2" y="9"  font-size="8" fill="#D1D5DB" font-family="Inter,sans-serif">100%</text>
-                  <text x="2" y="30" font-size="8" fill="#D1D5DB" font-family="Inter,sans-serif">50%</text>
+                  <text x="2" y="9"  font-size="8" fill="#D1D5DB" font-family="var(--font-geist),sans-serif">100%</text>
+                  <text x="2" y="30" font-size="8" fill="#D1D5DB" font-family="var(--font-geist),sans-serif">50%</text>
                   <!-- Arrays -->
                   <rect class="bar-el" data-h="6"  data-y="57" x="38"  y="63" width="11" height="0" fill="#EF4444" rx="2"/>
                   <rect class="bar-el" data-h="25" data-y="38" x="51"  y="63" width="11" height="0" fill="#F59E0B" rx="2"/>

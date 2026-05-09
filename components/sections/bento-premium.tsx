@@ -54,7 +54,7 @@ const BENTO_CSS = `    /* ========================================
     html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-geist), sans-serif;
       color: var(--body);
       background: var(--surface);
       line-height: 1.5;
@@ -89,7 +89,7 @@ const BENTO_CSS = `    /* ========================================
     }
 
     .bento-section .card-badge {
-      font-family: 'Inter', sans-serif;
+      
       font-size: 11px;
       font-weight: 500;
       letter-spacing: 0.04em;
@@ -119,7 +119,7 @@ const BENTO_CSS = `    /* ========================================
     }
 
     .bento-section .btn-primary {
-      font-family: 'Inter', sans-serif;
+      
       font-size: 14px;
       font-weight: 600;
       color: #fff;
@@ -145,7 +145,7 @@ const BENTO_CSS = `    /* ========================================
     }
 
     .bento-section .btn-secondary {
-      font-family: 'Inter', sans-serif;
+      
       font-size: 14px;
       font-weight: 600;
       color: var(--heading);
@@ -162,7 +162,7 @@ const BENTO_CSS = `    /* ========================================
        3. Section & Grid
        ======================================== */
     .bento-section .bento-section {
-      padding: 80px 0;
+      padding: 32px 0 40px 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -349,7 +349,7 @@ const BENTO_CSS = `    /* ========================================
       background: rgba(255,255,255,.55);
       backdrop-filter: blur(8px);
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       transition: border-color 200ms, background 200ms, transform 200ms;
     }
@@ -444,7 +444,7 @@ const BENTO_CSS = `    /* ========================================
       font-size: 9px;
       color: #7A8FA6;
       text-align: center;
-      font-family: 'DM Sans', sans-serif;
+      
     }
 
     .bento-section .mind-browser-body {
@@ -453,8 +453,8 @@ const BENTO_CSS = `    /* ========================================
       position: relative;
       overflow: hidden;
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+      align-items: center;
+      justify-content: center;
       padding-left: 32px;
     }
 
@@ -481,22 +481,20 @@ const BENTO_CSS = `    /* ========================================
       position: relative;
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       gap: 56px;
       min-width: max-content;
       padding: 20px 50px 20px 0;
-      transform: scale(0.95);
-      transform-origin: left center;
     }
 
     .bento-section .mind-node-wrap {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       gap: 56px;
       opacity: 0;
-      transform: translateX(-10px);
-      transition: opacity 0.35s ease, transform 0.35s ease;
+      transform: translateX(-14px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
     }
     .bento-section .mind-node-wrap.visible { opacity: 1; transform: translateX(0); }
 
@@ -512,13 +510,13 @@ const BENTO_CSS = `    /* ========================================
       padding: 0 16px;
       border-radius: 999px;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 6px;
       cursor: default;
       white-space: nowrap;
       font-size: 11px;
       font-weight: 500;
-      font-family: 'DM Sans', sans-serif;
+      
       transition: transform 0.15s ease, filter 0.15s ease;
       border: none;
       outline: none;
@@ -671,7 +669,7 @@ const BENTO_CSS = `    /* ========================================
       font-size: 9px;
       color: #7A8FA6;
       text-align: center;
-      font-family: 'DM Sans', sans-serif;
+      
     }
     .bento-section .chat-browser-body {
       background: rgba(255, 255, 255, 0.20);
@@ -710,7 +708,7 @@ const BENTO_CSS = `    /* ========================================
       font-size: 9px;
       color: #7A8FA6;
       text-align: center;
-      font-family: 'DM Sans', sans-serif;
+      
     }
 
     .bento-section .kg-browser-body {
@@ -921,7 +919,7 @@ const BENTO_CSS = `    /* ========================================
       background: var(--surface);
       border: 1px solid var(--border);
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       cursor: pointer;
       z-index: 10;
@@ -1047,7 +1045,7 @@ const BENTO_CSS = `    /* ========================================
     /* Discover: Share & Embed */
     .bento-section .share-header { font-size:11px; font-weight:600; color:#061b31; margin-bottom:12px; }
     .bento-section .share-url-row { display:flex; align-items:center; gap:6px; background:#f8fafd; border:1px solid #e5edf5; border-radius:6px; padding:7px 9px; margin-bottom:12px; }
-    .bento-section .share-url-text { flex:1; font-size:10px; color:#7A8FA6; font-family:'DM Sans',sans-serif; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .bento-section .share-url-text { flex:1; font-size:10px; color:#7A8FA6;  overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .bento-section .share-copy-btn { width:22px; height:22px; background:#fff; border:1px solid #e5edf5; border-radius:5px; display:flex; align-items:center; justify-content:center; flex-shrink:0; cursor:pointer; }
     .bento-section .share-toggles { display:flex; flex-direction:column; gap:9px; }
     .bento-section .share-toggle-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }
@@ -1486,7 +1484,7 @@ const BENTO_HTML = `<!-- ======================================
               <span class="card-title">Interactive Mind Maps</span>
             </div>
             <div class="card-arrow">
-              <svg width="16" height="16" fill="none" stroke="var(--heading)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="var(--heading)"></path><path d="M6.75 10.25L5 10.25L5 15.5L10.25 15.5L10.25 13.75L6.75 13.75L6.75 10.25Z" fill="var(--heading)"></path></svg>
             </div>
           </div>
           <div class="card-visual" style="padding:0 20px 16px 20px;position:relative;z-index:1;">
@@ -1516,7 +1514,7 @@ const BENTO_HTML = `<!-- ======================================
               <span class="card-title">AI Flashcards with Spaced Repetition</span>
             </div>
             <div class="card-arrow">
-              <svg width="16" height="16" fill="none" stroke="var(--heading)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="var(--heading)"></path><path d="M6.75 10.25L5 10.25L5 15.5L10.25 15.5L10.25 13.75L6.75 13.75L6.75 10.25Z" fill="var(--heading)"></path></svg>
             </div>
           </div>
           <div class="card-visual" style="position:relative;z-index:1;">
@@ -1540,7 +1538,7 @@ const BENTO_HTML = `<!-- ======================================
               <span class="card-title">Ask anything, get cited answers</span>
             </div>
             <div class="card-arrow">
-              <svg width="16" height="16" fill="none" stroke="var(--heading)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="var(--heading)"></path><path d="M6.75 10.25L5 10.25L5 15.5L10.25 15.5L10.25 13.75L6.75 13.75L6.75 10.25Z" fill="var(--heading)"></path></svg>
             </div>
           </div>
           <div class="card-visual" style="padding:0 20px 16px 20px;position:relative;z-index:1;">
@@ -1580,7 +1578,7 @@ const BENTO_HTML = `<!-- ======================================
               <span class="card-title">Knowledge Graphs</span>
             </div>
             <div class="card-arrow">
-              <svg width="16" height="16" fill="none" stroke="var(--heading)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12L12 4M12 4H6M12 4v6"/></svg>
+              <svg width="14" height="14" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13.75 6.75L10.25 6.75L10.25 5L15.5 5L15.5 10.25L13.75 10.25L13.75 6.75Z" fill="var(--heading)"></path><path d="M6.75 10.25L5 10.25L5 15.5L10.25 15.5L10.25 13.75L6.75 13.75L6.75 10.25Z" fill="var(--heading)"></path></svg>
             </div>
           </div>
           <div class="card-visual" style="padding:0 20px 16px 20px;position:relative;z-index:1;">
@@ -1684,7 +1682,7 @@ const BENTO_HTML = `<!-- ======================================
   <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
     <div class="modal-container">
       <button class="modal-close" id="modalClose" aria-label="Close modal">
-        <svg width="16" height="16" fill="none" stroke="var(--heading)" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+        <svg width="16" height="16" viewBox="0 0 16 17" fill="var(--heading)"><path d="m8.002 7.266 4.236-4.234 1.238 1.237-4.237 4.234 4.233 4.232-1.238 1.237-4.232-4.231-4.236 4.236-1.238-1.237 4.237-4.237-4.24-4.239 1.237-1.237 4.24 4.24Z"></path></svg>
       </button>
       <div class="modal-body" id="modalBody">
         <!-- Populated by JS -->
@@ -1923,25 +1921,25 @@ function initBentoJS(container: HTMLDivElement) {
                         <path d="M310 180 C310 210,280 210,280 240" stroke="#e07030" stroke-width="1.5" fill="none" opacity="0.3"/>
                         <path d="M310 180 C310 210,355 210,355 240" stroke="#e07030" stroke-width="1.5" fill="none" opacity="0.3"/>
                         <rect x="145" y="30" width="110" height="30" rx="15" fill="#1a1a2e"/>
-                        <text x="200" y="50" text-anchor="middle" fill="#fff" font-size="11" font-weight="500" font-family="Inter,sans-serif">Photosynthesis</text>
+                        <text x="200" y="50" text-anchor="middle" fill="#fff" font-size="11" font-weight="500" font-family="var(--font-geist),sans-serif">Photosynthesis</text>
                         <rect x="45" y="155" width="90" height="26" rx="13" fill="#d62839"/>
-                        <text x="90" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="Inter,sans-serif">Inputs</text>
+                        <text x="90" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="var(--font-geist),sans-serif">Inputs</text>
                         <rect x="155" y="155" width="90" height="26" rx="13" fill="#1b4332"/>
-                        <text x="200" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="Inter,sans-serif">Process</text>
+                        <text x="200" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="var(--font-geist),sans-serif">Process</text>
                         <rect x="265" y="155" width="90" height="26" rx="13" fill="#c44900"/>
-                        <text x="310" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="Inter,sans-serif">Outputs</text>
+                        <text x="310" y="172" text-anchor="middle" fill="#fff" font-size="10" font-weight="500" font-family="var(--font-geist),sans-serif">Outputs</text>
                         <rect x="10" y="243" width="70" height="22" rx="11" fill="#fbb8bf"/>
-                        <text x="45" y="258" text-anchor="middle" fill="#6b0011" font-size="9" font-family="Inter,sans-serif">CO&#8322; + Water</text>
+                        <text x="45" y="258" text-anchor="middle" fill="#6b0011" font-size="9" font-family="var(--font-geist),sans-serif">CO&#8322; + Water</text>
                         <rect x="90" y="243" width="85" height="22" rx="11" fill="#fbb8bf"/>
-                        <text x="132" y="258" text-anchor="middle" fill="#6b0011" font-size="9" font-family="Inter,sans-serif">Sunlight</text>
+                        <text x="132" y="258" text-anchor="middle" fill="#6b0011" font-size="9" font-family="var(--font-geist),sans-serif">Sunlight</text>
                         <rect x="125" y="243" width="85" height="22" rx="11" fill="#95d5b2"/>
-                        <text x="167" y="258" text-anchor="middle" fill="#0a2e1a" font-size="9" font-family="Inter,sans-serif">Light Rxn</text>
+                        <text x="167" y="258" text-anchor="middle" fill="#0a2e1a" font-size="9" font-family="var(--font-geist),sans-serif">Light Rxn</text>
                         <rect x="192" y="243" width="72" height="22" rx="11" fill="#95d5b2"/>
-                        <text x="228" y="258" text-anchor="middle" fill="#0a2e1a" font-size="9" font-family="Inter,sans-serif">Calvin</text>
+                        <text x="228" y="258" text-anchor="middle" fill="#0a2e1a" font-size="9" font-family="var(--font-geist),sans-serif">Calvin</text>
                         <rect x="245" y="243" width="72" height="22" rx="11" fill="#f9c784"/>
-                        <text x="281" y="258" text-anchor="middle" fill="#5c2800" font-size="9" font-family="Inter,sans-serif">Glucose</text>
+                        <text x="281" y="258" text-anchor="middle" fill="#5c2800" font-size="9" font-family="var(--font-geist),sans-serif">Glucose</text>
                         <rect x="320" y="243" width="72" height="22" rx="11" fill="#f9c784"/>
-                        <text x="356" y="258" text-anchor="middle" fill="#5c2800" font-size="9" font-family="Inter,sans-serif">Oxygen</text>
+                        <text x="356" y="258" text-anchor="middle" fill="#5c2800" font-size="9" font-family="var(--font-geist),sans-serif">Oxygen</text>
                       </svg>
                       <div style="display:flex;gap:8px;margin-top:10px;">
                         <div style="flex:1;background:rgba(255,255,255,0.6);border:1px solid rgba(229,237,245,0.5);border-radius:6px;padding:5px 8px;text-align:center;">
@@ -2016,19 +2014,19 @@ function initBentoJS(container: HTMLDivElement) {
                         <line x1="110" y1="92" x2="110" y2="104" stroke="#BAE6FD" stroke-width="1"/>
                         <line x1="182" y1="92" x2="182" y2="104" stroke="#BAE6FD" stroke-width="1"/>
                         <rect x="55" y="8" width="110" height="22" rx="11" fill="#0EA5E9"/>
-                        <text x="110" y="23" text-anchor="middle" fill="#fff" font-size="10" font-weight="600" font-family="Inter,sans-serif">Photosynthesis</text>
+                        <text x="110" y="23" text-anchor="middle" fill="#fff" font-size="10" font-weight="600" font-family="var(--font-geist),sans-serif">Photosynthesis</text>
                         <rect x="4" y="70" width="68" height="22" rx="11" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1"/>
-                        <text x="38" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="Inter,sans-serif">Inputs</text>
+                        <text x="38" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="var(--font-geist),sans-serif">Inputs</text>
                         <rect x="76" y="70" width="68" height="22" rx="11" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1"/>
-                        <text x="110" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="Inter,sans-serif">Process</text>
+                        <text x="110" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="var(--font-geist),sans-serif">Process</text>
                         <rect x="148" y="70" width="68" height="22" rx="11" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1"/>
-                        <text x="182" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="Inter,sans-serif">Outputs</text>
+                        <text x="182" y="85" text-anchor="middle" fill="#0284C7" font-size="9.5" font-weight="600" font-family="var(--font-geist),sans-serif">Outputs</text>
                         <rect x="8" y="104" width="60" height="17" rx="8.5" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="0.75"/>
-                        <text x="38" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="Inter,sans-serif">3 subtopics</text>
+                        <text x="38" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="var(--font-geist),sans-serif">3 subtopics</text>
                         <rect x="80" y="104" width="60" height="17" rx="8.5" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="0.75"/>
-                        <text x="110" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="Inter,sans-serif">4 subtopics</text>
+                        <text x="110" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="var(--font-geist),sans-serif">4 subtopics</text>
                         <rect x="152" y="104" width="60" height="17" rx="8.5" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="0.75"/>
-                        <text x="182" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="Inter,sans-serif">2 subtopics</text>
+                        <text x="182" y="116" text-anchor="middle" fill="#0EA5E9" font-size="8" font-family="var(--font-geist),sans-serif">2 subtopics</text>
                       </svg>
                     </div>
                   </div>
@@ -2089,16 +2087,16 @@ function initBentoJS(container: HTMLDivElement) {
                       <div style="background:#F0F9FF;border:1px solid #BAE6FD;border-radius:7px;height:62px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;overflow:hidden;padding:8px;">
                         <svg width="100%" height="46" viewBox="0 0 200 46" fill="none">
                           <rect x="70" y="2" width="60" height="14" rx="7" fill="#0EA5E9"/>
-                          <text x="100" y="12.5" text-anchor="middle" fill="#fff" font-size="7" font-weight="600" font-family="Inter,sans-serif">Photosynthesis</text>
+                          <text x="100" y="12.5" text-anchor="middle" fill="#fff" font-size="7" font-weight="600" font-family="var(--font-geist),sans-serif">Photosynthesis</text>
                           <line x1="100" y1="16" x2="34" y2="30" stroke="#BAE6FD" stroke-width="1"/>
                           <line x1="100" y1="16" x2="100" y2="30" stroke="#BAE6FD" stroke-width="1"/>
                           <line x1="100" y1="16" x2="166" y2="30" stroke="#BAE6FD" stroke-width="1"/>
                           <rect x="4" y="30" width="60" height="14" rx="7" fill="#E0F2FE"/>
-                          <text x="34" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="Inter,sans-serif">Inputs</text>
+                          <text x="34" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="var(--font-geist),sans-serif">Inputs</text>
                           <rect x="70" y="30" width="60" height="14" rx="7" fill="#E0F2FE"/>
-                          <text x="100" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="Inter,sans-serif">Process</text>
+                          <text x="100" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="var(--font-geist),sans-serif">Process</text>
                           <rect x="136" y="30" width="60" height="14" rx="7" fill="#E0F2FE"/>
-                          <text x="166" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="Inter,sans-serif">Outputs</text>
+                          <text x="166" y="40.5" text-anchor="middle" fill="#0284C7" font-size="6.5" font-family="var(--font-geist),sans-serif">Outputs</text>
                         </svg>
                       </div>
                       <div style="display:flex;gap:5px;flex-wrap:wrap;">
@@ -2808,7 +2806,7 @@ function initBentoJS(container: HTMLDivElement) {
             let nodes, edges, alpha;
             let dragNode = null, hovered = null;
             const tip = document.createElement('div');
-            tip.style.cssText = 'position:absolute;pointer-events:none;display:none;background:#fff;border:0.5px solid #ccc;border-radius:8px;padding:6px 10px;font-size:11px;color:#222;line-height:1.4;max-width:160px;z-index:10;font-family:DM Sans,sans-serif;';
+            tip.style.cssText = 'position:absolute;pointer-events:none;display:none;background:#fff;border:0.5px solid #ccc;border-radius:8px;padding:6px 10px;font-size:11px;color:#222;line-height:1.4;max-width:160px;z-index:10;font-family:var(--font-geist),sans-serif;';
             modalWrap.appendChild(tip);
   
             function init() {
@@ -3409,13 +3407,13 @@ function initBentoJS(container: HTMLDivElement) {
                         <path d="M110 30 C110 56,174 56,174 70" stroke="#FDE68A" stroke-width="1.5"/>
                         <line x1="110" y1="30" x2="110" y2="92" stroke="#FDE68A" stroke-width="1.5" stroke-dasharray="3 2"/>
                         <rect x="28" y="8" width="164" height="24" rx="12" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
-                        <text x="110" y="23.5" text-anchor="middle" fill="#92400E" font-size="9.5" font-weight="600" font-family="Inter,sans-serif">Lec. 12 — Markov Chains</text>
+                        <text x="110" y="23.5" text-anchor="middle" fill="#92400E" font-size="9.5" font-weight="600" font-family="var(--font-geist),sans-serif">Lec. 12 — Markov Chains</text>
                         <rect x="4" y="70" width="84" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
-                        <text x="46" y="84.5" text-anchor="middle" fill="#92400E" font-size="9" font-family="Inter,sans-serif">← Lecture 11</text>
+                        <text x="46" y="84.5" text-anchor="middle" fill="#92400E" font-size="9" font-family="var(--font-geist),sans-serif">← Lecture 11</text>
                         <rect x="132" y="70" width="84" height="22" rx="11" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
-                        <text x="174" y="84.5" text-anchor="middle" fill="#92400E" font-size="9" font-family="Inter,sans-serif">Probability →</text>
+                        <text x="174" y="84.5" text-anchor="middle" fill="#92400E" font-size="9" font-family="var(--font-geist),sans-serif">Probability →</text>
                         <rect x="72" y="92" width="76" height="20" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width=".75"/>
-                        <text x="110" y="105.5" text-anchor="middle" fill="#D97706" font-size="8" font-family="Inter,sans-serif">+1 more note</text>
+                        <text x="110" y="105.5" text-anchor="middle" fill="#D97706" font-size="8" font-family="var(--font-geist),sans-serif">+1 more note</text>
                       </svg>
                       <div class="nc-footer">
                         <span>Auto-detected by AI</span>
@@ -3673,9 +3671,9 @@ function initBentoJS(container: HTMLDivElement) {
             setTimeout(() => {
               wrap.classList.add('visible');
               drawConnector(id, cid);
-            }, i * 80);
+            }, i * 100);
           });
-          setTimeout(refreshConnectors, 400);
+          setTimeout(refreshConnectors, 520);
         }
   
         function collapseAll() {
@@ -3685,11 +3683,11 @@ function initBentoJS(container: HTMLDivElement) {
             nodeEls[id]?.classList.remove('expanded');
             const col = childEls[id];
             Array.from(col.children).forEach(w => w.classList.remove('visible'));
-            setTimeout(() => { col.style.display = 'none'; }, 350);
+            setTimeout(() => { col.style.display = 'none'; }, 420);
           });
           Object.keys(paths).forEach(key => {
             paths[key].classList.remove('visible');
-            setTimeout(() => { paths[key]?.remove(); delete paths[key]; }, 350);
+            setTimeout(() => { paths[key]?.remove(); delete paths[key]; }, 420);
           });
         }
   
@@ -3727,7 +3725,10 @@ function initBentoJS(container: HTMLDivElement) {
             updateConnector(key, pid, cid);
           });
         }
-  
+
+        window.addEventListener('resize', refreshConnectors);
+        new ResizeObserver(refreshConnectors).observe(treeEl);
+
         // Auto-play cursor
         const CLICK_SEQ = ['root','inputs','process','outputs'];
         const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -3976,7 +3977,7 @@ export default function BentoPremium() {
   }, []);
 
   return (
-    <section id="features" style={{ background: '#F8F7F5', padding: '80px 0' }}>
+    <section id="features" style={{ background: '#F8F7F5', padding: '32px 0 40px 0' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto',  }}>
       <style>{BENTO_CSS}</style>
       <div className="bento-section" ref={containerRef} dangerouslySetInnerHTML={{ __html: BENTO_HTML }} />

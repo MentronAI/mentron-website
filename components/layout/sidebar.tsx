@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation"
 
 const navLinks = [
   { href: "/#hero", label: "Home" },
-  { href: "/#key-features", label: "Features" },
-  { href: "/#features", label: "Tools" },
+  { href: "/#why-mentron", label: "Features" },
+  { href: "/#platform-features", label: "Tools" },
   { href: "/blogs", label: "Blogs" },
   { href: "/#faq", label: "FAQ" },
 ]
@@ -36,41 +36,37 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Fixed navbar — transparent over hero, white bg on scroll */}
+      {/* Fixed navbar — light mode always */}
       <nav
-        className={`fixed top-0 left-4 right-4 z-50 rounded-b-2xl transition-all duration-500 ${
-          scrolled || !isHome
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
             ? "bg-white/95 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.08)] border-b border-slate-200/50"
             : "bg-transparent border-b border-transparent"
         }`}
       >
-        <div className="max-w-[1100px] mx-auto flex items-center justify-between px-6 lg:px-8 h-[60px] lg:h-[68px]">
+        <div className="max-w-7xl mx-auto flex items-center pl-4 pr-6 lg:pl-6 lg:pr-8 h-[60px] lg:h-[68px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          <Link href="/" className="flex items-center shrink-0 mr-8">
             <Image
               src="/logo/mentron.webp"
               alt="Mentron"
               width={100}
               height={20}
-              className={`h-[18px] lg:h-[22px] w-auto transition-all duration-300 ${
-                scrolled || !isHome ? "[filter:none]" : "brightness-0 invert"
-              }`}
+              className="h-[18px] lg:h-[22px] w-auto transition-all duration-300"
               unoptimized
             />
           </Link>
 
-          {/* Center Nav Links */}
-          <div className="hidden lg:flex items-center gap-8">
+          {/* Nav Links — left aligned after logo */}
+          <div className="hidden lg:flex items-center gap-8 flex-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={`text-[15px] font-medium transition-colors duration-300 ${
                   pathname === link.href
-                    ? (scrolled || !isHome) ? "text-slate-900" : "text-white"
-                    : (scrolled || !isHome)
-                      ? "text-slate-500 hover:text-slate-900"
-                      : "text-white/60 hover:text-white"
+                    ? "text-slate-900"
+                    : "text-slate-500 hover:text-slate-900"
                 }`}
               >
                 {link.label}
@@ -82,11 +78,7 @@ export default function Sidebar() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/institutional-demo"
-              className={`text-[14px] font-semibold py-2.5 px-6 rounded-full transition-all duration-300 ${
-                (scrolled || !isHome)
-                  ? "bg-primary hover:bg-primary-dark text-white"
-                  : "bg-white text-slate-900 hover:bg-white/90"
-              }`}
+              className="text-[14px] font-semibold py-2.5 px-6 rounded-full bg-primary hover:bg-primary-dark text-white transition-all duration-300"
             >
               Get Early Access
             </Link>
@@ -100,20 +92,17 @@ export default function Sidebar() {
           >
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 origin-center ${
-                isOpen ? "rotate-45 translate-y-[5.5px] bg-slate-700"
-                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
+                isOpen ? "rotate-45 translate-y-[5.5px] bg-slate-700" : "bg-slate-700"
               }`}
             />
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 ${
-                isOpen ? "opacity-0 scale-x-0 bg-slate-700"
-                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
+                isOpen ? "opacity-0 scale-x-0 bg-slate-700" : "bg-slate-700"
               }`}
             />
             <span
               className={`block w-[18px] h-[1.5px] transition-all duration-300 origin-center ${
-                isOpen ? "-rotate-45 -translate-y-[5.5px] bg-slate-700"
-                  : (scrolled || !isHome) ? "bg-slate-700" : "bg-white"
+                isOpen ? "-rotate-45 -translate-y-[5.5px] bg-slate-700" : "bg-slate-700"
               }`}
             />
           </button>

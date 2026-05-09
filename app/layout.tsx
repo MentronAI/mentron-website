@@ -80,7 +80,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} min-h-screen bg-white font-sans antialiased`}>
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} min-h-screen bg-white font-sans antialiased`}>
         {/* JSON-LD Schemas */}
         <script
           type="application/ld+json"

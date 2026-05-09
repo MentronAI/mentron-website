@@ -5,9 +5,9 @@ import { Linkedin, Github } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="pt-12 pb-0 bg-page">
-      <div className="max-w-7xl mx-auto">
-        <div className="lg:py-12 bg-white border-neutral-200 border rounded-3xl pt-10 pb-10 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)] mb-12 px-6 lg:px-0">
+    <footer className="pt-12 pb-0 bg-[#F8F7F5]">
+      <div className="container lg:pl-0 lg:pr-0 mx-auto pr-0 pl-0">
+        <div className="lg:px-10 lg:py-12 bg-white border-neutral-200 border rounded-3xl pt-10 pr-6 pb-10 pl-6 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.35)] mb-12">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
             {/* Brand */}
             <div className="lg:w-1/3 space-y-5">

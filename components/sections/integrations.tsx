@@ -49,8 +49,8 @@ const INTEGRATIONS_CSS = `
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 32px 0 40px 0;
+  
 }
 
 /* Dot grid — light gray dots on white */
@@ -325,7 +325,7 @@ const INTEGRATIONS_CSS = `
   transition-duration: .5s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   overflow: hidden;
-  font-family: 'Geist Mono', monospace;
+  font-family: var(--font-geist), sans-serif;
 }
 .integrations-section .psp-app-container {
   border: 1px dashed var(--m-border);
@@ -893,7 +893,7 @@ export default function Integrations() {
   }, []);
 
   return (
-    <section id="integrations" style={{ background: '#FFFFFF' }}>
+    <section id="integrations" style={{ background: '#F8F7F5' }}>
       <style>{INTEGRATIONS_CSS}</style>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
         <div ref={containerRef} dangerouslySetInnerHTML={{ __html: INTEGRATIONS_HTML }} />
