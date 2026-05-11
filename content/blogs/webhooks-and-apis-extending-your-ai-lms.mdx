@@ -453,15 +453,6 @@ Yes, through LTI 1.3 tool provider integration. Mentron connects as an LTI 1.3-c
 Always treat AI-generated grades as requiring human review before becoming official records. Mentron's AI LMS API includes a `review_status` field (values: `pending_human_review`, `approved`, `rejected`) and an `ai_confidence` score (0-1) on assessment submissions. Build your custom integrations to surface these fields to instructors rather than auto-posting AI grades directly to authoritative gradebooks. When processing LMS webhooks for `grade.posted` events, check the `graded_by` field — if it indicates AI grading, route to a review queue before finalizing. This human-in-the-loop approach is responsible deployment practice for AI assessment systems in 2026.
 
 ---
-
-### Internal Link Opportunities
-
-- [Connecting AI LMS to SIS and ERP systems with enrollment automation]
-- [LTI 1.3 integration guide for connecting Mentron to Canvas LMS]
-- [How Mentron's AI quiz generation and auto-grading works under the hood]
-- [FSRS spaced repetition algorithm explained for developers and educators]
-- [AI LMS data privacy and FERPA compliance guide for IT teams]
-
 ## Related Articles on LMS Integration
 
 - [AI LMS + Moodle: Modernizing Open-Source LMS](/blogs/ai-lms-moodle-modernizing-open-source-lms)

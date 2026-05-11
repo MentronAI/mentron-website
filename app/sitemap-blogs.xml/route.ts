@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { getAllPosts } from '@/lib/blog'
 
 export async function GET() {
-  const baseUrl = 'https://mentron.in'
+  const baseUrl = 'https://www.mentron.in'
   const posts = getAllPosts()
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

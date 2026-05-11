@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mentron Blog - AI-Powered Education Insights',
     description: 'Insights on AI-powered learning, education technology, and study strategies.',
-    url: 'https://mentron.in/blogs',
+    url: 'https://www.mentron.in/blogs',
     siteName: 'Mentron',
     images: [
       {
-        url: 'https://mentron.in/images/mentron-in-og-default.jpg',
+        url: 'https://www.mentron.in/images/mentron-in-og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'Mentron Blog',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Mentron Blog',
     description: 'Insights on AI-powered learning and education technology.',
-    images: ['https://mentron.in/images/mentron-in-og-default.jpg'],
+    images: ['https://www.mentron.in/images/mentron-in-og-default.jpg'],
     creator: '@mentronai',
   },
 }

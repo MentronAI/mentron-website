@@ -21,7 +21,7 @@ const bricolage = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mentron.in'),
+  metadataBase: new URL('https://www.mentron.in'),
   title: "Mentron LMS- Smarter Learning & Smarter Teaching",
   description: "AI powered LMS that learns your learning style and auto-generates flashcards, quizzes, mind maps. Makes learning faster, saves teachers 6+ hrs/week.",
   // Favicon and icons
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Mentron LMS- Smarter Learning & Smarter Teaching',
     description: 'AI powered LMS that learns your learning style and auto-generates flashcards, quizzes, mind maps. Makes learning faster, saves teachers 6+ hrs/week.',
-    url: 'https://mentron.in',
+    url: 'https://www.mentron.in',
     siteName: 'Mentron',
     images: [
       {

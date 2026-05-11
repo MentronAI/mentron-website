@@ -2,7 +2,7 @@
 import { Metadata } from 'next'
 import { BlogPost, getAllPosts } from './blog'
 
-const SITE_URL = 'https://mentron.in'
+const SITE_URL = 'https://www.mentron.in'
 const SITE_NAME = 'Mentron'
 const LOGO_PATH = '/logo/mentron.webp'
 const DEFAULT_OG_IMAGE = '/images/mentron-og-default.jpg'
