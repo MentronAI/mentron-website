@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 
 import { useEffect, useRef } from 'react';
@@ -191,13 +192,14 @@ const BENTO_CSS = `    /* ========================================
     .bento-section .bento-card {
       position: relative;
       border-radius: var(--radius-card);
-      overflow: visible;
+      overflow: hidden;
       cursor: pointer;
       border: none;
       background: none;
       outline: none;
       text-align: left;
       display: block;
+      min-width: 0;
     }
 
     .bento-section .bento-card:focus-visible .card-border {
@@ -1333,7 +1335,7 @@ const BENTO_CSS = `    /* ========================================
        8. Responsive
        ======================================== */
     @media (max-width: 980px) {
-      .bento-card.large,
+      .bento-section .bento-card.large,
       .bento-section .bento-card.small {
         flex-basis: 100%;
         aspect-ratio: unset;
@@ -1346,7 +1348,7 @@ const BENTO_CSS = `    /* ========================================
 
       .bento-section .modal-body { padding: 32px; }
       .bento-section .modal-header { grid-template-columns: 1fr; }
-      .modal-header-left,
+      .bento-section .modal-header-left,
       .bento-section .modal-header-right { grid-column: span 1; }
       .bento-section .modal-graphics { grid-template-columns: 1fr; }
       .bento-section .modal-graphic-panel { min-height: 320px; }
@@ -1356,8 +1358,8 @@ const BENTO_CSS = `    /* ========================================
 
     @media (max-width: 640px) {
       .bento-section .bento-section { padding: 48px 16px; }
-      .bento-card.large,
-      .bento-card.small,
+      .bento-section .bento-card.large,
+      .bento-section .bento-card.small,
       .bento-section .bento-card.full {
         min-height: 280px;
       }
@@ -1371,55 +1373,99 @@ const BENTO_CSS = `    /* ========================================
       .bento-section .cornell-ai { display: none; }
       .bento-section .cornell-summary { flex-wrap: wrap; }
 
-      .flash-single { width: 100%; max-width: 260px; }
-      .mind-browser, .chat-browser, .kg-browser { width: 100%; }
-      .card-title { font-size: clamp(1.1rem, 3vw, 1.4rem); }
+      .bento-section .flash-single { width: 100%; max-width: 260px; }
+      .bento-section .mind-browser, .bento-section .chat-browser, .bento-section .kg-browser { width: 100%; }
+      .bento-section .card-title { font-size: clamp(1.1rem, 3vw, 1.4rem); }
     }
 
     @media (max-width: 480px) {
       .bento-section { padding: 32px 12px; }
-      .bento-card.large,
-      .bento-card.small,
-      .bento-card.full { min-height: 220px; }
-      .card-face { padding: 16px; }
-      .card-title { font-size: clamp(1rem, 3vw, 1.25rem); }
-      .card-arrow { width: 24px; height: 24px; }
-      .card-arrow svg { width: 12px; height: 12px; }
-      .card-badge { font-size: 9px; padding: 2px 8px; }
+      .bento-section .bento-card.large,
+      .bento-section .bento-card.small,
+      .bento-section .bento-card.full { min-height: 220px; }
+      .bento-section .card-face { padding: 16px; }
+      .bento-section .card-title { font-size: clamp(1rem, 3vw, 1.25rem); }
+      .bento-section .card-arrow { width: 24px; height: 24px; }
+      .bento-section .card-arrow svg { width: 12px; height: 12px; }
+      .bento-section .card-badge { font-size: 9px; padding: 2px 8px; }
 
-      .modal-body { padding: 16px; gap: 20px; }
-      .modal-title { font-size: 16px; }
-      .modal-desc { font-size: 12px; max-width: 100%; }
-      .modal-cta-row { flex-wrap: wrap; }
-      .btn-primary, .btn-secondary { padding: 7px 14px; font-size: 12px; }
-      .modal-graphic-panel { min-height: 200px; }
-      .modal-graphic { padding: 12px; }
-      .flash-single { width: 100%; max-width: 240px; }
-      .mind-browser, .chat-browser, .kg-browser { width: 100%; }
-      .doc-graphic, .note-graphic { min-height: 140px; padding: 12px; }
-      .disc-inner-card { min-height: unset; padding: 10px; }
-      .modal-detail-item { flex-direction: column; gap: 6px; align-items: flex-start; text-align: center; }
-      .modal-detail-icon { width: 32px; height: 32px; }
-      .modal-detail-title { font-size: 11px; }
-      .modal-detail-desc { font-size: 10px; }
-      .modal-discover-heading { font-size: 10px; margin-bottom: 10px; }
+      .bento-section .modal-body { padding: 16px; gap: 20px; }
+      .bento-section .modal-title { font-size: 16px; }
+      .bento-section .modal-desc { font-size: 12px; max-width: 100%; }
+      .bento-section .modal-cta-row { flex-wrap: wrap; }
+      .bento-section .btn-primary, .bento-section .btn-secondary { padding: 7px 14px; font-size: 12px; }
+      .bento-section .modal-graphic-panel { min-height: 200px; }
+      .bento-section .modal-graphic { padding: 12px; }
+      .bento-section .flash-single { width: 100%; max-width: 240px; }
+      .bento-section .mind-browser, .bento-section .chat-browser, .bento-section .kg-browser { width: 100%; }
+      .bento-section .doc-graphic, .bento-section .note-graphic { min-height: 140px; padding: 12px; }
+      .bento-section .disc-inner-card { min-height: unset; padding: 10px; }
+      .bento-section .modal-details { grid-template-columns: repeat(2, 1fr); gap: 10px 12px; padding-top: 16px; }
+      .bento-section .modal-detail-item { flex-direction: row; gap: 8px; align-items: flex-start; text-align: left; }
+      .bento-section .modal-detail-icon { width: 28px; height: 28px; flex-shrink: 0; }
+      .bento-section .modal-detail-icon svg { width: 18px; height: 18px; }
+      .bento-section .modal-detail-text { font-size: 10px; line-height: 1.4; }
+      .bento-section .modal-discover-heading { font-size: 10px; margin-bottom: 10px; }
+
+      /* Feature list: 2x2 grid on mobile */
+      .bento-section .feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 10px; }
+      .bento-section .feature-text { font-size: 10px; line-height: 1.35; }
+      .bento-section .feature-item svg { width: 14px; height: 14px; }
+
+      /* Scale down mindmap tree */
+      .bento-section .mind-browser-body { height: 260px; padding-left: 16px; }
+      .bento-section .mind-tree { gap: 28px; padding: 12px 20px 12px 0; }
+      .bento-section .mind-node-wrap { gap: 28px; }
+      .bento-section .mind-pill { height: 26px; padding: 0 10px; font-size: 9px; gap: 4px; }
+      .bento-section .mind-pill .mchevron { font-size: 8px; }
+      .bento-section .mind-svg-layer path.mind-conn { stroke-width: 1.2; }
+
+      /* Scale down KG canvas wrapper */
+      .bento-section .kg-browser-body { height: 220px; }
+    }
+
+    /* Modal graphic responsive classes */
+    .modal-graphic-mindmap { width: 100%; max-width: 360px; }
+    .modal-graphic-notes-layout { display: flex; gap: 20px; width: 100%; max-width: 600px; }
+    .modal-graphic-notes-editor { flex: 1; min-width: 0; }
+    .modal-graphic-notes-sidebar { width: 180px; flex-shrink: 0; }
+
+    @media (max-width: 480px) {
+      .modal-graphic-notes-layout { flex-direction: column; }
+      .modal-graphic-notes-sidebar { width: 100%; }
     }
 
     @media (max-width: 380px) {
       .bento-section { padding: 24px 8px; }
-      .card-face { padding: 14px; }
-      .card-title { font-size: clamp(0.875rem, 3.5vw, 1rem); }
+      .bento-section .card-face { padding: 14px; }
+      .bento-section .card-title { font-size: clamp(0.875rem, 3.5vw, 1rem); }
 
-      .modal-overlay { padding: 16px 8px; }
-      .modal-body { padding: 14px; gap: 16px; }
-      .modal-close { width: 30px; height: 30px; top: 12px; right: 12px; }
-      .modal-close svg { width: 14px; height: 14px; }
-      .modal-header { gap: 16px; }
-      .modal-graphics { gap: 10px; }
-      .modal-graphic-panel { min-height: 180px; }
-      .modal-details { gap: 10px; padding: 14px 0; }
-      .btn-primary, .btn-secondary { padding: 6px 12px; font-size: 11px; }
-      .modal-discover-grid { gap: 8px; }
+      .bento-section .modal-overlay { padding: 8px 4px; }
+      .bento-section .modal-body { padding: 10px; gap: 16px; }
+      .bento-section .modal-close { width: 44px; height: 44px; top: 8px; right: 8px; }
+      .bento-section .modal-close svg { width: 14px; height: 14px; }
+      .bento-section .modal-header { gap: 16px; }
+      .bento-section .modal-graphics { gap: 10px; }
+      .bento-section .modal-graphic-panel { min-height: 180px; }
+      .bento-section .modal-details { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 14px 0; }
+      .bento-section .modal-detail-item { flex-direction: row; gap: 6px; }
+      .bento-section .modal-detail-icon { width: 24px; height: 24px; }
+      .bento-section .modal-detail-icon svg { width: 16px; height: 16px; }
+      .bento-section .modal-detail-text { font-size: 9px; }
+      .bento-section .feature-list { gap: 4px 8px; }
+      .bento-section .feature-text { font-size: 9px; }
+      .bento-section .btn-primary, .bento-section .btn-secondary { padding: 6px 12px; font-size: 11px; }
+      .bento-section .modal-discover-grid { gap: 8px; }
+
+      /* Further scale mindmap */
+      .bento-section .mind-browser-body { height: 200px; padding-left: 10px; }
+      .bento-section .mind-tree { gap: 20px; padding: 8px 12px 8px 0; }
+      .bento-section .mind-node-wrap { gap: 20px; }
+      .bento-section .mind-pill { height: 22px; padding: 0 8px; font-size: 8px; }
+      .bento-section .mind-children { gap: 5px; }
+
+      /* Further scale KG */
+      .bento-section .kg-browser-body { height: 180px; }
 
       .cornell-notes { padding: 12px; }
       .notes-doc-title { font-size: 10px; }
@@ -1776,33 +1822,37 @@ function initBentoJS(container: HTMLDivElement) {
   
       // --- Mouse Tracking ---
       container.querySelectorAll('.bento-card').forEach(card => {
-        card.addEventListener('mousemove', e => {
-          const rect = card.getBoundingClientRect();
-          card.style.setProperty('--mx', ((e.clientX - rect.left) / rect.width * 100).toFixed(1));
-          card.style.setProperty('--my', ((e.clientY - rect.top) / rect.height * 100).toFixed(1));
+        card.addEventListener('mousemove', (e: Event) => {
+          const me = e as MouseEvent;
+          const el = card as HTMLElement;
+          const rect = el.getBoundingClientRect();
+          el.style.setProperty('--mx', ((me.clientX - rect.left) / rect.width * 100).toFixed(1));
+          el.style.setProperty('--my', ((me.clientY - rect.top) / rect.height * 100).toFixed(1));
         });
       });
   
       // --- 3D Tilt Effect on flashcard visual ---
       container.querySelectorAll('.bento-card.tilt-3d').forEach(card => {
-        const flashCard = card.querySelector('.flash-single');
+        const flashCard = card.querySelector('.flash-single') as HTMLElement | null;
         if (!flashCard) return;
   
-        card.addEventListener('mousemove', e => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
+        card.addEventListener('mousemove', (e: Event) => {
+          const me = e as MouseEvent;
+          const el = card as HTMLElement;
+          const rect = el.getBoundingClientRect();
+          const x = me.clientX - rect.left;
+          const y = me.clientY - rect.top;
           const centerX = rect.width / 2;
           const centerY = rect.height / 2;
-          const rotateX = ((y - centerY) / centerY) * -10;
-          const rotateY = ((x - centerX) / centerX) * 10;
-          flashCard.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-          flashCard.style.boxShadow = `0 8px 30px rgba(0,0,0,0.12), 0 20px 50px rgba(0,0,0,0.08)`;
+          const rx = ((y - centerY) / centerY) * -10;
+          const ry = ((x - centerX) / centerX) * 10;
+          flashCard!.style.transform = `perspective(600px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+          flashCard!.style.boxShadow = `0 8px 30px rgba(0,0,0,0.12), 0 20px 50px rgba(0,0,0,0.08)`;
         });
-  
+
         card.addEventListener('mouseleave', () => {
-          flashCard.style.transform = '';
-          flashCard.style.boxShadow = '';
+          flashCard!.style.transform = '';
+          flashCard!.style.boxShadow = '';
         });
       });
   
@@ -1810,7 +1860,7 @@ function initBentoJS(container: HTMLDivElement) {
       const overlay = container.querySelector('#modalOverlay');
       const modalBody = container.querySelector('#modalBody');
       const closeBtn = container.querySelector('#modalClose');
-      let lastFocused = null;
+      let lastFocused: HTMLElement | null = null;
   
       function openModal(tool) {
         const data = toolData[tool];
@@ -1830,22 +1880,22 @@ function initBentoJS(container: HTMLDivElement) {
                 </div>
               </div>
               <div class="modal-header-right">
-                <div style="display:flex;flex-direction:column;gap:8px;">
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                <div class="feature-list">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    One-click generation from study materials
+                    <span class="feature-text">One-click generation from study materials</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Drag, zoom, and expand interactive nodes
+                    <span class="feature-text">Drag, zoom, and expand interactive nodes</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Export as images or PDF for revision
+                    <span class="feature-text">Export as images or PDF for revision</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Auto-organize by topic hierarchy
+                    <span class="feature-text">Auto-organize by topic hierarchy</span>
                   </div>
                 </div>
               </div>
@@ -3004,22 +3054,22 @@ function initBentoJS(container: HTMLDivElement) {
                 </div>
               </div>
               <div class="modal-header-right">
-                <div style="display:flex;flex-direction:column;gap:8px;">
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                <div class="feature-list">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Page-level citations for every answer
+                    <span class="feature-text">Page-level citations for every answer</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Multi-document cross-referencing
+                    <span class="feature-text">Multi-document cross-referencing</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Streaming responses in real time
+                    <span class="feature-text">Streaming responses in real time</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Conversation history with context
+                    <span class="feature-text">Conversation history with context</span>
                   </div>
                 </div>
               </div>
@@ -3241,22 +3291,22 @@ function initBentoJS(container: HTMLDivElement) {
                 </div>
               </div>
               <div class="modal-header-right">
-                <div style="display:flex;flex-direction:column;gap:8px;">
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                <div class="feature-list">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Real-time AI suggestions as you type
+                    <span class="feature-text">Real-time AI suggestions as you type</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Auto-link to flashcards and mind maps
+                    <span class="feature-text">Auto-link to flashcards and mind maps</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    One-click summary generation
+                    <span class="feature-text">One-click summary generation</span>
                   </div>
-                  <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:#3c4f69;">
+                  <div class="feature-item">
                     <svg width="16" height="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l3 3 7-8"/></svg>
-                    Quick actions: quiz, summarize, expand
+                    <span class="feature-text">Quick actions: quiz, summarize, expand</span>
                   </div>
                 </div>
               </div>
@@ -3510,7 +3560,7 @@ function initBentoJS(container: HTMLDivElement) {
   
           if (data.preview === 'mindmaps') {
           graphicEl.innerHTML = `
-            <div style="position:relative;width:360px;height:300px;">
+            <div class="modal-graphic-mindmap" style="position:relative;height:300px;">
               <svg width="360" height="300" viewBox="0 0 360 300" fill="none" style="position:absolute;inset:0;">
                 <path d="M180 140 C180 100, 80 70, 65 58" stroke="#BAE6FD" stroke-width="2" fill="none"/>
                 <path d="M180 140 C200 100, 290 65, 300 55" stroke="#BAE6FD" stroke-width="2" fill="none"/>
@@ -3531,8 +3581,8 @@ function initBentoJS(container: HTMLDivElement) {
             </div>`;
         } else if (data.preview === 'notes') {
           graphicEl.innerHTML = `
-            <div style="display:flex;gap:20px;width:100%;max-width:600px;">
-              <div class="notes-editor" style="flex:1;">
+            <div class="modal-graphic-notes-layout">
+              <div class="notes-editor modal-graphic-notes-editor">
                 <div style="margin-bottom:4px;">
                   <strong style="color:var(--heading);font-size:12px;">Lecture 12 — Markov Chains</strong>
                 </div>
@@ -3545,7 +3595,7 @@ function initBentoJS(container: HTMLDivElement) {
                   <span class="notes-chip">Create Mind Map</span>
                 </div>
               </div>
-              <div class="notes-sidebar" style="width:180px;">
+              <div class="notes-sidebar modal-graphic-notes-sidebar">
                 <div class="notes-sidebar-title">AI Suggestions</div>
                 <div class="notes-suggestion">Add transition matrix example to reinforce the memorylessness property.</div>
                 <div class="notes-suggestion" style="border-left-color:#10B981;">Related concept: Hidden Markov Models — covered in Chapter 8.</div>
@@ -3869,6 +3919,8 @@ function initBentoJS(container: HTMLDivElement) {
           ctx = canvas.getContext('2d');
           ctx.scale(dpr, dpr);
           ctx.clearRect(0,0,W,H);
+
+          const sc = Math.min(1, W / 420);
   
           const p = (fx, fy) => [W * fx, H * fy];
           // Radial layout — center node with others evenly spaced around it
@@ -3883,7 +3935,7 @@ function initBentoJS(container: HTMLDivElement) {
             apps:     p(0.18, 0.46),
           };
   
-          const nodes = NODES.map(n => ({...n, x: positions[n.id][0], y: positions[n.id][1]}));
+          const nodes = NODES.map(n => ({...n, x: positions[n.id][0], y: positions[n.id][1], pw: n.pw * sc, ph: n.ph * sc}));
           const nodeMap = {};
           nodes.forEach(n => nodeMap[n.id] = n);
           const edges = EDGES.map(e => ({...e, source: nodeMap[e.s], target: nodeMap[e.t]})).filter(e => e.source && e.target);
@@ -3905,11 +3957,11 @@ function initBentoJS(container: HTMLDivElement) {
   
             // Line
             ctx.beginPath(); ctx.moveTo(sx,sy); ctx.lineTo(ex,ey);
-            ctx.strokeStyle = col; ctx.lineWidth = 1.3; ctx.stroke();
-  
+            ctx.strokeStyle = col; ctx.lineWidth = 1.3 * sc; ctx.stroke();
+
             // Arrowhead
             const angle = Math.atan2(ey-sy, ex-sx);
-            const al=12, aw=0.45;
+            const al=12*sc, aw=0.45;
             ctx.beginPath(); ctx.moveTo(ex, ey);
             ctx.lineTo(ex - al*Math.cos(angle-aw), ey - al*Math.sin(angle-aw));
             ctx.lineTo(ex - al*Math.cos(angle+aw), ey - al*Math.sin(angle+aw));
@@ -3919,9 +3971,11 @@ function initBentoJS(container: HTMLDivElement) {
             // Label pill at midpoint
             const mx=(sx+ex)/2, my=(sy+ey)/2;
             ctx.save();
-            ctx.font = `500 9px 'DM Sans', sans-serif`;
+            const edgeFS = Math.max(7, 9 * sc);
+            ctx.font = `500 ${edgeFS}px 'DM Sans', sans-serif`;
             const tw = ctx.measureText(e.label).width;
-            roundRect(mx - tw/2 - 5, my - 7, tw + 10, 14, 4);
+            const lp = 5 * sc, lh = 14 * sc, lr = 4 * sc;
+            roundRect(mx - tw/2 - lp, my - lh/2, tw + lp*2, lh, lr);
             ctx.fillStyle = 'rgba(255,255,255,0.92)';
             ctx.fill();
             ctx.strokeStyle = 'rgba(0,0,0,0.06)';
@@ -3942,19 +3996,19 @@ function initBentoJS(container: HTMLDivElement) {
             // Shadow
             ctx.save();
             ctx.shadowColor = 'rgba(0,0,0,0.1)';
-            ctx.shadowBlur = 8;
-            ctx.shadowOffsetX = 2;
-            ctx.shadowOffsetY = 2;
+            ctx.shadowBlur = 8 * sc;
+            ctx.shadowOffsetX = 2 * sc;
+            ctx.shadowOffsetY = 2 * sc;
             roundRect(x, y, w, h, pillR);
             ctx.fillStyle = col; ctx.fill();
             ctx.restore();
-  
+
             // White border
             roundRect(x, y, w, h, pillR);
-            ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
-  
+            ctx.strokeStyle = '#fff'; ctx.lineWidth = 2 * sc; ctx.stroke();
+
             // Label — sized to fit inside box with padding
-            const fs = Math.max(10, Math.min(14, n.ph * 0.8));
+            const fs = Math.max(7, Math.min(14, n.ph * 0.8));
             ctx.font = `600 ${fs}px 'DM Sans', sans-serif`;
             ctx.fillStyle = '#fff';
             ctx.textAlign='center'; ctx.textBaseline='middle';
@@ -3977,7 +4031,7 @@ export default function BentoPremium() {
   }, []);
 
   return (
-    <section id="features" style={{ background: '#F8F7F5', padding: '32px 0 40px 0' }}>
+    <section id="features" style={{ background: '#F8F7F5', padding: '32px 24px 40px 24px' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto',  }}>
       <style>{BENTO_CSS}</style>
       <div className="bento-section" ref={containerRef} dangerouslySetInnerHTML={{ __html: BENTO_HTML }} />

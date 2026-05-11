@@ -596,6 +596,17 @@ const TEACHER_CSS = `
         gap: 20px;
       }
     }
+    @media (max-width: 480px) {
+      .teacher-section { padding: 48px 16px 32px; }
+      .teacher-section .browser { border-radius: 12px; }
+      .teacher-section .dashboard { height: 480px; }
+      .teacher-section .browser-chrome { height: 36px; }
+      .teacher-section .browser-url { font-size: 9px; }
+      .teacher-section .day-cell { width: 22px; height: 22px; font-size: 9px; }
+      .teacher-section .bubble-ai,
+      .teacher-section .bubble-user { font-size: 12px; padding: 8px 10px; }
+      .teacher-section .risk-card { padding: 10px; }
+    }
 `;
 
 const TEACHER_HTML = `

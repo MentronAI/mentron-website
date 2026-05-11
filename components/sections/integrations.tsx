@@ -49,7 +49,7 @@ const INTEGRATIONS_CSS = `
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 32px 0 40px 0;
+  padding: 32px 24px 40px 24px;
   
 }
 
@@ -518,6 +518,33 @@ const INTEGRATIONS_CSS = `
   }
   .integrations-section .center-path-mobile-svg { display: none; }
   .integrations-section .m-button { display: inline-flex; }
+}
+
+@media (max-width: 480px) {
+  .integrations-section .grid-row-block--anchor {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+  .integrations-section .grid-row-block {
+    width: auto; min-width: 0; white-space: nowrap;
+    padding: 2px 6px; font-size: 10px; height: 28px;
+  }
+  .integrations-section .figure { height: auto; min-height: 380px; }
+  .integrations-section .systems-row-1,
+  .integrations-section .systems-row-2 { gap: 4px; }
+  .integrations-section .system-label { font-size: 10px; padding: 3px 6px; }
+  .integrations-section .connector-label { font-size: 10px; }
+  .integrations-section .figure--chart-left { top: calc(52% - 12px); left: 2%; transform: scale(0.7); transform-origin: left top; }
+  .integrations-section .figure--chart-right { top: calc(54% + 44px); right: 10%; transform: scale(0.7); transform-origin: right top; }
+  .integrations-section .center-path-mobile-svg { left: 4%; width: 92%; }
+  .integrations-section .stripe-pos { transform: translate(-50%, -50%); }
+  .integrations-section .stripe-center { width: 56px; height: 56px; }
+  .integrations-section .stripe-center img { width: 36px; height: 36px; }
+  .integrations-section .pipeline-app { width: 56px; height: 56px; }
+  .integrations-section .psp-app { width: 36px; height: 36px; font-size: 9px; padding: 2px 4px; }
+  .integrations-section .apps { transform: scale(0.65); transform-origin: left center; }
+  .integrations-section .app-slot, .integrations-section .app-logo { width: 32px; height: 32px; }
+  .integrations-section .app-slot img { width: 32px; height: 32px; }
 }
 `;
 

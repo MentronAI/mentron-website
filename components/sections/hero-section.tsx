@@ -63,7 +63,7 @@ export default function HeroSection() {
 
         {/* Main Headline */}
         <h1
-          className="mt-6 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-slate-900 animate-[fadeInUp_0.8s_ease-out_0.3s_both]"
+          className="mt-6 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight text-slate-900 animate-[fadeInUp_0.8s_ease-out_0.3s_both]"
         >
           The AI that{" "}
           <span className="font-instrument-serif-italic text-primary">sees where you struggle</span>, before you do.
@@ -75,7 +75,7 @@ export default function HeroSection() {
         >
           <a
             href="/institutional-demo"
-            className="bg-primary hover:bg-primary-dark text-white text-base font-semibold py-4 px-10 rounded-lg transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transform hover:-translate-y-0.5"
+            className="bg-primary hover:bg-primary-dark text-white text-base font-semibold py-4 px-6 sm:px-10 rounded-lg transition-all shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transform hover:-translate-y-0.5"
           >
             Get Early Access
           </a>

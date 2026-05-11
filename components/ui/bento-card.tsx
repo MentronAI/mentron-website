@@ -83,7 +83,7 @@ export function BentoCard({
       />
 
       {/* Inner card content */}
-      <div className="relative bg-white rounded-2xl z-[1] h-full" style={{ padding: "32px" }}>
+      <div className="relative bg-white rounded-2xl z-[1] h-full p-5 sm:p-8">
         {/* Gradient orb 1 */}
         <div
           className="absolute rounded-full pointer-events-none"

@@ -13,7 +13,7 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-12 items-start">
           <div className="lg:col-span-4">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tighter text-slate-900 font-display mb-4">
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight tracking-tighter text-slate-900 font-display mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-slate-500 text-base">
