@@ -58,6 +58,61 @@ export default function AboutPage() {
             </section>
 
             <section className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4 text-slate-900 font-display">Meet the Team</h2>
+              <p className="text-slate-600 text-lg leading-relaxed mb-8">
+                The people building Mentron — educators, technologists, and operators with decades of combined
+                experience in AI, learning science, and institutional partnerships.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {[
+                  {
+                    name: 'Dr. Senthilkumar',
+                    role: 'Manager & Public Relations Officer',
+                    initials: 'R',
+                    gradient: 'from-emerald-500 to-teal-600',
+                    bio: 'Heads day-to-day operations and represents Mentron across institutional and public engagements.',
+                  },
+                  {
+                    name: 'Dr. M. Kaliappan',
+                    role: 'Development Advisor',
+                    initials: 'MK',
+                    gradient: 'from-amber-500 to-orange-600',
+                    bio: 'Advises on engineering and product development, ensuring the platform scales reliably for institutions of any size.',
+                  },
+                  {
+                    name: 'Nithish',
+                    role: 'C-Suite Consultant & Advisor',
+                    initials: 'N',
+                    gradient: 'from-blue-500 to-indigo-600',
+                    bio: 'Guides Mentron\'s product vision and institutional strategy, drawing on deep experience in AI platforms and EdTech.',
+                  },
+                  {
+                    name: 'Varushni',
+                    role: 'Co-Founder',
+                    initials: 'V',
+                    gradient: 'from-violet-500 to-fuchsia-600',
+                    bio: 'Co-leads Mentron\'s direction, operations, and partnerships — turning research breakthroughs into classroom-ready tools.',
+                  },
+                ].map((member) => (
+                  <div
+                    key={member.name}
+                    className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:border-primary hover:shadow-md transition-all"
+                  >
+                    <div
+                      className={`w-20 h-20 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center text-white text-2xl font-semibold mb-5`}
+                      aria-hidden="true"
+                    >
+                      {member.initials}
+                    </div>
+                    <h3 className="text-lg font-semibold text-slate-900 mb-1">{member.name}</h3>
+                    <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">{member.bio}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-slate-900">Our Technology</h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-4">
                 Mentron leverages the latest advancements in artificial intelligence, including large language models 
