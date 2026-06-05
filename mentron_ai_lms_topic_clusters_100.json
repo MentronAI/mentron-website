@@ -1552,8 +1552,8 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.learnupon.com/blog/best-corporate-lms/; https://www.talentlms.com/blog/corporate-lms-guide; https://www.ispringsolutions.com/blog/best-corporate-lms",
     "content_angle": "Comprehensive guide to using AI LMS for workforce upskilling.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 9,
