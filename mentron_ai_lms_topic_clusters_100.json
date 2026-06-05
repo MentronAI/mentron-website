@@ -1356,8 +1356,8 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.d2l.com/blog/best-lms-for-higher-education/; https://moodle.com/news/higher-education-lms/; https://www.instructure.com/higher-education/resources",
     "content_angle": "What VCs, deans, and HoDs should see in AI LMS dashboards.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 7,
