@@ -1,0 +1,319 @@
+---
+title: "Skills Frameworks and AI LMS: Building a Skills Graph | Mentron"
+date: "2026-06-06"
+description: "How to design a skills taxonomy and skills graph inside an AI LMS — and why the data model is the difference between reporting completions and reporting capability"
+author:
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.png"
+image: "/images/blog/skills-frameworks-and-ai-lms-building-a-skills-graph.jpg"
+category:
+  - "AI LMS"
+  - "Corporate"
+published: true
+featured: false
+---
+
+Most corporate LMS implementations report on course completions. A small number report on capability. The difference between the two is almost always a skills graph — a structured representation of the skills an organization needs, the relationships between those skills, and the level of proficiency each employee has achieved. Without a skills graph, the LMS is a content delivery system. With one, it is a workforce intelligence platform.
+
+An [AI LMS with a skills graph](/blogs/ai-lms-for-corporate-training-2026-guide) is the first generation of corporate learning platforms that can answer the questions the business actually cares about: What skills do we have? What skills are we missing? Where are the gaps most likely to block the strategy? Which content is most relevant to closing those gaps? Which employees are ready for the next role? The skills graph is what makes those questions answerable.
+
+This guide covers what a skills graph is, how to design one for a corporate AI LMS, what the data model looks like, how to populate it, and how to use it to drive learning, mobility, and strategic workforce decisions. The companion [corporate training guide](/blogs/ai-lms-for-corporate-training-2026-guide) covers the broader platform context, and the [onboarding guide](/blogs/onboarding-new-hires-faster-with-ai-lms) covers the application of skills graphs to a specific use case.
+
+---
+
+## What a Skills Graph Is
+
+A skills graph is a structured representation of three things:
+
+- **The skills the organization needs** — the competencies, capabilities, and knowledge areas that the business strategy requires, organized into a hierarchy or a network
+- **The relationships between skills** — the prerequisite relationships, the related skills, the clusters, and the skill families
+- **The proficiency of each employee** — the level of mastery each employee has achieved for each skill, based on assessments, content completion, manager observation, and other evidence
+
+The graph is more than a list of skills. It is a connected structure, where skills relate to skills, skills relate to content, skills relate to roles, and skills relate to employees. The connections are what make the graph useful — they are how the system can answer questions like "what should this employee learn next" or "what content addresses this specific gap" or "how does the skill profile of this team compare to the strategy."
+
+### Skills Graph vs. Skills Taxonomy
+
+A skills taxonomy is a list of skills, usually organized in a hierarchy. A skills graph is the same data, but with the relationships between skills explicitly modeled. The difference matters because most of the valuable questions about skills are about relationships:
+
+- What is the prerequisite for this skill?
+- What other skills are typically held by people who have this skill?
+- What skills are missing from this team that are typical for this role?
+- What content is most relevant to closing a specific gap?
+
+A taxonomy can answer some of these questions with hierarchy and inference. A graph can answer them directly, with explicit relationships and the data to back them up. In practice, the two are often used interchangeably, but the graph is the more powerful structure, and it is what an AI LMS needs to deliver the most valuable capabilities.
+
+### Skills Graph vs. Knowledge Graph
+
+A skills graph is a specialized type of knowledge graph. The knowledge graph is the broader structure that connects skills, content, roles, employees, competencies, learning outcomes, and any other entity the organization wants to model. The skills graph is the skills-specific subset.
+
+The full [knowledge graph guide](/blogs/from-syllabus-to-knowledge-graph-structuring-courses-with-ai) covers the broader concept, including the application to course design and the comparison to traditional course outlines. The skills graph is the application of the same ideas to the workforce capability model.
+
+---
+
+## Why a Skills Graph Matters in 2026
+
+Three forces are making the skills graph a strategic priority for L&D and HR leaders in 2026.
+
+**Skills are changing faster than job descriptions.** Annual performance reviews and job descriptions written two years ago do not capture the skills the business needs today. The shelf life of a technical skill is now measured in months. An organization that does not have a current, dynamic view of the skills it needs and the skills it has is making workforce decisions in the dark.
+
+**Boards are asking questions only a skills graph can answer.** "What skills do we need for the AI strategy?" "Where are the gaps?" "How are we closing them?" "Which teams are most at risk?" "What does our talent pipeline look like for the roles that don't exist yet?" These are strategic questions, and the skills graph is the data structure that makes them answerable.
+
+**AI capabilities depend on the data model.** The AI features of an AI LMS — adaptive paths, conversational tutors, predictive analytics — depend on a structured data model that connects content, assessments, employees, and skills. Without the skills graph, the AI is operating on a flat content library. With the graph, the AI can personalize at the skill level, which is the granularity that matters.
+
+The skills graph is not a feature. It is the data foundation that makes the rest of the AI LMS work. A platform that does not have one is producing a course-centric experience. A platform that does have one is producing a capability-centric experience.
+
+---
+
+## The Components of a Skills Graph
+
+A skills graph for a corporate AI LMS has four core components, each of which has to be designed and populated for the graph to deliver value.
+
+### 1. The Skill Ontology
+
+The skill ontology is the set of skills, the hierarchy, and the relationships. The most common starting point is one of the public skill frameworks:
+
+- **O*NET** — the US Department of Labor's occupational information network, with detailed skill descriptions for over 1,000 occupations
+- **ESCO** — the European Skills, Competences, Qualifications and Occupations classification, with skills mapped to occupations across the EU
+- **SFIA** — the Skills Framework for the Information Age, widely used in IT and digital roles
+- **Industry-specific frameworks** — many industries have their own skill frameworks (e.g., the NICE Cybersecurity Workforce Framework for cybersecurity)
+
+Most organizations do not start from scratch. They adopt a public framework and customize it for their context. The customization is where the most important work happens — adding the company-specific skills, removing the skills that are not relevant, and adjusting the proficiency levels to match the organization's roles.
+
+A typical corporate skills ontology has:
+
+- **Skill families** — high-level categories like "Data & Analytics," "Engineering," "Leadership," "Sales"
+- **Skills** — specific competencies within each family, like "Python Programming" or "Coaching" or "Negotiation"
+- **Sub-skills** — components of skills, like "Python syntax" and "Python data structures" as sub-skills of "Python Programming"
+- **Skill relationships** — prerequisites, related skills, and clusters
+
+The AI capabilities of the platform can support the ontology design. The AI can suggest skills based on the job descriptions, the content library, and the assessment data. The human review and approval is still required, but the AI accelerates the work.
+
+### 2. The Role-Skill Map
+
+The role-skill map connects skills to roles. A "Senior Data Engineer" role requires skills like "Python Programming," "SQL," "Data Pipeline Design," "Cloud Architecture," and so on, at specific proficiency levels. The role-skill map is what makes the skills graph answer the question "what does this role need?"
+
+The role-skill map is built from:
+
+- **Job descriptions** — the existing job descriptions, augmented with the skill requirements
+- **Manager input** — the people managers who know what the role actually needs
+- **Industry frameworks** — the public role-skill maps from O*NET, ESCO, or industry-specific sources
+- **Performance data** — the skills that high performers in the role actually have, inferred from the assessment and the content engagement data
+
+The role-skill map is the most valuable component for workforce planning. It answers the question "what skills does the business need" at the role level, and it provides the baseline for gap analysis.
+
+### 3. The Content-Skill Map
+
+The content-skill map connects content to skills. Each course, module, video, assessment, and learning activity is tagged with the skills it addresses and the proficiency level it supports. The content-skill map is what makes the skills graph answer the question "what content addresses this gap?"
+
+The content-skill map is built from:
+
+- **Author input** — the content author tags the content with the relevant skills during the authoring process
+- **AI inference** — the AI analyzes the content and suggests the relevant skills, with human review and approval
+- **Assessment alignment** — the assessments are aligned to specific skills and proficiency levels, so the assessment results can be mapped to the skills graph
+
+The content-skill map is the bridge between the skills graph and the learning experience. It is what makes the adaptive paths, the personalized recommendations, and the just-in-time content delivery work.
+
+### 4. The Employee-Skill Profile
+
+The employee-skill profile is the proficiency level each employee has achieved for each skill. The profile is built from multiple sources of evidence:
+
+- **Assessment results** — the explicit assessments the employee has taken, mapped to specific skills and proficiency levels
+- **Content completion** — the content the employee has completed, with the skill tags used to infer proficiency
+- **Manager assessment** — the manager's observation of the employee's skill level, captured through structured input
+- **Peer assessment** — peer feedback on specific skills, captured through structured 360-degree processes
+- **Project and work history** — the projects, roles, and accomplishments the employee has, with skill inference
+- **Self-assessment** — the employee's own view of their skill level, calibrated against the other evidence
+
+The AI capabilities of the platform can synthesize these sources into a coherent profile, with the relative weight of each source configured by the organization. The profile is the basis for the personalized learning paths, the gap analysis, the talent mobility decisions, and the strategic workforce reporting.
+
+---
+
+## How to Design a Skills Graph
+
+Designing a skills graph is a multi-month project that touches every part of the L&D and HR stack. The most common approach is to start with one business unit or function, prove the value, and expand.
+
+### Phase 1: Define the Scope and the Stakeholders
+
+The first phase is the scoping. The decisions:
+
+- **Which business unit or function to start with** — most organizations start with the function that has the clearest skills gap or the most strategic priority
+- **Which roles to include in the role-skill map** — usually a subset of the roles in the chosen function, with the roles prioritized by volume or strategic importance
+- **Which skills to include in the ontology** — a starting set, often 100-300 skills, with the ability to expand over time
+- **Which content to map first** — the content most relevant to the chosen roles, with the rest of the content mapped over time
+
+The stakeholders typically include L&D, HR, the business leaders of the chosen function, and the technical team that will integrate the skills graph with the rest of the HR and learning stack.
+
+### Phase 2: Build the Ontology
+
+The second phase is the ontology design. The work:
+
+- **Adopt a public framework** as the starting point, customized for the organization's context
+- **Map the roles to the skills** with the appropriate proficiency levels
+- **Validate with the business** — the role-skill map has to be credible to the people managers and the business leaders
+- **Build the governance process** — the ongoing process for adding, removing, and updating skills as the business evolves
+
+The AI capabilities of the platform can accelerate the ontology design, but the human review and validation is essential. The ontology is the foundation for everything that follows, and an inaccurate ontology produces inaccurate insights.
+
+### Phase 3: Map the Content
+
+The third phase is the content mapping. The work:
+
+- **Tag the existing content with the relevant skills** — a content audit, with the skills inferred from the content and validated by the content owners
+- **Update the content authoring process** — new content is tagged during the authoring process, with the AI suggesting the skills and the human approving
+- **Map the assessments to the skills and proficiency levels** — the assessments are the source of proficiency data, and the alignment has to be rigorous
+
+The content mapping is the largest effort in the project, and it is where the AI provides the most acceleration. The AI can analyze a module and suggest the relevant skills, the proficiency level, and the assessment alignment. The human review and approval is still required, especially for high-stakes content.
+
+### Phase 4: Build the Employee Profiles
+
+The fourth phase is the employee profiles. The work:
+
+- **Configure the evidence sources** — the assessments, the content completion, the manager input, and the other sources that contribute to the profile
+- **Build the inference model** — the relative weight of each evidence source, the proficiency level inference, and the decay model for skills that are not used
+- **Calibrate against the manager view** — the manager should be able to validate the profile and adjust the proficiency levels based on their direct observation
+- **Build the employee-facing experience** — the learner should be able to see their own profile, understand the gap to their target role, and explore the learning paths that close the gap
+
+The employee profiles are the most valuable output of the skills graph. The profile is what makes the personalized learning paths, the gap analysis, the talent mobility decisions, and the strategic workforce reporting possible.
+
+### Phase 5: Operationalize and Iterate
+
+The fifth phase is operationalization. The work:
+
+- **Integrate with the HRIS and the talent systems** — the skills graph has to be part of the broader talent data model
+- **Build the dashboards and the reporting** — for L&D, for HR, for the business, and for the employees
+- **Launch the learning paths and the recommendations** — the skills graph powers the personalized paths, the just-in-time content, and the adaptive assessments
+- **Iterate based on the data** — the ontology, the content map, and the profile model are improved based on the actual usage
+
+The operationalization is where the value of the skills graph becomes visible. The dashboards show the skill gaps, the personalized paths show the recommendations, and the talent systems show the mobility opportunities.
+
+---
+
+## Common Mistakes in Skills Graph Implementations
+
+A few patterns appear repeatedly in skills graph implementations that fail to deliver value.
+
+**Mistake 1: Trying to build the entire ontology in the first project.** A skills graph is a multi-year effort, and trying to model every skill, every role, and every employee in the first project produces an unwieldy model that no one trusts. Start with a focused scope, prove the value, and expand.
+
+**Mistake 2: Adopting a public framework without customization.** Public frameworks are useful starting points, but they have to be customized for the organization's context. A framework that includes skills the organization does not need, or that is missing skills the organization does need, is producing noise.
+
+**Mistake 3: Skipping the content mapping.** The content-skill map is what makes the skills graph actionable. A skills graph that is not connected to the content library is producing insights no one can act on.
+
+**Mistake 4: Under-investing in the employee profile.** The employee profile is the most valuable output of the skills graph, and it requires careful design. A profile that is based only on content completion is producing a thin view of the employee's actual skills. A profile that includes the manager input, the project history, and the other evidence sources is producing a richer and more credible view.
+
+**Mistake 5: Treating the skills graph as an HR project.** The skills graph is most valuable when it is a strategic asset that serves L&D, HR, the business, and the employees. A project that is owned by HR and not connected to the business is producing a data model that no one uses.
+
+**Mistake 6: Ignoring the data quality.** A skills graph is only as good as the data that goes into it. An inaccurate role-skill map, a content map that is not aligned to the actual content, or an employee profile that is not calibrated produces insights that no one trusts. The data quality has to be a focus from the start.
+
+---
+
+## Using the Skills Graph to Drive Learning and Mobility
+
+The skills graph is most valuable when it is used to drive specific outcomes. The most common applications:
+
+### Personalized Learning Paths
+
+The skills graph powers the personalized learning paths. The system knows the employee's current profile, the target role, the gap, and the content that addresses the gap. The path is generated automatically, with the AI adjusting the sequence, the difficulty, and the modalities based on the learner's performance.
+
+The personalized path is the most direct application of the skills graph, and it is what most learners actually experience.
+
+### Talent Mobility and Career Pathing
+
+The skills graph powers the talent mobility decisions. The system knows what skills each role requires, what skills the employee has, and what the gap is to the next role. The employee can explore the career paths, see the skills they need to develop, and follow the learning paths that close the gap.
+
+The talent mobility application requires integration with the HRIS and the talent management system. The skills graph is the data foundation, but the workflows have to be in the systems the HR team already uses.
+
+### Strategic Workforce Planning
+
+The skills graph powers the strategic workforce planning. The system knows what skills the business needs for the strategy, what skills the workforce has, and what the gap is. The CHRO and the business leaders can see the gap at the role level, the business unit level, and the company level, and they can make the hiring, the development, and the redeployment decisions based on the data.
+
+The strategic workforce planning application is the most strategic use of the skills graph, and it is the use case that boards care about most.
+
+### Content Investment Decisions
+
+The skills graph informs the content investment decisions. The system knows which skills are gaps across the organization, which content is most relevant to closing those gaps, and which content has the highest engagement. The L&D team can prioritize the content investment based on the gap and the impact.
+
+The content investment application is most valuable when the L&D team is making the build-versus-buy-versus-partner decisions for the content library.
+
+---
+
+## Measuring the Success of a Skills Graph
+
+The metrics for a skills graph fall into two categories: data quality and business impact.
+
+**Data quality metrics:**
+
+- **Skill coverage** — the share of roles that have a complete role-skill map
+- **Content coverage** — the share of content that has a complete content-skill map
+- **Employee coverage** — the share of employees that have a complete employee-skill profile
+- **Profile accuracy** — the share of employee profiles that are validated by the manager
+- **Ontology health** — the number of skills added, removed, or updated in the last quarter
+
+**Business impact metrics:**
+
+- **Time to proficiency** — the time it takes for an employee to reach the required proficiency for a role, before and after the skills graph
+- **Internal mobility** — the share of role moves that are filled internally, with the skills graph as the matching mechanism
+- **Skill gap closure** — the rate at which the gap between the current state and the target state is closing, at the role, business unit, and company level
+- **Learning engagement** — the engagement with the personalized paths, compared to the engagement with the generic content
+- **Strategic readiness** — the share of the strategic skills that are at or above the target proficiency level
+
+A skills graph that is producing measurable improvements in these metrics is delivering value. A skills graph that is producing dashboards no one uses is not.
+
+---
+
+## The Future of the Skills Graph
+
+The skills graph is the foundation for the next generation of workforce intelligence. Three trends are worth watching.
+
+**Real-time skill inference.** The AI is increasingly able to infer skills from the work the employee does — the documents they write, the meetings they attend, the projects they complete. The skills graph will be continuously updated, rather than updated through periodic assessments.
+
+**Skills-based organizations.** A growing number of organizations are moving away from role-based structures and toward skills-based structures. The skills graph is the data foundation for the skills-based organization, and the AI LMS is the platform that delivers the development.
+
+**Cross-organizational skills graphs.** Industry consortia are exploring shared skills graphs that span multiple organizations. The use cases include talent mobility across the industry, skills-based hiring, and industry-wide workforce planning. The standards are still emerging, but the direction is clear.
+
+A skills graph on an AI LMS is a strategic asset in 2026. The organizations that invest in the data foundation now will be the ones that can answer the strategic workforce questions in two years, when the rest of the market is still trying to figure out what skills they have.
+
+If you are a chief learning officer, head of talent management, or HR executive designing a skills strategy for your organization, [Schedule a Mentron demo](https://mentron.in/demo) to see how the platform handles skill ontologies, role-skill mapping, content tagging, employee profiles, and the dashboards that turn the skills graph into strategic workforce intelligence.
+
+---
+
+## Frequently Asked Questions
+
+### What is a skills graph in an AI LMS?
+
+A skills graph is a structured data model that connects skills, roles, content, and employees in a corporate AI LMS. The graph makes it possible to answer questions about workforce capability that traditional LMSs cannot, including what skills the organization needs, what skills the workforce has, where the gaps are, what content is most relevant to closing the gaps, and which employees are ready for the next role.
+
+### How is a skills graph different from a skills taxonomy?
+
+A skills taxonomy is a list of skills, usually organized in a hierarchy. A skills graph is the same data, but with the relationships between skills explicitly modeled as a graph. The graph structure is what makes the system answer questions about prerequisites, related skills, content alignment, and gap analysis directly, without inference from the hierarchy.
+
+### How long does it take to build a skills graph?
+
+A focused skills graph for one business unit and a few hundred skills can be built in 3-6 months. A full enterprise skills graph with thousands of skills, hundreds of roles, and tens of thousands of employees typically takes 12-24 months. The timeline depends on the scope, the data quality, the integration requirements, and the governance maturity.
+
+### Where does the data for a skills graph come from?
+
+The data comes from multiple sources. The skill ontology typically starts with a public framework (O*NET, ESCO, SFIA) and is customized for the organization. The role-skill map comes from job descriptions, manager input, and industry frameworks. The content-skill map comes from author input and AI inference. The employee-skill profile comes from assessments, content completion, manager observation, peer feedback, and project history. The AI capabilities of the platform can synthesize the data from these sources into a coherent profile.
+
+### How does the skills graph integrate with the HRIS and talent systems?
+
+The skills graph is typically integrated with the HRIS for employee data (role, business unit, manager, location), with the talent management system for performance and mobility data, and with the learning platform for the learning data. The integration is usually bidirectional — the skills graph reads from the HRIS and writes back the skill profile, which is then visible in the talent management workflows.
+
+### What is the ROI of a skills graph?
+
+The ROI comes from multiple sources. Faster time-to-proficiency for new hires and new roles. Higher internal mobility, which reduces external hiring costs. Better strategic workforce planning, which improves the alignment between the workforce and the business strategy. Higher learning engagement, because the personalized paths are more relevant. Better content investment decisions, because the gaps are visible. Most organizations that invest in a skills graph see meaningful improvements in these areas within 12-18 months.
+
+### Can a skills graph work without a content library?
+
+A skills graph can be built and used without a content library — the role-skill map and the employee profile have value on their own. However, the full value of the skills graph is realized when it is connected to the content library, because the content-skill map is what makes the personalized learning paths possible. A skills graph that is not connected to the content library is producing insights without a way to act on them.
+
+## Related Articles
+
+- [AI LMS for Corporate Training: 2026 Guide](/blogs/ai-lms-for-corporate-training-2026-guide)
+- [From Syllabus to Knowledge Graph: Structuring Courses with AI](/blogs/from-syllabus-to-knowledge-graph-structuring-courses-with-ai)
+- [Knowledge Graphs vs Traditional Course Outlines](/blogs/knowledge-graphs-vs-traditional-course-outlines)
+- [Onboarding New Hires Faster with AI LMS](/blogs/onboarding-new-hires-faster-with-ai-lms)
+- [AI LMS for Sales Enablement and Product Training](/blogs/ai-lms-for-sales-enablement-and-product-training)
+- [Compliance Training with AI LMS: Getting It Right](/blogs/compliance-training-with-ai-lms-getting-it-right)
+- [AI Governance for LMS: Policies, Ethics, and Oversight](/blogs/ai-governance-for-lms-policies-ethics-and-oversight)
+- [Measuring ROI of Corporate LMS and AI Training](/blogs/measuring-roi-of-corporate-lms-and-ai-training)
