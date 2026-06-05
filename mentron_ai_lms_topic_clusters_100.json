@@ -1188,8 +1188,8 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Workflow article showing end-to-end learning cycles.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 6,
