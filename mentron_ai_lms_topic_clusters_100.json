@@ -1622,8 +1622,8 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.learnupon.com/blog/best-corporate-lms/; https://www.talentlms.com/blog/corporate-lms-guide; https://www.ispringsolutions.com/blog/best-corporate-lms",
     "content_angle": "Using AI LMS beyond employees for customers and partners.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 9,
