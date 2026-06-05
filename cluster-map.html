@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mentron Cluster Map: LMS & AI LMS</title>
+<style>
+  body { margin: 0; font-family: -apple-system, system-ui, sans-serif; background: #fafafa; color: #1a1a1a; }
+  header { padding: 20px 32px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+  h1 { margin: 0; font-size: 20px; font-weight: 600; }
+  .stats { color: #6b7280; font-size: 13px; margin-top: 4px; }
+  .stats b { color: #111; }
+  .legend { display: flex; gap: 16px; padding: 12px 32px; background: #fff; border-bottom: 1px solid #e5e7eb; font-size: 12px; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .legend .pillar-i { background: #0077FF; width: 14px; height: 14px; }
+  #map { width: 100%; height: calc(100vh - 110px); display: block; background: radial-gradient(ellipse at center, #fff 0%, #f3f4f6 100%); }
+  .node { cursor: pointer; transition: r 0.15s; }
+  .node:hover { r: 14; }
+  .node.pillar:hover { r: 42; }
+  .node-label { font-size: 10px; fill: #1a1a1a; pointer-events: none; text-anchor: middle; font-weight: 500; }
+  .node-sub { font-size: 8px; fill: #6b7280; pointer-events: none; text-anchor: middle; }
+  .edge { stroke: #d1d5db; stroke-width: 0.5; fill: none; }
+  .edge.pillar-spoke { stroke: #9ca3af; stroke-width: 1; stroke-dasharray: 3,3; }
+  .edge.intra-cluster { stroke-width: 0.5; opacity: 0.6; }
+  #tooltip { position: fixed; background: #111; color: #fff; padding: 8px 12px; border-radius: 6px; font-size: 12px; pointer-events: none; opacity: 0; transition: opacity 0.15s; max-width: 320px; z-index: 100; }
+  #tooltip a { color: #93c5fd; text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mentron Content Cluster Map — LMS & AI LMS</h1>
+  <div class="stats">
+    <b>100</b> posts planned ·
+    <b>49</b> written · <b>51</b> planned ·
+    <b>10</b> clusters · <b>120</b> internal links ·
+    <b>156,900</b> estimated words
+  </div>
+</header>
+<div class="legend">
+  <span><i class="pillar-i"></i> Pillar</span>
+  <span><i style="background:#10B981"></i> Written anchor</span>
+  <span><i style="background:#10B981;opacity:0.45"></i> Written spoke</span>
+  <span><i style="background:#9ca3af;opacity:0.5"></i> Planned spoke</span>
+  <span style="margin-left:auto;color:#6b7280">Click any node to open the blog post</span>
+</div>
+<svg id="map" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid meet">
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="600.0" y2="220.0"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="552.1" y2="99.1"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="567.7" y2="94.1"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="583.7" y2="91.0"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="600.0" y2="90.0"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="616.3" y2="91.0"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="632.3" y2="94.1"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="647.9" y2="99.1"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="662.6" y2="106.1"/>
+  <line class="edge intra-cluster" x1="600.0" y1="220.0" x2="676.4" y2="114.8"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="764.6" y2="273.5"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="796.9" y2="147.6"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="812.4" y2="152.6"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="827.2" y2="159.6"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="841.0" y2="168.3"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="853.6" y2="178.7"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="864.7" y2="190.6"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="874.3" y2="203.8"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="882.2" y2="218.1"/>
+  <line class="edge intra-cluster" x1="764.6" y1="273.5" x2="888.2" y2="233.3"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="866.3" y2="413.5"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="966.5" y2="330.6"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="976.1" y2="343.8"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="983.9" y2="358.1"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="989.9" y2="373.3"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="994.0" y2="389.1"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="996.0" y2="405.3"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="996.0" y2="421.6"/>
+  <line class="edge intra-cluster" x1="866.3" y1="413.5" x2="994.0" y2="437.8"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="866.3" y2="586.5"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="994.0" y2="562.2"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="996.0" y2="578.4"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="996.0" y2="594.7"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="994.0" y2="610.9"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="989.9" y2="626.7"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="976.1" y2="656.2"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="966.5" y2="669.4"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="955.3" y2="681.3"/>
+  <line class="edge intra-cluster" x1="866.3" y1="586.5" x2="942.7" y2="691.7"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="764.6" y2="726.5"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="874.3" y2="796.2"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="864.7" y2="809.4"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="853.6" y2="821.3"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="841.0" y2="831.7"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="827.2" y2="840.4"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="812.4" y2="847.4"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="796.9" y2="852.4"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="780.9" y2="855.5"/>
+  <line class="edge intra-cluster" x1="764.6" y1="726.5" x2="764.6" y2="856.5"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="600.0" y2="780.0"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="435.4" y2="726.5"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="333.7" y2="586.5"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="333.7" y2="413.5"/>
+  <line class="edge pillar-spoke" x1="600.0" y1="500.0" x2="435.4" y2="273.5"/>
+  <circle class="node pillar" data-id="pillar" data-url="https://www.mentron.in/blogs/what-is-an-ai-lms-complete-2026-guide" data-label="What is an AI LMS? Complete 2026 Guide" data-sub="AI LMS" data-status="pillar" cx="600.0" cy="500.0" r="38" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="600.0" y="552.0" font-weight="700">What is an AI LMS? Complete 2026 Guide</text>
+  <circle class="node" data-id="cl1_anchor" data-url="https://www.mentron.in/blogs/what-is-an-ai-lms-complete-2026-guide" data-label="What is an AI LMS? Complete 2026 Guide" data-sub="Cluster 1: AI LMS Fundamentals" data-status="written" cx="600.0" cy="220.0" r="22" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="600.0" y="254.0">What is an AI LMS?</text>
+  <text class="node-label" x="600.0" y="265.0">Complete 2026 Guide</text>
+  <circle class="node" data-id="ai-lms-vs-traditional-lms-key-differences-in-2026" data-url="https://www.mentron.in/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026" data-label="AI LMS vs Traditional LMS: Key Differences in 2026" data-sub="ai lms vs lms" data-status="written" cx="552.1" cy="99.1" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="top-ai-lms-features-to-look-for-in-2026" data-url="https://www.mentron.in/blogs/top-ai-lms-features-to-look-for-in-2026" data-label="Top AI LMS Features to Look for in 2026" data-sub="ai lms features" data-status="written" cx="567.7" cy="94.1" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-architecture-how-modern-learning-platforms-work" data-url="https://www.mentron.in/blogs/ai-lms-architecture-how-modern-learning-platforms-work" data-label="AI LMS Architecture: How Modern Learning Platforms Work" data-sub="ai lms architecture" data-status="written" cx="583.7" cy="91.0" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-benefits-for-students-teachers-and-admins" data-url="https://www.mentron.in/blogs/ai-lms-benefits-for-students-teachers-and-admins" data-label="AI LMS Benefits for Students, Teachers, and Admins" data-sub="ai lms benefits" data-status="written" cx="600.0" cy="90.0" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-pricing-models-explained-2026-edition" data-url="https://www.mentron.in/blogs/ai-lms-pricing-models-explained-2026-edition" data-label="AI LMS Pricing Models Explained: 2026 Edition" data-sub="ai lms pricing" data-status="written" cx="616.3" cy="91.0" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="best-ai-lms-platforms-in-2026-comparison-guide" data-url="https://www.mentron.in/blogs/best-ai-lms-platforms-in-2026-comparison-guide" data-label="Best AI LMS Platforms in 2026: Comparison Guide" data-sub="best ai lms 2026" data-status="written" cx="632.3" cy="94.1" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-for-small-edtech-startups-how-to-compete" data-url="https://www.mentron.in/blogs/ai-lms-for-small-edtech-startups-how-to-compete" data-label="AI LMS for Small EdTech Startups: How to Compete" data-sub="ai lms for startups" data-status="written" cx="647.9" cy="99.1" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="generative-ai-in-lms-beyond-chatbots-and-content" data-url="https://www.mentron.in/blogs/generative-ai-in-lms-beyond-chatbots-and-content" data-label="Generative AI in LMS: Beyond Chatbots and Content" data-sub="generative ai lms" data-status="written" cx="662.6" cy="106.1" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-trends-shaping-the-future-of-learning" data-url="https://www.mentron.in/blogs/ai-lms-trends-shaping-the-future-of-learning" data-label="AI LMS Trends Shaping the Future of Learning" data-sub="ai lms trends 2026" data-status="written" cx="676.4" cy="114.8" r="10" fill="#0077FF" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="cl2_anchor" data-url="https://www.mentron.in/blogs/ai-quiz-generator-for-teachers-complete-guide" data-label="AI Quiz Generator for Teachers: Complete Guide" data-sub="Cluster 2: AI Quiz & Assessment" data-status="written" cx="764.6" cy="273.5" r="22" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="764.6" y="307.5">AI Quiz Generator for</text>
+  <text class="node-label" x="764.6" y="318.5">Teachers: Complete Guide</text>
+  <circle class="node" data-id="how-ai-quiz-generators-save-teachers-hours-every-week" data-url="https://www.mentron.in/blogs/how-ai-quiz-generators-save-teachers-hours-every-week" data-label="How AI Quiz Generators Save Teachers Hours Every Week" data-sub="ai quiz generator benefits" data-status="written" cx="796.9" cy="147.6" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="question-types-your-ai-lms-should-support" data-url="https://www.mentron.in/blogs/question-types-your-ai-lms-should-support" data-label="Question Types Your AI LMS Should Support" data-sub="ai lms assessment types" data-status="written" cx="812.4" cy="152.6" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="designing-fair-and-bias-free-ai-assessments" data-url="https://www.mentron.in/blogs/designing-fair-and-bias-free-ai-assessments" data-label="Designing Fair and Bias-Free AI Assessments" data-sub="ai assessment bias" data-status="written" cx="827.2" cy="159.6" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="secure-online-exams-with-ai-proctoring-what-to-know" data-url="https://www.mentron.in/blogs/secure-online-exams-with-ai-proctoring-what-to-know" data-label="Secure Online Exams with AI Proctoring: What to Know" data-sub="ai proctoring" data-status="written" cx="841.0" cy="168.3" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="formative-vs-summative-assessment-in-an-ai-lms" data-url="https://www.mentron.in/blogs/formative-vs-summative-assessment-in-an-ai-lms" data-label="Formative vs Summative Assessment in an AI LMS" data-sub="formative assessment ai lms" data-status="written" cx="853.6" cy="178.7" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="auto-grading-short-answers-with-ai-how-it-works" data-url="https://www.mentron.in/blogs/auto-grading-short-answers-with-ai-how-it-works" data-label="Auto-Grading Short Answers with AI: How It Works" data-sub="ai auto grading" data-status="written" cx="864.7" cy="190.6" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="best-practices-for-question-bank-management-in-an-ai-lms" data-url="https://www.mentron.in/blogs/best-practices-for-question-bank-management-in-an-ai-lms" data-label="Best Practices for Question Bank Management in an AI LMS" data-sub="question bank ai lms" data-status="written" cx="874.3" cy="203.8" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="using-ai-analytics-to-improve-assessments" data-url="https://www.mentron.in/blogs/using-ai-analytics-to-improve-assessments" data-label="Using AI Analytics to Improve Assessments" data-sub="ai assessment analytics" data-status="written" cx="882.2" cy="218.1" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="open-ended-vs-objective-questions-in-an-ai-lms" data-url="https://www.mentron.in/blogs/open-ended-vs-objective-questions-in-an-ai-lms" data-label="Open-Ended vs Objective Questions in an AI LMS" data-sub="open ended questions ai lms" data-status="written" cx="888.2" cy="233.3" r="10" fill="#10B981" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="cl3_anchor" data-url="https://www.mentron.in/blogs/canvas-lms-ai-integration-step-by-step-guide" data-label="Canvas LMS AI Integration: Step-by-Step Guide" data-sub="Cluster 3: Canvas & LMS Integrations" data-status="written" cx="866.3" cy="413.5" r="22" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="866.3" y="447.5">Canvas LMS AI</text>
+  <text class="node-label" x="866.3" y="458.5">Integration: Step-by-Step</text>
+  <text class="node-sub" x="866.3" y="469.5">...</text>
+  <circle class="node" data-id="choosing-the-right-ai-add-on-for-canvas-lms" data-url="https://www.mentron.in/blogs/choosing-the-right-ai-add-on-for-canvas-lms" data-label="Choosing the Right AI Add-on for Canvas LMS" data-sub="canvas lms ai app" data-status="written" cx="966.5" cy="330.6" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="syncing-grades-between-canvas-and-your-ai-lms" data-url="https://www.mentron.in/blogs/syncing-grades-between-canvas-and-your-ai-lms" data-label="Syncing Grades Between Canvas and Your AI LMS" data-sub="canvas grade sync" data-status="written" cx="976.1" cy="343.8" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="integrating-ai-lms-with-google-classroom" data-url="https://www.mentron.in/blogs/integrating-ai-lms-with-google-classroom" data-label="Integrating AI LMS with Google Classroom" data-sub="ai lms google classroom" data-status="written" cx="983.9" cy="358.1" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-lms-moodle-modernizing-open-source-lms" data-url="https://www.mentron.in/blogs/ai-lms-moodle-modernizing-open-source-lms" data-label="AI LMS + Moodle: Modernizing Open-Source LMS" data-sub="ai lms moodle" data-status="written" cx="989.9" cy="373.3" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="single-sign-on-sso-for-ai-lms-and-campus-systems" data-url="https://www.mentron.in/blogs/single-sign-on-sso-for-ai-lms-and-campus-systems" data-label="Single Sign-On (SSO) for AI LMS and Campus Systems" data-sub="ai lms sso" data-status="written" cx="994.0" cy="389.1" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="connecting-ai-lms-with-sis-and-erp-systems" data-url="https://www.mentron.in/blogs/connecting-ai-lms-with-sis-and-erp-systems" data-label="Connecting AI LMS with SIS and ERP Systems" data-sub="ai lms sis integration" data-status="written" cx="996.0" cy="405.3" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="webhooks-and-apis-extending-your-ai-lms" data-url="https://www.mentron.in/blogs/webhooks-and-apis-extending-your-ai-lms" data-label="Webhooks and APIs: Extending Your AI LMS" data-sub="ai lms api" data-status="written" cx="996.0" cy="421.6" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="integrating-ai-lms-with-video-platforms-like-zoom-and-teams" data-url="https://www.mentron.in/blogs/integrating-ai-lms-with-video-platforms-like-zoom-and-teams" data-label="Integrating AI LMS with Video Platforms like Zoom and Teams" data-sub="ai lms zoom integration" data-status="written" cx="994.0" cy="437.8" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="checklist-for-evaluating-lms-integrations-in-2026" data-url="https://www.mentron.in/blogs/checklist-for-evaluating-lms-integrations-in-2026" data-label="Checklist for Evaluating LMS Integrations in 2026" data-sub="lms integration checklist" data-status="tagged-written-but-missing" cx="989.9" cy="453.6" r="10" fill="#F59E0B" fill-opacity="1.0" stroke="#dc2626" stroke-width="2"/>
+  <circle class="node" data-id="cl4_anchor" data-url="https://www.mentron.in/blogs/recommendation-engines-in-ai-lms-explained" data-label="Recommendation Engines in AI LMS Explained" data-sub="Cluster 4: Adaptive Learning & Personalization" data-status="written" cx="866.3" cy="586.5" r="22" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="866.3" y="620.5">Recommendation Engines in</text>
+  <text class="node-label" x="866.3" y="631.5">AI LMS Explained</text>
+  <circle class="node" data-id="what-is-adaptive-learning-in-an-ai-lms" data-url="https://www.mentron.in/blogs/what-is-adaptive-learning-in-an-ai-lms" data-label="What Is Adaptive Learning in an AI LMS?" data-sub="adaptive learning ai lms" data-status="written" cx="994.0" cy="562.2" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="designing-personalized-learning-paths-with-ai" data-url="https://www.mentron.in/blogs/designing-personalized-learning-paths-with-ai" data-label="Designing Personalized Learning Paths with AI" data-sub="personalized learning paths ai" data-status="written" cx="996.0" cy="578.4" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="microlearning-and-ai-bite-sized-lessons-that-work" data-url="https://www.mentron.in/blogs/microlearning-and-ai-bite-sized-lessons-that-work" data-label="Microlearning and AI: Bite-Sized Lessons that Work" data-sub="ai microlearning" data-status="written" cx="996.0" cy="594.7" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="using-ai-to-detect-at-risk-learners-early" data-url="https://www.mentron.in/blogs/using-ai-to-detect-at-risk-learners-early" data-label="Using AI to Detect At-Risk Learners Early" data-sub="ai early warning system" data-status="written" cx="994.0" cy="610.9" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="skill-based-learning-with-ai-lms" data-url="https://www.mentron.in/blogs/skill-based-learning-with-ai-lms" data-label="Skill-Based Learning with AI LMS" data-sub="skills based learning ai lms" data-status="written" cx="989.9" cy="626.7" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="adaptive-learning-for-stem-vs-humanities" data-url="https://www.mentron.in/blogs/adaptive-learning-for-stem-vs-humanities" data-label="Adaptive Learning for STEM vs Humanities" data-sub="adaptive learning stem" data-status="written" cx="976.1" cy="656.2" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="personalization-in-corporate-training-with-ai-lms" data-url="https://www.mentron.in/blogs/personalization-in-corporate-training-with-ai-lms" data-label="Personalization in Corporate Training with AI LMS" data-sub="personalized corporate training ai" data-status="written" cx="966.5" cy="669.4" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="data-you-need-for-effective-adaptive-learning" data-url="https://www.mentron.in/blogs/data-you-need-for-effective-adaptive-learning" data-label="AI-Driven Remedediation and Enrichment in LMS" data-sub="adaptive learning data requirements" data-status="written" cx="955.3" cy="681.3" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="ai-driven-remediation-and-enrichment-in-lms" data-url="https://www.mentron.in/blogs/ai-driven-remediation-and-enrichment-in-lms" data-label="AI-Driven Remediation and Enrichment in LMS" data-sub="ai remediation lms" data-status="written" cx="942.7" cy="691.7" r="10" fill="#8B5CF6" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="cl5_anchor" data-url="https://www.mentron.in/blogs/fsrs-flashcards-explained-smarter-spaced-repetition" data-label="FSRS Flashcards Explained: Smarter Spaced Repetition" data-sub="Cluster 5: FSRS Flashcards & Memory" data-status="written" cx="764.6" cy="726.5" r="22" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <text class="node-label" x="764.6" y="760.5">FSRS Flashcards</text>
+  <text class="node-label" x="764.6" y="771.5">Explained: Smarter Spaced</text>
+  <text class="node-sub" x="764.6" y="782.5">...</text>
+  <circle class="node" data-id="fsrs-vs-anki-sm2-which-is-better-in-2026" data-url="https://www.mentron.in/blogs/fsrs-vs-anki-sm2-which-is-better-in-2026" data-label="FSRS vs Anki SM2: Which Is Better in 2026?" data-sub="fsrs vs anki" data-status="written" cx="874.3" cy="796.2" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="how-ai-lms-uses-fsrs-for-smarter-revision" data-url="https://www.mentron.in/blogs/how-ai-lms-uses-fsrs-for-smarter-revision" data-label="How AI LMS Uses FSRS for Smarter Revision" data-sub="ai lms fsrs" data-status="written" cx="864.7" cy="809.4" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="designing-effective-flashcards-for-fsrs" data-url="https://www.mentron.in/blogs/designing-effective-flashcards-for-fsrs" data-label="Designing Effective Flashcards for FSRS" data-sub="fsrs flashcard design" data-status="written" cx="853.6" cy="821.3" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="fsrs-flashcards-for-neet-jee-and-competitive-exams" data-url="https://www.mentron.in/blogs/fsrs-flashcards-for-neet-jee-and-competitive-exams" data-label="FSRS Flashcards for NEET, JEE, and Competitive Exams" data-sub="fsrs flashcards neet" data-status="written" cx="841.0" cy="831.7" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="using-fsrs-flashcards-in-university-courses" data-url="https://www.mentron.in/blogs/using-fsrs-flashcards-in-university-courses" data-label="Using FSRS Flashcards in University Courses" data-sub="fsrs flashcards university" data-status="written" cx="827.2" cy="840.4" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="combining-mind-maps-and-fsrs-for-deep-learning" data-url="https://www.mentron.in/blogs/combining-mind-maps-and-fsrs-for-deep-learning" data-label="Combining Mind Maps and FSRS for Deep Learning" data-sub="fsrs mind maps" data-status="written" cx="812.4" cy="847.4" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="common-mistakes-with-fsrs-and-how-to-avoid-them" data-url="https://www.mentron.in/blogs/common-mistakes-with-fsrs-and-how-to-avoid-them" data-label="Common Mistakes with FSRS and How to Avoid Them" data-sub="fsrs mistakes" data-status="written" cx="796.9" cy="852.4" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="fsrs-flashcards-for-corporate-training-and-certifications" data-url="https://www.mentron.in/blogs/fsrs-flashcards-for-corporate-training-and-certifications" data-label="FSRS Flashcards for Corporate Training and Certifications" data-sub="fsrs corporate training" data-status="written" cx="780.9" cy="855.5" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="analytics-for-fsrs-measuring-retention-and-progress" data-url="https://www.mentron.in/blogs/analytics-for-fsrs-measuring-retention-and-progress" data-label="Analytics for FSRS: Measuring Retention and Progress" data-sub="fsrs analytics" data-status="written" cx="764.6" cy="856.5" r="10" fill="#EC4899" fill-opacity="1.0" stroke="#fff" stroke-width="2"/>
+  <circle class="node" data-id="cl6_anchor" data-url="https://www.mentron.in/blogs/mind-maps-in-an-ai-lms-visual-learning-that-scales" data-label="Mind Maps in an AI LMS: Visual Learning That Scales" data-sub="Cluster 6: Mind Maps & Knowledge Graphs" data-status="planned" cx="600.0" cy="780.0" r="22" fill="#06B6D4" fill-opacity="1.0" stroke="#9ca3af" stroke-width="1"/>
+  <text class="node-label" x="600.0" y="814.0">Mind Maps in an AI LMS:</text>
+  <text class="node-label" x="600.0" y="825.0">Visual Learning That</text>
+  <text class="node-sub" x="600.0" y="836.0">...</text>
+  <circle class="node" data-id="from-syllabus-to-knowledge-graph-structuring-courses-with-ai" data-url="https://www.mentron.in/blogs/from-syllabus-to-knowledge-graph-structuring-courses-with-ai" data-label="From Syllabus to Knowledge Graph: Structuring Courses with AI" data-sub="knowledge graph lms" data-status="planned" cx="647.9" cy="900.9" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="how-mind-maps-improve-concept-retention" data-url="https://www.mentron.in/blogs/how-mind-maps-improve-concept-retention" data-label="How Mind Maps Improve Concept Retention" data-sub="mind maps learning retention" data-status="planned" cx="632.3" cy="905.9" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="collaborative-mind-mapping-for-group-projects" data-url="https://www.mentron.in/blogs/collaborative-mind-mapping-for-group-projects" data-label="Collaborative Mind Mapping for Group Projects" data-sub="collaborative mind maps" data-status="planned" cx="616.3" cy="909.0" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="linking-mind-maps-flashcards-and-quizzes-in-an-ai-lms" data-url="https://www.mentron.in/blogs/linking-mind-maps-flashcards-and-quizzes-in-an-ai-lms" data-label="Linking Mind Maps, Flashcards, and Quizzes in an AI LMS" data-sub="integrated study workflows ai lms" data-status="planned" cx="600.0" cy="910.0" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="best-practices-for-creating-mind-maps-for-stem-subjects" data-url="https://www.mentron.in/blogs/best-practices-for-creating-mind-maps-for-stem-subjects" data-label="Best Practices for Creating Mind Maps for STEM Subjects" data-sub="stem mind maps" data-status="planned" cx="583.7" cy="909.0" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="mind-maps-for-humanities-and-social-sciences" data-url="https://www.mentron.in/blogs/mind-maps-for-humanities-and-social-sciences" data-label="Mind Maps for Humanities and Social Sciences" data-sub="mind maps humanities" data-status="planned" cx="567.7" cy="905.9" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-generated-mind-maps-from-pdfs-and-slides" data-url="https://www.mentron.in/blogs/ai-generated-mind-maps-from-pdfs-and-slides" data-label="AI-Generated Mind Maps from PDFs and Slides" data-sub="ai generated mind maps" data-status="planned" cx="552.1" cy="900.9" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="comparing-mind-mapping-tools-in-lms-platforms" data-url="https://www.mentron.in/blogs/comparing-mind-mapping-tools-in-lms-platforms" data-label="Comparing Mind Mapping Tools in LMS Platforms" data-sub="mind mapping lms comparison" data-status="planned" cx="537.4" cy="893.9" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="knowledge-graphs-vs-traditional-course-outlines" data-url="https://www.mentron.in/blogs/knowledge-graphs-vs-traditional-course-outlines" data-label="Knowledge Graphs vs Traditional Course Outlines" data-sub="knowledge graph vs outline" data-status="planned" cx="523.6" cy="885.2" r="10" fill="#06B6D4" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="cl7_anchor" data-url="https://www.mentron.in/blogs/ai-lms-for-universities-complete-implementation-guide" data-label="AI LMS for Universities: Complete Implementation Guide" data-sub="Cluster 7: AI LMS for Universities" data-status="planned" cx="435.4" cy="726.5" r="22" fill="#F97316" fill-opacity="1.0" stroke="#9ca3af" stroke-width="1"/>
+  <text class="node-label" x="435.4" y="760.5">AI LMS for Universities:</text>
+  <text class="node-label" x="435.4" y="771.5">Complete Implementation</text>
+  <text class="node-sub" x="435.4" y="782.5">...</text>
+  <circle class="node" data-id="modernizing-university-lms-from-moodle-to-ai-first-platforms" data-url="https://www.mentron.in/blogs/modernizing-university-lms-from-moodle-to-ai-first-platforms" data-label="Modernizing University LMS: From Moodle to AI-First Platforms" data-sub="modern university lms" data-status="planned" cx="403.1" cy="852.4" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-engineering-colleges-key-requirements" data-url="https://www.mentron.in/blogs/ai-lms-for-engineering-colleges-key-requirements" data-label="AI LMS for Engineering Colleges: Key Requirements" data-sub="ai lms engineering colleges" data-status="planned" cx="387.6" cy="847.4" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-medical-and-nursing-colleges" data-url="https://www.mentron.in/blogs/ai-lms-for-medical-and-nursing-colleges" data-label="AI LMS for Medical and Nursing Colleges" data-sub="ai lms medical colleges" data-status="planned" cx="372.8" cy="840.4" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="improving-naac-and-accreditation-scores-with-ai-lms" data-url="https://www.mentron.in/blogs/improving-naac-and-accreditation-scores-with-ai-lms" data-label="Improving NAAC and Accreditation Scores with AI LMS" data-sub="ai lms naac" data-status="planned" cx="359.0" cy="831.7" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="blended-learning-models-for-universities-using-ai-lms" data-url="https://www.mentron.in/blogs/blended-learning-models-for-universities-using-ai-lms" data-label="Blended Learning Models for Universities Using AI LMS" data-sub="blended learning university ai lms" data-status="planned" cx="346.4" cy="821.3" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="analytics-dashboards-university-leaders-need-in-an-ai-lms" data-url="https://www.mentron.in/blogs/analytics-dashboards-university-leaders-need-in-an-ai-lms" data-label="Analytics Dashboards University Leaders Need in an AI LMS" data-sub="university lms analytics" data-status="planned" cx="335.3" cy="809.4" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-autonomous-and-deemed-universities" data-url="https://www.mentron.in/blogs/ai-lms-for-autonomous-and-deemed-universities" data-label="AI LMS for Autonomous and Deemed Universities" data-sub="ai lms autonomous universities" data-status="planned" cx="325.7" cy="796.2" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="using-ai-lms-data-for-academic-research" data-url="https://www.mentron.in/blogs/using-ai-lms-data-for-academic-research" data-label="Using AI LMS Data for Academic Research" data-sub="lms learning analytics research" data-status="planned" cx="317.8" cy="781.9" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-rfp-template-for-universities" data-url="https://www.mentron.in/blogs/ai-lms-rfp-template-for-universities" data-label="AI LMS RFP Template for Universities" data-sub="ai lms rfp template" data-status="planned" cx="311.8" cy="766.7" r="10" fill="#F97316" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="cl8_anchor" data-url="https://www.mentron.in/blogs/ai-lms-for-schools-how-k-12-can-start" data-label="AI LMS for Schools: How K-12 Can Start" data-sub="Cluster 8: AI LMS for Schools (K-12)" data-status="planned" cx="333.7" cy="586.5" r="22" fill="#84CC16" fill-opacity="1.0" stroke="#9ca3af" stroke-width="1"/>
+  <text class="node-label" x="333.7" y="620.5">AI LMS for Schools: How</text>
+  <text class="node-label" x="333.7" y="631.5">K-12 Can Start</text>
+  <circle class="node" data-id="ai-lms-for-cbse-and-icse-schools-in-india" data-url="https://www.mentron.in/blogs/ai-lms-for-cbse-and-icse-schools-in-india" data-label="AI LMS for CBSE and ICSE Schools in India" data-sub="ai lms cbse" data-status="planned" cx="233.5" cy="669.4" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="homework-assignments-and-parent-portals-in-an-ai-lms" data-url="https://www.mentron.in/blogs/homework-assignments-and-parent-portals-in-an-ai-lms" data-label="Homework, Assignments, and Parent Portals in an AI LMS" data-sub="ai lms homework" data-status="planned" cx="223.9" cy="656.2" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="reducing-teacher-burnout-in-schools-with-ai-lms" data-url="https://www.mentron.in/blogs/reducing-teacher-burnout-in-schools-with-ai-lms" data-label="Reducing Teacher Burnout in Schools with AI LMS" data-sub="ai lms teacher burnout" data-status="planned" cx="216.1" cy="641.9" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-international-schools-and-ib-curriculum" data-url="https://www.mentron.in/blogs/ai-lms-for-international-schools-and-ib-curriculum" data-label="AI LMS for International Schools and IB Curriculum" data-sub="ai lms international schools" data-status="planned" cx="210.1" cy="626.7" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="best-practices-for-device-and-lms-use-in-k-12" data-url="https://www.mentron.in/blogs/best-practices-for-device-and-lms-use-in-k-12" data-label="Best Practices for Device and LMS Use in K-12" data-sub="k12 lms device policy" data-status="planned" cx="206.0" cy="610.9" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-rural-and-low-bandwidth-schools" data-url="https://www.mentron.in/blogs/ai-lms-for-rural-and-low-bandwidth-schools" data-label="AI LMS for Rural and Low-Bandwidth Schools" data-sub="ai lms low bandwidth" data-status="planned" cx="204.0" cy="594.7" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="safety-privacy-and-ai-in-school-lms" data-url="https://www.mentron.in/blogs/safety-privacy-and-ai-in-school-lms" data-label="Safety, Privacy, and AI in School LMS" data-sub="school lms privacy" data-status="planned" cx="204.0" cy="578.4" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="using-ai-lms-for-olympiad-and-competition-prep" data-url="https://www.mentron.in/blogs/using-ai-lms-for-olympiad-and-competition-prep" data-label="Using AI LMS for Olympiad and Competition Prep" data-sub="ai lms olympiad prep" data-status="planned" cx="206.0" cy="562.2" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="school-change-management-for-lms-rollout" data-url="https://www.mentron.in/blogs/school-change-management-for-lms-rollout" data-label="School Change Management for LMS Rollout" data-sub="school lms rollout" data-status="planned" cx="210.1" cy="546.4" r="10" fill="#84CC16" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="cl9_anchor" data-url="https://www.mentron.in/blogs/ai-lms-for-corporate-training-2026-guide" data-label="AI LMS for Corporate Training: 2026 Guide" data-sub="Cluster 9: Corporate Training with AI LMS" data-status="planned" cx="333.7" cy="413.5" r="22" fill="#6366F1" fill-opacity="1.0" stroke="#9ca3af" stroke-width="1"/>
+  <text class="node-label" x="333.7" y="447.5">AI LMS for Corporate</text>
+  <text class="node-label" x="333.7" y="458.5">Training: 2026 Guide</text>
+  <circle class="node" data-id="measuring-roi-of-corporate-lms-and-ai-training" data-url="https://www.mentron.in/blogs/measuring-roi-of-corporate-lms-and-ai-training" data-label="Measuring ROI of Corporate LMS and AI Training" data-sub="lms roi" data-status="planned" cx="204.0" cy="421.6" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-sales-enablement-and-product-training" data-url="https://www.mentron.in/blogs/ai-lms-for-sales-enablement-and-product-training" data-label="AI LMS for Sales Enablement and Product Training" data-sub="ai lms sales training" data-status="planned" cx="204.0" cy="405.3" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="compliance-training-with-ai-lms-getting-it-right" data-url="https://www.mentron.in/blogs/compliance-training-with-ai-lms-getting-it-right" data-label="Compliance Training with AI LMS: Getting It Right" data-sub="compliance training ai lms" data-status="planned" cx="206.0" cy="389.1" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="blended-learning-for-corporate-training-with-ai-lms" data-url="https://www.mentron.in/blogs/blended-learning-for-corporate-training-with-ai-lms" data-label="Blended Learning for Corporate Training with AI LMS" data-sub="blended corporate learning ai" data-status="planned" cx="210.1" cy="373.3" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-lms-for-customer-education-and-partner-training" data-url="https://www.mentron.in/blogs/ai-lms-for-customer-education-and-partner-training" data-label="AI LMS for Customer Education and Partner Training" data-sub="customer education lms" data-status="planned" cx="216.1" cy="358.1" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="skills-frameworks-and-ai-lms-building-a-skills-graph" data-url="https://www.mentron.in/blogs/skills-frameworks-and-ai-lms-building-a-skills-graph" data-label="Skills Frameworks and AI LMS: Building a Skills Graph" data-sub="skills framework ai lms" data-status="planned" cx="223.9" cy="343.8" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="onboarding-new-hires-faster-with-ai-lms" data-url="https://www.mentron.in/blogs/onboarding-new-hires-faster-with-ai-lms" data-label="Onboarding New Hires Faster with AI LMS" data-sub="ai lms onboarding" data-status="planned" cx="233.5" cy="330.6" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="comparing-top-corporate-lms-platforms-with-ai-features" data-url="https://www.mentron.in/blogs/comparing-top-corporate-lms-platforms-with-ai-features" data-label="Comparing Top Corporate LMS Platforms with AI Features" data-sub="top corporate lms 2026" data-status="planned" cx="244.7" cy="318.7" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="security-and-compliance-requirements-for-corporate-ai-lms" data-url="https://www.mentron.in/blogs/security-and-compliance-requirements-for-corporate-ai-lms" data-label="Security and Compliance Requirements for Corporate AI LMS" data-sub="corporate lms security" data-status="planned" cx="257.3" cy="308.3" r="10" fill="#6366F1" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="cl10_anchor" data-url="https://www.mentron.in/blogs/ai-lms-implementation-checklist-for-90-days" data-label="AI LMS Implementation Checklist for 90 Days" data-sub="Cluster 10: Implementation, Privacy & ROI" data-status="planned" cx="435.4" cy="273.5" r="22" fill="#EF4444" fill-opacity="1.0" stroke="#9ca3af" stroke-width="1"/>
+  <text class="node-label" x="435.4" y="307.5">AI LMS Implementation</text>
+  <text class="node-label" x="435.4" y="318.5">Checklist for 90 Days</text>
+  <circle class="node" data-id="lms-data-privacy-and-security-in-the-age-of-ai" data-url="https://www.mentron.in/blogs/lms-data-privacy-and-security-in-the-age-of-ai" data-label="LMS Data Privacy and Security in the Age of AI" data-sub="ai lms data privacy" data-status="planned" cx="325.7" cy="203.8" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="total-cost-of-ownership-for-ai-lms" data-url="https://www.mentron.in/blogs/total-cost-of-ownership-for-ai-lms" data-label="Total Cost of Ownership for AI LMS" data-sub="ai lms total cost of ownership" data-status="planned" cx="335.3" cy="190.6" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="change-management-strategies-for-ai-lms-rollouts" data-url="https://www.mentron.in/blogs/change-management-strategies-for-ai-lms-rollouts" data-label="Change Management Strategies for AI LMS Rollouts" data-sub="ai lms change management" data-status="planned" cx="346.4" cy="178.7" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="building-an-ai-lms-business-case-for-your-institution" data-url="https://www.mentron.in/blogs/building-an-ai-lms-business-case-for-your-institution" data-label="Building an AI LMS Business Case for Your Institution" data-sub="ai lms business case" data-status="planned" cx="359.0" cy="168.3" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="ai-governance-for-lms-policies-ethics-and-oversight" data-url="https://www.mentron.in/blogs/ai-governance-for-lms-policies-ethics-and-oversight" data-label="AI Governance for LMS: Policies, Ethics, and Oversight" data-sub="ai governance lms" data-status="planned" cx="372.8" cy="159.6" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="evaluating-ai-accuracy-in-lms-features" data-url="https://www.mentron.in/blogs/evaluating-ai-accuracy-in-lms-features" data-label="Evaluating AI Accuracy in LMS Features" data-sub="ai accuracy lms" data-status="planned" cx="387.6" cy="152.6" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="vendor-evaluation-checklist-for-ai-lms" data-url="https://www.mentron.in/blogs/vendor-evaluation-checklist-for-ai-lms" data-label="Vendor Evaluation Checklist for AI LMS" data-sub="ai lms vendor checklist" data-status="planned" cx="403.1" cy="147.6" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="open-source-vs-commercial-ai-lms-pros-and-cons" data-url="https://www.mentron.in/blogs/open-source-vs-commercial-ai-lms-pros-and-cons" data-label="Open-Source vs Commercial AI LMS: Pros and Cons" data-sub="open source ai lms" data-status="planned" cx="419.1" cy="144.5" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+  <circle class="node" data-id="future-proofing-your-lms-strategy-for-2030" data-url="https://www.mentron.in/blogs/future-proofing-your-lms-strategy-for-2030" data-label="Future-Proofing Your LMS Strategy for 2030" data-sub="future of lms 2030" data-status="planned" cx="435.4" cy="143.5" r="10" fill="#EF4444" fill-opacity="0.45" stroke="#9ca3af" stroke-width="1"/>
+</svg>
+<div id="tooltip"></div>
+<script>
+const tooltip = document.getElementById('tooltip');
+document.querySelectorAll('.node').forEach(n => {
+  n.addEventListener('mouseenter', (e) => {
+    const label = n.getAttribute('data-label');
+    const sub = n.getAttribute('data-sub');
+    const url = n.getAttribute('data-url');
+    const status = n.getAttribute('data-status');
+    const statusLabel = {written: '✅ Written', planned: '📝 Planned', 'tagged-written-but-missing': '⚠️ Flagged issue', pillar: '⭐ Pillar'}[status] || status;
+    tooltip.innerHTML = `<div style="font-weight:600;margin-bottom:4px">${label}</div><div style="color:#9ca3af;margin-bottom:4px">${sub}</div><div style="margin-bottom:6px">${statusLabel}</div><a href="${url}" target="_blank">Open post →</a>`;
+    tooltip.style.opacity = 1;
+  });
+  n.addEventListener('mousemove', (e) => {
+    tooltip.style.left = (e.clientX + 14) + 'px';
+    tooltip.style.top = (e.clientY + 14) + 'px';
+  });
+  n.addEventListener('mouseleave', () => {
+    tooltip.style.opacity = 0;
+  });
+  n.addEventListener('click', () => {
+    const url = n.getAttribute('data-url');
+    if (url) window.open(url, '_blank');
+  });
+});
+</script>
+</body>
+</html>

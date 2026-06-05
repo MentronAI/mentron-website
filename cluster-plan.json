@@ -1,0 +1,2133 @@
+{
+  "meta": {
+    "generated": "2026-06-05",
+    "site": "mentron.in",
+    "seed_keywords": [
+      "LMS",
+      "AI LMS"
+    ],
+    "total_posts_planned": 100,
+    "total_posts_written": 49,
+    "data_issues": [
+      "checklist-for-evaluating-lms-integrations-in-2026 is marked written in JSON but MDX file missing"
+    ],
+    "orphan_blogs": [
+      "ai-quiz-generator-for-teachers-2026",
+      "ai-transforming-learning",
+      "best-ai-lms-platforms-2026",
+      "canvas-ai-integration-2026-guide",
+      "lms-integration-checklist-evaluating-third-party-tool-compatibility"
+    ],
+    "total_links": 120,
+    "total_estimated_words": 156900
+  },
+  "pillar": {
+    "slug": "what-is-an-ai-lms-complete-2026-guide",
+    "url": "https://www.mentron.in/blogs/what-is-an-ai-lms-complete-2026-guide",
+    "title": "What is an AI LMS? Complete 2026 Guide",
+    "keyword": "AI LMS",
+    "secondary_keywords": [
+      "AI learning management system",
+      "what is an AI LMS",
+      "AI-powered LMS"
+    ],
+    "template": "ultimate-guide",
+    "word_count": 3500,
+    "status": "written",
+    "cluster": 1,
+    "rationale": "Broadest search intent; \"what is\" SERP dominated by listicles so a true pillar guide is a real gap. Anchors all 9 spoke clusters because every cluster is a sub-feature of an AI LMS."
+  },
+  "clusters": [
+    {
+      "cluster_no": 1,
+      "name": "AI LMS Fundamentals",
+      "color": "#0077FF",
+      "anchor_slug": "what-is-an-ai-lms-complete-2026-guide",
+      "cross_links_to": [
+        "AI Quiz & Assessment",
+        "Canvas & LMS Integrations",
+        "Adaptive Learning & Personalization",
+        "FSRS Flashcards & Memory",
+        "Mind Maps & Knowledge Graphs",
+        "AI LMS for Universities",
+        "AI LMS for Schools (K-12)",
+        "Corporate Training with AI LMS",
+        "Implementation, Privacy & ROI"
+      ],
+      "posts": [
+        {
+          "slug": "what-is-an-ai-lms-complete-2026-guide",
+          "url": "https://www.mentron.in/blogs/what-is-an-ai-lms-complete-2026-guide",
+          "title": "What is an AI LMS? Complete 2026 Guide",
+          "primary_keyword": "ai lms",
+          "template": "explainer",
+          "word_count": 3500,
+          "status": "written",
+          "is_anchor": true,
+          "is_pillar": true
+        },
+        {
+          "slug": "ai-lms-vs-traditional-lms-key-differences-in-2026",
+          "url": "https://www.mentron.in/blogs/ai-lms-vs-traditional-lms-key-differences-in-2026",
+          "title": "AI LMS vs Traditional LMS: Key Differences in 2026",
+          "primary_keyword": "ai lms vs lms",
+          "template": "comparison",
+          "word_count": 1800,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "top-ai-lms-features-to-look-for-in-2026",
+          "url": "https://www.mentron.in/blogs/top-ai-lms-features-to-look-for-in-2026",
+          "title": "Top AI LMS Features to Look for in 2026",
+          "primary_keyword": "ai lms features",
+          "template": "listicle",
+          "word_count": 1300,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-architecture-how-modern-learning-platforms-work",
+          "url": "https://www.mentron.in/blogs/ai-lms-architecture-how-modern-learning-platforms-work",
+          "title": "AI LMS Architecture: How Modern Learning Platforms Work",
+          "primary_keyword": "ai lms architecture",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-benefits-for-students-teachers-and-admins",
+          "url": "https://www.mentron.in/blogs/ai-lms-benefits-for-students-teachers-and-admins",
+          "title": "AI LMS Benefits for Students, Teachers, and Admins",
+          "primary_keyword": "ai lms benefits",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-pricing-models-explained-2026-edition",
+          "url": "https://www.mentron.in/blogs/ai-lms-pricing-models-explained-2026-edition",
+          "title": "AI LMS Pricing Models Explained: 2026 Edition",
+          "primary_keyword": "ai lms pricing",
+          "template": "explainer",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "best-ai-lms-platforms-in-2026-comparison-guide",
+          "url": "https://www.mentron.in/blogs/best-ai-lms-platforms-in-2026-comparison-guide",
+          "title": "Best AI LMS Platforms in 2026: Comparison Guide",
+          "primary_keyword": "best ai lms 2026",
+          "template": "comparison",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-small-edtech-startups-how-to-compete",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-small-edtech-startups-how-to-compete",
+          "title": "AI LMS for Small EdTech Startups: How to Compete",
+          "primary_keyword": "ai lms for startups",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "generative-ai-in-lms-beyond-chatbots-and-content",
+          "url": "https://www.mentron.in/blogs/generative-ai-in-lms-beyond-chatbots-and-content",
+          "title": "Generative AI in LMS: Beyond Chatbots and Content",
+          "primary_keyword": "generative ai lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-trends-shaping-the-future-of-learning",
+          "url": "https://www.mentron.in/blogs/ai-lms-trends-shaping-the-future-of-learning",
+          "title": "AI LMS Trends Shaping the Future of Learning",
+          "primary_keyword": "ai lms trends 2026",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 2,
+      "name": "AI Quiz & Assessment",
+      "color": "#10B981",
+      "anchor_slug": "ai-quiz-generator-for-teachers-complete-guide",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Adaptive Learning & Personalization",
+        "AI LMS for Universities",
+        "AI LMS for Schools (K-12)"
+      ],
+      "posts": [
+        {
+          "slug": "ai-quiz-generator-for-teachers-complete-guide",
+          "url": "https://www.mentron.in/blogs/ai-quiz-generator-for-teachers-complete-guide",
+          "title": "AI Quiz Generator for Teachers: Complete Guide",
+          "primary_keyword": "ai quiz generator",
+          "template": "ultimate-guide",
+          "word_count": 2500,
+          "status": "written",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "how-ai-quiz-generators-save-teachers-hours-every-week",
+          "url": "https://www.mentron.in/blogs/how-ai-quiz-generators-save-teachers-hours-every-week",
+          "title": "How AI Quiz Generators Save Teachers Hours Every Week",
+          "primary_keyword": "ai quiz generator benefits",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "question-types-your-ai-lms-should-support",
+          "url": "https://www.mentron.in/blogs/question-types-your-ai-lms-should-support",
+          "title": "Question Types Your AI LMS Should Support",
+          "primary_keyword": "ai lms assessment types",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "designing-fair-and-bias-free-ai-assessments",
+          "url": "https://www.mentron.in/blogs/designing-fair-and-bias-free-ai-assessments",
+          "title": "Designing Fair and Bias-Free AI Assessments",
+          "primary_keyword": "ai assessment bias",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "secure-online-exams-with-ai-proctoring-what-to-know",
+          "url": "https://www.mentron.in/blogs/secure-online-exams-with-ai-proctoring-what-to-know",
+          "title": "Secure Online Exams with AI Proctoring: What to Know",
+          "primary_keyword": "ai proctoring",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "formative-vs-summative-assessment-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/formative-vs-summative-assessment-in-an-ai-lms",
+          "title": "Formative vs Summative Assessment in an AI LMS",
+          "primary_keyword": "formative assessment ai lms",
+          "template": "comparison",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "auto-grading-short-answers-with-ai-how-it-works",
+          "url": "https://www.mentron.in/blogs/auto-grading-short-answers-with-ai-how-it-works",
+          "title": "Auto-Grading Short Answers with AI: How It Works",
+          "primary_keyword": "ai auto grading",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "best-practices-for-question-bank-management-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/best-practices-for-question-bank-management-in-an-ai-lms",
+          "title": "Best Practices for Question Bank Management in an AI LMS",
+          "primary_keyword": "question bank ai lms",
+          "template": "listicle",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "using-ai-analytics-to-improve-assessments",
+          "url": "https://www.mentron.in/blogs/using-ai-analytics-to-improve-assessments",
+          "title": "Using AI Analytics to Improve Assessments",
+          "primary_keyword": "ai assessment analytics",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "open-ended-vs-objective-questions-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/open-ended-vs-objective-questions-in-an-ai-lms",
+          "title": "Open-Ended vs Objective Questions in an AI LMS",
+          "primary_keyword": "open ended questions ai lms",
+          "template": "comparison",
+          "word_count": 1800,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 3,
+      "name": "Canvas & LMS Integrations",
+      "color": "#F59E0B",
+      "anchor_slug": "canvas-lms-ai-integration-step-by-step-guide",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Implementation, Privacy & ROI",
+        "AI LMS for Universities",
+        "Corporate Training with AI LMS"
+      ],
+      "posts": [
+        {
+          "slug": "canvas-lms-ai-integration-step-by-step-guide",
+          "url": "https://www.mentron.in/blogs/canvas-lms-ai-integration-step-by-step-guide",
+          "title": "Canvas LMS AI Integration: Step-by-Step Guide",
+          "primary_keyword": "canvas lms ai integration",
+          "template": "how-to",
+          "word_count": 2500,
+          "status": "written",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "choosing-the-right-ai-add-on-for-canvas-lms",
+          "url": "https://www.mentron.in/blogs/choosing-the-right-ai-add-on-for-canvas-lms",
+          "title": "Choosing the Right AI Add-on for Canvas LMS",
+          "primary_keyword": "canvas lms ai app",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "syncing-grades-between-canvas-and-your-ai-lms",
+          "url": "https://www.mentron.in/blogs/syncing-grades-between-canvas-and-your-ai-lms",
+          "title": "Syncing Grades Between Canvas and Your AI LMS",
+          "primary_keyword": "canvas grade sync",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "integrating-ai-lms-with-google-classroom",
+          "url": "https://www.mentron.in/blogs/integrating-ai-lms-with-google-classroom",
+          "title": "Integrating AI LMS with Google Classroom",
+          "primary_keyword": "ai lms google classroom",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-moodle-modernizing-open-source-lms",
+          "url": "https://www.mentron.in/blogs/ai-lms-moodle-modernizing-open-source-lms",
+          "title": "AI LMS + Moodle: Modernizing Open-Source LMS",
+          "primary_keyword": "ai lms moodle",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "single-sign-on-sso-for-ai-lms-and-campus-systems",
+          "url": "https://www.mentron.in/blogs/single-sign-on-sso-for-ai-lms-and-campus-systems",
+          "title": "Single Sign-On (SSO) for AI LMS and Campus Systems",
+          "primary_keyword": "ai lms sso",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "connecting-ai-lms-with-sis-and-erp-systems",
+          "url": "https://www.mentron.in/blogs/connecting-ai-lms-with-sis-and-erp-systems",
+          "title": "Connecting AI LMS with SIS and ERP Systems",
+          "primary_keyword": "ai lms sis integration",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "webhooks-and-apis-extending-your-ai-lms",
+          "url": "https://www.mentron.in/blogs/webhooks-and-apis-extending-your-ai-lms",
+          "title": "Webhooks and APIs: Extending Your AI LMS",
+          "primary_keyword": "ai lms api",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+          "url": "https://www.mentron.in/blogs/integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+          "title": "Integrating AI LMS with Video Platforms like Zoom and Teams",
+          "primary_keyword": "ai lms zoom integration",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "checklist-for-evaluating-lms-integrations-in-2026",
+          "url": "https://www.mentron.in/blogs/checklist-for-evaluating-lms-integrations-in-2026",
+          "title": "Checklist for Evaluating LMS Integrations in 2026",
+          "primary_keyword": "lms integration checklist",
+          "template": "checklist",
+          "word_count": 1300,
+          "status": "tagged-written-but-missing",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 4,
+      "name": "Adaptive Learning & Personalization",
+      "color": "#8B5CF6",
+      "anchor_slug": "recommendation-engines-in-ai-lms-explained",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "AI Quiz & Assessment",
+        "FSRS Flashcards & Memory",
+        "Mind Maps & Knowledge Graphs"
+      ],
+      "posts": [
+        {
+          "slug": "what-is-adaptive-learning-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/what-is-adaptive-learning-in-an-ai-lms",
+          "title": "What Is Adaptive Learning in an AI LMS?",
+          "primary_keyword": "adaptive learning ai lms",
+          "template": "explainer",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "designing-personalized-learning-paths-with-ai",
+          "url": "https://www.mentron.in/blogs/designing-personalized-learning-paths-with-ai",
+          "title": "Designing Personalized Learning Paths with AI",
+          "primary_keyword": "personalized learning paths ai",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "microlearning-and-ai-bite-sized-lessons-that-work",
+          "url": "https://www.mentron.in/blogs/microlearning-and-ai-bite-sized-lessons-that-work",
+          "title": "Microlearning and AI: Bite-Sized Lessons that Work",
+          "primary_keyword": "ai microlearning",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "using-ai-to-detect-at-risk-learners-early",
+          "url": "https://www.mentron.in/blogs/using-ai-to-detect-at-risk-learners-early",
+          "title": "Using AI to Detect At-Risk Learners Early",
+          "primary_keyword": "ai early warning system",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "skill-based-learning-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/skill-based-learning-with-ai-lms",
+          "title": "Skill-Based Learning with AI LMS",
+          "primary_keyword": "skills based learning ai lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "recommendation-engines-in-ai-lms-explained",
+          "url": "https://www.mentron.in/blogs/recommendation-engines-in-ai-lms-explained",
+          "title": "Recommendation Engines in AI LMS Explained",
+          "primary_keyword": "ai course recommendations",
+          "template": "explainer",
+          "word_count": 2500,
+          "status": "written",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "adaptive-learning-for-stem-vs-humanities",
+          "url": "https://www.mentron.in/blogs/adaptive-learning-for-stem-vs-humanities",
+          "title": "Adaptive Learning for STEM vs Humanities",
+          "primary_keyword": "adaptive learning stem",
+          "template": "comparison",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "personalization-in-corporate-training-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/personalization-in-corporate-training-with-ai-lms",
+          "title": "Personalization in Corporate Training with AI LMS",
+          "primary_keyword": "personalized corporate training ai",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "data-you-need-for-effective-adaptive-learning",
+          "url": "https://www.mentron.in/blogs/data-you-need-for-effective-adaptive-learning",
+          "title": "AI-Driven Remedediation and Enrichment in LMS",
+          "primary_keyword": "adaptive learning data requirements",
+          "template": "how-to",
+          "word_count": 1300,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-driven-remediation-and-enrichment-in-lms",
+          "url": "https://www.mentron.in/blogs/ai-driven-remediation-and-enrichment-in-lms",
+          "title": "AI-Driven Remediation and Enrichment in LMS",
+          "primary_keyword": "ai remediation lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 5,
+      "name": "FSRS Flashcards & Memory",
+      "color": "#EC4899",
+      "anchor_slug": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Adaptive Learning & Personalization",
+        "Mind Maps & Knowledge Graphs"
+      ],
+      "posts": [
+        {
+          "slug": "fsrs-flashcards-explained-smarter-spaced-repetition",
+          "url": "https://www.mentron.in/blogs/fsrs-flashcards-explained-smarter-spaced-repetition",
+          "title": "FSRS Flashcards Explained: Smarter Spaced Repetition",
+          "primary_keyword": "fsrs flashcards",
+          "template": "explainer",
+          "word_count": 2500,
+          "status": "written",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "fsrs-vs-anki-sm2-which-is-better-in-2026",
+          "url": "https://www.mentron.in/blogs/fsrs-vs-anki-sm2-which-is-better-in-2026",
+          "title": "FSRS vs Anki SM2: Which Is Better in 2026?",
+          "primary_keyword": "fsrs vs anki",
+          "template": "comparison",
+          "word_count": 1800,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "how-ai-lms-uses-fsrs-for-smarter-revision",
+          "url": "https://www.mentron.in/blogs/how-ai-lms-uses-fsrs-for-smarter-revision",
+          "title": "How AI LMS Uses FSRS for Smarter Revision",
+          "primary_keyword": "ai lms fsrs",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "designing-effective-flashcards-for-fsrs",
+          "url": "https://www.mentron.in/blogs/designing-effective-flashcards-for-fsrs",
+          "title": "Designing Effective Flashcards for FSRS",
+          "primary_keyword": "fsrs flashcard design",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "fsrs-flashcards-for-neet-jee-and-competitive-exams",
+          "url": "https://www.mentron.in/blogs/fsrs-flashcards-for-neet-jee-and-competitive-exams",
+          "title": "FSRS Flashcards for NEET, JEE, and Competitive Exams",
+          "primary_keyword": "fsrs flashcards neet",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "using-fsrs-flashcards-in-university-courses",
+          "url": "https://www.mentron.in/blogs/using-fsrs-flashcards-in-university-courses",
+          "title": "Using FSRS Flashcards in University Courses",
+          "primary_keyword": "fsrs flashcards university",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "combining-mind-maps-and-fsrs-for-deep-learning",
+          "url": "https://www.mentron.in/blogs/combining-mind-maps-and-fsrs-for-deep-learning",
+          "title": "Combining Mind Maps and FSRS for Deep Learning",
+          "primary_keyword": "fsrs mind maps",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "common-mistakes-with-fsrs-and-how-to-avoid-them",
+          "url": "https://www.mentron.in/blogs/common-mistakes-with-fsrs-and-how-to-avoid-them",
+          "title": "Common Mistakes with FSRS and How to Avoid Them",
+          "primary_keyword": "fsrs mistakes",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "fsrs-flashcards-for-corporate-training-and-certifications",
+          "url": "https://www.mentron.in/blogs/fsrs-flashcards-for-corporate-training-and-certifications",
+          "title": "FSRS Flashcards for Corporate Training and Certifications",
+          "primary_keyword": "fsrs corporate training",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "analytics-for-fsrs-measuring-retention-and-progress",
+          "url": "https://www.mentron.in/blogs/analytics-for-fsrs-measuring-retention-and-progress",
+          "title": "Analytics for FSRS: Measuring Retention and Progress",
+          "primary_keyword": "fsrs analytics",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "written",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 6,
+      "name": "Mind Maps & Knowledge Graphs",
+      "color": "#06B6D4",
+      "anchor_slug": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Adaptive Learning & Personalization",
+        "FSRS Flashcards & Memory",
+        "AI LMS for Universities",
+        "AI LMS for Schools (K-12)"
+      ],
+      "posts": [
+        {
+          "slug": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+          "url": "https://www.mentron.in/blogs/mind-maps-in-an-ai-lms-visual-learning-that-scales",
+          "title": "Mind Maps in an AI LMS: Visual Learning That Scales",
+          "primary_keyword": "mind maps ai lms",
+          "template": "how-to",
+          "word_count": 2500,
+          "status": "planned",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "from-syllabus-to-knowledge-graph-structuring-courses-with-ai",
+          "url": "https://www.mentron.in/blogs/from-syllabus-to-knowledge-graph-structuring-courses-with-ai",
+          "title": "From Syllabus to Knowledge Graph: Structuring Courses with AI",
+          "primary_keyword": "knowledge graph lms",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "how-mind-maps-improve-concept-retention",
+          "url": "https://www.mentron.in/blogs/how-mind-maps-improve-concept-retention",
+          "title": "How Mind Maps Improve Concept Retention",
+          "primary_keyword": "mind maps learning retention",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "collaborative-mind-mapping-for-group-projects",
+          "url": "https://www.mentron.in/blogs/collaborative-mind-mapping-for-group-projects",
+          "title": "Collaborative Mind Mapping for Group Projects",
+          "primary_keyword": "collaborative mind maps",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "linking-mind-maps-flashcards-and-quizzes-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/linking-mind-maps-flashcards-and-quizzes-in-an-ai-lms",
+          "title": "Linking Mind Maps, Flashcards, and Quizzes in an AI LMS",
+          "primary_keyword": "integrated study workflows ai lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "best-practices-for-creating-mind-maps-for-stem-subjects",
+          "url": "https://www.mentron.in/blogs/best-practices-for-creating-mind-maps-for-stem-subjects",
+          "title": "Best Practices for Creating Mind Maps for STEM Subjects",
+          "primary_keyword": "stem mind maps",
+          "template": "listicle",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "mind-maps-for-humanities-and-social-sciences",
+          "url": "https://www.mentron.in/blogs/mind-maps-for-humanities-and-social-sciences",
+          "title": "Mind Maps for Humanities and Social Sciences",
+          "primary_keyword": "mind maps humanities",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-generated-mind-maps-from-pdfs-and-slides",
+          "url": "https://www.mentron.in/blogs/ai-generated-mind-maps-from-pdfs-and-slides",
+          "title": "AI-Generated Mind Maps from PDFs and Slides",
+          "primary_keyword": "ai generated mind maps",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "comparing-mind-mapping-tools-in-lms-platforms",
+          "url": "https://www.mentron.in/blogs/comparing-mind-mapping-tools-in-lms-platforms",
+          "title": "Comparing Mind Mapping Tools in LMS Platforms",
+          "primary_keyword": "mind mapping lms comparison",
+          "template": "how-to",
+          "word_count": 1800,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "knowledge-graphs-vs-traditional-course-outlines",
+          "url": "https://www.mentron.in/blogs/knowledge-graphs-vs-traditional-course-outlines",
+          "title": "Knowledge Graphs vs Traditional Course Outlines",
+          "primary_keyword": "knowledge graph vs outline",
+          "template": "comparison",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 7,
+      "name": "AI LMS for Universities",
+      "color": "#F97316",
+      "anchor_slug": "ai-lms-for-universities-complete-implementation-guide",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Canvas & LMS Integrations",
+        "AI LMS for Schools (K-12)",
+        "Corporate Training with AI LMS",
+        "Implementation, Privacy & ROI"
+      ],
+      "posts": [
+        {
+          "slug": "ai-lms-for-universities-complete-implementation-guide",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-universities-complete-implementation-guide",
+          "title": "AI LMS for Universities: Complete Implementation Guide",
+          "primary_keyword": "ai lms for universities",
+          "template": "ultimate-guide",
+          "word_count": 2500,
+          "status": "planned",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "modernizing-university-lms-from-moodle-to-ai-first-platforms",
+          "url": "https://www.mentron.in/blogs/modernizing-university-lms-from-moodle-to-ai-first-platforms",
+          "title": "Modernizing University LMS: From Moodle to AI-First Platforms",
+          "primary_keyword": "modern university lms",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-engineering-colleges-key-requirements",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-engineering-colleges-key-requirements",
+          "title": "AI LMS for Engineering Colleges: Key Requirements",
+          "primary_keyword": "ai lms engineering colleges",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-medical-and-nursing-colleges",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-medical-and-nursing-colleges",
+          "title": "AI LMS for Medical and Nursing Colleges",
+          "primary_keyword": "ai lms medical colleges",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "improving-naac-and-accreditation-scores-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/improving-naac-and-accreditation-scores-with-ai-lms",
+          "title": "Improving NAAC and Accreditation Scores with AI LMS",
+          "primary_keyword": "ai lms naac",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "blended-learning-models-for-universities-using-ai-lms",
+          "url": "https://www.mentron.in/blogs/blended-learning-models-for-universities-using-ai-lms",
+          "title": "Blended Learning Models for Universities Using AI LMS",
+          "primary_keyword": "blended learning university ai lms",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "analytics-dashboards-university-leaders-need-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/analytics-dashboards-university-leaders-need-in-an-ai-lms",
+          "title": "Analytics Dashboards University Leaders Need in an AI LMS",
+          "primary_keyword": "university lms analytics",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-autonomous-and-deemed-universities",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-autonomous-and-deemed-universities",
+          "title": "AI LMS for Autonomous and Deemed Universities",
+          "primary_keyword": "ai lms autonomous universities",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "using-ai-lms-data-for-academic-research",
+          "url": "https://www.mentron.in/blogs/using-ai-lms-data-for-academic-research",
+          "title": "Using AI LMS Data for Academic Research",
+          "primary_keyword": "lms learning analytics research",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-rfp-template-for-universities",
+          "url": "https://www.mentron.in/blogs/ai-lms-rfp-template-for-universities",
+          "title": "AI LMS RFP Template for Universities",
+          "primary_keyword": "ai lms rfp template",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 8,
+      "name": "AI LMS for Schools (K-12)",
+      "color": "#84CC16",
+      "anchor_slug": "ai-lms-for-schools-how-k-12-can-start",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Canvas & LMS Integrations",
+        "AI LMS for Universities",
+        "Corporate Training with AI LMS",
+        "Implementation, Privacy & ROI"
+      ],
+      "posts": [
+        {
+          "slug": "ai-lms-for-schools-how-k-12-can-start",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-schools-how-k-12-can-start",
+          "title": "AI LMS for Schools: How K-12 Can Start",
+          "primary_keyword": "ai lms for schools",
+          "template": "how-to",
+          "word_count": 2500,
+          "status": "planned",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-cbse-and-icse-schools-in-india",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-cbse-and-icse-schools-in-india",
+          "title": "AI LMS for CBSE and ICSE Schools in India",
+          "primary_keyword": "ai lms cbse",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "homework-assignments-and-parent-portals-in-an-ai-lms",
+          "url": "https://www.mentron.in/blogs/homework-assignments-and-parent-portals-in-an-ai-lms",
+          "title": "Homework, Assignments, and Parent Portals in an AI LMS",
+          "primary_keyword": "ai lms homework",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "reducing-teacher-burnout-in-schools-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/reducing-teacher-burnout-in-schools-with-ai-lms",
+          "title": "Reducing Teacher Burnout in Schools with AI LMS",
+          "primary_keyword": "ai lms teacher burnout",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-international-schools-and-ib-curriculum",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-international-schools-and-ib-curriculum",
+          "title": "AI LMS for International Schools and IB Curriculum",
+          "primary_keyword": "ai lms international schools",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "best-practices-for-device-and-lms-use-in-k-12",
+          "url": "https://www.mentron.in/blogs/best-practices-for-device-and-lms-use-in-k-12",
+          "title": "Best Practices for Device and LMS Use in K-12",
+          "primary_keyword": "k12 lms device policy",
+          "template": "listicle",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-rural-and-low-bandwidth-schools",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-rural-and-low-bandwidth-schools",
+          "title": "AI LMS for Rural and Low-Bandwidth Schools",
+          "primary_keyword": "ai lms low bandwidth",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "safety-privacy-and-ai-in-school-lms",
+          "url": "https://www.mentron.in/blogs/safety-privacy-and-ai-in-school-lms",
+          "title": "Safety, Privacy, and AI in School LMS",
+          "primary_keyword": "school lms privacy",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "using-ai-lms-for-olympiad-and-competition-prep",
+          "url": "https://www.mentron.in/blogs/using-ai-lms-for-olympiad-and-competition-prep",
+          "title": "Using AI LMS for Olympiad and Competition Prep",
+          "primary_keyword": "ai lms olympiad prep",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "school-change-management-for-lms-rollout",
+          "url": "https://www.mentron.in/blogs/school-change-management-for-lms-rollout",
+          "title": "School Change Management for LMS Rollout",
+          "primary_keyword": "school lms rollout",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 9,
+      "name": "Corporate Training with AI LMS",
+      "color": "#6366F1",
+      "anchor_slug": "ai-lms-for-corporate-training-2026-guide",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Canvas & LMS Integrations",
+        "AI LMS for Universities",
+        "AI LMS for Schools (K-12)",
+        "Implementation, Privacy & ROI"
+      ],
+      "posts": [
+        {
+          "slug": "ai-lms-for-corporate-training-2026-guide",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-corporate-training-2026-guide",
+          "title": "AI LMS for Corporate Training: 2026 Guide",
+          "primary_keyword": "ai lms for corporate training",
+          "template": "ultimate-guide",
+          "word_count": 2500,
+          "status": "planned",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "measuring-roi-of-corporate-lms-and-ai-training",
+          "url": "https://www.mentron.in/blogs/measuring-roi-of-corporate-lms-and-ai-training",
+          "title": "Measuring ROI of Corporate LMS and AI Training",
+          "primary_keyword": "lms roi",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-sales-enablement-and-product-training",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-sales-enablement-and-product-training",
+          "title": "AI LMS for Sales Enablement and Product Training",
+          "primary_keyword": "ai lms sales training",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "compliance-training-with-ai-lms-getting-it-right",
+          "url": "https://www.mentron.in/blogs/compliance-training-with-ai-lms-getting-it-right",
+          "title": "Compliance Training with AI LMS: Getting It Right",
+          "primary_keyword": "compliance training ai lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "blended-learning-for-corporate-training-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/blended-learning-for-corporate-training-with-ai-lms",
+          "title": "Blended Learning for Corporate Training with AI LMS",
+          "primary_keyword": "blended corporate learning ai",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-lms-for-customer-education-and-partner-training",
+          "url": "https://www.mentron.in/blogs/ai-lms-for-customer-education-and-partner-training",
+          "title": "AI LMS for Customer Education and Partner Training",
+          "primary_keyword": "customer education lms",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "skills-frameworks-and-ai-lms-building-a-skills-graph",
+          "url": "https://www.mentron.in/blogs/skills-frameworks-and-ai-lms-building-a-skills-graph",
+          "title": "Skills Frameworks and AI LMS: Building a Skills Graph",
+          "primary_keyword": "skills framework ai lms",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "onboarding-new-hires-faster-with-ai-lms",
+          "url": "https://www.mentron.in/blogs/onboarding-new-hires-faster-with-ai-lms",
+          "title": "Onboarding New Hires Faster with AI LMS",
+          "primary_keyword": "ai lms onboarding",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "comparing-top-corporate-lms-platforms-with-ai-features",
+          "url": "https://www.mentron.in/blogs/comparing-top-corporate-lms-platforms-with-ai-features",
+          "title": "Comparing Top Corporate LMS Platforms with AI Features",
+          "primary_keyword": "top corporate lms 2026",
+          "template": "listicle",
+          "word_count": 1800,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "security-and-compliance-requirements-for-corporate-ai-lms",
+          "url": "https://www.mentron.in/blogs/security-and-compliance-requirements-for-corporate-ai-lms",
+          "title": "Security and Compliance Requirements for Corporate AI LMS",
+          "primary_keyword": "corporate lms security",
+          "template": "how-to",
+          "word_count": 1300,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    },
+    {
+      "cluster_no": 10,
+      "name": "Implementation, Privacy & ROI",
+      "color": "#EF4444",
+      "anchor_slug": "ai-lms-implementation-checklist-for-90-days",
+      "cross_links_to": [
+        "AI LMS Fundamentals",
+        "Canvas & LMS Integrations",
+        "AI LMS for Universities",
+        "AI LMS for Schools (K-12)",
+        "Corporate Training with AI LMS"
+      ],
+      "posts": [
+        {
+          "slug": "ai-lms-implementation-checklist-for-90-days",
+          "url": "https://www.mentron.in/blogs/ai-lms-implementation-checklist-for-90-days",
+          "title": "AI LMS Implementation Checklist for 90 Days",
+          "primary_keyword": "ai lms implementation checklist",
+          "template": "checklist",
+          "word_count": 2500,
+          "status": "planned",
+          "is_anchor": true,
+          "is_pillar": false
+        },
+        {
+          "slug": "lms-data-privacy-and-security-in-the-age-of-ai",
+          "url": "https://www.mentron.in/blogs/lms-data-privacy-and-security-in-the-age-of-ai",
+          "title": "LMS Data Privacy and Security in the Age of AI",
+          "primary_keyword": "ai lms data privacy",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "total-cost-of-ownership-for-ai-lms",
+          "url": "https://www.mentron.in/blogs/total-cost-of-ownership-for-ai-lms",
+          "title": "Total Cost of Ownership for AI LMS",
+          "primary_keyword": "ai lms total cost of ownership",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "change-management-strategies-for-ai-lms-rollouts",
+          "url": "https://www.mentron.in/blogs/change-management-strategies-for-ai-lms-rollouts",
+          "title": "Change Management Strategies for AI LMS Rollouts",
+          "primary_keyword": "ai lms change management",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "building-an-ai-lms-business-case-for-your-institution",
+          "url": "https://www.mentron.in/blogs/building-an-ai-lms-business-case-for-your-institution",
+          "title": "Building an AI LMS Business Case for Your Institution",
+          "primary_keyword": "ai lms business case",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "ai-governance-for-lms-policies-ethics-and-oversight",
+          "url": "https://www.mentron.in/blogs/ai-governance-for-lms-policies-ethics-and-oversight",
+          "title": "AI Governance for LMS: Policies, Ethics, and Oversight",
+          "primary_keyword": "ai governance lms",
+          "template": "how-to",
+          "word_count": 1600,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "evaluating-ai-accuracy-in-lms-features",
+          "url": "https://www.mentron.in/blogs/evaluating-ai-accuracy-in-lms-features",
+          "title": "Evaluating AI Accuracy in LMS Features",
+          "primary_keyword": "ai accuracy lms",
+          "template": "how-to",
+          "word_count": 1500,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "vendor-evaluation-checklist-for-ai-lms",
+          "url": "https://www.mentron.in/blogs/vendor-evaluation-checklist-for-ai-lms",
+          "title": "Vendor Evaluation Checklist for AI LMS",
+          "primary_keyword": "ai lms vendor checklist",
+          "template": "checklist",
+          "word_count": 1300,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "open-source-vs-commercial-ai-lms-pros-and-cons",
+          "url": "https://www.mentron.in/blogs/open-source-vs-commercial-ai-lms-pros-and-cons",
+          "title": "Open-Source vs Commercial AI LMS: Pros and Cons",
+          "primary_keyword": "open source ai lms",
+          "template": "comparison",
+          "word_count": 1800,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        },
+        {
+          "slug": "future-proofing-your-lms-strategy-for-2030",
+          "url": "https://www.mentron.in/blogs/future-proofing-your-lms-strategy-for-2030",
+          "title": "Future-Proofing Your LMS Strategy for 2030",
+          "primary_keyword": "future of lms 2030",
+          "template": "how-to",
+          "word_count": 1400,
+          "status": "planned",
+          "is_anchor": false,
+          "is_pillar": false
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "pillar",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "type": "mandatory",
+      "anchor": "mind maps ai lms",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-universities-complete-implementation-guide",
+      "type": "mandatory",
+      "anchor": "ai lms for universities",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "ai-lms-for-universities-complete-implementation-guide",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-schools-how-k-12-can-start",
+      "type": "mandatory",
+      "anchor": "ai lms for schools",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "ai-lms-for-schools-how-k-12-can-start",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-corporate-training-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms for corporate training",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "ai-lms-for-corporate-training-2026-guide",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-implementation-checklist-for-90-days",
+      "type": "mandatory",
+      "anchor": "ai lms implementation checklist",
+      "reason": "Pillar \u2192 cluster anchor (spoke-level hub)"
+    },
+    {
+      "from": "ai-lms-implementation-checklist-for-90-days",
+      "to": "pillar",
+      "type": "mandatory",
+      "anchor": "AI LMS",
+      "reason": "Cluster anchor \u2192 pillar (return link)"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-vs-traditional-lms-key-differences-in-2026",
+      "type": "mandatory",
+      "anchor": "ai lms vs lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-vs-traditional-lms-key-differences-in-2026",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "top-ai-lms-features-to-look-for-in-2026",
+      "type": "mandatory",
+      "anchor": "ai lms features",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "top-ai-lms-features-to-look-for-in-2026",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-architecture-how-modern-learning-platforms-work",
+      "type": "mandatory",
+      "anchor": "ai lms architecture",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-architecture-how-modern-learning-platforms-work",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-benefits-for-students-teachers-and-admins",
+      "type": "mandatory",
+      "anchor": "ai lms benefits",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-benefits-for-students-teachers-and-admins",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-pricing-models-explained-2026-edition",
+      "type": "mandatory",
+      "anchor": "ai lms pricing",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-pricing-models-explained-2026-edition",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "best-ai-lms-platforms-in-2026-comparison-guide",
+      "type": "mandatory",
+      "anchor": "best ai lms 2026",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "best-ai-lms-platforms-in-2026-comparison-guide",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-for-small-edtech-startups-how-to-compete",
+      "type": "mandatory",
+      "anchor": "ai lms for startups",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-for-small-edtech-startups-how-to-compete",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "generative-ai-in-lms-beyond-chatbots-and-content",
+      "type": "mandatory",
+      "anchor": "generative ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "generative-ai-in-lms-beyond-chatbots-and-content",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-trends-shaping-the-future-of-learning",
+      "type": "mandatory",
+      "anchor": "ai lms trends 2026",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-trends-shaping-the-future-of-learning",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "type": "mandatory",
+      "anchor": "ai lms",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "how-ai-quiz-generators-save-teachers-hours-every-week",
+      "type": "mandatory",
+      "anchor": "ai quiz generator benefits",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "how-ai-quiz-generators-save-teachers-hours-every-week",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "question-types-your-ai-lms-should-support",
+      "type": "mandatory",
+      "anchor": "ai lms assessment types",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "question-types-your-ai-lms-should-support",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "designing-fair-and-bias-free-ai-assessments",
+      "type": "mandatory",
+      "anchor": "ai assessment bias",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "designing-fair-and-bias-free-ai-assessments",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "secure-online-exams-with-ai-proctoring-what-to-know",
+      "type": "mandatory",
+      "anchor": "ai proctoring",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "secure-online-exams-with-ai-proctoring-what-to-know",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "formative-vs-summative-assessment-in-an-ai-lms",
+      "type": "mandatory",
+      "anchor": "formative assessment ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "formative-vs-summative-assessment-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "auto-grading-short-answers-with-ai-how-it-works",
+      "type": "mandatory",
+      "anchor": "ai auto grading",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "auto-grading-short-answers-with-ai-how-it-works",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "best-practices-for-question-bank-management-in-an-ai-lms",
+      "type": "mandatory",
+      "anchor": "question bank ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "best-practices-for-question-bank-management-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "using-ai-analytics-to-improve-assessments",
+      "type": "mandatory",
+      "anchor": "ai assessment analytics",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "using-ai-analytics-to-improve-assessments",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "open-ended-vs-objective-questions-in-an-ai-lms",
+      "type": "mandatory",
+      "anchor": "open ended questions ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "open-ended-vs-objective-questions-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "mandatory",
+      "anchor": "ai quiz generator",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "choosing-the-right-ai-add-on-for-canvas-lms",
+      "type": "mandatory",
+      "anchor": "canvas lms ai app",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "choosing-the-right-ai-add-on-for-canvas-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "syncing-grades-between-canvas-and-your-ai-lms",
+      "type": "mandatory",
+      "anchor": "canvas grade sync",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "syncing-grades-between-canvas-and-your-ai-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "integrating-ai-lms-with-google-classroom",
+      "type": "mandatory",
+      "anchor": "ai lms google classroom",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "integrating-ai-lms-with-google-classroom",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "ai-lms-moodle-modernizing-open-source-lms",
+      "type": "mandatory",
+      "anchor": "ai lms moodle",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-lms-moodle-modernizing-open-source-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "single-sign-on-sso-for-ai-lms-and-campus-systems",
+      "type": "mandatory",
+      "anchor": "ai lms sso",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "single-sign-on-sso-for-ai-lms-and-campus-systems",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "connecting-ai-lms-with-sis-and-erp-systems",
+      "type": "mandatory",
+      "anchor": "ai lms sis integration",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "connecting-ai-lms-with-sis-and-erp-systems",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "webhooks-and-apis-extending-your-ai-lms",
+      "type": "mandatory",
+      "anchor": "ai lms api",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "webhooks-and-apis-extending-your-ai-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+      "type": "mandatory",
+      "anchor": "ai lms zoom integration",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "mandatory",
+      "anchor": "canvas lms ai integration",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "type": "mandatory",
+      "anchor": "adaptive learning ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "what-is-adaptive-learning-in-an-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "designing-personalized-learning-paths-with-ai",
+      "type": "mandatory",
+      "anchor": "personalized learning paths ai",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "designing-personalized-learning-paths-with-ai",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "microlearning-and-ai-bite-sized-lessons-that-work",
+      "type": "mandatory",
+      "anchor": "ai microlearning",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "microlearning-and-ai-bite-sized-lessons-that-work",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "using-ai-to-detect-at-risk-learners-early",
+      "type": "mandatory",
+      "anchor": "ai early warning system",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "using-ai-to-detect-at-risk-learners-early",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "skill-based-learning-with-ai-lms",
+      "type": "mandatory",
+      "anchor": "skills based learning ai lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "skill-based-learning-with-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "adaptive-learning-for-stem-vs-humanities",
+      "type": "mandatory",
+      "anchor": "adaptive learning stem",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "adaptive-learning-for-stem-vs-humanities",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "personalization-in-corporate-training-with-ai-lms",
+      "type": "mandatory",
+      "anchor": "personalized corporate training ai",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "personalization-in-corporate-training-with-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "data-you-need-for-effective-adaptive-learning",
+      "type": "mandatory",
+      "anchor": "adaptive learning data requirements",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "data-you-need-for-effective-adaptive-learning",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "ai-driven-remediation-and-enrichment-in-lms",
+      "type": "mandatory",
+      "anchor": "ai remediation lms",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "ai-driven-remediation-and-enrichment-in-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "type": "mandatory",
+      "anchor": "ai course recommendations",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-vs-anki-sm2-which-is-better-in-2026",
+      "type": "mandatory",
+      "anchor": "fsrs vs anki",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "fsrs-vs-anki-sm2-which-is-better-in-2026",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "how-ai-lms-uses-fsrs-for-smarter-revision",
+      "type": "mandatory",
+      "anchor": "ai lms fsrs",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "how-ai-lms-uses-fsrs-for-smarter-revision",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "designing-effective-flashcards-for-fsrs",
+      "type": "mandatory",
+      "anchor": "fsrs flashcard design",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "designing-effective-flashcards-for-fsrs",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-flashcards-for-neet-jee-and-competitive-exams",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards neet",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "fsrs-flashcards-for-neet-jee-and-competitive-exams",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "using-fsrs-flashcards-in-university-courses",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards university",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "using-fsrs-flashcards-in-university-courses",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "combining-mind-maps-and-fsrs-for-deep-learning",
+      "type": "mandatory",
+      "anchor": "fsrs mind maps",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "combining-mind-maps-and-fsrs-for-deep-learning",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "common-mistakes-with-fsrs-and-how-to-avoid-them",
+      "type": "mandatory",
+      "anchor": "fsrs mistakes",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "common-mistakes-with-fsrs-and-how-to-avoid-them",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-flashcards-for-corporate-training-and-certifications",
+      "type": "mandatory",
+      "anchor": "fsrs corporate training",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "fsrs-flashcards-for-corporate-training-and-certifications",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "analytics-for-fsrs-measuring-retention-and-progress",
+      "type": "mandatory",
+      "anchor": "fsrs analytics",
+      "reason": "Cluster anchor \u2192 spoke"
+    },
+    {
+      "from": "analytics-for-fsrs-measuring-retention-and-progress",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "mandatory",
+      "anchor": "fsrs flashcards",
+      "reason": "Spoke \u2192 cluster anchor"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "cross-cluster",
+      "anchor": "ai quiz generator",
+      "reason": "Cluster 1 \u2192 Cluster 2 (topical relationship)"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "cross-cluster",
+      "anchor": "canvas lms ai integration",
+      "reason": "Cluster 1 \u2192 Cluster 3 (topical relationship)"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "type": "cross-cluster",
+      "anchor": "adaptive learning ai lms",
+      "reason": "Cluster 1 \u2192 Cluster 4 (topical relationship)"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "cross-cluster",
+      "anchor": "fsrs flashcards",
+      "reason": "Cluster 1 \u2192 Cluster 5 (topical relationship)"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "type": "cross-cluster",
+      "anchor": "adaptive learning ai lms",
+      "reason": "Cluster 2 \u2192 Cluster 4 (topical relationship)"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "type": "cross-cluster",
+      "anchor": "ai quiz generator",
+      "reason": "Cluster 4 \u2192 Cluster 2 (topical relationship)"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "cross-cluster",
+      "anchor": "fsrs flashcards",
+      "reason": "Cluster 4 \u2192 Cluster 5 (topical relationship)"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "type": "cross-cluster",
+      "anchor": "adaptive learning ai lms",
+      "reason": "Cluster 5 \u2192 Cluster 4 (topical relationship)"
+    },
+    {
+      "from": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "type": "cross-cluster",
+      "anchor": "adaptive learning ai lms",
+      "reason": "Cluster 6 \u2192 Cluster 4 (topical relationship)"
+    },
+    {
+      "from": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "type": "cross-cluster",
+      "anchor": "fsrs flashcards",
+      "reason": "Cluster 6 \u2192 Cluster 5 (topical relationship)"
+    },
+    {
+      "from": "ai-lms-for-universities-complete-implementation-guide",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "cross-cluster",
+      "anchor": "canvas lms ai integration",
+      "reason": "Cluster 7 \u2192 Cluster 3 (topical relationship)"
+    },
+    {
+      "from": "ai-lms-for-schools-how-k-12-can-start",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "cross-cluster",
+      "anchor": "canvas lms ai integration",
+      "reason": "Cluster 8 \u2192 Cluster 3 (topical relationship)"
+    },
+    {
+      "from": "ai-lms-for-corporate-training-2026-guide",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "cross-cluster",
+      "anchor": "canvas lms ai integration",
+      "reason": "Cluster 9 \u2192 Cluster 3 (topical relationship)"
+    },
+    {
+      "from": "ai-lms-implementation-checklist-for-90-days",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "type": "cross-cluster",
+      "anchor": "canvas lms ai integration",
+      "reason": "Cluster 10 \u2192 Cluster 3 (topical relationship)"
+    }
+  ]
+}
