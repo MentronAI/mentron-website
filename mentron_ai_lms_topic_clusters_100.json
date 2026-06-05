@@ -1762,8 +1762,8 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://edtechmagazine.com/k12/article/2025/09/data-privacy-classroom; https://edtechmagazine.com/higher-ed/article/2025/10/justifying-lms-investments-roi; https://www.educause.edu/topics/teaching-and-learning/learning-management-systems-lms",
     "content_angle": "Guide to AI governance structures around LMS usage.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 10,
