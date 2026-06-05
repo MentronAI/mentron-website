@@ -1412,8 +1412,8 @@
     "difficulty": "Medium",
     "competitor_urls_to_use": "https://www.weareteachers.com/best-learning-management-systems/; https://www.pcmag.com/picks/the-best-k-12-learning-management-systems-lms; https://www.schoology.com/blog",
     "content_angle": "Starter guide for school leaders adopting AI LMS.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 8,
