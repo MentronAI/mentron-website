@@ -1,0 +1,320 @@
+---
+title: "Vendor Evaluation Checklist for AI LMS | Mentron"
+date: "2026-06-06"
+description: "A complete vendor evaluation checklist for AI LMS platforms — covering AI capability, integration, security, support, financial viability, and the 50 questions that separate real vendors from marketing claims."
+author:
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.png"
+image: "/images/blog/vendor-evaluation-checklist-for-ai-lms.jpg"
+category:
+  - "AI LMS"
+  - "Implementation"
+published: true
+featured: false
+---
+
+The vendor evaluation for an AI LMS is not the same as the vendor evaluation for a traditional LMS. Traditional LMS features are mature and well-understood; AI features vary enormously in capability, accuracy, and integration depth. A vendor that demos well may have weak AI; a vendor with strong AI may have weak integration. **A vendor evaluation checklist for AI LMS** is the structured approach to comparing platforms on the dimensions that actually matter — and to distinguishing real capability from marketing claims.
+
+This guide provides the 50-question evaluation checklist, the evaluation methodology, the reference check process, the financial due diligence framework, and the red flags that indicate a vendor is not ready for institutional deployment. For the business case that uses the evaluation as input, see [building an AI LMS business case for your institution](/blogs/building-an-ai-lms-business-case-for-your-institution). For the TCO framework that supports the financial comparison, see [total cost of ownership for AI LMS](/blogs/total-cost-of-ownership-for-ai-lms).
+
+---
+
+## Why AI LMS Vendor Evaluation Is Harder
+
+A traditional LMS vendor evaluation asks: *does the platform have the features we need, at a price we can afford, with a vendor we can trust?* An AI LMS evaluation adds three more dimensions: *is the AI accurate, is the AI safe, and will the AI keep working as the underlying models change?*
+
+The first dimension (capability) is the most visible. The vendor's sales deck has screenshots of the AI features. The demo shows the AI in action. The institution can ask for trial access and test the AI on its own course material.
+
+The second dimension (safety) is less visible. The vendor's data privacy documentation is buried in the contract. The AI's bias and accuracy are not visible in the demo. The institution has to ask the right questions and review the right documentation.
+
+The third dimension (longevity) is the least visible. The AI is built on top of large language models that are updated by their providers. The vendor's product roadmap depends on the providers' roadmaps. The institution has to assess whether the vendor can adapt to model changes, regulatory changes, and market changes over a 3–5 year horizon.
+
+The 50-question checklist is the institution's defense against the gaps in any single dimension. A vendor that answers the questions clearly and convincingly is a vendor that can be evaluated. A vendor that cannot answer the questions is a vendor that cannot be evaluated.
+
+---
+
+## The 50-Question Checklist
+
+The checklist has 8 sections, each with 5–8 questions. Each question is specific enough to produce a yes/no/partial answer.
+
+### Section 1 — AI Capability (8 Questions)
+
+These questions evaluate whether the AI features work as claimed.
+
+1. Can the AI generate a usable mind map from a 60-page PDF in under 60 seconds? Provide a sample for testing.
+2. Can the AI generate a quiz with at least 30 questions, each tagged to a specific learning outcome and Bloom's level?
+3. Can the AI generate a flashcard deck that integrates with FSRS or an equivalent spaced repetition algorithm?
+4. Can the AI auto-grade both objective (multiple choice, fill-in-the-blank) and subjective (essay, short answer) assessments?
+5. Can the AI adapt to the learner's mastery state and route them to appropriate content?
+6. Can the AI support multiple languages, or is it English-only?
+7. Can the AI be fine-tuned on the institution's content domain (e.g., medical, legal, engineering)?
+8. Does the AI provide confidence scores or uncertainty estimates with its outputs?
+
+### Section 2 — Integration (7 Questions)
+
+These questions evaluate whether the AI LMS fits into the institution's existing environment.
+
+1. Does the platform support LTI 1.3 integration with our existing LMS (Canvas, Moodle, Blackboard, D2L)?
+2. Does the platform support SSO via SAML 2.0 or OIDC with our identity provider (Okta, Azure AD, Google Workspace)?
+3. Does the platform support SIS / HRIS integration for roster sync (Clever, Infinite Campus, PeopleSoft, Workday)?
+4. Does the platform support grade passback to the existing LMS gradebook?
+5. Does the platform have a public API for custom integrations?
+6. Does the platform support SCIM for automated user provisioning and deprovisioning?
+7. Does the platform provide pre-built connectors for our SIS / HRIS / LMS, or are custom integrations required?
+
+### Section 3 — Data Privacy and Security (10 Questions)
+
+These questions evaluate whether the vendor can be trusted with sensitive data.
+
+1. Where is the data processed? Is it sent to third-party LLM providers (OpenAI, Anthropic, Google)? Under what data processing agreements?
+2. Is the data used to train or fine-tune the underlying LLM? If yes, what opt-out mechanisms are available?
+3. Does the vendor offer zero-retention deployments (data processed and immediately discarded)?
+4. What is the encryption policy? In transit? At rest? Are customer-managed encryption keys (CMEK) supported?
+5. What is the access control model? Role-based? Attribute-based? Tenant isolation?
+6. What is the audit logging capability? What is logged? How long? Is the log accessible to the institution?
+7. What is the incident response process? What is the notification timeframe for a security incident?
+8. What certifications does the vendor hold? SOC 2 Type II? ISO 27001? FERPA documentation? GDPR DPA?
+9. Does the vendor support data export in standard formats (CSV, JSON, xAPI)? Can the institution delete all data on contract termination?
+10. Does the vendor publish a sub-processor list? Are LLM providers listed as sub-processors?
+
+### Section 4 — AI Accuracy and Governance (6 Questions)
+
+These questions evaluate whether the vendor supports the institution's accuracy and governance requirements.
+
+1. Does the vendor provide accuracy metrics for their AI features? On what data were the metrics measured?
+2. Does the vendor support institution-specific calibration sets for accuracy evaluation?
+3. Does the vendor support institution-specific bias audits? Has the vendor run independent bias audits on their models?
+4. Does the vendor notify the institution of model updates? Can the institution pin the model version used for assessments?
+5. Does the vendor provide a sandbox environment for testing AI features before deployment?
+6. Does the vendor have a documented process for handling AI errors and inaccuracies reported by customers?
+
+### Section 5 — Support and Implementation (6 Questions)
+
+These questions evaluate whether the vendor can support the institution through implementation and beyond.
+
+1. What is the implementation timeline for an institution of our size and complexity?
+2. What implementation services are included? What is the institution's responsibility vs. the vendor's?
+3. What training is included? In what format? For how many users?
+4. What is the support tier structure? What is the SLA for each tier? What is the response time?
+5. Is there a designated customer success manager? Is there a 24/7 support option for critical incidents?
+6. What is the platform's uptime SLA? What is the documented uptime history? What is the escalation path for outages?
+
+### Section 6 — Financial and Contractual (6 Questions)
+
+These questions evaluate the vendor's financial viability and the contract's terms.
+
+1. Is the vendor profitable? Funded by venture capital? Publicly traded? What is the runway if venture-funded?
+2. What is the pricing model? Per user? Per course? Per seat? Site license? What is the growth curve?
+3. What is the contract term? Is there an annual price escalation cap? What happens at renewal?
+4. Is there a termination clause? What is the data export process on termination? Is there a transition period?
+5. Are AI features included in the base price, or are they a separate add-on? Is usage metered or unlimited?
+6. Does the vendor offer a pilot or proof-of-concept at reduced cost? What is the conversion from pilot to production?
+
+### Section 7 — Accessibility and Compliance (4 Questions)
+
+These questions evaluate whether the platform meets the institution's regulatory and accessibility requirements.
+
+1. Does the platform meet WCAG 2.1 AA accessibility standards? Has it been audited by a third party?
+2. Does the platform support the institution's data residency requirements? Are EU, US, APAC deployment regions available?
+3. Does the platform support FERPA, GDPR, PDPA, and COPPA compliance? Is the documentation available for review?
+4. Does the platform support assistive technologies (screen readers, voice control, keyboard navigation)?
+
+### Section 8 — Roadmap and Longevity (3 Questions)
+
+These questions evaluate the vendor's commitment to the platform over a 3–5 year horizon.
+
+1. What is the product roadmap for the next 12–24 months? Are AI capabilities a priority?
+2. How does the vendor track and respond to changes in underlying LLM providers? What is the plan if a major LLM provider changes its terms or pricing?
+3. What is the vendor's release cadence? How often are new features released? How are breaking changes handled?
+
+---
+
+## The Evaluation Methodology
+
+The 50 questions are the framework. The methodology is how the institution uses the framework to reach a decision.
+
+### Step 1 — Longlist to Shortlist (Days 1–7)
+
+The institution begins with a longlist of 5–10 vendors. The longlist is sourced from peer institutions, industry analyst reports (Gartner, EDUCAUSE, Tyton Partners), and market awareness. Each vendor is sent a standardized RFI (Request for Information) covering the 50 questions. The institution reviews the responses and shortlists 3–5 vendors based on capability fit, market presence, and reference checks.
+
+### Step 2 — Pilot Demo (Days 8–14)
+
+Each shortlisted vendor runs a structured pilot demo. The demo is on the institution's actual course material, not the vendor's prepared material. The vendor generates a mind map, a quiz, and a flashcard deck from the institution's PDF. The institution evaluates the AI's output quality against the criteria in the calibration set.
+
+### Step 3 — Reference Checks (Days 15–21)
+
+The institution requests 3 references from each shortlisted vendor, with at least one reference from an institution of similar size and context. The reference check focuses on: implementation experience, ongoing support quality, accuracy in production, and what the institution would do differently. The institution speaks to the references directly, not through the vendor.
+
+### Step 4 — Trial Access (Days 22–45)
+
+The institution gets trial access to the leading 2–3 vendors. The institution runs a controlled test on a small sample of course material and a small sample of students. The trial tests the AI's accuracy, the integration, the support responsiveness, and the user experience.
+
+### Step 5 — Final Evaluation and Selection (Days 46–60)
+
+The institution's steering committee reviews all the data — the RFI responses, the pilot demo outputs, the reference checks, the trial results, the financial proposal — and makes a final selection. The decision is documented with the rationale.
+
+The total evaluation is 60 days. The institution can compress to 30 days for urgent needs, but 60 days is the standard for a defensible evaluation.
+
+---
+
+## The Pilot Demo: What to Test
+
+The pilot demo is the most informative part of the evaluation. The institution should test:
+
+### Mind Map Generation
+
+Upload a 60-page chapter from the institution's actual course material. Time how long the AI takes to generate a mind map. Evaluate the mind map for: concept coverage, relationship accuracy, editability, learning outcome tagging. Score the output on a 1–5 scale for each dimension.
+
+### Quiz Generation
+
+Generate a 30-question quiz from the same chapter. Evaluate each question for: factual accuracy, alignment to the learning outcome, Bloom's level appropriateness, clarity of wording. Score the output.
+
+### Flashcard Generation
+
+Generate a 60-card flashcard deck. Evaluate each card for: factual accuracy, atomicity (one concept per card), usefulness for review. Score the output.
+
+### Adaptive Routing
+
+For a small sample of students (10–20), set up a unit and observe the AI's adaptive routing. Does the AI route students to appropriate content? Does the AI respond to mastery signals? Score the experience.
+
+### Auto-Grading
+
+For a small sample of student work (10–20 essays or short answers), run the AI auto-grader. Compare the AI's grades to the instructor's grades. Score the agreement rate, the feedback quality, and the time saved.
+
+The pilot demo produces concrete data on the AI's actual performance, not the vendor's claimed performance.
+
+---
+
+## Reference Checks: What to Ask
+
+The reference check is the institution's window into the vendor's behavior over time. The 5 questions to ask references:
+
+1. **Implementation experience** — How long did implementation take? Were there surprises? How was the vendor's responsiveness?
+2. **Ongoing support quality** — How responsive is the vendor when issues arise? Do they fix bugs quickly? Are feature requests acknowledged?
+3. **Accuracy in production** — Has the AI's accuracy held up in production? Have there been any notable failures?
+4. **What would you do differently** — What would you change about your vendor selection or implementation?
+5. **Would you recommend them** — Would you choose this vendor again? Why or why not?
+
+The reference check is the most reliable signal in the evaluation. Vendors choose references who will speak positively, but the depth of the conversation reveals the truth.
+
+---
+
+## Financial Due Diligence
+
+For long-term contracts (3+ years), the institution should conduct financial due diligence on the vendor. The institution is making a 3–5 year commitment; the vendor's financial viability over that horizon matters.
+
+### Questions to Ask
+
+- Is the vendor profitable? At what runway?
+- Who are the major investors? What is the most recent funding round?
+- What is the vendor's customer concentration? What percentage of revenue comes from the top 10 customers?
+- Has the vendor had any major executive turnover in the past 12 months?
+- Has the vendor had any layoffs, restructurings, or pivots in the past 24 months?
+- Is the vendor a candidate for acquisition? If so, by whom, and what would change for customers?
+
+### Public Information Sources
+
+- Crunchbase, PitchBook, or similar for funding history
+- LinkedIn for executive and employee trends
+- G2, Capterra, or similar for verified customer reviews
+- The vendor's own financial disclosures (if public)
+- News coverage of the vendor's business
+
+A vendor with strong AI but weak financial viability is a risk. A 3-year commitment to a vendor that may not exist in 2 years is a poor investment regardless of the platform's quality.
+
+---
+
+## Red Flags
+
+Some vendor responses should trigger immediate concern.
+
+### Red Flag 1 — Cannot Answer the AI Capability Questions
+
+A vendor that cannot demonstrate the AI's capability on the institution's actual material is hiding something. The demo should be on real content, not prepared material. A vendor that insists on a prepared demo is signaling that the AI does not perform well on real content.
+
+### Red Flag 2 — Will Not Provide References
+
+A vendor that will not provide references, or provides only references from very small or very different institutions, is signaling that the customer experience is not as described. A vendor with satisfied customers will provide them readily.
+
+### Red Flag 3 — Vague on Data Privacy
+
+A vendor that is vague on where data is processed, whether it is used for training, or what the retention policy is, is signaling that the privacy posture is weak. The data privacy questions are the easiest to answer clearly. A vendor that cannot answer them clearly is a risk.
+
+### Red Flag 4 — No Calibration Set Support
+
+A vendor that does not support institution-specific calibration sets is signaling that the AI's accuracy cannot be independently validated. The institution needs the ability to evaluate the AI on its own content. A vendor that does not support this is making the institution's evaluation harder than necessary.
+
+### Red Flag 5 — AI Features as a Separate Add-On
+
+A vendor that prices AI features as a separate add-on is signaling that the AI is not core to the platform. The pricing model should include AI in the base price, or the AI features should be clearly itemized with the rationale.
+
+### Red Flag 6 — Aggressive Renewal Terms
+
+A vendor that has aggressive renewal terms (auto-renewal with no notice, large price escalation at renewal, lock-in clauses) is signaling that the contract is the lock-in, not the platform. The contract should be balanced, with reasonable notice and termination provisions.
+
+### Red Flag 7 — Recent Major Restructuring
+
+A vendor that has had a major restructuring, executive turnover, or pivot in the past 12 months is signaling instability. The institution should investigate the cause and the implications for customers.
+
+### Red Flag 8 — No Public Roadmap
+
+A vendor that does not publish a roadmap, or that publishes a roadmap but does not deliver on it, is signaling weak execution. The institution should ask for the past two roadmaps and check delivery rates.
+
+---
+
+## The 50-Question Scoring Template
+
+For each question, the institution scores the vendor on a 0–3 scale:
+- 0 — vendor cannot answer, or answer is unsatisfactory
+- 1 — vendor can answer with caveats, or the answer is partial
+- 2 — vendor can answer clearly and convincingly
+- 3 — vendor can answer with specific evidence (data, references, documentation)
+
+The scores are aggregated across the 8 sections. A vendor with 130+ points (out of 150) is a strong candidate. A vendor with 100–130 points is a possible candidate with reservations. A vendor with <100 points is unlikely to be a defensible choice.
+
+The scoring is documented. The institution's selection decision is supported by the score, not by the vendor's sales pitch.
+
+---
+
+## Conclusion
+
+**Vendor evaluation for an AI LMS** is the structured approach to distinguishing real capability from marketing claims. The 50-question checklist is the framework. The 60-day evaluation methodology is the process. The reference checks, the trial access, the pilot demo, and the financial due diligence are the data sources. The scoring template is the decision support.
+
+A defensible evaluation is a 60-day effort. The institution that runs the 60-day evaluation reaches a decision that the steering committee, the procurement office, and the legal team can all support. The institution that buys on a sales pitch reaches a decision that is harder to defend when the platform underperforms.
+
+**Ready to evaluate AI LMS vendors?** [Schedule a Mentron demo](https://mentron.in/demo) and bring your 50-question checklist — by the end of the call, we will walk through the questions with our responses and arrange a trial access to test on your course material.
+
+---
+
+## Frequently Asked Questions
+
+### What is the most important question to ask an AI LMS vendor?
+
+The most important question is: *can the AI generate a usable mind map from a 60-page PDF in under 60 seconds?* This single question tests the vendor's most differentiating capability. If the answer is yes, the AI generation pipeline is functional. If the answer is no, the pipeline is broken or slow, and the rest of the platform's value depends on it. The question is easy to test: bring a real PDF and time the generation. The vendor's response is the single most informative data point in the evaluation.
+
+### How do I check an AI LMS vendor's references?
+
+Request 3 references, with at least one from an institution of similar size and context. Speak to the references directly, not through the vendor. Ask about implementation experience, ongoing support quality, accuracy in production, and what they would do differently. The reference check is the most reliable signal in the evaluation. A vendor with satisfied customers will provide references readily; a vendor with poor customer experience will hesitate.
+
+### What are the red flags in AI LMS vendor selection?
+
+The most common red flags are: cannot answer the AI capability questions, will not provide references, vague on data privacy, no calibration set support, AI features as a separate add-on with hidden costs, aggressive renewal terms, recent major restructuring, and no public roadmap. Each of these signals a vendor risk that the institution should investigate before committing to a multi-year contract.
+
+### How long should the vendor evaluation take?
+
+60 days is the standard for a defensible evaluation. The first 7 days are RFI and shortlisting. Days 8–14 are pilot demos. Days 15–21 are reference checks. Days 22–45 are trial access on a small sample. Days 46–60 are final evaluation and selection. Compressing to 30 days is feasible for urgent needs but increases the risk of missing critical issues. A vendor that requires a faster decision is a vendor to be cautious of.
+
+### How do I compare AI LMS vendors with different pricing models?
+
+Use the TCO worksheet (see [total cost of ownership for AI LMS](/blogs/total-cost-of-ownership-for-ai-lms)). The 8 cost categories are the same regardless of pricing model. The vendor provides the cost per category based on the institution's inputs (user count, course count, integration count, support tier). The 3-year TCO is the apples-to-apples comparison. The license cost alone is a misleading comparison; the TCO is the real one.
+
+---
+
+## Related Articles
+
+- [Building an AI LMS Business Case for Your Institution](/blogs/building-an-ai-lms-business-case-for-your-institution)
+- [Total Cost of Ownership for AI LMS](/blogs/total-cost-of-ownership-for-ai-lms)
+- [AI LMS Implementation Checklist for 90 Days](/blogs/ai-lms-implementation-checklist-for-90-days)
+- [LMS Data Privacy and Security in the Age of AI](/blogs/lms-data-privacy-and-security-in-the-age-of-ai)
+- [Comparing Mind Mapping Tools in LMS Platforms](/blogs/comparing-mind-mapping-tools-in-lms-platforms)
