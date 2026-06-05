@@ -1,0 +1,363 @@
+---
+title: "AI LMS Implementation Checklist for 90 Days | Mentron"
+date: "2026-06-06"
+description: "A 90-day plan to implement an AI LMS at your institution — week-by-week milestones, common pitfalls, and the decisions that determine whether the rollout succeeds or stalls."
+author:
+  name: "Ananya Krishnan"
+  role: "Content Lead, Mentron"
+  image: "/images/authors/ananya.png"
+image: "/images/blog/ai-lms-implementation-checklist-for-90-days.jpg"
+category:
+  - "AI LMS"
+  - "Implementation"
+published: true
+featured: false
+---
+
+The difference between an AI LMS rollout that produces measurable learning outcomes and one that stalls after the demo is almost always execution. The platform is rarely the limiting factor. The limiting factor is the implementation plan: who owns what, when each milestone is hit, how the pilot is scoped, and how the rollout expands. **A 90-day AI LMS implementation checklist** is the structure that converts a vendor's demo into an institutional capability. It works for K-12 districts, universities, and corporate L&D teams alike, with adjustments for context.
+
+This guide walks through the 90 days in 4 phases, with weekly milestones, the decisions that need to be made at each phase, and the common pitfalls that derail rollouts. For the business case that justifies the investment, see [building an AI LMS business case for your institution](/blogs/building-an-ai-lms-business-case-for-your-institution). For the change management approach that supports the rollout, see [change management strategies for AI LMS rollouts](/blogs/change-management-strategies-for-ai-lms-rollouts).
+
+---
+
+## The 90-Day Shape
+
+The 90 days break into 4 phases. Each phase has a clear deliverable, a set of decisions, and a handoff to the next phase.
+
+| Phase | Days | Deliverable | Key Decisions |
+|-------|------|-------------|---------------|
+| Phase 1 — Foundation | Days 1–21 | Charter, team, vendor selected | Scope, ownership, vendor, budget |
+| Phase 2 — Pilot Setup | Days 22–45 | Pilot course live, faculty onboarded | Course selection, faculty cohort, success metrics |
+| Phase 3 — Pilot Run | Days 46–75 | Pilot data collected, lessons learned | Adoption barriers, iteration, support model |
+| Phase 4 — Scale Decision | Days 76–90 | Rollout plan, budget reforecast, governance | Expansion scope, training plan, governance model |
+
+The 90 days are the minimum. A 60-day version is feasible for a small L&D team piloting a single course. A 120-day version is necessary for a multi-campus university with unionized faculty and procurement requirements. The structure stays the same; the calendar stretches.
+
+---
+
+## Phase 1 — Foundation (Days 1–21)
+
+The first 21 days are about getting the foundation right. Skipping this phase is the most common reason rollouts fail. The team tries to set up a pilot without a charter, ownership is unclear, the vendor is selected based on demo impressions rather than fit, and the budget is fuzzy. By week 3, the team is stuck.
+
+### Week 1 — Charter and Team
+
+The first week is paperwork. It is the most important week.
+
+**Form the steering committee.** The committee should include: a senior sponsor (provost, CTO, CLO, or equivalent), a project lead with operational authority, a faculty or instructor representative, a learning design or curriculum expert, an IT/security lead, and a data/analytics lead. The committee meets weekly for the first 90 days.
+
+**Draft the charter.** The charter is a 1–2 page document that defines:
+- The problem the AI LMS is supposed to solve
+- The success metrics the rollout will be evaluated against
+- The scope of the pilot (which course, which audience, which term)
+- The constraints (budget, timeline, technical requirements)
+- The decision-making authority (who can approve what)
+- The communication plan (who hears about progress when)
+
+The charter is signed by the senior sponsor. Without a signed charter, the project has no foundation.
+
+**Define success metrics.** The success metrics should be specific and measurable. *Improve learning outcomes* is too vague. *Reduce time-to-mastery on the introductory course by 15% as measured by post-test scores* is measurable. *Increase faculty satisfaction with course preparation by 20% as measured by survey* is measurable. *Generate accreditation-ready outcome attainment reports within 6 months* is measurable. Pick 3–5 metrics, baseline them, and track them throughout the rollout.
+
+### Week 2 — Vendor Selection
+
+The second week is vendor evaluation. Use the framework from [vendor evaluation checklist for AI LMS](/blogs/vendor-evaluation-checklist-for-ai-lms) — 12 evaluation questions that distinguish a real feature from a marketing claim. Run the framework against 3–5 vendors.
+
+**Shortlist based on capability, not price.** The cheapest vendor that cannot deliver AI-generated mind maps is not cheaper than the slightly-more-expensive vendor that can. The selection is a capability match, not a price match.
+
+**Run a structured pilot demo.** Each shortlisted vendor should run a pilot demo on the institution's actual course material. The vendor that can generate a usable map from the institution's actual PDF in under 60 seconds has demonstrated capability. The vendor that asks the institution to reformat the source material first has not.
+
+**Negotiate the contract.** The contract should specify:
+- Pricing (per-seat, per-course, or institutional — and the growth curve)
+- Data ownership and data export rights
+- Service-level agreement (uptime, support response time)
+- Implementation support (training, onboarding, technical integration)
+- Termination terms (data export, transition support)
+
+The contract is the safety net. A 3-year commitment without a termination clause is risky; a 1-year pilot with renewal options is safer.
+
+### Week 3 — Environment Setup
+
+The third week is the technical setup. The IT and security teams provision the environment.
+
+**For cloud deployments:** Single sign-on (SSO) is configured, the domain is mapped, user provisioning is set up (typically via SCIM or LTI 1.3 for institutions with existing identity providers), and the data residency requirements are confirmed.
+
+**For LTI 1.3 deployments with existing LMS (Canvas, Moodle):** The LTI tool is registered, the deployment IDs are configured, the grade passback is tested, and the OAuth scopes are reviewed. The instructor accesses the AI tools from inside the existing LMS.
+
+**For data integration:** The institution's SIS or HR system is connected for roster sync. For corporate L&D, the HRIS is the source of truth for user provisioning.
+
+By the end of week 3, the environment is configured and the institution's data is flowing into the platform. The team can log in, see test users, and verify that the integration works.
+
+**Phase 1 deliverable:** Signed charter, steering committee formed, vendor selected, environment configured. The team is ready to set up the pilot.
+
+---
+
+## Phase 2 — Pilot Setup (Days 22–45)
+
+The second phase is about designing a pilot that produces meaningful data. The pilot should be small enough to manage and large enough to produce signal.
+
+### Week 4 — Pilot Course Selection
+
+Pick the pilot course carefully. The course should be:
+
+- **High-stakes** — the outcomes matter to the institution. A pilot on a low-stakes elective does not generate institutional buy-in.
+- **Manageable in scope** — a single course, a single instructor (or small team), a single term. Multi-instructor, multi-section pilots are too complex for the first run.
+- **Evidence-friendly** — the course has measurable outcomes (a final exam, a certification test, a competency assessment). Without a measurable outcome, the pilot cannot prove value.
+- **Instructor-buy-in** — the instructor is enthusiastic and willing to invest the time. A reluctant instructor produces a reluctant pilot.
+
+For universities, a single introductory STEM course (introductory biology, chemistry, physics, or programming) is a strong pilot choice. The prerequisite chains make the AI tools visibly useful. For K-12, a single subject at a single grade level. For corporate L&D, a single high-enrollment compliance or onboarding program.
+
+### Week 5 — Course Onboarding
+
+The instructor's time investment is the biggest cost of the pilot. The vendor should provide onboarding support. The setup tasks are:
+
+- Upload source material (PDFs, slide decks, notes) into the platform
+- Review the AI-generated knowledge graph and concept map
+- Refine the graph (merge nodes, split nodes, add missing concepts)
+- Bind concept nodes to learning outcomes
+- Generate the initial quiz bank and flashcard deck from the graph
+- Review the assessment output and refine
+
+A typical instructor spends 4–8 hours on course onboarding. The vendor's onboarding specialist should be available for the first session to walk through the workflow.
+
+### Week 6 — Faculty and Student Onboarding
+
+The pilot is not just the instructor. The students (or employees) need to know what is happening and why.
+
+**For students:** A short orientation (15–20 minutes) explaining the new tools, how to access them, and how the data is used. The orientation is recorded for students who join late. The communication emphasizes that the new tools are designed to help them learn, not to surveil them.
+
+**For faculty:** A longer orientation (1–2 hours) covering the platform's capabilities, the data they can see, the privacy protections, and the support available. Faculty are reassured that they retain pedagogical authority — the AI is a tool, not a replacement.
+
+**For IT and data teams:** A technical walkthrough of the integration, the data flows, the security controls, and the support escalation paths.
+
+**Phase 2 deliverable:** Pilot course live, instructor onboarded, students and faculty oriented. The pilot is ready to run.
+
+---
+
+## Phase 3 — Pilot Run (Days 46–75)
+
+The third phase is the pilot itself. The goal is to collect meaningful data, surface problems, and iterate.
+
+### Weeks 7–9 — Run the Pilot
+
+The pilot runs for 3–4 weeks. During the pilot:
+
+**Daily:** The project lead checks the platform's analytics for any technical issues (login failures, integration errors, slow performance). The instructor checks the concept-level mastery data to see how students are progressing.
+
+**Weekly:** The steering committee meets for 30 minutes to review progress, address issues, and adjust the plan. The minutes are circulated to stakeholders.
+
+**Bi-weekly:** The instructor meets with the vendor's success manager for 30 minutes to discuss what is working, what is not, and what the vendor can do to help.
+
+### What to Look For
+
+The pilot data should answer these questions:
+
+- **Adoption** — what percentage of students are using the AI tools? Are some tools adopted more than others?
+- **Outcomes** — are the students who use the tools performing better on assessments than those who do not? (This is the most important data point.)
+- **Time savings** — how much time is the instructor saving on quiz generation, flashcard generation, and content preparation?
+- **Faculty satisfaction** — does the instructor find the tools useful? Would they recommend them to colleagues?
+- **Student satisfaction** — do students find the tools helpful? What is their Net Promoter Score?
+- **Technical issues** — what is breaking? How quickly is it fixed?
+
+The data should be tracked against the success metrics defined in week 1. If the metrics are trending positively, the pilot is succeeding. If they are not, the team needs to understand why before scaling.
+
+### Iteration
+
+The pilot is the time to iterate. If a tool is not being adopted, the team should investigate why. Common reasons:
+
+- **Awareness** — students do not know the tool exists. Fix with better communication.
+- **Usability** — the tool is hard to use. Fix with better onboarding or platform training.
+- **Trust** — students do not trust the AI's output. Fix with transparency about how the AI works and what its limitations are.
+- **Relevance** — the tool is not relevant to the course. Fix by adjusting the course setup or the pilot scope.
+
+**Phase 3 deliverable:** Pilot data collected, lessons learned documented, iteration plan in place. The team is ready to make the scale decision.
+
+---
+
+## Phase 4 — Scale Decision (Days 76–90)
+
+The fourth phase is the decision. The pilot data tells the team whether to scale, what to fix before scaling, and how fast to scale.
+
+### Week 10 — Pilot Debrief
+
+The steering committee convenes a 2-hour pilot debrief. The agenda:
+
+1. **Data review** — present the success metrics and the pilot data
+2. **Lessons learned** — what worked, what did not, what surprised the team
+3. **Iteration plan** — what needs to change before scaling
+4. **Scale decision** — proceed with scale, extend the pilot, or pause
+
+The decision is documented. The senior sponsor signs off on the next steps.
+
+### Week 11 — Rollout Plan
+
+If the decision is to scale, the team drafts a rollout plan. The plan specifies:
+
+- **Scope** — which courses, which instructors, which terms
+- **Sequence** — the order in which courses come on board (typically high-pilot-impact courses first, then adjacent courses, then the rest)
+- **Training plan** — how instructors are trained (live sessions, recorded videos, peer mentoring)
+- **Support model** — who handles what (vendor support, internal IT, peer support)
+- **Communication plan** — how the rollout is communicated to students, faculty, and parents (for K-12)
+- **Success metrics for scale** — the same metrics as the pilot, applied to the broader rollout
+
+### Week 12 — Budget Reforecast and Governance
+
+The budget is reforecast based on the pilot's actual usage and the scale plan. The governance model is formalized:
+
+- **Steering committee** continues to meet monthly through the rollout
+- **Faculty advisory group** provides input on the rollout and surfaces issues
+- **IT and security review** is conducted quarterly
+- **Data review** is conducted at the end of each term to assess outcomes
+
+The governance model is documented and signed off. The team is now running a program, not a project.
+
+**Phase 4 deliverable:** Rollout plan, budget reforecast, governance model, signed off by the senior sponsor. The pilot has become an institutional capability.
+
+---
+
+## Common Pitfalls and How to Avoid Them
+
+### Pitfall 1 — Skipping the Charter
+
+The team starts with a demo, falls in love with the platform, and tries to run a pilot before writing the charter. The pilot has no scope, no success metrics, no owner, and no budget. By week 3, the team is stuck.
+
+**Fix:** Charter first, demo second. The charter is what makes the demo productive.
+
+### Pitfall 2 — Picking the Wrong Pilot Course
+
+The team picks a low-stakes course because it is "easy" to pilot. The pilot produces no institutional buy-in because the outcomes do not matter. The scale decision is a no.
+
+**Fix:** Pick a high-stakes, evidence-friendly course with an enthusiastic instructor. The pilot's value is in the data, not the convenience.
+
+### Pitfall 3 — Underinvesting in Onboarding
+
+The instructor is given a login and expected to figure it out. The instructor does not have time to learn the platform. The pilot is run with minimal use of the AI tools. The data is weak.
+
+**Fix:** The vendor provides structured onboarding. The instructor's time investment is supported. The first 4–8 hours of the instructor's time are the most valuable hours of the entire rollout.
+
+### Pitfall 4 — Over-Reliance on Demo Impressions
+
+The team selects the vendor whose demo was most impressive, rather than the vendor whose capabilities best match the institution's needs. The pilot exposes the mismatch.
+
+**Fix:** Run the structured pilot demo on the institution's actual course material. The vendor that can produce useful output on the real material is the right vendor.
+
+### Pitfall 5 — Treating the Pilot as the End
+
+The team runs the pilot, gets good data, and stops. The pilot does not scale. The institutional value is unrealized.
+
+**Fix:** The scale decision is part of the 90-day plan, not a separate effort. The pilot is the foundation of the scale plan, not the conclusion of the project.
+
+### Pitfall 6 — Ignoring Data Privacy Concerns
+
+The team does not engage IT and security until late in the pilot. Data privacy concerns surface, and the pilot is paused to address them. The 90 days are blown.
+
+**Fix:** IT and security are in the steering committee from day 1. The vendor's data privacy and security documentation is reviewed in week 2. Concerns are addressed before the pilot starts, not during it.
+
+### Pitfall 7 — No Communication Plan
+
+The pilot runs in a vacuum. Students, faculty, and parents (for K-12) are surprised by the new tools. Adoption is low because awareness is low.
+
+**Fix:** Communication is part of the pilot setup. Students and faculty are oriented. The value is communicated clearly. The support is visible.
+
+---
+
+## Adapting the Plan for Different Contexts
+
+### K-12 Districts
+
+A K-12 rollout typically involves 1–3 schools in the pilot, expanding to the district in the scale phase. The 90-day plan adapts:
+
+- **Steering committee** includes district leadership (superintendent, curriculum director, IT director) and school-level leadership (principal, lead teacher)
+- **Pilot course** is a single subject at a single grade level, with the lead teacher as the champion
+- **Parent communication** is critical — parents need to know what data is collected, how it is used, and what their rights are
+- **FERPA compliance** is non-negotiable — the vendor's data handling is reviewed in detail before the pilot starts
+
+### Universities
+
+A university rollout typically involves a single department in the pilot, expanding to the college or institution in the scale phase.
+
+- **Steering committee** includes the provost, dean, department chair, IT director, and faculty senate representative
+- **Pilot course** is a high-enrollment introductory course in a department with a strong teaching culture
+- **Faculty union considerations** may affect the rollout — the rollout is voluntary, not mandatory
+- **Accessibility compliance** is critical — WCAG 2.1 AA conformance is required
+
+### Corporate L&D
+
+A corporate rollout typically involves a single business unit or region in the pilot, expanding to the company in the scale phase.
+
+- **Steering committee** includes the CLO, head of L&D, IT director, and a senior business sponsor
+- **Pilot program** is a high-enrollment compliance or onboarding program
+- **Data privacy** must align with the company's overall data governance — the LMS is part of the HR data ecosystem
+- **Integration with HRIS** is critical — the LMS is only as useful as the data it receives
+
+---
+
+## The First 30 Days — A Compressed View
+
+For teams that want a one-page summary of the first 30 days, here it is:
+
+### Days 1–7
+- Form the steering committee
+- Draft the charter
+- Define success metrics
+- Baseline the current state
+
+### Days 8–14
+- Run vendor evaluations on 3–5 platforms
+- Run structured pilot demos on the institution's actual course material
+- Negotiate the contract
+
+### Days 15–21
+- Configure the environment (SSO, LTI 1.3, SIS integration)
+- Confirm data privacy and security review
+- Test the integration end-to-end
+
+### Days 22–30
+- Select the pilot course and instructor
+- Begin course onboarding
+- Schedule student and faculty orientations
+- Communicate the rollout to stakeholders
+
+By day 30, the foundation is in place and the pilot is about to start. The remaining 60 days follow the structure above.
+
+---
+
+## Conclusion
+
+A 90-day **AI LMS implementation checklist** is the structure that converts a vendor's demo into an institutional capability. The 4 phases — Foundation, Pilot Setup, Pilot Run, Scale Decision — produce a signed charter, a running pilot, pilot data, and a scale plan in 90 days. The structure adapts to K-12, university, and corporate contexts. The common pitfalls are avoidable with discipline, not luck.
+
+The plan is not a recipe. Each institution's context is different. The 90 days should be stretched for a complex university, compressed for a small L&D team, and adapted for K-12's communication and parent-engagement requirements. The structure is the same.
+
+**Ready to start a 90-day rollout?** [Schedule a Mentron demo](https://mentron.in/demo) and bring your charter (or your charter draft) — by the end of the call, we will walk through the first 30 days with your context.
+
+---
+
+## Frequently Asked Questions
+
+### How long does an AI LMS implementation take?
+
+The minimum is 90 days for a focused pilot. A 60-day version is feasible for a small L&D team piloting a single course with an enthusiastic instructor. A 120-day version is necessary for a multi-campus university with procurement requirements, faculty union considerations, and accessibility compliance. The structure of the 90-day plan (Foundation, Pilot Setup, Pilot Run, Scale Decision) stays the same; the calendar stretches or compresses to fit the institution's context.
+
+### What is the most common reason AI LMS rollouts fail?
+
+Skipping the charter. Teams that start with a vendor demo and try to run a pilot without a signed charter, defined success metrics, or clear ownership stall by week 3. The pilot has no scope, no budget, and no decision-making authority. The fix is charter-first, demo-second. The charter is what makes the demo productive and the pilot measurable.
+
+### What should the pilot course be?
+
+The pilot course should be high-stakes, manageable in scope, evidence-friendly, and have an enthusiastic instructor. For universities, a single introductory STEM course with a strong instructor is a strong choice. For K-12, a single subject at a single grade level. For corporate L&D, a single high-enrollment compliance or onboarding program. The course should have measurable outcomes (a final exam, a certification test, or a competency assessment) so the pilot can produce data that justifies scaling.
+
+### How do we measure pilot success?
+
+Use the success metrics defined in week 1 of the 90-day plan. Common metrics include: time-to-mastery on the introductory course (compared to the prior term's data), instructor time savings on quiz and flashcard generation, faculty satisfaction, student satisfaction, and accreditation-ready outcome attainment. Track at least 3–5 specific metrics, baseline them, and compare the pilot data against the baseline.
+
+### What is the difference between a pilot and a rollout?
+
+A pilot is a focused test on a single course (or small set of courses) that produces data and lessons learned. A rollout is the broader deployment across courses, instructors, and terms that follows the pilot's success. The pilot is the foundation of the rollout. The scale decision at the end of the pilot is the bridge from one to the other.
+
+---
+
+## Related Articles
+
+- [Building an AI LMS Business Case for Your Institution](/blogs/building-an-ai-lms-business-case-for-your-institution)
+- [Change Management Strategies for AI LMS Rollouts](/blogs/change-management-strategies-for-ai-lms-rollouts)
+- [Vendor Evaluation Checklist for AI LMS](/blogs/vendor-evaluation-checklist-for-ai-lms)
+- [LMS Data Privacy and Security in the Age of AI](/blogs/lms-data-privacy-and-security-in-the-age-of-ai)
+- [Total Cost of Ownership for AI LMS](/blogs/total-cost-of-ownership-for-ai-lms)
