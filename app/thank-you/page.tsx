@@ -1,9 +1,24 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 import Footer from '@/components/layout/footer';
 
 export default function ThankYouPage() {
+  useEffect(() => {
+    const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+    if (!gtag) return;
+
+    const emailHash = sessionStorage.getItem('mentron_demo_email_hash');
+    sessionStorage.removeItem('mentron_demo_email_hash');
+
+    gtag('event', 'demo_request_completed', {
+      email_hash: emailHash ?? 'unknown',
+      send_page_view: false,
+    });
+  }, []);
+
   return (
     <>
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-24 text-center">
@@ -14,8 +29,8 @@ export default function ThankYouPage() {
         <p className="text-lg text-slate-600 max-w-md mb-10">
           Your request for an institutional demo has been received. Our team will contact you shortly to schedule a session.
         </p>
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-8 rounded-2xl transition-all shadow-xl shadow-primary/25"
         >
           Return Home

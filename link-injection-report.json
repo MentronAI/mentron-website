@@ -1,0 +1,668 @@
+{
+  "injected": [
+    {
+      "from": "pillar",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "how-ai-quiz-generators-save-teachers-hours-every-week",
+      "status": "already_present",
+      "anchor": "ai quiz generator benefits"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "question-types-your-ai-lms-should-support",
+      "status": "already_present",
+      "anchor": "ai lms assessment types"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "designing-fair-and-bias-free-ai-assessments",
+      "status": "already_present",
+      "anchor": "ai assessment bias"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "secure-online-exams-with-ai-proctoring-what-to-know",
+      "status": "already_present",
+      "anchor": "ai proctoring"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "formative-vs-summative-assessment-in-an-ai-lms",
+      "status": "already_present",
+      "anchor": "formative assessment ai lms"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "auto-grading-short-answers-with-ai-how-it-works",
+      "status": "already_present",
+      "anchor": "ai auto grading"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "best-practices-for-question-bank-management-in-an-ai-lms",
+      "status": "already_present",
+      "anchor": "question bank ai lms"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "using-ai-analytics-to-improve-assessments",
+      "status": "already_present",
+      "anchor": "ai assessment analytics"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "open-ended-vs-objective-questions-in-an-ai-lms",
+      "status": "already_present",
+      "anchor": "open ended questions ai lms"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "pillar",
+      "status": "already_present",
+      "anchor": "AI LMS"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "choosing-the-right-ai-add-on-for-canvas-lms",
+      "status": "already_present",
+      "anchor": "canvas lms ai app"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "syncing-grades-between-canvas-and-your-ai-lms",
+      "status": "already_present",
+      "anchor": "canvas grade sync"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "integrating-ai-lms-with-google-classroom",
+      "status": "already_present",
+      "anchor": "ai lms google classroom"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "ai-lms-moodle-modernizing-open-source-lms",
+      "status": "already_present",
+      "anchor": "ai lms moodle"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "single-sign-on-sso-for-ai-lms-and-campus-systems",
+      "status": "already_present",
+      "anchor": "ai lms sso"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "connecting-ai-lms-with-sis-and-erp-systems",
+      "status": "already_present",
+      "anchor": "ai lms sis integration"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+      "status": "already_present",
+      "anchor": "ai lms zoom integration"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "status": "already_present",
+      "anchor": "adaptive learning ai lms"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "designing-personalized-learning-paths-with-ai",
+      "status": "already_present",
+      "anchor": "personalized learning paths ai"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "microlearning-and-ai-bite-sized-lessons-that-work",
+      "status": "already_present",
+      "anchor": "ai microlearning"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "using-ai-to-detect-at-risk-learners-early",
+      "status": "already_present",
+      "anchor": "ai early warning system"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "skill-based-learning-with-ai-lms",
+      "status": "already_present",
+      "anchor": "skills based learning ai lms"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "adaptive-learning-for-stem-vs-humanities",
+      "status": "already_present",
+      "anchor": "adaptive learning stem"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "personalization-in-corporate-training-with-ai-lms",
+      "status": "already_present",
+      "anchor": "personalized corporate training ai"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "data-you-need-for-effective-adaptive-learning",
+      "status": "already_present",
+      "anchor": "adaptive learning data requirements"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "ai-driven-remediation-and-enrichment-in-lms",
+      "status": "already_present",
+      "anchor": "ai remediation lms"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-vs-anki-sm2-which-is-better-in-2026",
+      "status": "already_present",
+      "anchor": "fsrs vs anki"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "designing-effective-flashcards-for-fsrs",
+      "status": "already_present",
+      "anchor": "fsrs flashcard design"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "combining-mind-maps-and-fsrs-for-deep-learning",
+      "status": "already_present",
+      "anchor": "fsrs mind maps"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-flashcards-for-corporate-training-and-certifications",
+      "status": "already_present",
+      "anchor": "fsrs corporate training"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "analytics-for-fsrs-measuring-retention-and-progress",
+      "status": "already_present",
+      "anchor": "fsrs analytics"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-vs-traditional-lms-key-differences-in-2026",
+      "status": "already_present",
+      "anchor": "ai lms vs lms"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "top-ai-lms-features-to-look-for-in-2026",
+      "status": "already_present",
+      "anchor": "ai lms features"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-architecture-how-modern-learning-platforms-work",
+      "status": "already_present",
+      "anchor": "ai lms architecture"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-benefits-for-students-teachers-and-admins",
+      "status": "already_present",
+      "anchor": "ai lms benefits"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-pricing-models-explained-2026-edition",
+      "status": "already_present",
+      "anchor": "ai lms pricing"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "best-ai-lms-platforms-in-2026-comparison-guide",
+      "status": "already_present",
+      "anchor": "best ai lms 2026"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-for-small-edtech-startups-how-to-compete",
+      "status": "already_present",
+      "anchor": "ai lms for startups"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "generative-ai-in-lms-beyond-chatbots-and-content",
+      "status": "already_present",
+      "anchor": "generative ai lms"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-lms-trends-shaping-the-future-of-learning",
+      "status": "already_present",
+      "anchor": "ai lms trends 2026"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "status": "already_present",
+      "anchor": "adaptive learning ai lms"
+    },
+    {
+      "from": "ai-lms-vs-traditional-lms-key-differences-in-2026",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "top-ai-lms-features-to-look-for-in-2026",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "ai-lms-architecture-how-modern-learning-platforms-work",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "ai-lms-benefits-for-students-teachers-and-admins",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "ai-lms-pricing-models-explained-2026-edition",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "best-ai-lms-platforms-in-2026-comparison-guide",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "ai-lms-for-small-edtech-startups-how-to-compete",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "ai-lms-trends-shaping-the-future-of-learning",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "status": "already_present",
+      "anchor": "ai lms"
+    },
+    {
+      "from": "how-ai-quiz-generators-save-teachers-hours-every-week",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "question-types-your-ai-lms-should-support",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "designing-fair-and-bias-free-ai-assessments",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "secure-online-exams-with-ai-proctoring-what-to-know",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "formative-vs-summative-assessment-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "auto-grading-short-answers-with-ai-how-it-works",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "best-practices-for-question-bank-management-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "using-ai-analytics-to-improve-assessments",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "open-ended-vs-objective-questions-in-an-ai-lms",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "status": "already_present",
+      "anchor": "ai quiz generator"
+    },
+    {
+      "from": "choosing-the-right-ai-add-on-for-canvas-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "syncing-grades-between-canvas-and-your-ai-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "integrating-ai-lms-with-google-classroom",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "ai-lms-moodle-modernizing-open-source-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "single-sign-on-sso-for-ai-lms-and-campus-systems",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "connecting-ai-lms-with-sis-and-erp-systems",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "webhooks-and-apis-extending-your-ai-lms",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "integrating-ai-lms-with-video-platforms-like-zoom-and-teams",
+      "to": "canvas-lms-ai-integration-step-by-step-guide",
+      "status": "already_present",
+      "anchor": "canvas lms ai integration"
+    },
+    {
+      "from": "what-is-adaptive-learning-in-an-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "designing-personalized-learning-paths-with-ai",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "microlearning-and-ai-bite-sized-lessons-that-work",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "using-ai-to-detect-at-risk-learners-early",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "adaptive-learning-for-stem-vs-humanities",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "personalization-in-corporate-training-with-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "ai-driven-remediation-and-enrichment-in-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "status": "already_present",
+      "anchor": "ai course recommendations"
+    },
+    {
+      "from": "fsrs-vs-anki-sm2-which-is-better-in-2026",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "designing-effective-flashcards-for-fsrs",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "fsrs-flashcards-for-neet-jee-and-competitive-exams",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "using-fsrs-flashcards-in-university-courses",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "combining-mind-maps-and-fsrs-for-deep-learning",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "common-mistakes-with-fsrs-and-how-to-avoid-them",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "fsrs-flashcards-for-corporate-training-and-certifications",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    },
+    {
+      "from": "analytics-for-fsrs-measuring-retention-and-progress",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "status": "already_present",
+      "anchor": "fsrs flashcards"
+    }
+  ],
+  "skipped_no_file": [
+    "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+    "ai-lms-for-universities-complete-implementation-guide",
+    "ai-lms-for-schools-how-k-12-can-start",
+    "ai-lms-for-corporate-training-2026-guide",
+    "ai-lms-implementation-checklist-for-90-days"
+  ],
+  "skipped_anchor_not_found": [
+    {
+      "from": "pillar",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "anchor": "ai quiz generator",
+      "suggested_target": "/blogs/ai-quiz-generator-for-teachers-complete-guide"
+    },
+    {
+      "from": "pillar",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "anchor": "ai course recommendations",
+      "suggested_target": "/blogs/recommendation-engines-in-ai-lms-explained"
+    },
+    {
+      "from": "pillar",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "anchor": "fsrs flashcards",
+      "suggested_target": "/blogs/fsrs-flashcards-explained-smarter-spaced-repetition"
+    },
+    {
+      "from": "pillar",
+      "to": "mind-maps-in-an-ai-lms-visual-learning-that-scales",
+      "anchor": "mind maps ai lms",
+      "suggested_target": "/blogs/mind-maps-in-an-ai-lms-visual-learning-that-scales"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-universities-complete-implementation-guide",
+      "anchor": "ai lms for universities",
+      "suggested_target": "/blogs/ai-lms-for-universities-complete-implementation-guide"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-schools-how-k-12-can-start",
+      "anchor": "ai lms for schools",
+      "suggested_target": "/blogs/ai-lms-for-schools-how-k-12-can-start"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-for-corporate-training-2026-guide",
+      "anchor": "ai lms for corporate training",
+      "suggested_target": "/blogs/ai-lms-for-corporate-training-2026-guide"
+    },
+    {
+      "from": "pillar",
+      "to": "ai-lms-implementation-checklist-for-90-days",
+      "anchor": "ai lms implementation checklist",
+      "suggested_target": "/blogs/ai-lms-implementation-checklist-for-90-days"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "pillar",
+      "anchor": "AI LMS",
+      "suggested_target": "/blogs/what-is-an-ai-lms-complete-2026-guide"
+    },
+    {
+      "from": "ai-quiz-generator-for-teachers-complete-guide",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "anchor": "adaptive learning ai lms",
+      "suggested_target": "/blogs/what-is-adaptive-learning-in-an-ai-lms"
+    },
+    {
+      "from": "canvas-lms-ai-integration-step-by-step-guide",
+      "to": "webhooks-and-apis-extending-your-ai-lms",
+      "anchor": "ai lms api",
+      "suggested_target": "/blogs/webhooks-and-apis-extending-your-ai-lms"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "pillar",
+      "anchor": "AI LMS",
+      "suggested_target": "/blogs/what-is-an-ai-lms-complete-2026-guide"
+    },
+    {
+      "from": "recommendation-engines-in-ai-lms-explained",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "anchor": "fsrs flashcards",
+      "suggested_target": "/blogs/fsrs-flashcards-explained-smarter-spaced-repetition"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "pillar",
+      "anchor": "AI LMS",
+      "suggested_target": "/blogs/what-is-an-ai-lms-complete-2026-guide"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "how-ai-lms-uses-fsrs-for-smarter-revision",
+      "anchor": "ai lms fsrs",
+      "suggested_target": "/blogs/how-ai-lms-uses-fsrs-for-smarter-revision"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "fsrs-flashcards-for-neet-jee-and-competitive-exams",
+      "anchor": "fsrs flashcards neet",
+      "suggested_target": "/blogs/fsrs-flashcards-for-neet-jee-and-competitive-exams"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "using-fsrs-flashcards-in-university-courses",
+      "anchor": "fsrs flashcards university",
+      "suggested_target": "/blogs/using-fsrs-flashcards-in-university-courses"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "common-mistakes-with-fsrs-and-how-to-avoid-them",
+      "anchor": "fsrs mistakes",
+      "suggested_target": "/blogs/common-mistakes-with-fsrs-and-how-to-avoid-them"
+    },
+    {
+      "from": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "to": "what-is-adaptive-learning-in-an-ai-lms",
+      "anchor": "adaptive learning ai lms",
+      "suggested_target": "/blogs/what-is-adaptive-learning-in-an-ai-lms"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "ai-quiz-generator-for-teachers-complete-guide",
+      "anchor": "ai quiz generator",
+      "suggested_target": "/blogs/ai-quiz-generator-for-teachers-complete-guide"
+    },
+    {
+      "from": "what-is-an-ai-lms-complete-2026-guide",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "anchor": "fsrs flashcards",
+      "suggested_target": "/blogs/fsrs-flashcards-explained-smarter-spaced-repetition"
+    },
+    {
+      "from": "generative-ai-in-lms-beyond-chatbots-and-content",
+      "to": "what-is-an-ai-lms-complete-2026-guide",
+      "anchor": "ai lms",
+      "suggested_target": "/blogs/what-is-an-ai-lms-complete-2026-guide"
+    },
+    {
+      "from": "skill-based-learning-with-ai-lms",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "anchor": "ai course recommendations",
+      "suggested_target": "/blogs/recommendation-engines-in-ai-lms-explained"
+    },
+    {
+      "from": "data-you-need-for-effective-adaptive-learning",
+      "to": "recommendation-engines-in-ai-lms-explained",
+      "anchor": "ai course recommendations",
+      "suggested_target": "/blogs/recommendation-engines-in-ai-lms-explained"
+    },
+    {
+      "from": "how-ai-lms-uses-fsrs-for-smarter-revision",
+      "to": "fsrs-flashcards-explained-smarter-spaced-repetition",
+      "anchor": "fsrs flashcards",
+      "suggested_target": "/blogs/fsrs-flashcards-explained-smarter-spaced-repetition"
+    }
+  ],
+  "pillar_placeholder": []
+}

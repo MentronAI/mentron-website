@@ -20,6 +20,15 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Footer from "@/components/layout/footer";
 
+async function hashEmailForAttribution(email: string): Promise<string> {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(email.toLowerCase().trim());
+  const hash = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(hash))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 const formSchema = z.object({
   institutionName: z.string().min(2, "Institution name is required"),
   contactName: z.string().min(2, "Contact name is required"),
@@ -54,9 +63,16 @@ export default function InstitutionalDemoPage() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+
+    gtag?.('event', 'form_submit_attempt', {
+      institution_type: values.institutionType || 'unknown',
+      current_lms: values.currentLMS || 'unknown',
+    });
+
     try {
       const { supabase } = await import('@/lib/supabase');
-      
+
       const { error } = await supabase
         .from('institutional_demo_forms')
         .insert([
@@ -78,13 +94,24 @@ export default function InstitutionalDemoPage() {
 
       if (error) {
         console.error('Supabase error:', error);
+        gtag?.('event', 'form_submit_error', { error_type: 'supabase_error' });
         alert('Failed to submit form. Please try again.');
         return;
       }
 
+      gtag?.('event', 'form_submit_success', {
+        institution_type: values.institutionType || 'unknown',
+        current_lms: values.currentLMS || 'unknown',
+        timeline: values.timeline || 'unknown',
+      });
+
+      const emailHash = await hashEmailForAttribution(values.email);
+      sessionStorage.setItem('mentron_demo_email_hash', emailHash);
+
       router.push("/thank-you");
     } catch (error) {
       console.error("Error submitting form:", error);
+      gtag?.('event', 'form_submit_error', { error_type: 'exception' });
       alert("An error occurred. Please try again.");
     }
   }

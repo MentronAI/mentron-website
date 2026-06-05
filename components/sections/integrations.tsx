@@ -656,7 +656,7 @@ const INTEGRATIONS_HTML = `
             <div class="animated-border"></div>
             <div class="animated-border-mask"></div>
           </div>
-          <img src="/logo/mentron_logo.webp" alt="Mentron" width="52" height="52">
+          <img src="/logo/mentron_logo.webp" alt="Mentron" width="52" height="52" loading="lazy" decoding="async">
         </div>
       </div>
 
