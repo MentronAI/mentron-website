@@ -1146,8 +1146,8 @@
     "difficulty": "High",
     "competitor_urls_to_use": "https://www.absorblms.com/blog/top-ai-learning-platforms; https://www.blend-ed.com/blog/best-ai-lms-platforms; https://www.intellum.com/resources/blog/top-ai-lms-platforms",
     "content_angle": "Guide for turning syllabus documents into interconnected knowledge graphs.",
-    "written": false,
-    "actual_status": "planned"
+    "written": true,
+    "actual_status": "written"
   },
   {
     "cluster_no": 6,
