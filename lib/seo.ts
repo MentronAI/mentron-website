@@ -96,7 +96,6 @@ export function generateBlogJsonLd(post: BlogPost) {
         height: 60,
       },
       sameAs: [
-        'https://twitter.com/mentronai', // Replace with actual profiles
         'https://www.linkedin.com/company/mentron',
       ],
     },
@@ -167,10 +166,7 @@ export function generateOrganizationJsonLd() {
     description: 'AI-powered learning platform for students, teachers, and institutions. Adaptive learning paths, auto-generated study materials, and instant feedback.',
     foundingDate: '2025-06-05',
     sameAs: [
-      'https://twitter.com/mentronai', // Replace with actual social profiles
       'https://www.linkedin.com/company/mentron',
-      'https://www.facebook.com/mentron',
-      'https://www.instagram.com/mentron',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -374,13 +370,6 @@ export function generateSoftwareAppJsonLd() {
       'Mind maps and knowledge graphs',
       'Adaptive learning paths',
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '127',
-      bestRating: '5',
-      worstRating: '1',
-    },
     offers: {
       '@type': 'Offer',
       price: '0',

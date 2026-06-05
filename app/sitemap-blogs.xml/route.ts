@@ -10,8 +10,6 @@ export async function GET() {
 ${posts.map(post => `  <url>
     <loc>${baseUrl}/blogs/${post.slug}</loc>
     <lastmod>${new Date(post.dateModified || post.date).toISOString()}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>`).join('\n')}
 </urlset>`
 
