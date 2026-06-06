@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Linkedin, Github } from 'lucide-react';
+import { Linkedin, Github, X } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -34,8 +34,12 @@ export default function Footer() {
                 <span aria-label="LinkedIn — coming soon" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center cursor-not-allowed opacity-50">
                   <Linkedin className="w-3.5 h-3.5" />
                 </span>
+                {/* X (Twitter) */}
+                <a href="https://x.com/mentrontech" target="_blank" rel="noopener noreferrer" aria-label="Mentron on X" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                  <X className="w-3.5 h-3.5" />
+                </a>
                 {/* GitHub */}
-                <a href="https://github.com/MentronAI" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
+                <a href="https://github.com/mentrontech" target="_blank" rel="noopener noreferrer" aria-label="Mentron on GitHub" className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-primary hover:text-primary transition-colors">
                   <Github className="w-3.5 h-3.5" />
                 </a>
               </div>

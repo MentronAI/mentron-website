@@ -6,7 +6,7 @@ const SITE_URL = 'https://www.mentron.in'
 const SITE_NAME = 'Mentron'
 const LOGO_PATH = '/logo/mentron.webp'
 const DEFAULT_OG_IMAGE = '/images/mentron-og-default.jpg'
-const TWITTER_HANDLE = '@mentronai' // Replace with your actual handle
+const TWITTER_HANDLE = '@mentrontech'
 
 // ============================================================================
 // BLOG POST METADATA (Open Graph, Twitter Cards, etc.)
@@ -97,6 +97,8 @@ export function generateBlogJsonLd(post: BlogPost) {
       },
       sameAs: [
         'https://www.linkedin.com/company/mentron',
+        'https://x.com/mentrontech',
+        'https://github.com/mentrontech',
       ],
     },
     mainEntityOfPage: {
@@ -167,12 +169,14 @@ export function generateOrganizationJsonLd() {
     foundingDate: '2025-06-05',
     sameAs: [
       'https://www.linkedin.com/company/mentron',
+      'https://x.com/mentrontech',
+      'https://github.com/mentrontech',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
       email: 'support@mentron.in',
-      url: `${SITE_URL}/contact`,
+      url: `${SITE_URL}/institutional-demo`,
     },
     address: {
       '@type': 'PostalAddress',
@@ -375,6 +379,7 @@ export function generateSoftwareAppJsonLd() {
       price: '0',
       priceCurrency: 'INR',
       description: 'Free trial available',
+      availability: 'https://schema.org/PreOrder',
     },
     publisher: {
       '@id': `${SITE_URL}#organization`,
@@ -411,30 +416,5 @@ export function generateCourseJsonLd(course: {
 }
 
 // ============================================================================
-// HOWTO JSON-LD (For tutorial/guide blog posts)
+// (HowTo removed — Google deprecated HowTo rich results in Sept 2023)
 // ============================================================================
-
-export function generateHowToJsonLd(howto: {
-  name: string
-  description: string
-  steps: Array<{ name: string; text: string; image?: string }>
-  totalTime?: string // ISO 8601: 'PT10M' = 10 minutes
-}) {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: howto.name,
-    description: howto.description,
-    totalTime: howto.totalTime,
-    step: howto.steps.map((s, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: s.name,
-      text: s.text,
-      image: s.image ? `${SITE_URL}${s.image}` : undefined,
-    })),
-    publisher: {
-      '@id': `${SITE_URL}#organization`,
-    },
-  }
-}

@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: 'Mentron Blog',
     description: 'Insights on AI-powered learning and education technology.',
     images: ['https://www.mentron.in/images/mentron-in-og-default.jpg'],
-    creator: '@mentronai',
+    creator: '@mentrontech',
   },
 }
 

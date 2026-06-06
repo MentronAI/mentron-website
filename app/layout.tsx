@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: 'Mentron LMS- Smarter Learning & Smarter Teaching',
     description: 'AI powered LMS that learns your learning style and auto-generates flashcards, quizzes, mind maps.',
     images: ['/images/mentron-in-og-default.jpg'],
-    creator: '@mentronai',
+    creator: '@mentrontech',
   },
 };
 
