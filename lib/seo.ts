@@ -180,8 +180,10 @@ export function generateOrganizationJsonLd() {
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Chennai',
+      streetAddress: 'North Andalpuram',
+      addressLocality: 'Rajapalayam',
       addressRegion: 'Tamil Nadu',
+      postalCode: '626108',
       addressCountry: 'IN',
     },
     founder: {

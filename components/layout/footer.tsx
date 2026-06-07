@@ -80,10 +80,17 @@ export default function Footer() {
           </div>
 
           {/* Footer Bottom */}
-          <div className="mt-12 pt-8 border-t border-neutral-200 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-xs text-neutral-400">
-              © 2026 Mentron. All rights reserved.
-            </p>
+          <div className="mt-12 pt-8 border-t border-neutral-200">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <p className="text-xs text-neutral-400">
+                © 2026 Mentron Technologies LLP. All rights reserved.
+              </p>
+            </div>
+            <div className="mt-3 text-xs text-neutral-400 leading-relaxed">
+              <p>Mentron Technologies LLP &middot; LLPIN: ACV-3361</p>
+              <p>North Andalpuram, Rajapalayam &ndash; 626108, Tamil Nadu, India</p>
+              <p>support@mentron.in</p>
+            </div>
           </div>
         </div>
       </div>

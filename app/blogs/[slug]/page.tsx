@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import ShareButtons from '@/components/blog/share-buttons';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -64,6 +65,21 @@ export default async function BlogPostPage(props: Props) {
   const blogJsonLd = generateBlogJsonLd(post);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(post);
   const faqJsonLd = post.faqs && post.faqs.length > 0 ? generateFAQJsonLd(post.faqs) : null;
+  const authorSlug = post.author.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `https://www.mentron.in/authors/${authorSlug}#person`,
+    name: post.author.name,
+    jobTitle: post.author.role,
+    url: `https://www.mentron.in/authors/${authorSlug}`,
+    image: post.author.image ? `https://www.mentron.in${post.author.image}` : undefined,
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Mentron Technologies LLP',
+      url: 'https://www.mentron.in',
+    },
+  };
 
   // Get related articles (simple logic: recent posts excluding current)
   const allPosts = getAllPosts();
@@ -88,6 +104,10 @@ export default async function BlogPostPage(props: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+      />
 
       {/* Breadcrumb Navigation */}
       <div className="px-6 lg:px-16 pt-8 pb-4 bg-white border-b border-slate-100">
@@ -211,20 +231,7 @@ export default async function BlogPostPage(props: Props) {
             {/* Share Buttons */}
             <div className="flex items-center justify-between mb-8">
               <p className="text-sm font-medium text-slate-900">Share this article:</p>
-              <div className="flex items-center gap-3">
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 hover:bg-primary hover:text-white transition-all flex items-center justify-center">
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 hover:bg-primary hover:text-white transition-all flex items-center justify-center">
-                  <Linkedin className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 hover:bg-primary hover:text-white transition-all flex items-center justify-center">
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-10 h-10 rounded-full bg-slate-100 hover:bg-primary hover:text-white transition-all flex items-center justify-center">
-                  <LinkIcon className="w-4 h-4" />
-                </a>
-              </div>
+              <ShareButtons url={`https://www.mentron.in/blogs/${post.slug}`} title={post.title} />
             </div>
 
             {/* Author Card */}
@@ -243,12 +250,12 @@ export default async function BlogPostPage(props: Props) {
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-slate-900 mb-2 font-display">{post.author.name}</h3>
                   <p className="text-sm text-slate-500 mb-4 font-geist">
-                    {post.author.role}. Building AI-powered learning tools for schools and colleges. Previously worked on ML systems at DigiSpot. Passionate about education technology and cognitive science.
+                    {post.author.bio || `${post.author.role} at Mentron.`}
                   </p>
                   <div className="flex items-center gap-3">
-                    <a href="#" className="text-sm text-primary hover:underline font-medium">Follow on Twitter →</a>
+                    <a href="https://x.com/mentrontech" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline font-medium">Follow on X →</a>
                     <span className="text-slate-300">•</span>
-                    <a href="#" className="text-sm text-primary hover:underline font-medium">LinkedIn Profile →</a>
+                    <a href="https://www.linkedin.com/company/mentron" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline font-medium">Mentron on LinkedIn →</a>
                   </div>
                 </div>
               </div>
@@ -354,7 +361,7 @@ export default async function BlogPostPage(props: Props) {
               Experience AI-powered learning tools for your school. Schedule a personalized demo with our team.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/demo" className="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-8 rounded-full transition-all shadow-xl shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-0.5">
+              <a href="/institutional-demo" className="bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-8 rounded-full transition-all shadow-xl shadow-primary/25 hover:shadow-primary/40 transform hover:-translate-y-0.5">
                 Schedule a Demo
               </a>
               <a href="/blogs" className="text-slate-600 hover:text-primary font-medium py-4 px-6 flex items-center justify-center gap-2 transition-colors rounded-full border-2 border-slate-200 hover:border-primary">

@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
+import { getAuthor } from '@/content/authors'
 
 const postsDirectory = path.join(process.cwd(), 'content/blogs')
 
@@ -16,6 +17,7 @@ export interface BlogPost {
     name: string
     image: string
     role: string
+    bio?: string
   }
   image: string
   category: string[]
@@ -47,7 +49,7 @@ export function getAllPosts(): BlogPost[] {
         description: data.description,
         date: data.date,
         dateModified: data.dateModified,
-        author: data.author,
+        author: { ...data.author, ...(getAuthor(data.author?.name) ? { bio: getAuthor(data.author.name)?.bio } : {}) },
         image: data.image,
         category: data.category || [],
         featured: data.featured || false,
@@ -75,7 +77,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       description: data.description,
       date: data.date,
       dateModified: data.dateModified,
-      author: data.author,
+      author: { ...data.author, ...(getAuthor(data.author?.name) ? { bio: getAuthor(data.author.name)?.bio } : {}) },
       image: data.image,
       category: data.category || [],
       featured: data.featured || false,
