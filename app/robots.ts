@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
 
   return {
     rules: [
+      // Default: allow all user agents, block admin/utility paths
       {
         userAgent: '*',
         allow: '/',
@@ -17,21 +18,34 @@ export default function robots(): MetadataRoute.Robots {
           '/reset-password',
         ],
       },
-      // Block AI crawlers from scraping content for training
+      // AI SEARCH crawlers (user-facing citation) — allow explicitly
       {
         userAgent: [
-          'GPTBot',          // OpenAI
-          'ChatGPT-User',    // OpenAI
-          'CCBot',           // Common Crawl (used by many AI companies)
-          'anthropic-ai',    // Anthropic (Claude)
-          'Claude-Web',      // Anthropic
-          'Google-Extended', // Google Bard training data
+          'GPTBot',              // OpenAI search crawler
+          'OAI-SearchBot',       // OpenAI search features
+          'ChatGPT-User',        // OpenAI user-triggered browse
+          'ClaudeBot',           // Anthropic web features
+          'Claude-Web',          // Anthropic user-triggered fetch
+          'PerplexityBot',       // Perplexity search
+          'Perplexity-User',     // Perplexity user-triggered fetch
+          'Applebot-Extended',   // Apple Intelligence
+        ],
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/dashboard/', '/login', '/signup', '/reset-password'],
+      },
+      // AI TRAINING crawlers — block (we don't consent to training on our content)
+      {
+        userAgent: [
+          'CCBot',           // Common Crawl (feeds most AI training corpora)
+          'anthropic-ai',    // Anthropic training crawler
+          'Google-Extended', // Google Gemini training (separate from Googlebot search)
           'Omgilibot',       // Omgili
-          'FacebookBot',     // Meta AI
+          'FacebookBot',     // Meta AI training
+          'Bytespider',      // ByteDance (uncomment to block)
         ],
         disallow: ['/'],
       },
-      // Allow Google, Bing, other search engines
+      // Search engine crawlers
       {
         userAgent: ['Googlebot', 'Googlebot-Image', 'Googlebot-News'],
         allow: '/',
