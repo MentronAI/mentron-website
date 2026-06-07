@@ -4,7 +4,7 @@ import Footer from '@/components/layout/footer';
 export default function PrivacyPage() {
   return (
     <>
-      <div className="flex-1 px-6 lg:px-16 py-12">
+      <div className="flex-1 px-6 lg:px-16 pt-[72px] lg:pt-[80px] pb-12">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-bold mb-8 text-slate-900 font-display tracking-tight">Privacy Policy</h1>
 

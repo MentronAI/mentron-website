@@ -60,7 +60,7 @@ export default async function AuthorPage({ params }: { params: Promise<{ slug: s
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
 
-      <div className="flex-1 px-6 lg:px-16 py-12">
+      <div className="flex-1 px-6 lg:px-16 pt-[72px] lg:pt-[80px] pb-12">
         <div className="max-w-4xl mx-auto">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-sm text-slate-500 font-geist mb-8">

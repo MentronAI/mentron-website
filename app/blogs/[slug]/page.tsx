@@ -110,7 +110,7 @@ export default async function BlogPostPage(props: Props) {
       />
 
       {/* Breadcrumb Navigation */}
-      <div className="px-6 lg:px-16 pt-8 pb-4 bg-white border-b border-slate-100">
+      <div className="px-6 lg:px-16 pt-[72px] lg:pt-[80px] pb-4 bg-white border-b border-slate-100">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-slate-500 font-geist">
             <Link href="/" className="hover:text-primary transition-colors">Home</Link>
