@@ -1,13 +1,14 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import {
   Search,
   Calendar,
-  Clock,
   BookOpen,
+  ChevronLeft,
+  ChevronRight,
 } from 'lucide-react'
 
 interface Post {
@@ -21,6 +22,8 @@ interface Post {
   author: { name: string; image: string }
 }
 
+const POSTS_PER_PAGE = 9
+
 export default function BlogSearch({
   posts,
   categories,
@@ -30,6 +33,7 @@ export default function BlogSearch({
 }) {
   const [query, setQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  const [page, setPage] = useState(1)
 
   const filtered = posts.filter((post) => {
     const matchesQuery =
@@ -43,6 +47,16 @@ export default function BlogSearch({
 
     return matchesQuery && matchesCategory
   })
+
+  const isFiltering = !!query || !!activeCategory
+  const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE)
+  const start = (page - 1) * POSTS_PER_PAGE
+  const paginated = isFiltering ? filtered : filtered.slice(start, start + POSTS_PER_PAGE)
+
+  // Reset page when filters change
+  useEffect(() => {
+    setPage(1)
+  }, [query, activeCategory])
 
   return (
     <>
@@ -92,18 +106,24 @@ export default function BlogSearch({
         ))}
       </div>
 
-      {/* Results count */}
-      {(query || activeCategory) && (
-        <p className="text-sm text-slate-500 mb-6 text-center font-geist">
-          {filtered.length} article{filtered.length !== 1 ? 's' : ''} found
-          {query && ` for "${query}"`}
-        </p>
-      )}
+      {/* Results info */}
+      <div className="flex items-center justify-between mb-8">
+        {(query || activeCategory) ? (
+          <p className="text-sm text-slate-500 font-geist">
+            {filtered.length} article{filtered.length !== 1 ? 's' : ''} found
+            {query && ` for "${query}"`}
+          </p>
+        ) : (
+          <p className="text-sm text-slate-500 font-geist">
+            Showing {start + 1}–{Math.min(start + POSTS_PER_PAGE, filtered.length)} of {filtered.length} posts
+          </p>
+        )}
+      </div>
 
       {/* Blog Grid */}
       {filtered.length > 0 ? (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filtered.map((post) => (
+          {paginated.map((post) => (
             <article
               key={post.slug}
               className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover-lift hover:border-primary transition-all flex flex-col h-full"
@@ -161,6 +181,49 @@ export default function BlogSearch({
           <p className="text-slate-500 font-geist">
             No articles found. Try a different search term or category.
           </p>
+        </div>
+      )}
+
+      {/* Pagination */}
+      {!isFiltering && totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 mt-12 pt-8 border-t border-slate-100">
+          <button
+            onClick={() => setPage((p) => Math.max(1, p - 1))}
+            disabled={page === 1}
+            className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${
+              page === 1
+                ? 'border-slate-200 text-slate-400 opacity-30 cursor-not-allowed'
+                : 'border-slate-200 text-slate-600 hover:border-primary hover:text-primary'
+            }`}
+          >
+            <ChevronLeft width={20} />
+          </button>
+
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+            <button
+              key={pageNum}
+              onClick={() => setPage(pageNum)}
+              className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold transition-all ${
+                pageNum === page
+                  ? 'bg-primary text-white'
+                  : 'border-2 border-slate-200 text-slate-600 hover:border-primary hover:text-primary'
+              }`}
+            >
+              {pageNum}
+            </button>
+          ))}
+
+          <button
+            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+            disabled={page === totalPages}
+            className={`w-10 h-10 rounded-full border-2 flex items-center justify-center transition-all ${
+              page === totalPages
+                ? 'border-slate-200 text-slate-400 opacity-30 cursor-not-allowed'
+                : 'border-primary text-primary hover:bg-primary hover:text-white'
+            }`}
+          >
+            <ChevronRight width={20} />
+          </button>
         </div>
       )}
     </>
